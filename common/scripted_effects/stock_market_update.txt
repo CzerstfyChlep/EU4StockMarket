@@ -103,6 +103,19 @@ update_demand_for_trade_good = {
 	update_demand_for_trade_good_$trade_good_id$ = yes
 }
 
+stock_market_change_price_with_id = {
+	stock_market_change_price_$trade_good_id$ = { value = $value$ }
+}
+
+stock_market_change_price = {
+	change_price = {
+		trade_goods = $trade_goods$
+		key = "Current Market Conditions"
+		value = $value$
+		duration = 60
+	}
+}
+
 set_price_for_trade_good = {
 	
 }

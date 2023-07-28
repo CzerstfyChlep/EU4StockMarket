@@ -2,7 +2,7 @@ update_demand_for_trade_good_0 = {
 	owner = {
 		export_to_variable = {
 			which = tempvar
-			value = modifier:development
+			value = trigger_value:development
 			who = PREV
 		}
 		multiply_variable = { 
