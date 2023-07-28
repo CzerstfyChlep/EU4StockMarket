@@ -1,0 +1,6 @@
+release_update_for_trade_good = {
+}
+
+set_price_for_trade_good = {
+	
+}
