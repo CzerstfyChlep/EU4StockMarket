@@ -1,0 +1,17 @@
+update_demand_for_trade_good_0 = {
+	owner = {
+		export_to_variable = {
+			which = tempvar
+			value = modifier:development
+			who = PREV
+		}
+		multiply_variable = { 
+			which = tempvar
+			value = 0.005
+		}
+		change_variable = {
+			which = stock_market_demand_for_0
+			which = tempvar
+		}
+	}
+}

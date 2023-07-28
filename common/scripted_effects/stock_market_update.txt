@@ -1,4 +1,106 @@
 release_update_for_trade_good = {
+	REB = {
+		set_variable = {
+			which = stock_market_supply_for_$trade_good_id$
+			value = 0
+		}
+		set_variable = {
+			which = stock_market_demand_for_$trade_good_id$
+			value = 0
+		}
+	}
+	
+	every_country = {
+		limit = {
+			NOT = { tag = REB }
+		}
+		set_variable = {
+			which = stock_market_demand_for_$trade_good_id$
+			value = 0
+		}
+		set_variable = {
+			which = stock_market_supply_for_$trade_good_id$
+			value = 0
+		}
+		export_to_variable = {
+			variable_name = temp_global_trade_goods_size_modifier
+			value = modifier:global_trade_goods_size_modifier
+			who = ROOT
+		}
+		export_to_variable = {
+			variable_name = temp_global_trade_goods_size
+			value = modifier:global_trade_goods_size
+			who = ROOT
+		}
+		every_owned_province = {
+			update_supply_for_trade_good = { trade_good_id = $trade_good_id$ }
+			update_demand_for_trade_good = { trade_good_id = $trade_good_id$ }
+		}
+		
+		REB = {
+			change_variable = {
+				which = stock_market_supply_for_$trade_good_id$
+				which = PREV
+			}
+			change_variable = {
+				which = stock_market_demand_for_$trade_good_id$
+				which = PREV
+			}
+		}
+	}
+	
+	set_price_for_trade_good = { trade_good_id = $trade_good_id$ }
+}
+
+update_supply_for_trade_good = {
+	set_variable = {
+		which = tempvar
+		value = $trade_good_id$
+	}
+	if = {
+		limit = {
+			is_variable_equal = {
+				which = stock_market_good_index
+				which = tempvar
+			}
+		}
+		owner = {
+			export_to_variable = {
+				variable_name = tempvar
+				value = modifier:trade_goods_size
+				who = PREV
+			}
+			export_to_variable = {
+				variable_name = tempvar2
+				value = modifier:trade_goods_size_modifier
+				who = PREV
+			}
+			change_variable = {
+				which = tempvar
+				which = temp_global_trade_goods_size
+			}
+			change_variable = {
+				which = tempvar2
+				which = temp_global_trade_goods_size_modifier
+			}
+			change_variable = {
+				which = tempvar2
+				value = 1
+			}
+			multiply_variable = {
+				which = tempvar
+				which = tempvar2
+			}
+			change_variable = {
+				which = stock_market_supply_for_$trade_good_id$
+				which = tempvar
+			}
+		}
+	}
+}
+
+update_demand_for_trade_good = {
+	update_demand_for_trade_good_$trade_good_id$ = yes
 }
 
 set_price_for_trade_good = {
