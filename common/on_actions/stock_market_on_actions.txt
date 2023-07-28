@@ -164,12 +164,20 @@ on_startup = {
 			desc = until_end_of_age_desc
 		}
 	}
+	if = {
+		limit = {
+			NOT = { has_global_flag = stock_market_on_startup_indexing_done }
+		}
+		set_global_flag = stock_market_on_startup_indexing_done
+		stock_market_startup_indexing = yes
+	}
 }
 
 # ROOT = province, FROM = country
 on_trade_good_changed = {
 	on_trade_good_changed_estate_privileges_effect = yes
 	on_trade_good_changed_government_effect = yes
+	stock_market_change_indexing_effect = yes
 	ROOT = {
 		if = {
 			limit = { 

@@ -1,0 +1,197 @@
+stock_market_change_indexing_effect = {
+	if = {
+		limit = {
+			trade_goods = grain
+		}
+		set_variable = { which = stock_market_good_index value = 0 }
+	}
+	else_if = {
+		limit = {
+			trade_goods = wine
+		}
+		set_variable = { which = stock_market_good_index value = 1 }
+	}
+	else_if = {
+		limit = {
+			trade_goods = wool
+		}
+		set_variable = { which = stock_market_good_index value = 2 }
+	}
+	else_if = {
+		limit = {
+			trade_goods = cloth
+		}
+		set_variable = { which = stock_market_good_index value = 3 }
+	}
+	else_if = {
+		limit = {
+			trade_goods = fish
+		}
+		set_variable = { which = stock_market_good_index value = 4 }
+	}
+	else_if = {
+		limit = {
+			trade_goods = fur
+		}
+		set_variable = { which = stock_market_good_index value = 5 }
+	}
+	else_if = {
+		limit = {
+			trade_goods = salt
+		}
+		set_variable = { which = stock_market_good_index value = 6 }
+	}
+	else_if = {
+		limit = {
+			trade_goods = naval_supplies
+		}
+		set_variable = { which = stock_market_good_index value = 7 }
+	}
+	else_if = {
+		limit = {
+			trade_goods = copper
+		}
+		set_variable = { which = stock_market_good_index value = 8 }
+	}
+	else_if = {
+		limit = {
+			trade_goods = gold
+		}
+		set_variable = { which = stock_market_good_index value = 9 }
+	}
+	else_if = {
+		limit = {
+			trade_goods = iron
+		}
+		set_variable = { which = stock_market_good_index value = 10 }
+	}
+	else_if = {
+		limit = {
+			trade_goods = slaves
+		}
+		set_variable = { which = stock_market_good_index value = 11 }
+	}
+	else_if = {
+		limit = {
+			trade_goods = ivory
+		}
+		set_variable = { which = stock_market_good_index value = 12 }
+	}
+	else_if = {
+		limit = {
+			trade_goods = tea
+		}
+		set_variable = { which = stock_market_good_index value = 13 }
+	}
+	else_if = {
+		limit = {
+			trade_goods = chinaware
+		}
+		set_variable = { which = stock_market_good_index value = 14 }
+	}
+	else_if = {
+		limit = {
+			trade_goods = spices
+		}
+		set_variable = { which = stock_market_good_index value = 15 }
+	}
+	else_if = {
+		limit = {
+			trade_goods = coffee
+		}
+		set_variable = { which = stock_market_good_index value = 16 }
+	}
+	else_if = {
+		limit = {
+			trade_goods = cotton
+		}
+		set_variable = { which = stock_market_good_index value = 17 }
+	}
+	else_if = {
+		limit = {
+			trade_goods = sugar
+		}
+		set_variable = { which = stock_market_good_index value = 18 }
+	}
+	else_if = {
+		limit = {
+			trade_goods = tobacco
+		}
+		set_variable = { which = stock_market_good_index value = 19 }
+	}
+	else_if = {
+		limit = {
+			trade_goods = cocoa
+		}
+		set_variable = { which = stock_market_good_index value = 20 }
+	}
+	else_if = {
+		limit = {
+			trade_goods = silk
+		}
+		set_variable = { which = stock_market_good_index value = 21 }
+	}
+	else_if = {
+		limit = {
+			trade_goods = dyes
+		}
+		set_variable = { which = stock_market_good_index value = 22 }
+	}
+	else_if = {
+		limit = {
+			trade_goods = tropical_wood
+		}
+		set_variable = { which = stock_market_good_index value = 23 }
+	}
+	else_if = {
+		limit = {
+			trade_goods = livestock
+		}
+		set_variable = { which = stock_market_good_index value = 24 }
+	}
+	else_if = {
+		limit = {
+			trade_goods = incense
+		}
+		set_variable = { which = stock_market_good_index value = 25 }
+	}
+	else_if = {
+		limit = {
+			trade_goods = glass
+		}
+		set_variable = { which = stock_market_good_index value = 26 }
+	}
+	else_if = {
+		limit = {
+			trade_goods = paper
+		}
+		set_variable = { which = stock_market_good_index value = 27 }
+	}
+	else_if = {
+		limit = {
+			trade_goods = gems
+		}
+		set_variable = { which = stock_market_good_index value = 28 }
+	}
+	else_if = {
+		limit = {
+			trade_goods = coal
+		}
+		set_variable = { which = stock_market_good_index value = 29 }
+	}
+	else_if = {
+		limit = {
+			trade_goods = cloves
+		}
+		set_variable = { which = stock_market_good_index value = 30 }
+	}
+	else = {
+		set_variable = { which = stock_market_good_index value = 31 }
+	}
+}
+
+stock_market_startup_indexing = {
+	every_province = {
+		stock_market_change_indexing_effect = yes
+	}
+}
