@@ -112,7 +112,7 @@ stock_market_change_price = {
 		trade_goods = $trade_goods$
 		key = "Current Market Conditions"
 		value = $value$
-		duration = 60
+		duration = 365
 	}
 }
 

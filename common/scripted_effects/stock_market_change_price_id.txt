@@ -1,0 +1,127 @@
+stock_market_change_price_0 = {
+	stock_market_change_price = { trade_goods = grain value = $value$ }
+}
+
+stock_market_change_price_1 = {
+	stock_market_change_price = { trade_goods = wine value = $value$ }
+}
+
+stock_market_change_price_2 = {
+	stock_market_change_price = { trade_goods = wool value = $value$ }
+}
+
+stock_market_change_price_3 = {
+	stock_market_change_price = { trade_goods = cloth value = $value$ }
+}
+
+stock_market_change_price_4 = {
+	stock_market_change_price = { trade_goods = fish value = $value$ }
+}
+
+stock_market_change_price_5 = {
+	stock_market_change_price = { trade_goods = fur value = $value$ }
+}
+
+stock_market_change_price_6 = {
+	stock_market_change_price = { trade_goods = salt value = $value$ }
+}
+
+stock_market_change_price_7 = {
+	stock_market_change_price = { trade_goods = naval_supplies value = $value$ }
+}
+
+stock_market_change_price_8 = {
+	stock_market_change_price = { trade_goods = copper value = $value$ }
+}
+
+stock_market_change_price_9 = {
+	stock_market_change_price = { trade_goods = gold value = $value$ }
+}
+
+stock_market_change_price_10 = {
+	stock_market_change_price = { trade_goods = iron value = $value$ }
+}
+
+stock_market_change_price_11 = {
+	stock_market_change_price = { trade_goods = slaves value = $value$ }
+}
+
+stock_market_change_price_12 = {
+	stock_market_change_price = { trade_goods = ivory value = $value$ }
+}
+
+stock_market_change_price_13 = {
+	stock_market_change_price = { trade_goods = tea value = $value$ }
+}
+
+stock_market_change_price_14 = {
+	stock_market_change_price = { trade_goods = chinaware value = $value$ }
+}
+
+stock_market_change_price_15 = {
+	stock_market_change_price = { trade_goods = spices value = $value$ }
+}
+
+stock_market_change_price_16 = {
+	stock_market_change_price = { trade_goods = coffee value = $value$ }
+}
+
+stock_market_change_price_17 = {
+	stock_market_change_price = { trade_goods = cotton value = $value$ }
+}
+
+stock_market_change_price_18 = {
+	stock_market_change_price = { trade_goods = sugar value = $value$ }
+}
+
+stock_market_change_price_19 = {
+	stock_market_change_price = { trade_goods = tobacco value = $value$ }
+}
+
+stock_market_change_price_20 = {
+	stock_market_change_price = { trade_goods = cocoa value = $value$ }
+}
+
+stock_market_change_price_21 = {
+	stock_market_change_price = { trade_goods = silk value = $value$ }
+}
+
+stock_market_change_price_22 = {
+	stock_market_change_price = { trade_goods = dyes value = $value$ }
+}
+
+stock_market_change_price_23 = {
+	stock_market_change_price = { trade_goods = tropical_wood value = $value$ }
+}
+
+stock_market_change_price_24 = {
+	stock_market_change_price = { trade_goods = livestock value = $value$ }
+}
+
+stock_market_change_price_25 = {
+	stock_market_change_price = { trade_goods = incense value = $value$ }
+}
+
+stock_market_change_price_26 = {
+	stock_market_change_price = { trade_goods = glass value = $value$ }
+}
+
+stock_market_change_price_27 = {
+	stock_market_change_price = { trade_goods = paper value = $value$ }
+}
+
+stock_market_change_price_28 = {
+	stock_market_change_price = { trade_goods = gems value = $value$ }
+}
+
+stock_market_change_price_29 = {
+	stock_market_change_price = { trade_goods = coal value = $value$ }
+}
+
+stock_market_change_price_30 = {
+	stock_market_change_price = { trade_goods = cloves value = $value$ }
+}
+
+stock_market_change_price_31 = {
+	stock_market_change_price = { trade_goods = unknown value = $value$ }
+}
