@@ -190,6 +190,11 @@ set_price_for_trade_good = {
             which = price_multiplier_power_$trade_good_id$
         }
 
+		subtract_variable = {
+            which = price_multiplier_$trade_good_id$
+            value = 1
+        }
+
 
         apply_change_price = { trade_good_id = $trade_good_id$ }
     }
