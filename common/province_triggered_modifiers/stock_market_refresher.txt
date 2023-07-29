@@ -1,0 +1,28 @@
+stock_market_refresh_prices_bimonthly = {
+	potential = {
+		always = yes
+	}
+
+	hidden = yes 
+	
+	trigger = {
+		had_province_flag = {
+			flag = stock_market_refresh_flag
+			days = 60
+		}
+	}
+	
+	#Province scope
+	on_activation = {
+		clr_province_flag = stock_market_refresh_flag
+		set_province_flag = stock_market_refresh_flag
+		release_update_for_trade_good = { trade_good_id = 0 }
+		release_update_for_trade_good = { trade_good_id = 1 }
+		release_update_for_trade_good = { trade_good_id = 2 }
+		release_update_for_trade_good = { trade_good_id = 3 }
+	}
+	
+	on_deactivation = {
+	
+	}
+}
