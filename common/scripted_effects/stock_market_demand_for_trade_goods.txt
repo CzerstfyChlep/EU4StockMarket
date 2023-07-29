@@ -62,6 +62,24 @@ update_demand_for_trade_good_1 = { #wine
 	}
 }
 
+update_demand_for_trade_good_2 = { #wool
+	owner = {
+		export_to_variable = {
+			which = tempvar
+			value = trigger_value:development
+			who = PREV
+		}
+		multiply_variable = { 
+			which = tempvar
+			value = 0.001
+		}
+		change_variable = {
+			which = stock_market_demand_for_2
+			which = tempvar
+		}
+	}
+}
+
 update_demand_for_trade_good_3 = { #cloth
 	if = {
 		limit = {
