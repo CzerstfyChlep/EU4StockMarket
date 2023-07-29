@@ -117,5 +117,80 @@ stock_market_change_price = {
 }
 
 set_price_for_trade_good = {
-	
+	 #Assuming we have a way to get the global default price
+    REB = {
+        set_variable = {
+            which = stock_market_price_value_$trade_good_id$
+            value = 5
+        }
+
+        set_variable = {
+            which = difference_value_$trade_good_id$
+            which = stock_market_demand_for_$trade_good_id$
+        }
+
+        subtract_variable = {
+            which = difference_value_$trade_good_id$
+            which = stock_market_supply_for_$trade_good_id$
+        }
+
+
+        set_variable = {
+            which = sum_value_$trade_good_id$
+            which = stock_market_supply_for_$trade_good_id$
+        }
+
+
+        change_variable = {
+            which = sum_value_$trade_good_id$
+            which = stock_market_demand_for_$trade_good_id$
+        }
+
+        set_variable = {
+            which = price_multiplier_$trade_good_id$
+            which = difference_value_$trade_good_id$
+        }
+
+
+        divide_variable = {
+            which = price_multiplier_$trade_good_id$
+            which = sum_value_$trade_good_id$
+        }
+
+		change_variable = {
+            which = price_multiplier_$trade_good_id$
+            value = 1
+        }
+
+        set_variable = {
+            which = price_multiplier_power_$trade_good_id$
+            which = price_multiplier_$trade_good_id$
+        }
+
+        multiply_variable = {
+            which = price_multiplier_$trade_good_id$	
+            which = price_multiplier_power_$trade_good_id$
+        }
+
+
+        multiply_variable = {
+        	which = price_multiplier_$trade_good_id$
+            which = price_multiplier_power_$trade_good_id$
+        }
+
+
+        multiply_variable = {
+            which = price_multiplier_$trade_good_id$
+            which = price_multiplier_power_$trade_good_id$
+        }
+
+
+        multiply_variable = {
+            which = price_multiplier_$trade_good_id$
+            which = price_multiplier_power_$trade_good_id$
+        }
+
+
+        apply_change_price = { trade_good_id = $trade_good_id$ }
+    }
 }
