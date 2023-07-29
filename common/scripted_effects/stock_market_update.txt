@@ -162,33 +162,17 @@ set_price_for_trade_good = {
             value = 1
         }
 
-        set_variable = {
-            which = price_multiplier_power_$trade_good_id$
+        multiply_variable = {
+            which = price_multiplier_$trade_good_id$	
             which = price_multiplier_$trade_good_id$
         }
+
 
         multiply_variable = {
             which = price_multiplier_$trade_good_id$	
-            which = price_multiplier_power_$trade_good_id$
-        }
-
-
-        multiply_variable = {
-        	which = price_multiplier_$trade_good_id$
-            which = price_multiplier_power_$trade_good_id$
-        }
-
-
-        multiply_variable = {
             which = price_multiplier_$trade_good_id$
-            which = price_multiplier_power_$trade_good_id$
         }
 
-
-        multiply_variable = {
-            which = price_multiplier_$trade_good_id$
-            which = price_multiplier_power_$trade_good_id$
-        }
 
 		subtract_variable = {
             which = price_multiplier_$trade_good_id$
