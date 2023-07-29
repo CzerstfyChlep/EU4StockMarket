@@ -108,12 +108,144 @@ stock_market_change_price_with_id = {
 }
 
 stock_market_change_price = {
-	change_price = {
-		trade_goods = $trade_goods$
-		key = "Current Market Conditions"
-		value = $value$
-		duration = 365
+	if = {
+		limit = {
+			is_month = 11
+		}
+		change_price = {
+			trade_goods = $trade_goods$
+			key = "Current Market Conditions"
+			value = $value$
+			duration = 31
+		}
 	}
+
+	else_if = {
+		limit = {
+			is_month = 10
+		}
+		change_price = {
+			trade_goods = $trade_goods$
+			key = "Current Market Conditions"
+			value = $value$
+			duration = 30
+		}
+	}
+
+	else_if = {
+		limit = {
+			is_month = 9
+		}
+		change_price = {
+			trade_goods = $trade_goods$
+			key = "Current Market Conditions"
+			value = $value$
+			duration = 30
+		}
+	}
+
+	else_if = {
+		limit = {
+			is_month = 8
+		}
+		change_price = {
+			trade_goods = $trade_goods$
+			key = "Current Market Conditions"
+			value = $value$
+			duration = 29
+		}
+	}
+
+	else_if = {
+		limit = {
+			is_month = 7
+		}
+		change_price = {
+			trade_goods = $trade_goods$
+			key = "Current Market Conditions"
+			value = $value$
+			duration = 30
+		}
+	}
+
+	else_if = {
+		limit = {
+			is_month = 6
+		}
+		change_price = {
+			trade_goods = $trade_goods$
+			key = "Current Market Conditions"
+			value = $value$
+			duration = 30
+		}
+	}
+
+	else_if = {
+		limit = {
+			is_month = 5
+		}
+		change_price = {
+			trade_goods = $trade_goods$
+			key = "Current Market Conditions"
+			value = $value$
+			duration = 29
+		}
+	}
+	else_if = {
+		limit = {
+			is_month = 4
+		}
+		change_price = {
+			trade_goods = $trade_goods$
+			key = "Current Market Conditions"
+			value = $value$
+			duration = 30
+		}
+	}
+
+	else_if = {
+		limit = {
+			is_month = 3
+		}
+		change_price = {
+			trade_goods = $trade_goods$
+			key = "Current Market Conditions"
+			value = $value$
+			duration = 29
+		}
+	}
+
+	else_if = {
+		limit = {
+			is_month = 2
+		}
+		change_price = {
+			trade_goods = $trade_goods$
+			key = "Current Market Conditions"
+			value = $value$
+			duration = 30
+		}
+	}
+	else_if = {
+		limit = {
+			is_month = 1
+		}
+		change_price = {
+			trade_goods = $trade_goods$
+			key = "Current Market Conditions"
+			value = $value$
+			duration = 27
+		}
+	}
+	else = { 
+		change_price = {
+			trade_goods = $trade_goods$
+			key = "Current Market Conditions"
+			value = $value$
+			duration = 30
+		}
+	}
+
 }
 
 set_price_for_trade_good = {
@@ -167,19 +299,9 @@ set_price_for_trade_good = {
             which = price_multiplier_$trade_good_id$
         }
 
-
-        multiply_variable = {
-            which = price_multiplier_$trade_good_id$	
-            which = price_multiplier_$trade_good_id$
-        }
-
-
 		subtract_variable = {
             which = price_multiplier_$trade_good_id$
             value = 1
         }
-
-
-        apply_change_price = { trade_good_id = $trade_good_id$ }
     }
 }

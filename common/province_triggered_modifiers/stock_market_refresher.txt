@@ -20,9 +20,171 @@ stock_market_refresh_prices_bimonthly = {
 		release_update_for_trade_good = { trade_good_id = 1 }
 		release_update_for_trade_good = { trade_good_id = 2 }
 		release_update_for_trade_good = { trade_good_id = 3 }
+		release_update_for_trade_good = { trade_good_id = 4 }
 	}
 	
 	on_deactivation = {
 	
 	}
 }
+
+stock_market_refresh_prices_monthly = {
+	potential = {
+		always = yes
+	}
+
+	hidden = yes 
+	
+	trigger = {
+		OR = {
+
+			AND = {
+				had_province_flag = {
+					flag = stock_market_ingame_price_refresh_flag
+					days = 20
+				}
+				has_province_flag = first_game_month_flag
+			}
+
+			AND = {
+				is_month = 11
+				had_province_flag = {
+					flag = stock_market_ingame_price_refresh_flag
+					days = 31
+				}
+			}
+			AND = {
+				is_month = 10
+				NOT = { is_month = 11 }
+				had_province_flag = {
+					flag = stock_market_ingame_price_refresh_flag
+					days = 32
+				}
+			}
+			AND = {
+				is_month = 9
+				NOT = { is_month = 10 }
+				had_province_flag = {
+					flag = stock_market_ingame_price_refresh_flag
+					days = 31
+					}
+			}
+			AND = {
+				is_month = 8
+				NOT = { is_month = 9 }
+				had_province_flag = {
+					flag = stock_market_ingame_price_refresh_flag
+					days = 32
+				}
+			}
+			AND = {
+				is_month = 7			
+				NOT = { is_month = 8 }
+				had_province_flag = {
+					flag = stock_market_ingame_price_refresh_flag
+					days = 32
+				}
+			}
+			AND = {
+				is_month = 6		
+				NOT = { is_month = 7 }	
+				had_province_flag = {
+					flag = stock_market_ingame_price_refresh_flag
+					days = 31
+				}
+			}
+			AND = {
+				is_month = 5			
+				NOT = { is_month = 6 }
+				had_province_flag = {
+					flag = stock_market_ingame_price_refresh_flag
+					days = 32
+				}
+			}
+			AND = {
+				is_month = 4			
+				NOT = { is_month = 5 }
+				had_province_flag = {
+					flag = stock_market_ingame_price_refresh_flag
+					days = 31
+				}
+			}
+			AND = {
+				is_month = 3			
+				NOT = { is_month = 4 }
+				had_province_flag = {
+					flag = stock_market_ingame_price_refresh_flag
+					days = 32
+				}
+			}
+			AND = {
+				is_month = 2			
+				NOT = { is_month = 3 }	
+				had_province_flag = {
+					flag = stock_market_ingame_price_refresh_flag
+					days = 29
+				}
+			}
+			AND = {
+				is_month = 1
+				NOT = { is_month = 2 }	
+				had_province_flag = {
+					flag = stock_market_ingame_price_refresh_flag
+					days = 32
+				}
+			}
+			AND = {
+				is_month = 0
+				NOT = { is_month = 1 }	
+				had_province_flag = {
+					flag = stock_market_ingame_price_refresh_flag
+					days = 32
+				}
+			}
+		}
+	}
+	
+	#Province scope
+	on_activation = {
+		clr_province_flag = stock_market_ingame_price_refresh_flag
+		set_province_flag = stock_market_ingame_price_refresh_flag
+		clr_province_flag = first_game_month_flag
+		apply_change_price = { trade_good_id = 0 }
+		apply_change_price = { trade_good_id = 1 }
+		apply_change_price = { trade_good_id = 2 }
+		apply_change_price = { trade_good_id = 3 }
+		apply_change_price = { trade_good_id = 4 }
+		apply_change_price = { trade_good_id = 5 }
+		apply_change_price = { trade_good_id = 6 }
+		apply_change_price = { trade_good_id = 7 }
+		apply_change_price = { trade_good_id = 8 }
+		apply_change_price = { trade_good_id = 3 }
+		apply_change_price = { trade_good_id = 10 }
+		apply_change_price = { trade_good_id = 11 }
+		apply_change_price = { trade_good_id = 12 }
+		apply_change_price = { trade_good_id = 13 }
+		apply_change_price = { trade_good_id = 14 }
+		apply_change_price = { trade_good_id = 15 }
+		apply_change_price = { trade_good_id = 16 }
+		apply_change_price = { trade_good_id = 17 }
+		apply_change_price = { trade_good_id = 18 }
+		apply_change_price = { trade_good_id = 19 }
+		apply_change_price = { trade_good_id = 20 }
+		apply_change_price = { trade_good_id = 21 }
+		apply_change_price = { trade_good_id = 22 }
+		apply_change_price = { trade_good_id = 23 }
+		apply_change_price = { trade_good_id = 24 }
+		apply_change_price = { trade_good_id = 25 }
+		apply_change_price = { trade_good_id = 26 }
+		apply_change_price = { trade_good_id = 27 }
+		apply_change_price = { trade_good_id = 28 }
+		apply_change_price = { trade_good_id = 29 }
+		apply_change_price = { trade_good_id = 30 }
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+
