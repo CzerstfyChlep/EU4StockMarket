@@ -37,6 +37,9 @@ release_update_for_trade_good = {
 			update_demand_for_trade_good = { trade_good_id = $trade_good_id$ }
 		}
 		
+		update_national_supply_for_trade_good = { trade_good_id = $trade_good_id$ }
+		update_national_demand_for_trade_good = { trade_good_id = $trade_good_id$ }
+		
 		REB = {
 			change_variable = {
 				which = stock_market_supply_for_$trade_good_id$
@@ -99,6 +102,14 @@ update_supply_for_trade_good = {
 	}
 }
 
+update_national_supply_for_trade_good = {
+	update_national_supply_for_trade_good_$trade_good_id$ = yes
+}
+
+update_national_demand_for_trade_good = {
+	update_national_demand_for_trade_good_$trade_good_id$ = yes
+}
+
 update_demand_for_trade_good = {
 	update_demand_for_trade_good_$trade_good_id$ = yes
 }
@@ -112,7 +123,7 @@ stock_market_change_price = {
 		trade_goods = $trade_goods$
 		key = "Current Market Conditions"
 		value = $value$
-		duration = 365
+		duration = 60
 	}
 }
 
@@ -182,4 +193,20 @@ set_price_for_trade_good = {
 
         apply_change_price = { trade_good_id = $trade_good_id$ }
     }
+}
+
+stock_market_on_startup = {
+	1 = {
+		set_province_flag = stock_market_refresh_flag
+		add_province_triggered_modifier = stock_market_refresh_prices_bimonthly
+	}
+	priority_update = yes
+}
+
+priority_update = {
+	release_update_for_trade_good = { trade_good_id = 3 } #cloth
+	release_update_for_trade_good = { trade_good_id = 2 } #wool (we need cloth supply to determine supply) 
+	
+	release_update_for_trade_good = { trade_good_id = 1 } #wool
+	release_update_for_trade_good = { trade_good_id = 0 } #grain
 }

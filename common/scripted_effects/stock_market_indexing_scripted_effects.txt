@@ -194,8 +194,5 @@ stock_market_startup_indexing = {
 	every_province = {
 		stock_market_change_indexing_effect = yes
 	}
-	1 = {
-		set_province_flag = stock_market_refresh_flag
-		add_province_triggered_modifier = stock_market_refresh_prices_bimonthly
-	}
+	stock_market_on_startup = yes
 }

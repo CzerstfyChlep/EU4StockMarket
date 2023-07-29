@@ -1,4 +1,4 @@
-update_demand_for_trade_good_0 = {
+update_demand_for_trade_good_0 = { #grain
 	owner = {
 		export_to_variable = {
 			which = tempvar
@@ -7,11 +7,84 @@ update_demand_for_trade_good_0 = {
 		}
 		multiply_variable = { 
 			which = tempvar
-			value = 0.005
+			value = 0.007
 		}
 		change_variable = {
 			which = stock_market_demand_for_0
 			which = tempvar
+		}
+	}
+}
+
+update_demand_for_trade_good_1 = { #wine
+	if = {
+		limit = {
+			OR = {
+				religion_group = christian
+				region = france_region
+				region = italy_region
+				region = iberia_region
+				region = persia_region
+				region = maghreb_region
+				region = south_german_region
+				region = anatolia_region
+				region = mashriq_region
+				region = egypt_region
+				region = carpathia_region
+			}
+		}
+		owner = {
+			export_to_variable = {
+				which = tempvar
+				value = trigger_value:development
+				who = PREV
+			}
+			multiply_variable = { 
+				which = tempvar
+				value = 0.005
+			}
+			if = {
+				limit = { #if province is muslim, then demand is minimal
+					PREV = {
+						religion_group = muslim 
+					}
+				}
+				multiply_variable = { 
+					which = tempvar
+					value = 0.1
+				}
+			}
+			change_variable = {
+				which = stock_market_demand_for_1
+				which = tempvar
+			}
+		}
+	}
+}
+
+update_demand_for_trade_good_3 = { #cloth
+	if = {
+		limit = {
+			development = 15
+		}
+		owner = {
+			export_to_variable = {
+				which = tempvar
+				value = trigger_value:development
+				who = PREV
+			}
+			subtract_variable = {
+				which = tempvar
+				value = 15
+			}
+			multiply_variable = { 
+				which = tempvar
+				value = 0.35
+			}
+			change_variable = {
+				which = stock_market_demand_for_3
+				which = tempvar
+			}
 		}
 	}
 }
