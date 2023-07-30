@@ -1,0 +1,108 @@
+update_national_demand_for_trade_good_0 = { # grain
+
+}
+update_national_demand_for_trade_good_1 = { # wine
+
+}
+update_national_demand_for_trade_good_2 = { # wool
+	set_variable = { #supply of cloth = demand for wool
+		which = tempvar
+		which = stock_market_supply_for_3
+	}
+	multiply_variable = { 
+		which = tempvar
+		value = 0.2
+	}
+	change_variable = {
+		which = stock_market_demand_for_2
+		which = tempvar
+	}
+	
+}
+update_national_demand_for_trade_good_3 = { # cloth
+
+}
+update_national_demand_for_trade_good_4 = { # fish
+
+}
+update_national_demand_for_trade_good_5 = { # fur
+
+}
+update_national_demand_for_trade_good_6 = { # salt
+
+}
+update_national_demand_for_trade_good_7 = { # naval_supplies
+
+}
+update_national_demand_for_trade_good_8 = { # copper
+
+}
+update_national_demand_for_trade_good_9 = { # gold
+
+}
+update_national_demand_for_trade_good_10 = { # iron
+
+}
+update_national_demand_for_trade_good_11 = { # slaves
+
+}
+update_national_demand_for_trade_good_12 = { # ivory
+
+}
+update_national_demand_for_trade_good_13 = { # tea
+
+}
+update_national_demand_for_trade_good_14 = { # chinaware
+
+}
+update_national_demand_for_trade_good_15 = { # spices
+
+}
+update_national_demand_for_trade_good_16 = { # coffee
+
+}
+update_national_demand_for_trade_good_17 = { # cotton
+
+}
+update_national_demand_for_trade_good_18 = { # sugar
+
+}
+update_national_demand_for_trade_good_19 = { # tobacco
+
+}
+update_national_demand_for_trade_good_20 = { # cocoa
+
+}
+update_national_demand_for_trade_good_21 = { # silk
+
+}
+update_national_demand_for_trade_good_22 = { # dyes
+
+}
+update_national_demand_for_trade_good_23 = { # tropical_wood
+
+}
+update_national_demand_for_trade_good_24 = { # livestock
+
+}
+update_national_demand_for_trade_good_25 = { # incense
+
+}
+update_national_demand_for_trade_good_26 = { # glass
+
+}
+update_national_demand_for_trade_good_27 = { # paper
+
+}
+update_national_demand_for_trade_good_28 = { # gems
+
+}
+update_national_demand_for_trade_good_29 = { # coal
+
+}
+update_national_demand_for_trade_good_30 = { # cloves
+
+}
+update_national_demand_for_trade_good_31 = { # unknown
+
+}
