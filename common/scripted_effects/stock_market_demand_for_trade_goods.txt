@@ -106,8 +106,8 @@ update_demand_for_trade_good_2 = { #wool
 update_demand_for_trade_good_3 = { #cloth
 	demand_from_province_dev = {
 		trade_good_id = 3
-		base = 0.6
-		multiplier = 0.5
+		base = 0.642
+		multiplier = 0.6
 	}
 	
 	# if = {
@@ -189,6 +189,62 @@ update_demand_for_trade_good_10 = { #iron
 	}
 }
 
+update_demand_for_trade_good_11 = { #slaves
+	if = {
+		limit = {
+			OR = {
+				superregion = africa_superregion
+				superregion = southern_africa_superregion
+			}
+			NOT = { region = maghreb_region }
+		}
+		owner = {
+			export_to_variable = {
+				which = tempvar
+				value = trigger_value:development
+				who = PREV
+			}
+			multiply_variable = { 
+				which = tempvar
+				value = 0.375
+			}
+			change_variable = {
+				which = stock_market_demand_for_11
+				which = tempvar
+			}
+		}
+	}
+}
+
+update_demand_for_trade_good_12 = { #ivory
+	if = {
+		limit = {
+			OR = {
+				superregion = africa_superregion
+				superregion = southern_africa_superregion
+				region = indo_china_region
+				region = burma_region
+			}
+			NOT = { region = maghreb_region }
+		}
+		owner = {
+			export_to_variable = {
+				which = tempvar
+				value = trigger_value:development
+				who = PREV
+			}
+			multiply_variable = { 
+				which = tempvar
+				value = 0.6
+			}
+			change_variable = {
+				which = stock_market_demand_for_12
+				which = tempvar
+			}
+		}
+	}
+}
+
 update_demand_for_trade_good_13 = { #tea
 	if = {
 		limit = {
@@ -217,6 +273,292 @@ update_demand_for_trade_good_13 = { #tea
 	}
 }
 
+update_demand_for_trade_good_14 = { #chinaware
+	if = {
+		limit = {
+			OR = {
+				superregion = china_superregion
+				superregion = far_east_superregion
+				superregion = east_indies_superregion
+			}
+		}
+		owner = {
+			export_to_variable = {
+				which = tempvar
+				value = trigger_value:development
+				who = PREV
+			}
+			multiply_variable = { 
+				which = tempvar
+				value = 0.3
+			}
+			change_variable = {
+				which = stock_market_demand_for_14
+				which = tempvar
+			}
+		}
+	}
+}
+
+update_demand_for_trade_good_15 = { #spices
+	if = {
+		limit = {
+			OR = {
+				superregion = india_superregion
+				superregion = east_indies_superregion
+				superregion = persia_superregion
+			}
+		}
+		owner = {
+			export_to_variable = {
+				which = tempvar
+				value = trigger_value:development
+				who = PREV
+			}
+			multiply_variable = { 
+				which = tempvar
+				value = 0.55
+			}
+			change_variable = {
+				which = stock_market_demand_for_15
+				which = tempvar
+			}
+		}
+	}
+}
+
+update_demand_for_trade_good_16 = { #coffee
+	if = {
+		limit = {
+			OR = {
+				superregion = africa_superregion
+				region = central_africa_region
+				region = carribeans_region
+				continent = south_america
+			}
+			NOT = = { region = maghreb_region }
+		}
+		owner = {
+			export_to_variable = {
+				which = tempvar
+				value = trigger_value:development
+				who = PREV
+			}
+			multiply_variable = { 
+				which = tempvar
+				value = 0.31
+			}
+			change_variable = {
+				which = stock_market_demand_for_16
+				which = tempvar
+			}
+		}
+	}
+}
+
+update_demand_for_trade_good_17 = { #cotton
+	if = {
+		limit = {
+			OR = {
+				superregion = india_superregion
+				region = southeast_america_region 
+				region = mississippi_region
+				region = rio_grande_region
+				superregion = persia_superregion
+				region = anatolia_region
+			}
+		}
+		owner = {
+			export_to_variable = {
+				which = tempvar
+				value = trigger_value:development
+				who = PREV
+			}
+			multiply_variable = { 
+				which = tempvar
+				value = 0.725
+			}
+			change_variable = {
+				which = stock_market_demand_for_17
+				which = tempvar
+			}
+		}
+	}
+}
+
+update_demand_for_trade_good_18 = { #sugar
+	if = {
+		limit = {
+			OR = {
+				superregion = central_america_superregion
+				region = colombia_region
+				region = brazil_region
+				region = mashriq_region
+				region = maghreb_region
+			}
+			NOT = { region = central_america_superregion }
+		}
+		owner = {
+			export_to_variable = {
+				which = tempvar
+				value = trigger_value:development
+				who = PREV
+			}
+			multiply_variable = { 
+				which = tempvar
+				value = 0.7
+			}
+			change_variable = {
+				which = stock_market_demand_for_18
+				which = tempvar
+			}
+		}
+	}
+}
+
+update_demand_for_trade_good_19 = { #tobacco
+	if = {
+		limit = {
+			OR = {
+				region = southeast_america_region
+				region = australia_region
+				region = brazil_region
+				region = carribeans_region
+				region = northeast_america_region
+			}
+		}
+		owner = {
+			export_to_variable = {
+				which = tempvar
+				value = trigger_value:development
+				who = PREV
+			}
+			multiply_variable = { 
+				which = tempvar
+				value = 0.8
+			}
+			change_variable = {
+				which = stock_market_demand_for_19
+				which = tempvar
+			}
+		}
+	}
+}
+
+update_demand_for_trade_good_20 = { #cocoa
+	if = {
+		limit = {
+			OR = {
+				region = peru_region
+				region = central_america_region
+				region = colombia_region
+				region = brazil_region
+			}
+		}
+		owner = {
+			export_to_variable = {
+				which = tempvar
+				value = trigger_value:development
+				who = PREV
+			}
+			multiply_variable = { 
+				which = tempvar
+				value = 1.75
+			}
+			change_variable = {
+				which = stock_market_demand_for_20
+				which = tempvar
+			}
+		}
+	}
+}
+
+update_demand_for_trade_good_21 = { #silk
+	if = {
+		limit = {
+			OR = {
+				superregion = india_superregion
+				superregion = china_superregion
+				superregion = persia_superregion
+			}
+		}
+		owner = {
+			export_to_variable = {
+				which = tempvar
+				value = trigger_value:development
+				who = PREV
+			}
+			multiply_variable = { 
+				which = tempvar
+				value = 0.75
+			}
+			change_variable = {
+				which = stock_market_demand_for_21
+				which = tempvar
+			}
+		}
+	}
+}
+
+update_demand_for_trade_good_22 = { #dyes
+	if = {
+		limit = {
+			OR = {
+				superregion = india_superregion
+				superregion = china_superregion
+				region = niger_region
+			}
+		}
+		owner = {
+			export_to_variable = {
+				which = tempvar
+				value = trigger_value:development
+				who = PREV
+			}
+			multiply_variable = { 
+				which = tempvar
+				value = 0.3
+			}
+			change_variable = {
+				which = stock_market_demand_for_22
+				which = tempvar
+			}
+		}
+	}
+}
+
+update_demand_for_trade_good_23 = { #tropical wood
+	if = {
+		limit = {
+			OR = {
+				superregion = india_superregion
+				superregion = east_indies_superregion
+				continent = south_america
+				region = central_america_region
+				region = colombia_region
+				region = niger_region
+				region = guinea_region
+				superregion = southern_africa_superregion
+			}
+		}
+		owner = {
+			export_to_variable = {
+				which = tempvar
+				value = trigger_value:development
+				who = PREV
+			}
+			multiply_variable = { 
+				which = tempvar
+				value = 0.14
+			}
+			change_variable = {
+				which = stock_market_demand_for_23
+				which = tempvar
+			}
+		}
+	}
+}
+
 update_demand_for_trade_good_24 = { #livestock
 	demand_from_province_dev = {
 		trade_good_id = 24
@@ -225,9 +567,107 @@ update_demand_for_trade_good_24 = { #livestock
 	}
 }
 
+update_demand_for_trade_good_25 = { #incense
+	if = {
+		limit = {
+			OR = {
+				region = malaya_region
+				region = indo_china_region
+				region = south_china_region
+				region = moluccas_region
+				region = indonesia_region
+				region = australia_region
+				region = arabia_region
+				region = horn_of_africa_region
+			}
+		}
+		owner = {
+			export_to_variable = {
+				which = tempvar
+				value = trigger_value:development
+				who = PREV
+			}
+			multiply_variable = { 
+				which = tempvar
+				value = 0.25
+			}
+			change_variable = {
+				which = stock_market_demand_for_25
+				which = tempvar
+			}
+		}
+	}
+}
+
 update_demand_for_trade_good_26 = { #glass
 	demand_from_province_dev = {
 		trade_good_id = 26
-		base = 0.001 #too low of a number, doesn't work. Will do later
+		base = 0.0803652
+		multiplier = 0.6
 	}
+}
+
+update_demand_for_trade_good_27 = { #papers
+	demand_from_province_dev = {
+		trade_good_id = 27
+		base = 0.1836316
+		multiplier = 0.65
+	}
+}
+
+update_demand_for_trade_good_28 = { #gems
+	demand_from_province_dev = {
+		trade_good_id = 28
+		base = 0.132
+		multiplier = 0.9
+	}
+}
+
+update_demand_for_trade_good_29 = { #coal
+	if = {
+		limit = {
+			enlightenment = 100
+		}
+		owner = {
+			export_to_variable = {
+				which = tempvar
+				value = trigger_value:development
+				who = PREV
+			}
+			multiply_variable = { 
+				which = tempvar
+				value = 0.05
+			}
+			change_variable = {
+				which = stock_market_demand_for_29
+				which = tempvar
+			}
+		}
+	}
+}
+
+update_demand_for_trade_good_30 = { #cloves
+	if = {
+		limit = {
+			region = moluccas_region
+		}
+		owner = {
+			export_to_variable = {
+				which = tempvar
+				value = trigger_value:development
+				who = PREV
+			}
+			multiply_variable = { 
+				which = tempvar
+				value = 1.6
+			}
+			change_variable = {
+				which = stock_market_demand_for_30
+				which = tempvar
+			}
+		}
+	}
+}
+
+update_demand_for_trade_good_31 = { #unknown. we dont care
 }
