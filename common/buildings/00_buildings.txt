@@ -65,7 +65,7 @@ workshop = {
 	time = 12
 	modifier = {
 		local_production_efficiency = 0.25
-		trade_goods_size = 0.1
+	#	trade_goods_size = 0.1
 	}
 	on_built = {
 		add_development_from_building = {
@@ -1293,7 +1293,7 @@ counting_house = {
 	make_obsolete = workshop
 	modifier = {
 		local_production_efficiency = 0.5
-		trade_goods_size = 0.2
+		#trade_goods_size = 0.2
 	}
 
 	on_built = {
@@ -1681,7 +1681,7 @@ manufactory = {
 	cost = 500
 	time = 60
 	modifier = {
-		trade_goods_size = 0.25
+	#	trade_goods_size = 0.25
 		trade_value = 3
 		trade_value_modifier = 0.5
 	}
