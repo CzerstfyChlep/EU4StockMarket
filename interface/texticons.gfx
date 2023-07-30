@@ -439,4 +439,128 @@ spriteTypes = {
 		name = "GFX_text_grain"
 		texturefile = "gfx/interface/icon_grain.dds"
 	}
+	spriteType = {
+		name = "GFX_text_wine"
+		texturefile = "gfx/interface/icon_wine.dds"
+	}
+	spriteType = {
+		name = "GFX_text_wool"
+		texturefile = "gfx/interface/icon_wool.dds"
+	}
+	spriteType = {
+		name = "GFX_text_cloth"
+		texturefile = "gfx/interface/icon_cloth.dds"
+	}
+	spriteType = {
+		name = "GFX_text_fish"
+		texturefile = "gfx/interface/icon_fish.dds"
+	}
+	spriteType = {
+		name = "GFX_text_fur"
+		texturefile = "gfx/interface/icon_fur.dds"
+	}
+	spriteType = {
+		name = "GFX_text_salt"
+		texturefile = "gfx/interface/icon_salt.dds"
+	}
+	spriteType = {
+		name = "GFX_text_naval_supplies"
+		texturefile = "gfx/interface/icon_naval.dds"
+	}
+	spriteType = {
+		name = "GFX_text_copper"
+		texturefile = "gfx/interface/icon_copper.dds"
+	}
+	spriteType = {
+		name = "GFX_text_gold"
+		texturefile = "gfx/interface/icon_gold.dds"
+	}
+	spriteType = {
+		name = "GFX_text_iron"
+		texturefile = "gfx/interface/icon_iron.dds"
+	}
+	spriteType = {
+		name = "GFX_text_slaves"
+		texturefile = "gfx/interface/icon_slaves.dds"
+	}
+	spriteType = {
+		name = "GFX_text_ivory"
+		texturefile = "gfx/interface/icon_ivory.dds"
+	}
+	spriteType = {
+		name = "GFX_text_tea"
+		texturefile = "gfx/interface/icon_tea.dds"
+	}
+	spriteType = {
+		name = "GFX_text_chinaware"
+		texturefile = "gfx/interface/icon_chinaware.dds"
+	}
+	spriteType = {
+		name = "GFX_text_spices"
+		texturefile = "gfx/interface/icon_spices.dds"
+	}
+	spriteType = {
+		name = "GFX_text_coffee"
+		texturefile = "gfx/interface/icon_coffee.dds"
+	}
+	spriteType = {
+		name = "GFX_text_cotton"
+		texturefile = "gfx/interface/icon_cotton.dds"
+	}
+	spriteType = {
+		name = "GFX_text_sugar"
+		texturefile = "gfx/interface/icon_sugar.dds"
+	}
+	spriteType = {
+		name = "GFX_text_tobacco"
+		texturefile = "gfx/interface/icon_tobacco.dds"
+	}
+	spriteType = {
+		name = "GFX_text_cocoa"
+		texturefile = "gfx/interface/icon_cocoa.dds"
+	}
+	spriteType = {
+		name = "GFX_text_silk"
+		texturefile = "gfx/interface/icon_silk.dds"
+	}
+	spriteType = {
+		name = "GFX_text_dyes"
+		texturefile = "gfx/interface/icon_dyes.dds"
+	}
+	spriteType = {
+		name = "GFX_text_tropical_wood"
+		texturefile = "gfx/interface/icon_tropical.dds"
+	}
+	spriteType = {
+		name = "GFX_text_livestock"
+		texturefile = "gfx/interface/icon_livestock.dds"
+	}
+	spriteType = {
+		name = "GFX_text_incense"
+		texturefile = "gfx/interface/icon_incense.dds"
+	}
+	spriteType = {
+		name = "GFX_text_glass"
+		texturefile = "gfx/interface/icon_glass.dds"
+	}
+	spriteType = {
+		name = "GFX_text_paper"
+		texturefile = "gfx/interface/icon_paper.dds"
+	}
+	spriteType = {
+		name = "GFX_text_gems"
+		texturefile = "gfx/interface/icon_gems.dds"
+	}
+	spriteType = {
+		name = "GFX_text_coal"
+		texturefile = "gfx/interface/icon_coal.dds"
+	}
+	spriteType = {
+		name = "GFX_text_cloves"
+		texturefile = "gfx/interface/icon_cloves.dds"
+	}
+	spriteType = {
+		name = "GFX_text_unknown"
+		texturefile = "gfx/interface/icon_unknown.dds"
+	}
 }
