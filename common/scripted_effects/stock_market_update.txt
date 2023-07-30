@@ -266,6 +266,9 @@ priority_update = {
 		trade_good_id = 24
 	}	#livestock
 	release_update_for_trade_good = {
-		trade_good_id = 26
-	}	#glass	
+		trade_good_id = 13
+	} #tea
+	# release_update_for_trade_good = {
+		# trade_good_id = 26
+	# }	#glass	
 }

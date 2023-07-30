@@ -185,7 +185,35 @@ update_demand_for_trade_good_10 = { #iron
 	demand_from_province_dev = {
 		trade_good_id = 10
 		base = 0.003356
-		multiplier = 0.67
+		multiplier = 0.65
+	}
+}
+
+update_demand_for_trade_good_13 = { #tea
+	if = {
+		limit = {
+			OR = {
+				superregion = china_superregion
+				superregion = far_east_superregion
+				superregion = east_indies_superregion
+				superregion = india_superregion
+			}
+		}
+		owner = {
+			export_to_variable = {
+				which = tempvar
+				value = trigger_value:development
+				who = PREV
+			}
+			multiply_variable = { 
+				which = tempvar
+				value = 0.001
+			}
+			change_variable = {
+				which = stock_market_demand_for_13
+				which = tempvar
+			}
+		}
 	}
 }
 
@@ -200,7 +228,6 @@ update_demand_for_trade_good_24 = { #livestock
 update_demand_for_trade_good_26 = { #glass
 	demand_from_province_dev = {
 		trade_good_id = 26
-		base = 0.000804
-		multiplier = 0.5
+		base = 0.001 #too low of a number, doesn't work. Will do later
 	}
 }
