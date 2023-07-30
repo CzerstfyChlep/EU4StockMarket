@@ -1,0 +1,5 @@
+﻿l_english:
+ stockpile_check_title: "Check Stockpiles"
+ CHECK_STOCKPILE_TEXT: "Your current stockpiles:\n£grain£: [This.country_stock_market_stockpile_for_0.GetValue]"
+ production_check_title: "Check Production"
+ CHECK_PRODUCTION_TEXT: "Last month production:\n£grain£: [This.country_total_stock_market_supply_for_0.GetValue]"

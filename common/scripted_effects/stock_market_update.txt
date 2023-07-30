@@ -9,17 +9,18 @@ release_update_for_trade_good = {
 			value = 0
 		}
 	}
-	
 	every_country = {
 		limit = {
-			NOT = { tag = REB }
+			NOT = {
+				tag = REB
+			}
 		}
 		set_variable = {
 			which = stock_market_demand_for_$trade_good_id$
 			value = 0
 		}
 		set_variable = {
-			which = stock_market_supply_for_$trade_good_id$
+			which = country_stock_market_supply_for_$trade_good_id$
 			value = 0
 		}
 		export_to_variable = {
@@ -32,14 +33,54 @@ release_update_for_trade_good = {
 			value = modifier:global_trade_goods_size
 			who = ROOT
 		}
+
 		every_owned_province = {
-			update_supply_for_trade_good = { trade_good_id = $trade_good_id$ }
-			update_demand_for_trade_good = { trade_good_id = $trade_good_id$ }
+			update_supply_for_trade_good = {
+				trade_good_id = $trade_good_id$
+			}
+			update_demand_for_trade_good = {
+				trade_good_id = $trade_good_id$
+			}
 		}
-		
-		update_national_supply_for_trade_good = { trade_good_id = $trade_good_id$ }
-		update_national_demand_for_trade_good = { trade_good_id = $trade_good_id$ }
-		
+
+		#We get country_stock_market_supply_for_$trade_good_id$ from those functions
+		#Here we determine how much we sell globally
+
+		#For localisation
+		set_variable = {
+			which = country_total_stock_market_supply_for_$trade_good_id$ 
+			which = country_stock_market_supply_for_$trade_good_id$
+		}
+
+		set_variable = {
+			which = stock_market_supply_for_$trade_good_id$ 
+			which = country_stock_market_supply_for_$trade_good_id$
+		}
+
+		# 75% goes to the global market
+		multiply_variable = {
+			which = stock_market_supply_for_$trade_good_id$ 
+			value = 0.75
+		}
+
+		# 25% goes to the stockpile
+		multiply_variable = {
+			which = country_stock_market_supply_for_$trade_good_id$
+			value = 0.25
+		}
+
+		change_variable = {
+			which = country_stock_market_stockpile_for_$trade_good_id$
+			which = country_stock_market_supply_for_$trade_good_id$
+		}
+
+
+		update_national_supply_for_trade_good = {
+			trade_good_id = $trade_good_id$
+		}
+		update_national_demand_for_trade_good = {
+			trade_good_id = $trade_good_id$
+		}
 		REB = {
 			change_variable = {
 				which = stock_market_supply_for_$trade_good_id$
@@ -51,8 +92,9 @@ release_update_for_trade_good = {
 			}
 		}
 	}
-	
-	set_price_for_trade_good = { trade_good_id = $trade_good_id$ }
+	set_price_for_trade_good = {
+		trade_good_id = $trade_good_id$
+	}
 }
 
 update_supply_for_trade_good = {
@@ -95,7 +137,7 @@ update_supply_for_trade_good = {
 				which = tempvar2
 			}
 			change_variable = {
-				which = stock_market_supply_for_$trade_good_id$
+				which = country_stock_market_supply_for_$trade_good_id$
 				which = tempvar
 			}
 		}
@@ -115,220 +157,91 @@ update_demand_for_trade_good = {
 }
 
 stock_market_change_price_with_id = {
-	stock_market_change_price_$trade_good_id$ = { value = $value$ }
+	stock_market_change_price_$trade_good_id$ = {
+		value = $value$
+		duration = $duration$
+	}
 }
 
 stock_market_change_price = {
-	if = {
-		limit = {
-			is_month = 11
-		}
-		change_price = {
-			trade_goods = $trade_goods$
-			key = "Current Market Conditions"
-			value = $value$
-			duration = 31
-		}
+	change_price = {
+		trade_goods = $trade_goods$
+		key = "Current Market Conditions"
+		value = $value$
+		duration = $duration$
 	}
-
-	else_if = {
-		limit = {
-			is_month = 10
-		}
-		change_price = {
-			trade_goods = $trade_goods$
-			key = "Current Market Conditions"
-			value = $value$
-			duration = 30
-		}
-	}
-
-	else_if = {
-		limit = {
-			is_month = 9
-		}
-		change_price = {
-			trade_goods = $trade_goods$
-			key = "Current Market Conditions"
-			value = $value$
-			duration = 30
-		}
-	}
-
-	else_if = {
-		limit = {
-			is_month = 8
-		}
-		change_price = {
-			trade_goods = $trade_goods$
-			key = "Current Market Conditions"
-			value = $value$
-			duration = 29
-		}
-	}
-
-	else_if = {
-		limit = {
-			is_month = 7
-		}
-		change_price = {
-			trade_goods = $trade_goods$
-			key = "Current Market Conditions"
-			value = $value$
-			duration = 30
-		}
-	}
-
-	else_if = {
-		limit = {
-			is_month = 6
-		}
-		change_price = {
-			trade_goods = $trade_goods$
-			key = "Current Market Conditions"
-			value = $value$
-			duration = 30
-		}
-	}
-
-	else_if = {
-		limit = {
-			is_month = 5
-		}
-		change_price = {
-			trade_goods = $trade_goods$
-			key = "Current Market Conditions"
-			value = $value$
-			duration = 29
-		}
-	}
-	else_if = {
-		limit = {
-			is_month = 4
-		}
-		change_price = {
-			trade_goods = $trade_goods$
-			key = "Current Market Conditions"
-			value = $value$
-			duration = 30
-		}
-	}
-
-	else_if = {
-		limit = {
-			is_month = 3
-		}
-		change_price = {
-			trade_goods = $trade_goods$
-			key = "Current Market Conditions"
-			value = $value$
-			duration = 29
-		}
-	}
-
-	else_if = {
-		limit = {
-			is_month = 2
-		}
-		change_price = {
-			trade_goods = $trade_goods$
-			key = "Current Market Conditions"
-			value = $value$
-			duration = 30
-		}
-	}
-	else_if = {
-		limit = {
-			is_month = 1
-		}
-		change_price = {
-			trade_goods = $trade_goods$
-			key = "Current Market Conditions"
-			value = $value$
-			duration = 27
-		}
-	}
-	else = { 
-		change_price = {
-			trade_goods = $trade_goods$
-			key = "Current Market Conditions"
-			value = $value$
-			duration = 30
-		}
-	}
-
 }
 
 set_price_for_trade_good = {
-	 #Assuming we have a way to get the global default price
-    REB = {
-        set_variable = {
-            which = stock_market_price_value_$trade_good_id$
-            value = 5
-        }
-
-        set_variable = {
-            which = difference_value_$trade_good_id$
-            which = stock_market_demand_for_$trade_good_id$
-        }
-
-        subtract_variable = {
-            which = difference_value_$trade_good_id$
-            which = stock_market_supply_for_$trade_good_id$
-        }
-
-
-        set_variable = {
-            which = sum_value_$trade_good_id$
-            which = stock_market_supply_for_$trade_good_id$
-        }
-
-
-        change_variable = {
-            which = sum_value_$trade_good_id$
-            which = stock_market_demand_for_$trade_good_id$
-        }
-
-        set_variable = {
-            which = price_multiplier_$trade_good_id$
-            which = difference_value_$trade_good_id$
-        }
-
-
-        divide_variable = {
-            which = price_multiplier_$trade_good_id$
-            which = sum_value_$trade_good_id$
-        }
-
-		change_variable = {
-            which = price_multiplier_$trade_good_id$
-            value = 1
-        }
-
-        multiply_variable = {
-            which = price_multiplier_$trade_good_id$	
-            which = price_multiplier_$trade_good_id$
-        }
-
+	#Assuming we have a way to get the global default price
+	REB = {
+		set_variable = {
+			which = stock_market_price_value_$trade_good_id$
+			value = 5
+		}
+		set_variable = {
+			which = difference_value_$trade_good_id$
+			which = stock_market_demand_for_$trade_good_id$
+		}
 		subtract_variable = {
-            which = price_multiplier_$trade_good_id$
-            value = 1
-        }
-    }
+			which = difference_value_$trade_good_id$
+			which = stock_market_supply_for_$trade_good_id$
+		}
+		set_variable = {
+			which = sum_value_$trade_good_id$
+			which = stock_market_supply_for_$trade_good_id$
+		}
+		change_variable = {
+			which = sum_value_$trade_good_id$
+			which = stock_market_demand_for_$trade_good_id$
+		}
+		set_variable = {
+			which = price_multiplier_$trade_good_id$
+			which = difference_value_$trade_good_id$
+		}
+		divide_variable = {
+			which = price_multiplier_$trade_good_id$
+			which = sum_value_$trade_good_id$
+		}
+		change_variable = {
+			which = price_multiplier_$trade_good_id$
+			value = 1
+		}
+		multiply_variable = {
+			which = price_multiplier_$trade_good_id$
+			which = price_multiplier_$trade_good_id$
+		}
+		subtract_variable = {
+			which = price_multiplier_$trade_good_id$
+			value = 1
+		}
+	}
 }
 
 stock_market_on_startup = {
 	1 = {
 		set_province_flag = stock_market_refresh_flag
 		add_province_triggered_modifier = stock_market_refresh_prices_bimonthly
+		add_province_triggered_modifier = stock_market_refresh_prices_monthly
+		set_province_flag = first_game_month_flag
 	}
-	priority_update = yes
+
+	
+	priority_update = yes 
+	apply_change_price_for_all_with_duration = { duration = 19 }
 }
 
 priority_update = {
-	release_update_for_trade_good = { trade_good_id = 3 } #cloth
-	release_update_for_trade_good = { trade_good_id = 2 } #wool (we need cloth supply to determine supply) 
-	
-	release_update_for_trade_good = { trade_good_id = 1 } #wool
-	release_update_for_trade_good = { trade_good_id = 0 } #grain
+	release_update_for_trade_good = {
+		trade_good_id = 3
+	}	#cloth
+	release_update_for_trade_good = {
+		trade_good_id = 2
+	}	#wool (we need cloth supply to determine supply) 
+	release_update_for_trade_good = {
+		trade_good_id = 1
+	}	#wool
+	release_update_for_trade_good = {
+		trade_good_id = 0
+	}	#grain
 }
