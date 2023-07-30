@@ -5,19 +5,18 @@ update_national_demand_for_trade_good_1 = { # wine
 
 }
 update_national_demand_for_trade_good_2 = { # wool
-	set_variable = { #supply of cloth = demand for wool
-		which = tempvar
-		which = stock_market_supply_for_3
-	}
-	multiply_variable = { 
-		which = tempvar
-		value = 0.2
-	}
-	change_variable = {
-		which = stock_market_demand_for_2
-		which = tempvar
-	}
-	
+	# set_variable = { #supply of cloth = demand for wool
+		# which = tempvar
+		# which = stock_market_supply_for_3
+	# }
+	# multiply_variable = { 
+		# which = tempvar
+		# value = 0.2
+	# }
+	# change_variable = {
+		# which = stock_market_demand_for_2
+		# which = tempvar
+	# }
 }
 update_national_demand_for_trade_good_3 = { # cloth
 
@@ -83,7 +82,15 @@ update_national_demand_for_trade_good_23 = { # tropical_wood
 
 }
 update_national_demand_for_trade_good_24 = { # livestock
-
+	if = {
+		limit = {
+			has_reform = steppe_horde
+		}
+		multiply_variable = { 
+			which = stock_market_demand_for_24
+			value = 2
+		}
+	}
 }
 update_national_demand_for_trade_good_25 = { # incense
 

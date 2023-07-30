@@ -1,4 +1,9 @@
-update_demand_for_trade_good_0 = { #grain
+demand_from_province_dev = {	#this serves a as a baseline for many trade goods
+								#base is balanced with an excel sheet to make a number that is around 5
+								#multiplier is an extra multiplier to reduce it to a lower number, like 2 for grain.
+								#trade_good_id is obvious
+								
+								#this is designed to provide a stable basis for most trade goods
 	owner = {
 		export_to_variable = {
 			which = tempvar
@@ -7,12 +12,40 @@ update_demand_for_trade_good_0 = { #grain
 		}
 		multiply_variable = { 
 			which = tempvar
-			value = 0.007
+			value = $base$
 		}
+		[[multiplier]
+			multiply_variable = { 
+				which = tempvar
+				value = $multiplier$
+			}
+		]
+		set_variable = {
+			which = modifier_var
+			value = 1
+		}
+		[[modifier_1] $modifier_1$ ]
+		[[modifier_2] $modifier_2$ ]
+		[[modifier_3] $modifier_3$ ]
+		[[modifier_4] $modifier_4$ ]
+		[[modifier_5] $modifier_5$ ]
+		[[modifier_6] $modifier_6$ ]
+		[[modifier_7] $modifier_7$ ]
+		[[modifier_8] $modifier_8$ ]
+		[[modifier_9] $modifier_9$ ]
 		change_variable = {
-			which = stock_market_demand_for_0
+			which = stock_market_demand_for_$trade_good_id$
 			which = tempvar
 		}
+	}
+}
+
+
+update_demand_for_trade_good_0 = { #grain
+	demand_from_province_dev = {
+		trade_good_id = 0
+		base = 0.009756
+		multiplier = 0.55
 	}
 }
 
@@ -41,7 +74,7 @@ update_demand_for_trade_good_1 = { #wine
 			}
 			multiply_variable = { 
 				which = tempvar
-				value = 0.005
+				value = 0.0033
 			}
 			if = {
 				limit = { #if province is muslim, then demand is minimal
@@ -63,46 +96,111 @@ update_demand_for_trade_good_1 = { #wine
 }
 
 update_demand_for_trade_good_2 = { #wool
-	owner = {
-		export_to_variable = {
-			which = tempvar
-			value = trigger_value:development
-			who = PREV
-		}
-		multiply_variable = { 
-			which = tempvar
-			value = 0.001
-		}
-		change_variable = {
-			which = stock_market_demand_for_2
-			which = tempvar
-		}
+	demand_from_province_dev = {
+		trade_good_id = 2
+		base = 0.003127
+		multiplier = 0.5
 	}
 }
 
 update_demand_for_trade_good_3 = { #cloth
-	if = {
-		limit = {
-			development = 15
-		}
-		owner = {
-			export_to_variable = {
-				which = tempvar
-				value = trigger_value:development
-				who = PREV
-			}
-			subtract_variable = {
-				which = tempvar
-				value = 15
-			}
-			multiply_variable = { 
-				which = tempvar
-				value = 0.35
-			}
-			change_variable = {
-				which = stock_market_demand_for_3
-				which = tempvar
-			}
-		}
+	demand_from_province_dev = {
+		trade_good_id = 3
+		base = 0.006427
+		multiplier = 0.5
+	}
+	
+	# if = {
+		# limit = {
+			# development = 15
+		# }
+		# owner = {
+			# export_to_variable = {
+				# which = tempvar
+				# value = trigger_value:development
+				# who = PREV
+			# }
+			# subtract_variable = {
+				# which = tempvar
+				# value = 15
+			# }
+			# multiply_variable = { 
+				# which = tempvar
+				# value = 0.35
+			# }
+			# change_variable = {
+				# which = stock_market_demand_for_3
+				# which = tempvar
+			# }
+		# }
+	# }
+}
+
+update_demand_for_trade_good_4 = { #fish
+	demand_from_province_dev = {
+		trade_good_id = 4
+		base = 0.004055
+		multiplier = 0.5
+	}
+}
+
+update_demand_for_trade_good_5 = { #fur
+	demand_from_province_dev = {
+		trade_good_id = 5
+		base = 0.002046
+		multiplier = 0.46
+	}
+}
+
+
+update_demand_for_trade_good_6 = { #salt
+	demand_from_province_dev = {
+		trade_good_id = 6
+		base = 0.002578
+		multiplier = 0.75
+	}
+}
+
+update_demand_for_trade_good_7 = { #naval supplies
+	demand_from_province_dev = {
+		trade_good_id = 7
+		base = 0.002744
+		multiplier = 0.6
+	}
+}
+
+update_demand_for_trade_good_8 = { #copper
+	demand_from_province_dev = {
+		trade_good_id = 8
+		base = 0.001135
+		multiplier = 0.7
+	}
+}
+
+update_demand_for_trade_good_9 = { #gold
+
+}
+
+update_demand_for_trade_good_10 = { #iron
+	demand_from_province_dev = {
+		trade_good_id = 10
+		base = 0.003356
+		multiplier = 0.67
+	}
+}
+
+update_demand_for_trade_good_24 = { #livestock
+	demand_from_province_dev = {
+		trade_good_id = 24
+		base = 0.00626
+		multiplier = 0.425
+	}
+}
+
+update_demand_for_trade_good_26 = { #glass
+	demand_from_province_dev = {
+		trade_good_id = 26
+		base = 0.000804
+		multiplier = 0.5
 	}
 }
