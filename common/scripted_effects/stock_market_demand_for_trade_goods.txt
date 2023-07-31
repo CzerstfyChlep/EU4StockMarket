@@ -165,7 +165,7 @@ update_demand_for_trade_good_7 = { #naval supplies
 	demand_from_province_dev = {
 		trade_good_id = 7
 		base = 0.2
-		multiplier = 0.6
+		multiplier = 0.35
 	}
 }
 

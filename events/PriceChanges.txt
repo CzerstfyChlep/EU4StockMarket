@@ -1029,6 +1029,7 @@ country_event = {
 			value = 0.10
 			duration = -1
 		}
+		set_global_flag = permanent_navies_happened
 	}
 }
 
