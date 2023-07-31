@@ -1,0 +1,58 @@
+namespace = he_bought_teaser
+country_event = {
+	id = he_bought_teaser.1
+	title = he_bought_teaser.1.t
+	desc = he_bought_teaser.1.desc
+	picture = HE_BOUGHT_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = he_bought_teaser.1.a
+		custom_tooltip = he_bought_teaser.1.a.tt
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = he_bought_teaser.1.a
+		custom_tooltip = he_bought_teaser.1.a.tt
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = he_bought_teaser.1.a
+		custom_tooltip = he_bought_teaser.1.a.tt
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = he_bought_teaser.1.a
+		custom_tooltip = he_bought_teaser.1.a.tt
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = he_bought_teaser.1.a
+		custom_tooltip = he_bought_teaser.1.a.tt
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = he_bought_teaser.1.a
+		custom_tooltip = he_bought_teaser.1.a.tt
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
+	
+}

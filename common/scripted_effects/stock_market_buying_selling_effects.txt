@@ -1,0 +1,176 @@
+buy_trade_good = {
+	#We get the current price as a variable
+
+	REB = {
+		ROOT = {
+			set_variable = {
+				which = stock_market_price_value_$trade_good_id$
+				which = PREV
+			}
+
+			set_variable = {
+				which = sum_value_$trade_good_id$
+				which = PREV
+			}
+
+			set_variable = {
+				which = difference_value_$trade_good_id$
+				which = PREV
+			}
+		}
+	}
+
+	change_variable = {
+		which = difference_value_$trade_good_id$
+		value = $amount$
+	}
+
+	change_variable = {
+		which = sum_value_$trade_good_id$
+		value = $amount$
+	}
+
+	divide_variable = {
+		which = difference_value_$trade_good_id$
+		which = sum_value_$trade_good_id$
+	}
+
+	change_variable = {
+		which = difference_value_$trade_good_id$
+		value = 1
+	}
+
+	multiply_variable = {
+		which = difference_value_$trade_good_id$
+		which = difference_value_$trade_good_id$
+	}
+
+	multiply_variable = {
+		which = difference_value_$trade_good_id$
+		value = 5
+	}
+
+	#Difference is now the final price!
+
+	change_variable = {
+		which = stock_market_price_value_$trade_good_id$
+		which = difference_value_$trade_good_id$
+	}
+
+
+	divide_variable = {
+		which = stock_market_price_value_$trade_good_id$
+		value = 2
+	}
+
+	#We have the average price here
+
+	set_variable = {
+		which = final_payment
+		which = stock_market_price_value_$trade_good_id$
+	}
+
+
+	multiply_variable = {
+		which = final_payment
+		value = $amount$
+	}
+
+
+	spend_ducats_based_on_variable = {
+		variable_name = final_payment
+	}
+
+	change_variable = {
+		which = country_stock_market_stockpile_for_$trade_good_id$
+		value = $amount$
+	}
+
+	REB = {
+		change_variable = {
+			which = stock_market_demand_for_$trade_good_id$
+			value = $amount$
+		}
+		set_price_for_trade_good = {
+			trade_good_id = $trade_good_id$
+		}
+	}
+}
+
+spend_ducats_based_on_variable = {
+	set_variable = {
+		which = spending_ducats_temp
+		which = $variable_name$
+	}
+
+	while = {
+		limit = {
+			check_variable = {
+				which = spending_ducats_temp
+				value = 100
+			}
+		}
+		subtract_variable = {
+			which = spending_ducats_temp
+			value = 100
+		}
+		add_treasury = -100
+	}
+
+	while = {
+		limit = {
+			check_variable = {
+				which = spending_ducats_temp
+				value = 10
+			}
+		}
+		subtract_variable = {
+			which = spending_ducats_temp
+			value = 10
+		}
+		add_treasury = -10
+	}
+
+	while = {
+		limit = {
+			check_variable = {
+				which = spending_ducats_temp
+				value = 1
+			}
+		}
+		subtract_variable = {
+			which = spending_ducats_temp
+			value = 1
+		}
+		add_treasury = -1
+	}
+
+	while = {
+		limit = {
+			check_variable = {
+				which = spending_ducats_temp
+				value = 0.1
+			}
+		}
+		subtract_variable = {
+			which = spending_ducats_temp
+			value = 0.1
+		}
+		add_treasury = -0.1
+	}
+
+	while = {
+		limit = {
+			check_variable = {
+				which = spending_ducats_temp
+				value = 0.01
+			}
+		}
+		subtract_variable = {
+			which = spending_ducats_temp
+			value = 0.01
+		}
+		add_treasury = -0.01
+	}
+
+}

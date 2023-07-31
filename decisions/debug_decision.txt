@@ -1,0 +1,21 @@
+country_decisions = {
+	debug_check = {
+
+		color = { 190 190 190 }
+		potential = {
+			always = yes
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = DEBUG_CHECK_TT			
+				always = no
+			}
+		}
+		effect = {
+			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

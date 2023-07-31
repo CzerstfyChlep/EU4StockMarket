@@ -172,6 +172,7 @@ stock_market_change_price = {
 	}
 }
 
+
 set_price_for_trade_good = {
 	#Assuming we have a way to get the global default price
 	REB = {
@@ -211,10 +212,18 @@ set_price_for_trade_good = {
 			which = price_multiplier_$trade_good_id$
 			which = price_multiplier_$trade_good_id$
 		}
+
+		# NEEDS to happen before removing the 1
+		multiply_variable = {
+			which = stock_market_price_value_$trade_good_id$
+			which = price_multiplier_$trade_good_id$
+		}
+		
 		subtract_variable = {
 			which = price_multiplier_$trade_good_id$
 			value = 1
 		}
+
 	}
 }
 

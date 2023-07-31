@@ -1,0 +1,106 @@
+namespace = stock_market_menu_events
+
+country_event = {
+	id = stock_market_menu_events.10
+	title = stock_market_menu_events.EVTNAME10
+	desc = stock_market_menu_events.EVTDESC10
+	picture = KING_SICK_IN_BED_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = stock_market_menu_events.10.EVTOPT1
+		custom_tooltip = STOCK_MARKET_GRAIN_BUY
+		hidden_effect = {
+			country_event = {
+				id = stock_market_menu_events.101
+			}
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.10.EVTOPT2
+		custom_tooltip = STOCK_MARKET_GRAIN_SELL
+		hidden_effect = {
+			country_event = {
+				id = stock_market_menu_events.102
+			}
+		}
+	}
+	
+	option = {
+		name = stock_market_menu_events.10.EVTOPT3
+		custom_tooltip = STOCK_MARKET_GRAIN_POLICIES
+		hidden_effect = {
+			country_event = {
+				id = stock_market_menu_events.103
+			}
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.10.EVTOPT4
+		custom_tooltip = STOCK_MARKET_BACK_TO_GENERAL
+		hidden_effect = {
+			country_event = {
+				id = stock_market_menu_events.2
+			}
+		}
+	}
+}
+
+country_event = {
+	id = stock_market_menu_events.101
+	title = stock_market_menu_events.EVTNAME101
+	desc = stock_market_menu_events.EVTDESC101
+	picture = KING_SICK_IN_BED_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = stock_market_menu_events.1011.EVTOPT1
+		custom_tooltip = STOCK_MARKET_GRAIN_BUY_10
+		hidden_effect = {
+
+			buy_trade_good = {
+				trade_good_id = 0
+				amount = 10
+			}
+
+			country_event = {
+				id = stock_market_menu_events.1010 #Going back to the same option via other event
+			}			
+		}
+	}
+}
+
+country_event = {
+	id = stock_market_menu_events.1010
+	title = stock_market_menu_events.EVTNAME101
+	desc = stock_market_menu_events.EVTDESC101
+	picture = KING_SICK_IN_BED_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		country_event = {
+			id = stock_market_menu_events.101 #Going back to the same option
+		}			
+		ai_chance = { 
+			factor = 1
+		}
+	}
+}

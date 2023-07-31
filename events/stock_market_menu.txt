@@ -1,0 +1,147 @@
+namespace = stock_market_menu_events
+
+country_event = {
+	id = stock_market_menu_events.1
+	title = stock_market_menu_events.EVTNAME1
+	desc = stock_market_menu_events.EVTDESC1
+	picture = KING_SICK_IN_BED_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = stock_market_menu_events.1.EVTOPT1
+		custom_tooltip = STOCK_MARKET_GENERAL_MENU_TT
+		hidden_effect = {
+			country_event = {
+				id = stock_market_menu_events.2
+			}
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.1.EVTOPT2
+		custom_tooltip = STOCK_MARKET_LUXURY_MENU_TT
+		hidden_effect = {
+			country_event = {
+				id = stock_market_menu_events.3
+			}
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.1.EVTOPT3
+		custom_tooltip = STOCK_MARKET_INDUSTRIAL_MENU_TT
+		hidden_effect = {
+			country_event = {
+				id = stock_market_menu_events.4
+			}
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.1.EVTOPT4
+		custom_tooltip = STOCK_MARKET_ORIENTAL_MENU_TT
+		hidden_effect = {
+			country_event = {
+				id = stock_market_menu_events.5
+			}
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.1.EVTOPT5
+		custom_tooltip = STOCK_MARKET_COLONIAL_MENU_TT
+		hidden_effect = {
+			country_event = {
+				id = stock_market_menu_events.6
+			}
+		}
+	}
+}
+
+country_event = {
+	id = stock_market_menu_events.2
+	title = stock_market_menu_events.EVTNAME2
+	desc = stock_market_menu_events.EVTDESC2
+	picture = KING_SICK_IN_BED_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = stock_market_menu_events.2.EVTOPT1
+		custom_tooltip = STOCK_MARKET_GRAIN_MENU_TT
+		hidden_effect = {
+			country_event = {
+				id = stock_market_menu_events.10
+			}
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.2.EVTOPT2
+		custom_tooltip = STOCK_MARKET_FISH_MENU_TT
+		hidden_effect = {
+			country_event = {
+				id = stock_market_menu_events.11
+			}
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.2.EVTOPT3
+		custom_tooltip = STOCK_MARKET_WOOL_MENU_TT
+		hidden_effect = {
+			country_event = {
+				id = stock_market_menu_events.12
+			}
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.2.EVTOPT4
+		custom_tooltip = STOCK_MARKET_LIVESTOCK_MENU_TT
+		hidden_effect = {
+			country_event = {
+				id = stock_market_menu_events.13
+			}
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.2.EVTOPT5
+		custom_tooltip = STOCK_MARKET_FUR_MENU_TT
+		hidden_effect = {
+			country_event = {
+				id = stock_market_menu_events.14
+			}
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.2.EVTOPT6
+		custom_tooltip = STOCK_MARKET_SALT_MENU_TT
+		hidden_effect = {
+			country_event = {
+				id = stock_market_menu_events.15
+			}
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.2.EVTOPT7
+		custom_tooltip = STOCK_MARKET_GO_BACK_MENU_TT
+		hidden_effect = {
+			country_event = {
+				id = stock_market_menu_events.1
+			}
+		}
+	}
+}

@@ -1,0 +1,19 @@
+country_decisions = {
+	open_market_menu = {
+		color = { 125 60 130 }
+		potential = {
+			always = yes
+		}
+		allow = {
+			ai = no
+		}
+		effect = {
+			country_event = {
+				id = stock_market_menu_events.1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
