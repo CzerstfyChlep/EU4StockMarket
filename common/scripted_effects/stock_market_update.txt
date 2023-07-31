@@ -136,6 +136,10 @@ update_supply_for_trade_good = {
 				which = tempvar
 				which = tempvar2
 			}
+			multiply_variable = {
+				which = tempvar
+				value = 100
+			}
 			change_variable = {
 				which = country_stock_market_supply_for_$trade_good_id$
 				which = tempvar
@@ -253,4 +257,82 @@ priority_update = {
 	release_update_for_trade_good = {
 		trade_good_id = 0
 	}	#grain
+	release_update_for_trade_good = {
+		trade_good_id = 4 
+	} 	#fish
+	release_update_for_trade_good = {
+		trade_good_id = 5
+	}	#fur
+	release_update_for_trade_good = {
+		trade_good_id = 6
+	}	#salt
+	release_update_for_trade_good = {
+		trade_good_id = 7
+	}	#naval supplies
+	release_update_for_trade_good = {
+		trade_good_id = 8
+	}	#copper
+	release_update_for_trade_good = {
+		trade_good_id = 10
+	}	#iron
+	release_update_for_trade_good = {
+		trade_good_id = 11
+	}	#slaves
+	release_update_for_trade_good = {
+		trade_good_id = 12
+	}	#ivory
+	release_update_for_trade_good = {
+		trade_good_id = 13
+	} 	#tea
+	release_update_for_trade_good = {
+		trade_good_id = 14
+	} 	#chinaware
+	release_update_for_trade_good = {
+		trade_good_id = 15
+	} 	#spices
+	release_update_for_trade_good = {
+		trade_good_id = 16
+	} 	#coffee
+	release_update_for_trade_good = {
+		trade_good_id = 17
+	} 	#cotton
+	release_update_for_trade_good = {
+		trade_good_id = 18
+	} 	#sugar
+	release_update_for_trade_good = {
+		trade_good_id = 19
+	} 	#tobacco
+	release_update_for_trade_good = {
+		trade_good_id = 20
+	} 	#cocoa
+	release_update_for_trade_good = {
+		trade_good_id = 21
+	} 	#silk
+	release_update_for_trade_good = {
+		trade_good_id = 22
+	} 	#dyes
+	release_update_for_trade_good = {
+		trade_good_id = 23
+	} 	#tropical wood
+	release_update_for_trade_good = {
+		trade_good_id = 24
+	}	#livestock
+	release_update_for_trade_good = {
+		trade_good_id = 25
+	}	#incense	
+	release_update_for_trade_good = {
+		trade_good_id = 26
+	}	#glass	
+	release_update_for_trade_good = {
+		trade_good_id = 27
+	}	#paper	
+	release_update_for_trade_good = {
+		trade_good_id = 28
+	}	#gems
+	release_update_for_trade_good = {
+		trade_good_id = 29
+	}	#coal
+	release_update_for_trade_good = {
+		trade_good_id = 30
+	}	#cloves
 }
