@@ -14,7 +14,7 @@ country_event = {
 
 	option = {
 		name = stock_market_menu_events.!NUM!.EVTOPT1
-		custom_tooltip = STOCK_MARKET_GRAIN_BUY
+		custom_tooltip = STOCK_MARKET_SALT_BUY
 		hidden_effect = {
 			country_event = {
 				id = stock_market_menu_events.!NUM!1
@@ -24,7 +24,7 @@ country_event = {
 
 	option = {
 		name = stock_market_menu_events.!NUM!.EVTOPT2
-		custom_tooltip = STOCK_MARKET_GRAIN_SELL
+		custom_tooltip = STOCK_MARKET_SALT_SELL
 		hidden_effect = {
 			country_event = {
 				id = stock_market_menu_events.!NUM!2
@@ -34,7 +34,7 @@ country_event = {
 	
 	option = {
 		name = stock_market_menu_events.!NUM!.EVTOPT3
-		custom_tooltip = STOCK_MARKET_GRAIN_POLICIES
+		custom_tooltip = STOCK_MARKET_SALT_POLICIES
 		hidden_effect = {
 			country_event = {
 				id = stock_market_menu_events.!NUM!3
@@ -73,7 +73,7 @@ country_event = {
 
 	option = {
 		name = stock_market_menu_events.!NUM!1.EVTOPT1
-		custom_tooltip = STOCK_MARKET_GRAIN_BUY_100
+		custom_tooltip = STOCK_MARKET_SALT_BUY_100
 		hidden_effect = {
 
 			buy_trade_good_with_given_price_amount = {
@@ -95,7 +95,7 @@ country_event = {
 
 	option = {
 		name = stock_market_menu_events.!NUM!1.EVTOPT2
-		custom_tooltip = STOCK_MARKET_GRAIN_BUY_25
+		custom_tooltip = STOCK_MARKET_SALT_BUY_25
 		hidden_effect = {
 
 			buy_trade_good_with_given_price_amount = {
@@ -115,7 +115,7 @@ country_event = {
 
 	option = {
 		name = stock_market_menu_events.!NUM!1.EVTOPT3
-		custom_tooltip = STOCK_MARKET_GRAIN_BUY_5
+		custom_tooltip = STOCK_MARKET_SALT_BUY_5
 		hidden_effect = {
 
 			buy_trade_good_with_given_price_amount = {
@@ -135,7 +135,7 @@ country_event = {
 
 	option = {
 		name = stock_market_menu_events.!NUM!1.EVTOPT4
-		custom_tooltip = STOCK_MARKET_GRAIN_BUY_1
+		custom_tooltip = STOCK_MARKET_SALT_BUY_1
 		hidden_effect = {
 
 			buy_trade_good_with_given_price_amount = {
@@ -155,7 +155,7 @@ country_event = {
 
 	option = {
 		name = stock_market_menu_events.!NUM!1.EVTOPT5
-		custom_tooltip = GO_BACK_TO_GRAIN_MENU
+		custom_tooltip = GO_BACK_TO_SALT_MENU
 		hidden_effect = {
 			country_event = {
 				id = stock_market_menu_events.!NUM!
@@ -208,7 +208,7 @@ country_event = {
 
 	option = {
 		name = stock_market_menu_events.!NUM!2.EVTOPT1
-		custom_tooltip = STOCK_MARKET_GRAIN_SELL_100
+		custom_tooltip = STOCK_MARKET_SALT_SELL_100
 		hidden_effect = {
 
 			sell_trade_good_with_given_price_amount = {
@@ -232,7 +232,7 @@ country_event = {
 
 	option = {
 		name = stock_market_menu_events.!NUM!2.EVTOPT2
-		custom_tooltip = STOCK_MARKET_GRAIN_SELL_25
+		custom_tooltip = STOCK_MARKET_SALT_SELL_25
 		hidden_effect = {
 
 			sell_trade_good_with_given_price_amount = {
@@ -255,7 +255,7 @@ country_event = {
 
 	option = {
 		name = stock_market_menu_events.!NUM!2.EVTOPT3
-		custom_tooltip = STOCK_MARKET_GRAIN_SELL_5
+		custom_tooltip = STOCK_MARKET_SALT_SELL_5
 		hidden_effect = {
 
 			sell_trade_good_with_given_price_amount = {
@@ -278,7 +278,7 @@ country_event = {
 
 	option = {
 		name = stock_market_menu_events.!NUM!2.EVTOPT4
-		custom_tooltip = STOCK_MARKET_GRAIN_SELL_1
+		custom_tooltip = STOCK_MARKET_SALT_SELL_1
 		hidden_effect = {
 
 			sell_trade_good_with_given_price_amount = {
@@ -301,7 +301,7 @@ country_event = {
 
 	option = {
 		name = stock_market_menu_events.!NUM!2.EVTOPT5
-		custom_tooltip = GO_BACK_TO_GRAIN_MENU
+		custom_tooltip = GO_BACK_TO_SALT_MENU
 		hidden_effect = {
 			country_event = {
 				id = stock_market_menu_events.!NUM!
@@ -346,7 +346,7 @@ country_event = {
 
 	option = {
 		name = stock_market_menu_events.!NUM!3.EVTOPT1
-		custom_tooltip = STOCK_MARKET_GRAIN_CONSUMPTION_BAN
+		custom_tooltip = STOCK_MARKET_SALT_CONSUMPTION_BAN
 		hidden_effect = {
 			switch_trade_good_policy = {
 				policy = "consumption_ban"
@@ -361,7 +361,7 @@ country_event = {
 
 	option = {
 		name = stock_market_menu_events.!NUM!3.EVTOPT2
-		custom_tooltip = STOCK_MARKET_GRAIN_IMPORT_BAN
+		custom_tooltip = STOCK_MARKET_SALT_IMPORT_BAN
 		hidden_effect = {
 			hidden_effect = {
 				switch_trade_good_policy = {
@@ -377,7 +377,7 @@ country_event = {
 
 	option = {
 		name = stock_market_menu_events.!NUM!3.EVTOPT3
-		custom_tooltip = STOCK_MARKET_GRAIN_EXPORT_BAN
+		custom_tooltip = STOCK_MARKET_SALT_EXPORT_BAN
 		hidden_effect = {
 			hidden_effect = {
 				switch_trade_good_policy = {
@@ -394,7 +394,7 @@ country_event = {
 
 	option = {
 		name = stock_market_menu_events.!NUM!3.EVTOPT4
-		custom_tooltip = GO_BACK_TO_GRAIN_MENU
+		custom_tooltip = GO_BACK_TO_SALT_MENU
 		hidden_effect = {
 			country_event = {
 				id = stock_market_menu_events.!NUM!

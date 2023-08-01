@@ -583,3 +583,16 @@ prepare_immediate_values_for_selling = {
 		get_average_price_for_selling_trade_good = { amount = 1 trade_good_id = $trade_good_id$ }
 	}
 }
+
+switch_trade_good_policy = {
+	if = {
+		limit = {
+			has_country_flag = $policy$_for_$trade_good_id$
+		}
+
+		clr_country_flag = $policy$_for_$trade_good_id$
+	}
+	else = {
+		set_country_flag = $policy$_for_$trade_good_id$
+	}
+}
