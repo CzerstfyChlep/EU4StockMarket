@@ -27,6 +27,9 @@ stock_market_measurements = {
 		measure_variable = { name = num_of_heavy_ship }
 		measure_variable = { name = num_of_light_ship }
 		measure_variable = { name = num_of_galley }
+
+		record_all_prices = yes
+		
 	}
 	
 	on_deactivation = {

@@ -12,7 +12,198 @@ measure_startup = {
 		measure_variable = { name = num_of_heavy_ship }
 		measure_variable = { name = num_of_light_ship }
 		measure_variable = { name = num_of_galley }
+
 		add_province_triggered_modifier = stock_market_measurements #comment this when not measuring
+	}
+}
+
+record_all_prices = {
+	REB = {
+		set_variable = {
+			which = stock_market_price_value_0_0
+			which = stock_market_price_value_0
+		}
+		push_onto_stack = { name = stock_market_price_value_0 }
+
+		set_variable = {
+			which = stock_market_price_value_1_0
+			which = stock_market_price_value_1
+		}
+		push_onto_stack = { name = stock_market_price_value_1 }
+
+		set_variable = {
+			which = stock_market_price_value_2_0
+			which = stock_market_price_value_2
+		}
+		push_onto_stack = { name = stock_market_price_value_2 }
+
+		set_variable = {
+			which = stock_market_price_value_3_0
+			which = stock_market_price_value_3
+		}
+		push_onto_stack = { name = stock_market_price_value_3 }
+
+		set_variable = {
+			which = stock_market_price_value_4_0
+			which = stock_market_price_value_4
+		}
+		push_onto_stack = { name = stock_market_price_value_4 }
+
+		set_variable = {
+			which = stock_market_price_value_5_0
+			which = stock_market_price_value_5
+		}
+		push_onto_stack = { name = stock_market_price_value_5 }
+
+		set_variable = {
+			which = stock_market_price_value_6_0
+			which = stock_market_price_value_6
+		}
+		push_onto_stack = { name = stock_market_price_value_6 }
+
+		set_variable = {
+			which = stock_market_price_value_7_0
+			which = stock_market_price_value_7
+		}
+		push_onto_stack = { name = stock_market_price_value_7 }
+
+		set_variable = {
+			which = stock_market_price_value_8_0
+			which = stock_market_price_value_8
+		}
+		push_onto_stack = { name = stock_market_price_value_8 }
+
+		set_variable = {
+			which = stock_market_price_value_9_0
+			which = stock_market_price_value_9
+		}
+		push_onto_stack = { name = stock_market_price_value_9 }
+
+		set_variable = {
+			which = stock_market_price_value_10_0
+			which = stock_market_price_value_10
+		}
+		push_onto_stack = { name = stock_market_price_value_10 }
+
+		set_variable = {
+			which = stock_market_price_value_11_0
+			which = stock_market_price_value_11
+		}
+		push_onto_stack = { name = stock_market_price_value_11 }
+
+		set_variable = {
+			which = stock_market_price_value_12_0
+			which = stock_market_price_value_12
+		}
+		push_onto_stack = { name = stock_market_price_value_12 }
+
+		set_variable = {
+			which = stock_market_price_value_13_0
+			which = stock_market_price_value_13
+		}
+		push_onto_stack = { name = stock_market_price_value_13 }
+
+		set_variable = {
+			which = stock_market_price_value_14_0
+			which = stock_market_price_value_14
+		}
+		push_onto_stack = { name = stock_market_price_value_14 }
+
+		set_variable = {
+			which = stock_market_price_value_15_0
+			which = stock_market_price_value_15
+		}
+		push_onto_stack = { name = stock_market_price_value_15 }
+
+		set_variable = {
+			which = stock_market_price_value_16_0
+			which = stock_market_price_value_16
+		}
+		push_onto_stack = { name = stock_market_price_value_16 }
+
+		set_variable = {
+			which = stock_market_price_value_17_0
+			which = stock_market_price_value_17
+		}
+		push_onto_stack = { name = stock_market_price_value_17 }
+
+		set_variable = {
+			which = stock_market_price_value_18_0
+			which = stock_market_price_value_18
+		}
+		push_onto_stack = { name = stock_market_price_value_18 }
+
+		set_variable = {
+			which = stock_market_price_value_19_0
+			which = stock_market_price_value_19
+		}
+		push_onto_stack = { name = stock_market_price_value_19 }
+
+		set_variable = {
+			which = stock_market_price_value_20_0
+			which = stock_market_price_value_20
+		}
+		push_onto_stack = { name = stock_market_price_value_20 }
+
+		set_variable = {
+			which = stock_market_price_value_21_0
+			which = stock_market_price_value_21
+		}
+		push_onto_stack = { name = stock_market_price_value_21 }
+
+		set_variable = {
+			which = stock_market_price_value_22_0
+			which = stock_market_price_value_22
+		}
+		push_onto_stack = { name = stock_market_price_value_22 }
+
+		set_variable = {
+			which = stock_market_price_value_23_0
+			which = stock_market_price_value_23
+		}
+		push_onto_stack = { name = stock_market_price_value_23 }
+
+		set_variable = {
+			which = stock_market_price_value_24_0
+			which = stock_market_price_value_24
+		}
+		push_onto_stack = { name = stock_market_price_value_24 }
+
+		set_variable = {
+			which = stock_market_price_value_25_0
+			which = stock_market_price_value_25
+		}
+		push_onto_stack = { name = stock_market_price_value_25 }
+
+		set_variable = {
+			which = stock_market_price_value_26_0
+			which = stock_market_price_value_26
+		}
+		push_onto_stack = { name = stock_market_price_value_26 }
+
+		set_variable = {
+			which = stock_market_price_value_27_0
+			which = stock_market_price_value_27
+		}
+		push_onto_stack = { name = stock_market_price_value_27 }
+
+		set_variable = {
+			which = stock_market_price_value_28_0
+			which = stock_market_price_value_28
+		}
+		push_onto_stack = { name = stock_market_price_value_28 }
+
+		set_variable = {
+			which = stock_market_price_value_29_0
+			which = stock_market_price_value_29
+		}
+		push_onto_stack = { name = stock_market_price_value_29 }
+
+		set_variable = {
+			which = stock_market_price_value_30_0
+			which = stock_market_price_value_30
+		}
+		push_onto_stack = { name = stock_market_price_value_30 }
 	}
 }
 

@@ -59,6 +59,30 @@
 
  stock_market_menu_events.EVTNAME101: "Market menu: Buy Grain"
  stock_market_menu_events.EVTDESC101: "Choose how much £grain£ §YGrain§! you want to buy.\nCurrent price: [REB.stock_market_price_value_0.GetValue]¤\nCurrent stockpile: [This.country_stock_market_stockpile_for_0.GetValue] £grain£"
- stock_market_menu_events.1011.EVTOPT1: "Buy 10"
- STOCK_MARKET_GRAIN_BUY_10: "Buy 10 Grain"
- DEBUG_CHECK_TT: "[This.test_var_1.GetValue]\n[This.test_var_2.GetValue]\n[This.test_var_3.GetValue]\n[This.test_var_4.GetValue]\n[This.test_var_5.GetValue]\n[This.test_var_6.GetValue]\n[This.test_var_7.GetValue]\n[This.test_var_8.GetValue]\n[This.test_var_9.GetValue]\n[This.test_var_10.GetValue]\n[This.test_var_11.GetValue]\n[This.test_var_12.GetValue]\n[This.test_var_13.GetValue]\n"
+ stock_market_menu_events.101.EVTOPT1: "Buy §Y100§! for §Y[This.buying_100_of_0_total.GetValue]§!"
+ STOCK_MARKET_GRAIN_BUY_100: "Buys 100 Grain for §Y[This.buying_100_of_0_price.GetValue]§! each, §Y[This.buying_100_of_0_total.GetValue]§! total."
+ stock_market_menu_events.101.EVTOPT2: "Buy §Y25§! for §Y[This.buying_25_of_0_total.GetValue]§!"
+ STOCK_MARKET_GRAIN_BUY_25: "Buys 25 Grain for §Y[This.buying_25_of_0_price.GetValue]§! each, §Y[This.buying_25_of_0_total.GetValue]§! total." 
+ stock_market_menu_events.101.EVTOPT3: "Buy §Y5§! for §Y[This.buying_5_of_0_total.GetValue]§!"
+ STOCK_MARKET_GRAIN_BUY_5: "Buys 5 Grain for §Y[This.buying_5_of_0_price.GetValue]§! each, §Y[This.buying_5_of_0_total.GetValue]§! total."
+ stock_market_menu_events.101.EVTOPT4: "Buy §Y1§! for §Y[This.buying_1_of_0_total.GetValue]§!"
+ STOCK_MARKET_GRAIN_BUY_1: "Buys 1 Grain for §Y[This.buying_1_of_0_price.GetValue]§! each, §Y[This.buying_1_of_0_total.GetValue]§! total." 
+ stock_market_menu_events.101.EVTOPT5: "Go back"
+
+ stock_market_menu_events.EVTNAME102: "Market menu: Sell Grain"
+ stock_market_menu_events.EVTDESC102: "Choose how much £grain£ §YGrain§! you want to sell.\nCurrent price: [REB.stock_market_price_value_0.GetValue]¤\nCurrent stockpile: [This.country_stock_market_stockpile_for_0.GetValue] £grain£"
+ stock_market_menu_events.102.EVTOPT1: "Sell §Y100§! for §Y[This.selling_100_of_0_total.GetValue]§!"
+ STOCK_MARKET_GRAIN_SELL_100: "Sells 100 Grain for §Y[This.selling_100_of_0_price.GetValue]§! each, §Y[This.selling_100_of_0_total.GetValue]§! total."
+ stock_market_menu_events.102.EVTOPT2: "Sell §Y25§! for §Y[This.selling_25_of_0_total.GetValue]§!"
+ STOCK_MARKET_GRAIN_SELL_25: "Sells 25 Grain for §Y[This.selling_25_of_0_price.GetValue]§! each, §Y[This.selling_25_of_0_total.GetValue]§! total." 
+ stock_market_menu_events.102.EVTOPT3: "Sell §Y5§! for §Y[This.selling_5_of_0_total.GetValue]§!"
+ STOCK_MARKET_GRAIN_SELL_5: "Sells 5 Grain for §Y[This.selling_5_of_0_price.GetValue]§! each, §Y[This.selling_5_of_0_total.GetValue]§! total."
+ stock_market_menu_events.102.EVTOPT4: "Sell §Y1§! for §Y[This.selling_1_of_0_total.GetValue]§!"
+ STOCK_MARKET_GRAIN_SELL_1: "Sells 1 Grain for §Y[This.selling_1_of_0_price.GetValue]§! each, §Y[This.selling_1_of_0_total.GetValue]§! total." 
+ stock_market_menu_events.102.EVTOPT5: "Go back"
+
+
+ GO_BACK_TO_GRAIN_MENU: "Opens £grain£ §YGrain§! menu"
+
+
+
