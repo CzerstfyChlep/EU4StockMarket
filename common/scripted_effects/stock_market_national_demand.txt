@@ -31,7 +31,38 @@ update_national_demand_for_trade_good_6 = { # salt
 
 }
 update_national_demand_for_trade_good_7 = { # naval_supplies
-
+	export_to_variable = {
+		which = tempvar
+		value = trigger_value:navy_size
+	}
+	
+	multiply_variable = {
+		which = tempvar
+		value = 0.35
+	}
+	
+	if = {
+		limit = {
+			is_hegemon_of_type = naval_hegemon
+		}
+		multiply_variable = {
+			which = tempvar
+			value = 2
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = permanent_navies_happened
+		}
+		multiply_variable = {
+			which = tempvar
+			value = 2
+		}
+	}
+	change_variable = {
+		which = stock_market_demand_for_7
+		which = tempvar
+	}
 }
 update_national_demand_for_trade_good_8 = { # copper
 
