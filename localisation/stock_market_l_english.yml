@@ -86,3 +86,14 @@
 
 
 
+ #New Event Localisation
+ stock_market_impact_of_navy_size: "The Impact of §YNumber of Ships§! on the §YDemand§! for £naval_supplies£ §YNaval Supplies§! is §Ydoubled§!.\n\n§YNumber of Ships§! will now generate §YDemand§! for £livestock£ §YLivestock§!."
+ stock_market_cannons_now_give_double_demand_for_copper: "§YNumber of Artillery§! will now generate §YDemand§! for £copper£ §YCopper§!.\n\n§YDemand§! for §YCopper§! will be multiplicatively increased by §G10.0%§!."
+ stock_market_100_copper_stockpile: "Add §G100.0§! £copper£§YCopper§! to the §YStockpile§!."
+ stock_market_demand_from_japanese_provinces_is_doubled: "The §YDemand§! for £tea£§YTea§! in provinces of §YJapanese§! Culture Group are §YDoubled§!.\n\nThe §YDemand§! for £tea£§YTea§! in provinces owned by a nation of §YJapanese§! Culture Group are §YDoubled§!.\n\nDemand for £tea£§YTea§! is increased multiplicatively increased by §G15.0%§!.\n\nProvinces of §YJapanese§! Culture Group will now produce §YDemand§! for £incense£§YIncense§!.\n"
+ stock_market_effects_of_european_spice_craze: "Effects of the §YEuropean Spice Craze§! are halved.\n\nThe global £spices£§YDemand§! for §YSpices§! is decreased multiplicatively by §R-5.0%§!"
+ stock_market_all_provinces_of_grain_and_wine: "Every province producing £grain£§YGrain§! or £wine£§YWine§!:"
+ 
+ stock_market_huaynaputina: "Huaynaputina Eruption"
+ 
+ stock_market_local_demand_for_foundry: "Local Cannon Foundry"
