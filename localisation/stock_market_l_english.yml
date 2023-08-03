@@ -12,7 +12,8 @@
  he_bought_teaser.1.t: "He Bought"
  he_bought_teaser.1.desc: "We have noticed that our rivals have acquired a large amount of grain. Our own stockpiles are large enough to manipulate the market price so their investment becomes useless. What should we do my king?"
  he_bought_teaser.1.a: "Dump it"
- he_bought_teaser.1.a.tt: "The price of £grain£ Grain decreases by: 99%"
+ #he_bought_teaser.1.a.tt: "The price of £grain£ Grain decreases by: 99%"
+ he_bought_teaser.1.a.tt: "We will sell our entire stockpile of £grain£ §YGrain§! amounting to §Y[Root.country_stock_market_stockpile_for_0.GetValue]§!£grain£ for [REB.stock_market_price_value_0.GetValue]¤ each.\n\nThis will have an effect the §YGrain§! prices."
  open_market_menu_title: "Open Market Menu"
  open_market_menu_desc: "Opens the market menu where you can buy and sell goods using your stockpile."
 
