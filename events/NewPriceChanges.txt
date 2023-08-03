@@ -1,0 +1,42 @@
+namespace = new_prices
+
+# High Renaissance Art 
+# italian provinces produce dyes and paper demand 
+# decision to expend above on a powerful modifier
+# Sola Scriptura
+# high demand of paper in protestant provs
+
+country_event = {
+	id = new_prices.1
+	title = prices.1.t
+	desc = prices.1.d
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = yes
+
+	trigger = {
+		
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	
+	option = {
+		name = prices.1.a
+		PDX_change_price = {
+			trade_goods = slaves
+			key = TRIANGLE_TRADE
+			value = 0.5
+			duration = -1
+		}
+		custom_tooltip = stock_market_triangle_trade_effect
+		
+		add_years_of_income  = 0.25
+		
+		add_prestige_or_monarch_power = { amount = 20 }
+		set_global_flag = triangle_happened
+	}
+}

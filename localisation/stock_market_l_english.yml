@@ -12,7 +12,8 @@
  he_bought_teaser.1.t: "He Bought"
  he_bought_teaser.1.desc: "We have noticed that our rivals have acquired a large amount of grain. Our own stockpiles are large enough to manipulate the market price so their investment becomes useless. What should we do my king?"
  he_bought_teaser.1.a: "Dump it"
- he_bought_teaser.1.a.tt: "The price of £grain£ Grain decreases by: 99%"
+ #he_bought_teaser.1.a.tt: "The price of £grain£ Grain decreases by: 99%"
+ he_bought_teaser.1.a.tt: "We will sell our entire stockpile of £grain£ §YGrain§! amounting to §Y[Root.country_stock_market_stockpile_for_0.GetValue]§!£grain£ for [REB.stock_market_price_value_0.GetValue]¤ each.\n\nThis will have an effect the §YGrain§! prices."
  open_market_menu_title: "Open Market Menu"
  open_market_menu_desc: "Opens the market menu where you can buy and sell goods using your stockpile."
 
@@ -133,3 +134,18 @@
 
  stock_market_menu_events.6.EVTOPT7: "ArrowLeft Back"
  STOCK_MARKET_GO_BACK_MENU_TT: "Opens §YMarket Menu§!"
+ #New Event Localisation
+ stock_market_impact_of_navy_size: "The Impact of §YNumber of Ships§! on the §YDemand§! for £naval_supplies£ §YNaval Supplies§! is §Ydoubled§!.\n\n§YNumber of Ships§! will now generate §YDemand§! for £livestock£ §YLivestock§!."
+ stock_market_cannons_now_give_double_demand_for_copper: "§YNumber of Artillery§! will now generate §YDemand§! for £copper£ §YCopper§!.\n\n§YDemand§! for §YCopper§! will be multiplicatively increased by §G10.0%§!."
+ stock_market_100_copper_stockpile: "Add §G100.0§! £copper£§YCopper§! to the §YStockpile§!."
+ stock_market_demand_from_japanese_provinces_is_doubled: "The §YDemand§! for £tea£§YTea§! in provinces of §YJapanese§! Culture Group are §YDoubled§!.\n\nThe §YDemand§! for £tea£§YTea§! in provinces owned by a nation of §YJapanese§! Culture Group are §YDoubled§!.\n\nDemand for £tea£§YTea§! is increased multiplicatively increased by §G15.0%§!.\n\nProvinces of §YJapanese§! Culture Group will now produce §YDemand§! for £incense£§YIncense§!.\n"
+ stock_market_effects_of_european_spice_craze: "Effects of the §YEuropean Spice Craze§! are halved.\n\nThe global £spices£§YDemand§! for §YSpices§! is decreased multiplicatively by §R-5.0%§!"
+ stock_market_all_provinces_of_grain_and_wine: "Every province producing £grain£§YGrain§! or £wine£§YWine§!:"
+ stock_market_beaver_tt: "§YDemand§! for £fur£§YFur§! in §YEuropean§! provinces is increased multiplicatively by §G+50.0%§!."
+ stock_market_felt_hats_tt: "§YDemand§! for £fur£§YFur§! in §YNorth American§! provinces is increased multiplicatively by §G+50.0%§!."
+ stock_market_triangle_trade_effect: "§YAmerican§! Provinces producing §YTobacco§!, §YSugar§! and §YCotton§! goods will now generate demand for £slaves£§YSlaves§! until Slavery is Abolished in the country."
+ stock_market_europe_will_now_produce_demand_for_chinaware: "§YEuropean§! Provinces will now generate demand for £chinaware£§YChinaware§!."
+ 
+ stock_market_huaynaputina: "Huaynaputina Eruption"
+ 
+ stock_market_local_demand_for_foundry: "Local Cannon Foundry"

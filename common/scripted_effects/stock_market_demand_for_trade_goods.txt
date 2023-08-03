@@ -33,6 +33,10 @@ demand_from_province_dev = {	#this serves a as a baseline for many trade goods
 		[[modifier_7] $modifier_7$ ]
 		[[modifier_8] $modifier_8$ ]
 		[[modifier_9] $modifier_9$ ]
+		multiply_variable = { 
+			which = tempvar
+			which = modifier_var
+		}
 		change_variable = {
 			which = stock_market_demand_for_$trade_good_id$
 			which = tempvar
@@ -148,7 +152,59 @@ update_demand_for_trade_good_5 = { #fur
 	demand_from_province_dev = {
 		trade_good_id = 5
 		base = 0.2
-		multiplier = 0.46
+		modifier_1 = "
+			if = {
+				limit = {
+					PREV = { has_winter = mild_winter }
+				}
+				change_variable = {
+					which = modifier_var
+					value = 0.5
+				}
+			}
+			else_if = {
+				limit = {
+					PREV = { has_winter = normal_winter }
+				}
+				change_variable = {
+					which = modifier_var
+					value = 2
+				}
+			}
+			if = {
+				limit = {
+					PREV = { has_winter = severe_winter }
+				}
+				change_variable = {
+					which = modifier_var
+					value = 4
+				}
+			}
+		"
+		modifier_2 = "
+			if = {
+				limit = {
+					has_global_flag = depleted_beaver_happened
+					PREV = { continent = europe }
+				}
+				multiply_variable = {
+					which = modifier_var
+					value = 1.5
+				}
+			}
+			else_if = {
+				limit = {
+					has_global_flag = felt_hats_happened
+					PREV = { continent = north_america }
+				}
+				multiply_variable = {
+					which = modifier_var
+					value = 1.5
+				}
+			}
+			else = { }
+		"
+		multiplier = 0.3
 	}
 }
 
@@ -165,7 +221,7 @@ update_demand_for_trade_good_7 = { #naval supplies
 	demand_from_province_dev = {
 		trade_good_id = 7
 		base = 0.2
-		multiplier = 0.6
+		multiplier = 0.25
 	}
 }
 
@@ -173,7 +229,7 @@ update_demand_for_trade_good_8 = { #copper
 	demand_from_province_dev = {
 		trade_good_id = 8
 		base = 0.1
-		multiplier = 0.7
+		multiplier = 0.6
 	}
 }
 
@@ -197,6 +253,38 @@ update_demand_for_trade_good_11 = { #slaves
 				superregion = southern_africa_superregion
 			}
 			NOT = { region = maghreb_region }
+		}
+		owner = {
+			export_to_variable = {
+				which = tempvar
+				value = trigger_value:development
+				who = PREV
+			}
+			multiply_variable = { 
+				which = tempvar
+				value = 0.375
+			}
+			change_variable = {
+				which = stock_market_demand_for_11
+				which = tempvar
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = triangle_happened
+			OR = {
+				continent = north_america
+				continent = south_america
+			}
+			OR = {
+				trade_goods = cotton
+				trade_goods = tobacco
+				trade_goods = sugar
+			}
+			NOT = { 
+				has_country_modifier = the_abolish_slavery_act
+			}
 		}
 		owner = {
 			export_to_variable = {
@@ -263,7 +351,17 @@ update_demand_for_trade_good_13 = { #tea
 			}
 			multiply_variable = { 
 				which = tempvar
-				value = 0.1
+				value = 0.15
+			}
+			if = {
+				limit = {
+					has_global_flag = japanese_tea_happened
+					PREV = { culture_group = japanese_g }
+				}
+				multiply_variable = { 
+					which = tempvar
+					value = 2
+				}
 			}
 			change_variable = {
 				which = stock_market_demand_for_13
@@ -291,6 +389,27 @@ update_demand_for_trade_good_14 = { #chinaware
 			multiply_variable = { 
 				which = tempvar
 				value = 0.3
+			}
+			change_variable = {
+				which = stock_market_demand_for_14
+				which = tempvar
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = europeans_in_china_happened
+			continent = europe
+		}
+		owner = {
+			export_to_variable = {
+				which = tempvar
+				value = trigger_value:development
+				who = PREV
+			}
+			multiply_variable = { 
+				which = tempvar
+				value = 0.15
 			}
 			change_variable = {
 				which = stock_market_demand_for_14
@@ -579,6 +698,10 @@ update_demand_for_trade_good_25 = { #incense
 				region = australia_region
 				region = arabia_region
 				region = horn_of_africa_region
+				AND = {
+					has_global_flag = japanese_tea_happened
+					culture_group = japanese_g
+				}
 			}
 		}
 		owner = {

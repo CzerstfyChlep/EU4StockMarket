@@ -1,0 +1,9 @@
+stock_market_local_demand_for_foundry = {
+	trade_value_modifier = 2
+	trade_goods_size = 1
+}
+
+stock_market_huaynaputina = {
+	trade_goods_size = -0.8
+	trade_goods_size_modifier = -1
+}

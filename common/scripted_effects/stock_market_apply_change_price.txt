@@ -122,7 +122,40 @@ apply_change_price = {
 				}
 			}
 
-
+			while = {
+				limit = {
+					check_variable = {
+						which = temp_work_var_$trade_good_id$
+						value = 0.005
+					}
+				}	
+				subtract_variable = {
+					which = temp_work_var_$trade_good_id$
+					value = 0.005
+				}
+				stock_market_change_price_with_id = {
+					trade_good_id = $trade_good_id$
+					value = 0.005
+					duration = $duration$
+				}
+			}
+			while = {
+				limit = {
+					check_variable = {
+						which = temp_work_var_$trade_good_id$
+						value = 0.001
+					}
+				}	
+				subtract_variable = {
+					which = temp_work_var_$trade_good_id$
+					value = 0.001
+				}
+				stock_market_change_price_with_id = {
+					trade_good_id = $trade_good_id$
+					value = 0.001
+					duration = $duration$
+				}
+			}
 		}
 		else = {
 			while = {
@@ -244,7 +277,44 @@ apply_change_price = {
 					duration = $duration$
 				}
 			}
-
+			while = {
+				limit = {
+					NOT = {
+						check_variable = {
+							which = temp_work_var_$trade_good_id$
+							value = -0.005
+						}
+					}
+				}	
+				change_variable = {
+					which = temp_work_var_$trade_good_id$
+					value = 0.005
+				}
+				stock_market_change_price_with_id = {
+					trade_good_id = $trade_good_id$
+					value = -0.005
+					duration = $duration$
+				}
+			}
+			while = {
+				limit = {
+					NOT = {
+						check_variable = {
+							which = temp_work_var_$trade_good_id$
+							value = -0.001
+						}
+					}
+				}	
+				change_variable = {
+					which = temp_work_var_$trade_good_id$
+					value = 0.001
+				}
+				stock_market_change_price_with_id = {
+					trade_good_id = $trade_good_id$
+					value = -0.001
+					duration = $duration$
+				}
+			}
 		}
 	}
 }

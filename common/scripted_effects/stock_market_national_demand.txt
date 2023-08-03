@@ -31,10 +31,70 @@ update_national_demand_for_trade_good_6 = { # salt
 
 }
 update_national_demand_for_trade_good_7 = { # naval_supplies
-
+	export_to_variable = {
+		which = tempvar
+		value = trigger_value:navy_size
+	}
+	
+	multiply_variable = {
+		which = tempvar
+		value = 0.5
+	}
+	
+	if = {
+		limit = {
+			is_hegemon_of_type = naval_hegemon
+		}
+		multiply_variable = {
+			which = tempvar
+			value = 2
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = permanent_navies_happened
+		}
+		multiply_variable = {
+			which = tempvar
+			value = 2
+		}
+	}
+	change_variable = {
+		which = stock_market_demand_for_7
+		which = tempvar
+	}
 }
 update_national_demand_for_trade_good_8 = { # copper
-
+	if = {
+		limit = {
+			has_global_flag = bronze_cannons_happened
+		}
+		
+		export_to_variable = {
+			which = tempvar
+			value = trigger_value:num_of_artillery
+		}
+		
+		multiply_variable = {
+			which = tempvar
+			value = 0.35
+		}
+		
+		change_variable = {
+			which = stock_market_demand_for_8
+			which = tempvar
+		}
+	}
+	
+	if = {
+		limit = {
+			has_global_flag = bronze_cannons_happened
+		}
+		multiply_variable = { 
+			which = stock_market_demand_for_8
+			value = 1.1
+		}
+	}
 }
 update_national_demand_for_trade_good_9 = { # gold
 
@@ -49,13 +109,40 @@ update_national_demand_for_trade_good_12 = { # ivory
 
 }
 update_national_demand_for_trade_good_13 = { # tea
-
+	if = {
+		limit = {
+			has_global_flag = japanese_tea_happened
+			culture_group = japanese_g
+		}
+		multiply_variable = { 
+			which = stock_market_demand_for_13
+			value = 2
+		}
+	}
+	
+	if = {
+		limit = {
+			has_global_flag = japanese_tea_happened
+		}
+		multiply_variable = { 
+			which = stock_market_demand_for_13
+			value = 1.15
+		}
+	}
 }
 update_national_demand_for_trade_good_14 = { # chinaware
 
 }
 update_national_demand_for_trade_good_15 = { # spices
-
+	if = {
+		limit = {
+			has_global_flag = decline_of_spices_happened
+		}
+		multiply_variable = { 
+			which = stock_market_demand_for_13
+			value = 0.95
+		}
+	}
 }
 update_national_demand_for_trade_good_16 = { # coffee
 
@@ -82,6 +169,27 @@ update_national_demand_for_trade_good_23 = { # tropical_wood
 
 }
 update_national_demand_for_trade_good_24 = { # livestock
+	if = {
+		limit = {
+			has_global_flag = permanent_navies_happened
+		}
+		
+		export_to_variable = {
+			which = tempvar
+			value = trigger_value:navy_size
+		}
+		
+		multiply_variable = {
+			which = tempvar
+			value = 0.25
+		}
+		
+		change_variable = {
+			which = stock_market_demand_for_24
+			which = tempvar
+		}
+	}
+	
 	if = {
 		limit = {
 			has_reform = steppe_horde

@@ -48,8 +48,11 @@ country_event = {
 			value = 0.5
 			duration = -1
 		}
+		custom_tooltip = stock_market_triangle_trade_effect
+		
 		add_years_of_income  = 0.25
-		add_prestige = 20
+		
+		add_prestige_or_monarch_power = { amount = 20 }
 		set_global_flag = triangle_happened
 	}
 }
@@ -104,7 +107,17 @@ country_event = {
 			duration = -1
 		}
 		add_years_of_income  = 0.25
-		add_prestige = 20
+		add_prestige_or_monarch_power = { amount = 20 }
+		
+		custom_tooltip = " "
+		
+		custom_tooltip = stock_market_europe_will_now_produce_demand_for_chinaware
+		
+		2151 = {
+			owner = {
+				add_years_of_income = 1
+			}
+		}
 	}
 }
 
@@ -595,6 +608,30 @@ country_event = {
 		is_year = 1600
 		not = { is_year = 1610 }
 	}
+	immediate = {
+		hidden_effect = {
+			random_list = {
+				1 = {
+					trigger = {
+						owns = 805
+					}
+					805 = { save_event_target_as = huaynaputina_eruption }
+				}
+				1 = {
+					trigger = {
+						owns = 2828
+					}
+					2828 = { save_event_target_as = huaynaputina_eruption }
+				}
+				1 = {
+					trigger = {
+						owns = 804
+					}
+					804 = { save_event_target_as = huaynaputina_eruption }
+				}
+			}
+		}
+	}
 	mean_time_to_happen = {
 		months = 3
 	}
@@ -602,17 +639,51 @@ country_event = {
 	
 	option = {
 		name = prices.10.a
-		PDX_change_price = {
-			trade_goods = grain
-			key = HUAYNAPUTINA
-			value = -0.75
-			duration = 730
+		# PDX_change_price = {
+			# trade_goods = grain
+			# key = HUAYNAPUTINA
+			# value = -0.75
+			# duration = 730
+		# }
+		# PDX_change_price = {
+			# trade_goods = wine
+			# key = HUAYNAPUTINA
+			# value = -0.75
+			# duration = 730
+		# }
+		
+		event_target:huaynaputina_eruption = {
+			add_base_tax = -2
+			add_base_production = -2
+			add_base_manpower = -1
+			
+			custom_tooltip = " "
+			
+			add_devastation = 100
 		}
-		PDX_change_price = {
-			trade_goods = wine
-			key = HUAYNAPUTINA
-			value = -0.75
-			duration = 730
+		
+		custom_tooltip = " "
+		
+		custom_tooltip = stock_market_all_provinces_of_grain_and_wine
+		tooltip = {
+			add_permanent_province_modifier = {
+				name = stock_market_huaynaputina
+				duration = 1095
+			}
+		}
+		hidden_effect = {
+			every_province = {
+				limit = {
+					OR = {
+						trade_goods = grain
+						trade_goods = wine
+					}
+				}
+				add_permanent_province_modifier = {
+					name = stock_market_huaynaputina
+					duration = 1095
+				}
+			}
 		}
 	}
 }
@@ -941,6 +1012,10 @@ country_event = {
 			value = 0.4
 			duration = -1
 		}
+		
+		set_global_flag = depleted_beaver_happened
+		
+		custom_tooltip = stock_market_beaver_tt
 	}
 }
 
@@ -985,6 +1060,10 @@ country_event = {
 			value = 0.35
 			duration = -1
 		}
+		
+		set_global_flag = felt_hats_happened
+		
+		custom_tooltip = stock_market_felt_hats_tt
 	}
 }
 
@@ -1029,6 +1108,9 @@ country_event = {
 			value = 0.10
 			duration = -1
 		}
+		set_global_flag = permanent_navies_happened
+		
+		custom_tooltip = stock_market_impact_of_navy_size
 	}
 }
 
@@ -1048,6 +1130,24 @@ country_event = {
 		copper = 1
 		NOT = { has_global_flag = bronze_cannons_happened }
 	}
+	
+	immediate = {
+		hidden_effect = {
+			random_owned_province = { 
+				limit = {
+					trade_goods = copper
+				}
+				save_event_target_as = copper_province
+			}
+			every_owned_province = {
+				limit = {
+					trade_goods = copper
+					higher_development_than = event_target:copper_province
+				}
+				save_event_target_as = copper_province
+			}
+		}
+	}
 	mean_time_to_happen = {
 		months = 1
 	}
@@ -1060,6 +1160,28 @@ country_event = {
 			key = BRONZE_CANNONS
 			value = 0.5
 			duration = -1
+		}
+		
+		set_global_flag = bronze_cannons_happened
+		
+		custom_tooltip = stock_market_cannons_now_give_double_demand_for_copper
+		
+		custom_tooltip = " "
+		
+		event_target:copper_province = {
+			add_permanent_province_modifier = {
+				name = stock_market_local_demand_for_foundry
+				duration = 14600
+			}
+		}
+		
+		custom_tooltip = stock_market_100_copper_stockpile
+		
+		hidden_effect = {
+			change_variable = {
+				which = country_stock_market_stockpile_for_7
+				value = 100
+			}
 		}
 	}
 }
@@ -1102,6 +1224,12 @@ country_event = {
 			value = 0.10
 			duration = -1
 		}
+		
+		set_global_flag = japanese_tea_happened
+		
+		custom_tooltip = stock_market_demand_from_japanese_provinces_is_doubled
+		
+		add_prestige_or_monarch_power = { amount = 25 }
 	}
 }
 
@@ -1144,6 +1272,12 @@ country_event = {
 			value = -0.4
 			duration = -1
 		}
+		
+		custom_tooltip = stock_market_effects_of_european_spice_craze
+		
+		custom_tooltip = " "
+		
+		add_mercantilism = 5
 	}
 }
 
