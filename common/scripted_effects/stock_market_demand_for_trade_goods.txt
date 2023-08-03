@@ -336,7 +336,7 @@ update_demand_for_trade_good_16 = { #coffee
 				region = carribeans_region
 				continent = south_america
 			}
-			NOT = = { region = maghreb_region }
+			NOT = { region = maghreb_region }
 		}
 		owner = {
 			export_to_variable = {

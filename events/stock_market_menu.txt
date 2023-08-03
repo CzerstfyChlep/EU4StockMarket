@@ -4,7 +4,7 @@ country_event = {
 	id = stock_market_menu_events.1
 	title = stock_market_menu_events.EVTNAME1
 	desc = stock_market_menu_events.EVTDESC1
-	picture = KING_SICK_IN_BED_eventPicture
+	picture = HARBOUR_eventPicture
 
 	is_triggered_only = yes
 
@@ -61,6 +61,11 @@ country_event = {
 			}
 		}
 	}
+
+	option = {
+		name = stock_market_menu_events.1.EVTOPT6
+		custom_tooltip = STOCK_MARKET_EXIT_MENU_TT
+	}
 }
 
 country_event = {
@@ -90,7 +95,7 @@ country_event = {
 		custom_tooltip = STOCK_MARKET_FISH_MENU_TT
 		hidden_effect = {
 			country_event = {
-				id = stock_market_menu_events.11
+				id = stock_market_menu_events.14
 			}
 		}
 	}
@@ -110,7 +115,7 @@ country_event = {
 		custom_tooltip = STOCK_MARKET_LIVESTOCK_MENU_TT
 		hidden_effect = {
 			country_event = {
-				id = stock_market_menu_events.13
+				id = stock_market_menu_events.34
 			}
 		}
 	}
@@ -120,7 +125,7 @@ country_event = {
 		custom_tooltip = STOCK_MARKET_FUR_MENU_TT
 		hidden_effect = {
 			country_event = {
-				id = stock_market_menu_events.14
+				id = stock_market_menu_events.15
 			}
 		}
 	}
@@ -130,13 +135,345 @@ country_event = {
 		custom_tooltip = STOCK_MARKET_SALT_MENU_TT
 		hidden_effect = {
 			country_event = {
-				id = stock_market_menu_events.15
+				id = stock_market_menu_events.16
 			}
 		}
 	}
 
 	option = {
 		name = stock_market_menu_events.2.EVTOPT7
+		custom_tooltip = STOCK_MARKET_GO_BACK_MENU_TT
+		hidden_effect = {
+			country_event = {
+				id = stock_market_menu_events.1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = stock_market_menu_events.3
+	title = stock_market_menu_events.EVTNAME3
+	desc = stock_market_menu_events.EVTDESC3
+	picture = KING_SICK_IN_BED_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = stock_market_menu_events.3.EVTOPT1
+		custom_tooltip = STOCK_MARKET_GEMS_MENU_TT
+		hidden_effect = {
+			country_event = {
+				id = stock_market_menu_events.38
+			}
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.3.EVTOPT2
+		custom_tooltip = STOCK_MARKET_CLOTH_MENU_TT
+		hidden_effect = {
+			country_event = {
+				id = stock_market_menu_events.13
+			}
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.3.EVTOPT3
+		custom_tooltip = STOCK_MARKET_WINE_MENU_TT
+		hidden_effect = {
+			country_event = {
+				id = stock_market_menu_events.11
+			}
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.3.EVTOPT4
+		custom_tooltip = STOCK_MARKET_PAPER_MENU_TT
+		hidden_effect = {
+			country_event = {
+				id = stock_market_menu_events.37
+			}
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.3.EVTOPT5
+		custom_tooltip = STOCK_MARKET_GLASS_MENU_TT
+		hidden_effect = {
+			country_event = {
+				id = stock_market_menu_events.36
+			}
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.3.EVTOPT6
+		custom_tooltip = STOCK_MARKET_DYES_MENU_TT
+		hidden_effect = {
+			country_event = {
+				id = stock_market_menu_events.32
+			}
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.3.EVTOPT7
+		custom_tooltip = STOCK_MARKET_INCENSE_MENU_TT
+		hidden_effect = {
+			country_event = {
+				id = stock_market_menu_events.35
+			}
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.3.EVTOPT8
+		custom_tooltip = STOCK_MARKET_GO_BACK_MENU_TT
+		hidden_effect = {
+			country_event = {
+				id = stock_market_menu_events.1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = stock_market_menu_events.4
+	title = stock_market_menu_events.EVTNAME4
+	desc = stock_market_menu_events.EVTDESC4
+	picture = KING_SICK_IN_BED_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = stock_market_menu_events.4.EVTOPT1
+		custom_tooltip = STOCK_MARKET_NAVAL_SUPPLIES_MENU_TT
+		hidden_effect = {
+			country_event = {
+				id = stock_market_menu_events.17
+			}
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.4.EVTOPT2
+		custom_tooltip = STOCK_MARKET_COPPER_MENU_TT
+		hidden_effect = {
+			country_event = {
+				id = stock_market_menu_events.18
+			}
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.4.EVTOPT3
+		custom_tooltip = STOCK_MARKET_IRON_MENU_TT
+		hidden_effect = {
+			country_event = {
+				id = stock_market_menu_events.20
+			}
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.4.EVTOPT4
+		custom_tooltip = STOCK_MARKET_COAL_MENU_TT
+		hidden_effect = {
+			country_event = {
+				id = stock_market_menu_events.39
+			}
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.4.EVTOPT5
+		custom_tooltip = STOCK_MARKET_GO_BACK_MENU_TT
+		hidden_effect = {
+			country_event = {
+				id = stock_market_menu_events.1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = stock_market_menu_events.5
+	title = stock_market_menu_events.EVTNAME5
+	desc = stock_market_menu_events.EVTDESC5
+	picture = KING_SICK_IN_BED_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = stock_market_menu_events.5.EVTOPT1
+		custom_tooltip = STOCK_MARKET_SILK_MENU_TT
+		hidden_effect = {
+			country_event = {
+				id = stock_market_menu_events.31
+			}
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.5.EVTOPT2
+		custom_tooltip = STOCK_MARKET_CHINAWARE_MENU_TT
+		hidden_effect = {
+			country_event = {
+				id = stock_market_menu_events.24
+			}
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.5.EVTOPT3
+		custom_tooltip = STOCK_MARKET_TEA_MENU_TT
+		hidden_effect = {
+			country_event = {
+				id = stock_market_menu_events.23
+			}
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.5.EVTOPT4
+		custom_tooltip = STOCK_MARKET_COTTON_MENU_TT
+		hidden_effect = {
+			country_event = {
+				id = stock_market_menu_events.27
+			}
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.5.EVTOPT5
+		custom_tooltip = STOCK_MARKET_SPICES_MENU_TT
+		hidden_effect = {
+			country_event = {
+				id = stock_market_menu_events.25
+			}
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.5.EVTOPT6
+		custom_tooltip = STOCK_MARKET_TROPICAL_WOOD_MENU_TT
+		hidden_effect = {
+			country_event = {
+				id = stock_market_menu_events.33
+			}
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.5.EVTOPT7
+		custom_tooltip = STOCK_MARKET_CLOVES_MENU_TT
+		hidden_effect = {
+			country_event = {
+				id = stock_market_menu_events.40
+			}
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.5.EVTOPT8
+		custom_tooltip = STOCK_MARKET_GO_BACK_MENU_TT
+		hidden_effect = {
+			country_event = {
+				id = stock_market_menu_events.1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = stock_market_menu_events.6
+	title = stock_market_menu_events.EVTNAME6
+	desc = stock_market_menu_events.EVTDESC6
+	picture = KING_SICK_IN_BED_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = stock_market_menu_events.6.EVTOPT1
+		custom_tooltip = STOCK_MARKET_COFFEE_MENU_TT
+		hidden_effect = {
+			country_event = {
+				id = stock_market_menu_events.26
+			}
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.6.EVTOPT2
+		custom_tooltip = STOCK_MARKET_SLAVES_MENU_TT
+		hidden_effect = {
+			country_event = {
+				id = stock_market_menu_events.21
+			}
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.6.EVTOPT3
+		custom_tooltip = STOCK_MARKET_SUGAR_MENU_TT
+		hidden_effect = {
+			country_event = {
+				id = stock_market_menu_events.28
+			}
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.6.EVTOPT4
+		custom_tooltip = STOCK_MARKET_TOBACCO_MENU_TT
+		hidden_effect = {
+			country_event = {
+				id = stock_market_menu_events.29
+			}
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.6.EVTOPT5
+		custom_tooltip = STOCK_MARKET_COCOA_MENU_TT
+		hidden_effect = {
+			country_event = {
+				id = stock_market_menu_events.30
+			}
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.6.EVTOPT6
+		custom_tooltip = STOCK_MARKET_IVORY_MENU_TT
+		hidden_effect = {
+			country_event = {
+				id = stock_market_menu_events.22
+			}
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.6.EVTOPT7
 		custom_tooltip = STOCK_MARKET_GO_BACK_MENU_TT
 		hidden_effect = {
 			country_event = {

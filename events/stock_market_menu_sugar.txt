@@ -1,9 +1,9 @@
 namespace = stock_market_menu_events
 
 country_event = {
-	id = stock_market_menu_events.!NUM!
-	title = stock_market_menu_events.EVTNAME!NUM!
-	desc = stock_market_menu_events.EVTDESC!NUM!
+	id = stock_market_menu_events.28
+	title = stock_market_menu_events.EVTNAME28
+	desc = stock_market_menu_events.EVTDESC28
 	picture = KING_SICK_IN_BED_eventPicture
 
 	is_triggered_only = yes
@@ -13,37 +13,37 @@ country_event = {
 	}
 
 	option = {
-		name = stock_market_menu_events.!NUM!.EVTOPT1
+		name = stock_market_menu_events.28.EVTOPT1
 		custom_tooltip = STOCK_MARKET_SUGAR_BUY
 		hidden_effect = {
 			country_event = {
-				id = stock_market_menu_events.!NUM!1
+				id = stock_market_menu_events.281
 			}
 		}
 	}
 
 	option = {
-		name = stock_market_menu_events.!NUM!.EVTOPT2
+		name = stock_market_menu_events.28.EVTOPT2
 		custom_tooltip = STOCK_MARKET_SUGAR_SELL
 		hidden_effect = {
 			country_event = {
-				id = stock_market_menu_events.!NUM!2
+				id = stock_market_menu_events.282
 			}
 		}
 	}
 	
 	option = {
-		name = stock_market_menu_events.!NUM!.EVTOPT3
+		name = stock_market_menu_events.28.EVTOPT3
 		custom_tooltip = STOCK_MARKET_SUGAR_POLICIES
 		hidden_effect = {
 			country_event = {
-				id = stock_market_menu_events.!NUM!3
+				id = stock_market_menu_events.283
 			}
 		}
 	}
 
 	option = {
-		name = stock_market_menu_events.!NUM!.EVTOPT4
+		name = stock_market_menu_events.28.EVTOPT4
 		custom_tooltip = STOCK_MARKET_BACK_TO_GENERAL
 		hidden_effect = {
 			country_event = {
@@ -54,9 +54,9 @@ country_event = {
 }
 
 country_event = {
-	id = stock_market_menu_events.!NUM!1
-	title = stock_market_menu_events.EVTNAME!NUM!1
-	desc = stock_market_menu_events.EVTDESC!NUM!1
+	id = stock_market_menu_events.281
+	title = stock_market_menu_events.EVTNAME281
+	desc = stock_market_menu_events.EVTDESC281
 	picture = KING_SICK_IN_BED_eventPicture
 
 	is_triggered_only = yes
@@ -65,109 +65,109 @@ country_event = {
 		#Calculate prices and show them here
 
 		hidden_effect = {
-			prepare_immediate_values_for_buying = { trade_good_id = !ID! }
+			prepare_immediate_values_for_buying = { trade_good_id = 18 }
 		}
 		# buying_$amount$_of_$trade_good_id$_price
 		# buying_$amount$_of_$trade_good_id$_total
 	}
 
 	option = {
-		name = stock_market_menu_events.!NUM!1.EVTOPT1
+		name = stock_market_menu_events.281.EVTOPT1
+		custom_tooltip = STOCK_MARKET_SUGAR_BUY_1000
+		hidden_effect = {
+
+			buy_trade_good_with_given_price_amount = {
+				amount = 1000
+				variable_name_total = buying_1000_of_18_total
+				trade_good_id = 18
+			}
+
+			country_event = {
+				id = stock_market_menu_events.2810 #Going back to the same option via other event
+			}			
+		}
+
+		trigger = {
+			has_country_flag = can_buy_1000_18
+		}
+
+	}
+
+	option = {
+		name = stock_market_menu_events.281.EVTOPT2
 		custom_tooltip = STOCK_MARKET_SUGAR_BUY_100
 		hidden_effect = {
 
 			buy_trade_good_with_given_price_amount = {
 				amount = 100
-				variable_name_total = buying_100_of_!ID!_total
-				trade_good_id = !ID!
+				variable_name_total = buying_100_of_18_total
+				trade_good_id = 18
 			}
 
 			country_event = {
-				id = stock_market_menu_events.!NUM!10 #Going back to the same option via other event
+				id = stock_market_menu_events.2810 #Going back to the same option via other event
 			}			
 		}
-
 		trigger = {
-			has_country_flag = can_buy_100_!ID!
+			has_country_flag = can_buy_100_18
 		}
-
 	}
 
 	option = {
-		name = stock_market_menu_events.!NUM!1.EVTOPT2
-		custom_tooltip = STOCK_MARKET_SUGAR_BUY_25
+		name = stock_market_menu_events.281.EVTOPT3
+		custom_tooltip = STOCK_MARKET_SUGAR_BUY_10
 		hidden_effect = {
 
 			buy_trade_good_with_given_price_amount = {
-				amount = 25
-				variable_name_total = buying_25_of_!ID!_total
-				trade_good_id = !ID!
+				amount = 10
+				variable_name_total = buying_10_of_18_total
+				trade_good_id = 18
 			}
 
 			country_event = {
-				id = stock_market_menu_events.!NUM!10 #Going back to the same option via other event
+				id = stock_market_menu_events.2810 #Going back to the same option via other event
 			}			
 		}
 		trigger = {
-			has_country_flag = can_buy_25_!ID!
+			has_country_flag = can_buy_10_18
 		}
 	}
 
 	option = {
-		name = stock_market_menu_events.!NUM!1.EVTOPT3
-		custom_tooltip = STOCK_MARKET_SUGAR_BUY_5
-		hidden_effect = {
-
-			buy_trade_good_with_given_price_amount = {
-				amount = 5
-				variable_name_total = buying_5_of_!ID!_total
-				trade_good_id = !ID!
-			}
-
-			country_event = {
-				id = stock_market_menu_events.!NUM!10 #Going back to the same option via other event
-			}			
-		}
-		trigger = {
-			has_country_flag = can_buy_5_!ID!
-		}
-	}
-
-	option = {
-		name = stock_market_menu_events.!NUM!1.EVTOPT4
+		name = stock_market_menu_events.281.EVTOPT4
 		custom_tooltip = STOCK_MARKET_SUGAR_BUY_1
 		hidden_effect = {
 
 			buy_trade_good_with_given_price_amount = {
 				amount = 1
-				variable_name_total = buying_1_of_!ID!_total
-				trade_good_id = !ID!
+				variable_name_total = buying_1_of_18_total
+				trade_good_id = 18
 			}
 
 			country_event = {
-				id = stock_market_menu_events.!NUM!10 #Going back to the same option via other event
+				id = stock_market_menu_events.2810 #Going back to the same option via other event
 			}			
 		}
 		trigger = {
-			has_country_flag = can_buy_1_!ID!
+			has_country_flag = can_buy_1_18
 		}
 	}
 
 	option = {
-		name = stock_market_menu_events.!NUM!1.EVTOPT5
+		name = stock_market_menu_events.281.EVTOPT5
 		custom_tooltip = GO_BACK_TO_SUGAR_MENU
 		hidden_effect = {
 			country_event = {
-				id = stock_market_menu_events.!NUM!
+				id = stock_market_menu_events.28
 			}			
 		}
 	}
 }
 
 country_event = {
-	id = stock_market_menu_events.!NUM!10
-	title = stock_market_menu_events.EVTNAME!NUM!1
-	desc = stock_market_menu_events.EVTDESC!NUM!1
+	id = stock_market_menu_events.2810
+	title = stock_market_menu_events.EVTNAME281
+	desc = stock_market_menu_events.EVTDESC281
 	picture = KING_SICK_IN_BED_eventPicture
 
 	is_triggered_only = yes
@@ -179,7 +179,7 @@ country_event = {
 
 	option = {
 		country_event = {
-			id = stock_market_menu_events.!NUM!1 #Going back to the same option
+			id = stock_market_menu_events.281 #Going back to the same option
 		}			
 		ai_chance = { 
 			factor = 1
@@ -188,9 +188,9 @@ country_event = {
 }
 
 country_event = {
-	id = stock_market_menu_events.!NUM!2
-	title = stock_market_menu_events.EVTNAME!NUM!2
-	desc = stock_market_menu_events.EVTDESC!NUM!2
+	id = stock_market_menu_events.282
+	title = stock_market_menu_events.EVTNAME282
+	desc = stock_market_menu_events.EVTDESC282
 	picture = KING_SICK_IN_BED_eventPicture
 
 	is_triggered_only = yes
@@ -199,7 +199,7 @@ country_event = {
 		#Calculate prices and show them here
 
 		hidden_effect = {
-			prepare_immediate_values_for_selling = { trade_good_id = !ID! }
+			prepare_immediate_values_for_selling = { trade_good_id = 18 }
 		}
 
 		# selling_$amount$_of_$trade_good_id$_price
@@ -207,113 +207,113 @@ country_event = {
 	}
 
 	option = {
-		name = stock_market_menu_events.!NUM!2.EVTOPT1
-		custom_tooltip = STOCK_MARKET_SUGAR_SELL_100
+		name = stock_market_menu_events.282.EVTOPT1
+		custom_tooltip = STOCK_MARKET_SUGAR_SELL_1000
 		hidden_effect = {
 
 			sell_trade_good_with_given_price_amount = {
-				amount = 100
-				variable_name_total = selling_100_of_!ID!_total
-				trade_good_id = !ID!
+				amount = 1000
+				variable_name_total = selling_1000_of_18_total
+				trade_good_id = 18
 			}
 
 			country_event = {
-				id = stock_market_menu_events.!NUM!11 #Going back to the same option via other event
+				id = stock_market_menu_events.2811 #Going back to the same option via other event
 			}			
 		}
 
 		trigger = {
 			check_variable = {
-				which = country_stock_market_stockpile_for_!ID!
+				which = country_stock_market_stockpile_for_18
+				value = 1000
+			}
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.282.EVTOPT2
+		custom_tooltip = STOCK_MARKET_SUGAR_SELL_100
+		hidden_effect = {
+
+			sell_trade_good_with_given_price_amount = {
+				amount = 100
+				variable_name_total = selling_100_of_18_total
+				trade_good_id = 18
+			}
+
+			country_event = {
+				id = stock_market_menu_events.2811 #Going back to the same option via other event
+			}			
+		}
+		trigger = {
+			check_variable = {
+				which = country_stock_market_stockpile_for_18
 				value = 100
 			}
 		}
 	}
 
 	option = {
-		name = stock_market_menu_events.!NUM!2.EVTOPT2
-		custom_tooltip = STOCK_MARKET_SUGAR_SELL_25
+		name = stock_market_menu_events.282.EVTOPT3
+		custom_tooltip = STOCK_MARKET_SUGAR_SELL_10
 		hidden_effect = {
 
 			sell_trade_good_with_given_price_amount = {
-				amount = 25
-				variable_name_total = selling_25_of_!ID!_total
-				trade_good_id = !ID!
+				amount = 10
+				variable_name_total = selling_10_of_18_total
+				trade_good_id = 18
 			}
 
 			country_event = {
-				id = stock_market_menu_events.!NUM!11 #Going back to the same option via other event
+				id = stock_market_menu_events.2811 #Going back to the same option via other event
 			}			
 		}
 		trigger = {
 			check_variable = {
-				which = country_stock_market_stockpile_for_!ID!
-				value = 25
+				which = country_stock_market_stockpile_for_18
+				value = 10
 			}
 		}
 	}
 
 	option = {
-		name = stock_market_menu_events.!NUM!2.EVTOPT3
-		custom_tooltip = STOCK_MARKET_SUGAR_SELL_5
-		hidden_effect = {
-
-			sell_trade_good_with_given_price_amount = {
-				amount = 5
-				variable_name_total = selling_5_of_!ID!_total
-				trade_good_id = !ID!
-			}
-
-			country_event = {
-				id = stock_market_menu_events.!NUM!11 #Going back to the same option via other event
-			}			
-		}
-		trigger = {
-			check_variable = {
-				which = country_stock_market_stockpile_for_!ID!
-				value = 5
-			}
-		}
-	}
-
-	option = {
-		name = stock_market_menu_events.!NUM!2.EVTOPT4
+		name = stock_market_menu_events.282.EVTOPT4
 		custom_tooltip = STOCK_MARKET_SUGAR_SELL_1
 		hidden_effect = {
 
 			sell_trade_good_with_given_price_amount = {
 				amount = 1
-				variable_name_total = selling_1_of_!ID!_total
-				trade_good_id = !ID!
+				variable_name_total = selling_1_of_18_total
+				trade_good_id = 18
 			}
 
 			country_event = {
-				id = stock_market_menu_events.!NUM!11 #Going back to the same option via other event
+				id = stock_market_menu_events.2811 #Going back to the same option via other event
 			}			
 		}
 		trigger = {
 			check_variable = {
-				which = country_stock_market_stockpile_for_!ID!
+				which = country_stock_market_stockpile_for_18
 				value = 1
 			}
 		}
 	}
 
 	option = {
-		name = stock_market_menu_events.!NUM!2.EVTOPT5
+		name = stock_market_menu_events.282.EVTOPT5
 		custom_tooltip = GO_BACK_TO_SUGAR_MENU
 		hidden_effect = {
 			country_event = {
-				id = stock_market_menu_events.!NUM!
+				id = stock_market_menu_events.28
 			}			
 		}
 	}
 }
 
 country_event = {
-	id = stock_market_menu_events.!NUM!11
-	title = stock_market_menu_events.EVTNAME!NUM!1
-	desc = stock_market_menu_events.EVTDESC!NUM!1
+	id = stock_market_menu_events.2811
+	title = stock_market_menu_events.EVTNAME281
+	desc = stock_market_menu_events.EVTDESC281
 	picture = KING_SICK_IN_BED_eventPicture
 
 	is_triggered_only = yes
@@ -325,7 +325,7 @@ country_event = {
 
 	option = {
 		country_event = {
-			id = stock_market_menu_events.!NUM!2 #Going back to the same option
+			id = stock_market_menu_events.282 #Going back to the same option
 		}			
 		ai_chance = { 
 			factor = 1
@@ -334,9 +334,9 @@ country_event = {
 }
 
 country_event = {
-	id = stock_market_menu_events.!NUM!3
-	title = stock_market_menu_events.EVTNAME!NUM!3
-	desc = stock_market_menu_events.EVTDESC!NUM!3
+	id = stock_market_menu_events.283
+	title = stock_market_menu_events.EVTNAME283
+	desc = stock_market_menu_events.EVTDESC283
 	picture = KING_SICK_IN_BED_eventPicture
 
 	is_triggered_only = yes
@@ -345,47 +345,47 @@ country_event = {
 	}
 
 	option = {
-		name = stock_market_menu_events.!NUM!3.EVTOPT1
+		name = stock_market_menu_events.283.EVTOPT1
 		custom_tooltip = STOCK_MARKET_SUGAR_CONSUMPTION_BAN
 		hidden_effect = {
 			switch_trade_good_policy = {
 				policy = "consumption_ban"
-				trade_good_id = !ID!
+				trade_good_id = 18
 			}
 			country_event = {
-				id = stock_market_menu_events.!NUM!12 #Going back to the same option via other event
+				id = stock_market_menu_events.2812 #Going back to the same option via other event
 			}		
 		}
 
 	}
 
 	option = {
-		name = stock_market_menu_events.!NUM!3.EVTOPT2
+		name = stock_market_menu_events.283.EVTOPT2
 		custom_tooltip = STOCK_MARKET_SUGAR_IMPORT_BAN
 		hidden_effect = {
 			hidden_effect = {
 				switch_trade_good_policy = {
 					policy = "import_ban"
-					trade_good_id = !ID!
+					trade_good_id = 18
 				}
 				country_event = {
-					id = stock_market_menu_events.!NUM!12 #Going back to the same option via other event
+					id = stock_market_menu_events.2812 #Going back to the same option via other event
 				}		
 			}		
 		}
 	}
 
 	option = {
-		name = stock_market_menu_events.!NUM!3.EVTOPT3
+		name = stock_market_menu_events.283.EVTOPT3
 		custom_tooltip = STOCK_MARKET_SUGAR_EXPORT_BAN
 		hidden_effect = {
 			hidden_effect = {
 				switch_trade_good_policy = {
 					policy = "export_ban"
-					trade_good_id = !ID!
+					trade_good_id = 18
 				}
 				country_event = {
-					id = stock_market_menu_events.!NUM!12 #Going back to the same option via other event
+					id = stock_market_menu_events.2812 #Going back to the same option via other event
 				}		
 			}		
 		}
@@ -393,23 +393,23 @@ country_event = {
 	}
 
 	option = {
-		name = stock_market_menu_events.!NUM!3.EVTOPT4
+		name = stock_market_menu_events.283.EVTOPT4
 		custom_tooltip = GO_BACK_TO_SUGAR_MENU
 		hidden_effect = {
 			country_event = {
-				id = stock_market_menu_events.!NUM!
+				id = stock_market_menu_events.28
 			}	
 			country_event = {
-				id = stock_market_menu_events.!NUM!12 #Going back to the same option via other event
+				id = stock_market_menu_events.2812 #Going back to the same option via other event
 			}			
 		}
 	}
 }
 
 country_event = {
-	id = stock_market_menu_events.!NUM!12
-	title = stock_market_menu_events.EVTNAME!NUM!1
-	desc = stock_market_menu_events.EVTDESC!NUM!1
+	id = stock_market_menu_events.2812
+	title = stock_market_menu_events.EVTNAME281
+	desc = stock_market_menu_events.EVTDESC281
 	picture = KING_SICK_IN_BED_eventPicture
 
 	is_triggered_only = yes
@@ -421,7 +421,7 @@ country_event = {
 
 	option = {
 		country_event = {
-			id = stock_market_menu_events.!NUM!3 #Going back to the same option
+			id = stock_market_menu_events.283 #Going back to the same option
 		}			
 		ai_chance = { 
 			factor = 1
