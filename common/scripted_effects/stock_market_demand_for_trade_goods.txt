@@ -159,7 +159,7 @@ update_demand_for_trade_good_5 = { #fur
 				}
 				change_variable = {
 					which = modifier_var
-					value = 2
+					value = 0.5
 				}
 			}
 			else_if = {
@@ -168,7 +168,7 @@ update_demand_for_trade_good_5 = { #fur
 				}
 				change_variable = {
 					which = modifier_var
-					value = 7
+					value = 2
 				}
 			}
 			if = {
@@ -177,11 +177,34 @@ update_demand_for_trade_good_5 = { #fur
 				}
 				change_variable = {
 					which = modifier_var
-					value = 15
+					value = 4
 				}
 			}
 		"
-		multiplier = 0.46
+		modifier_2 = "
+			if = {
+				limit = {
+					has_global_flag = depleted_beaver_happened
+					PREV = { continent = europe }
+				}
+				multiply_variable = {
+					which = modifier_var
+					value = 1.5
+				}
+			}
+			else_if = {
+				limit = {
+					has_global_flag = felt_hats_happened
+					PREV = { continent = north_america }
+				}
+				multiply_variable = {
+					which = modifier_var
+					value = 1.5
+				}
+			}
+			else = { }
+		"
+		multiplier = 0.3
 	}
 }
 
@@ -230,6 +253,38 @@ update_demand_for_trade_good_11 = { #slaves
 				superregion = southern_africa_superregion
 			}
 			NOT = { region = maghreb_region }
+		}
+		owner = {
+			export_to_variable = {
+				which = tempvar
+				value = trigger_value:development
+				who = PREV
+			}
+			multiply_variable = { 
+				which = tempvar
+				value = 0.375
+			}
+			change_variable = {
+				which = stock_market_demand_for_11
+				which = tempvar
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = triangle_happened
+			OR = {
+				continent = north_america
+				continent = south_america
+			}
+			OR = {
+				trade_goods = cotton
+				trade_goods = tobacco
+				trade_goods = sugar
+			}
+			NOT = { 
+				has_country_modifier = the_abolish_slavery_act
+			}
 		}
 		owner = {
 			export_to_variable = {
@@ -334,6 +389,27 @@ update_demand_for_trade_good_14 = { #chinaware
 			multiply_variable = { 
 				which = tempvar
 				value = 0.3
+			}
+			change_variable = {
+				which = stock_market_demand_for_14
+				which = tempvar
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = europeans_in_china_happened
+			continent = europe
+		}
+		owner = {
+			export_to_variable = {
+				which = tempvar
+				value = trigger_value:development
+				who = PREV
+			}
+			multiply_variable = { 
+				which = tempvar
+				value = 0.15
 			}
 			change_variable = {
 				which = stock_market_demand_for_14

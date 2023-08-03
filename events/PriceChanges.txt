@@ -48,8 +48,11 @@ country_event = {
 			value = 0.5
 			duration = -1
 		}
+		custom_tooltip = stock_market_triangle_trade_effect
+		
 		add_years_of_income  = 0.25
-		add_prestige = 20
+		
+		add_prestige_or_monarch_power = { amount = 20 }
 		set_global_flag = triangle_happened
 	}
 }
@@ -104,7 +107,17 @@ country_event = {
 			duration = -1
 		}
 		add_years_of_income  = 0.25
-		add_prestige = 20
+		add_prestige_or_monarch_power = { amount = 20 }
+		
+		custom_tooltip = " "
+		
+		custom_tooltip = stock_market_europe_will_now_produce_demand_for_chinaware
+		
+		2151 = {
+			owner = {
+				add_years_of_income = 1
+			}
+		}
 	}
 }
 
@@ -999,6 +1012,10 @@ country_event = {
 			value = 0.4
 			duration = -1
 		}
+		
+		set_global_flag = depleted_beaver_happened
+		
+		custom_tooltip = stock_market_beaver_tt
 	}
 }
 
@@ -1043,6 +1060,10 @@ country_event = {
 			value = 0.35
 			duration = -1
 		}
+		
+		set_global_flag = felt_hats_happened
+		
+		custom_tooltip = stock_market_felt_hats_tt
 	}
 }
 
