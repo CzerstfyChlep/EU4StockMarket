@@ -11,7 +11,7 @@ update_national_demand_for_trade_good_2 = { # wool
 	}
 	multiply_variable = { 
 		which = tempvar
-		value = 0.2
+		value = 0.05
 	}
 	change_variable = {
 		which = stock_market_demand_for_2
