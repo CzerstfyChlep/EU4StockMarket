@@ -2722,6 +2722,12 @@ country_event = {
 			value = 0.35
 			duration = -1
 		}
+		
+		set_global_flag = perfume_industry
+		
+		custom_tooltip = " "
+		
+		custom_tooltip = stock_market_perfume_industry_tt
 	}
 }
 
@@ -2753,6 +2759,7 @@ country_event = {
 	option = {
 		name = prices.42.a
 		add_dip_power = 100
+		set_global_flag = selective_breeding_happened
 		add_innovativeness_small_effect = yes
 		PDX_change_price = {
 			trade_goods = livestock
@@ -2773,6 +2780,11 @@ country_event = {
 			}
 			add_base_production = 3
 		}
+		
+		
+		custom_tooltip = " "
+		
+		custom_tooltip = stock_market_breeding_tt
 	}
 }
 
@@ -2815,7 +2827,7 @@ country_event = {
 	
 	option = {
 		name = prices.43.a
-		add_prestige = 15
+		add_prestige_or_monarch_power = { amount = 15 }
 		PDX_change_price = {
 			trade_goods = glass
 			key = BOHEMIAN_GLASS
@@ -2826,6 +2838,8 @@ country_event = {
 			add_base_production = 2
 			add_base_tax = 2
 		}
+		
+		custom_tooltip = stock_market_demand_for_glass_in_europe
 	}
 }
 
@@ -2864,6 +2878,8 @@ country_event = {
 			value = 0.25
 			duration = -1
 		}
+		set_global_flag = development_of_optics
+		custom_tooltip = stock_market_development_of_optics_tt
 	}
 }
 
@@ -2921,6 +2937,8 @@ country_event = {
 	
 	option = {
 		name = prices.45.a
+		
+		set_global_flag = lead_crystal_happened
 		add_years_of_income = 1
 		event_target:glass_province = {
 			change_trade_goods = glass
@@ -2933,6 +2951,10 @@ country_event = {
 			value = -0.65
 			duration = -1
 		}
+		
+		custom_tooltip = " "
+		
+		custom_tooltip = stock_market_reduce_supply_of_glass
 	}
 }
 
@@ -3018,5 +3040,9 @@ country_event = {
 			value = -0.30
 			duration = -1
 		}
+		
+		set_global_flag = stock_market_improved_coal_mining
+		
+		custom_tooltip = stock_market_no_more_coal_demand
 	}
 }

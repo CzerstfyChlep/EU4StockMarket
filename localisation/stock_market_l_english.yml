@@ -173,6 +173,12 @@
  stock_market_higher_demand_for_gems: "Demand for £gems£§YGems§! in provinces with at least §Y20§! Development will be increased by §G+25.0%§!."
  stock_market_increased_supply_for_gems: "Global Supply of £gems£§YGems§! is increased multiplicatively by §Y+20.0%§!."
  stock_market_less_incense_demand_from_protestants_and_reformed: "§YReformed§! and §YProtestant§! provinces will now have greatly decreased Demand for £incense£§YIncense§!."
+ stock_market_perfume_industry_tt: "Demand for £incense£§YIncense§! is increased multiplicatively by §G+15.0%§!."
+ stock_market_breeding_tt: "Demand for £livestock£§YLivestock§! is increased multiplicatively by §G+20.0%§!.\n\nDemand for £Wool£§YWool§! is increased multiplicatively by §G+10.0%§!."
+ stock_market_no_more_coal_demand: "Global £coal£§YCoal§! Demand is decreased multiplicatively by §R-30.0%§!."
+ stock_market_demand_for_glass_in_europe: "Demand for £glass£§YGlass§! in European Provinces is increased by §G+25.0!."
+ stock_market_reduce_supply_of_glass: "Supply of £glass£§YGlass§! is increased multiplicatively by §Y+50.0%§!."
+ stock_market_development_of_optics_tt: "Demand for §YGlass§! among nations with at least §Y20§! Innovativeness or with §YInnovative§! Ideas is increased by §G+200.0%§!."
  
  stock_market_huaynaputina: "Huaynaputina Eruption"
  stock_market_bottger_manufacture: "Bottger's Manufacture"

@@ -797,7 +797,7 @@ update_demand_for_trade_good_25 = { #incense
 			}
 			multiply_variable = { 
 				which = tempvar
-				value = 0.125
+				value = 0.05
 			}
 			if = {
 				limit = {
@@ -827,6 +827,18 @@ update_demand_for_trade_good_26 = { #glass
 		trade_good_id = 26
 		base = 0.0803652
 		multiplier = 0.6
+		modifier_1 = "
+			if = {
+				limit = {
+					has_global_flag = bohemian_glass_flag
+					PREV = { continent = europe }
+				}
+				change_variable = {
+					which = modifier_var
+					value = 0.25
+				}
+			}
+		"
 	}
 }
 
