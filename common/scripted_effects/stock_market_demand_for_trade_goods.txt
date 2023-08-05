@@ -50,6 +50,24 @@ update_demand_for_trade_good_0 = { #grain
 		trade_good_id = 0
 		base = 0.9
 		multiplier = 0.55
+		modifier_1 = "
+			if = {
+				limit = {
+					NOT = { has_global_flag = columbian_exchange_happened }
+					PREV = {
+						OR = {
+							continent = africa
+							continent = europe
+							continent = asia
+						}
+					}
+				}
+				change_variable = {
+					which = modifier_var
+					value = 0.25
+				}
+			}
+		"
 	}
 }
 
@@ -563,7 +581,7 @@ update_demand_for_trade_good_18 = { #sugar
 				region = mashriq_region
 				region = maghreb_region
 			}
-			NOT = { region = central_america_superregion }
+			NOT = { region = central_america_region }
 		}
 		owner = {
 			export_to_variable = {
@@ -731,7 +749,25 @@ update_demand_for_trade_good_24 = { #livestock
 		trade_good_id = 24
 		base = 0.6
 		multiplier = 0.425
+		modifier_1 = "
+			if = {
+				limit = {
+					NOT = { has_global_flag = columbian_exchange_happened }
+					PREV = {
+						OR = {
+							continent = north_america
+							continent = south_america
+						}
+					}
+				}
+				change_variable = {
+					which = modifier_var
+					value = -0.5
+				}
+			}
+		"
 	}
+	
 }
 
 update_demand_for_trade_good_25 = { #incense
@@ -750,6 +786,7 @@ update_demand_for_trade_good_25 = { #incense
 					has_global_flag = japanese_tea_happened
 					culture_group = japanese_g
 				}
+				religion_group = christian
 			}
 		}
 		owner = {
@@ -760,7 +797,22 @@ update_demand_for_trade_good_25 = { #incense
 			}
 			multiply_variable = { 
 				which = tempvar
-				value = 0.25
+				value = 0.125
+			}
+			if = {
+				limit = {
+					has_global_flag = incense_rejected
+					PREV = {
+						OR = {
+							religion = protestant
+							religion = reformed
+						}
+					}
+				}
+				multiply_variable = { 
+					which = tempvar
+					value = 0.1
+				}
 			}
 			change_variable = {
 				which = stock_market_demand_for_25
@@ -783,6 +835,47 @@ update_demand_for_trade_good_27 = { #papers
 		trade_good_id = 27
 		base = 0.1836316
 		multiplier = 0.65
+		modifier_1 = "
+			if = {
+				limit = {
+					has_global_flag = printing_paper_prices_rise
+					PREV = { printing_press = 90 }
+				}
+				change_variable = {
+					which = modifier_var
+					value = 0.5
+				}
+			}
+		"
+		modifier_2 = "
+			if = {
+				limit = {
+					has_global_flag = paper_in_bureaucracies
+					OR = {
+						government_rank = 2
+						is_great_power = yes
+					}
+				}
+				change_variable = {
+					which = modifier_var
+					value = 0.5
+				}
+			}
+		"
+		modifier_3 = "
+			if = {
+				limit = {
+					has_global_flag = popular_literacy
+					PREV = {
+						has_building = university
+					}
+				}
+				change_variable = {
+					which = modifier_var
+					value = 0.5
+				}
+			}
+		"
 	}
 }
 
@@ -790,7 +883,21 @@ update_demand_for_trade_good_28 = { #gems
 	demand_from_province_dev = {
 		trade_good_id = 28
 		base = 0.132
-		multiplier = 0.9
+		multiplier = 0.9]
+		modifier_1 = "
+			if = {
+				limit = {
+					has_global_flag = faceting_happened
+					PREV = {
+						development = 20
+					}
+				}
+				change_variable = {
+					which = modifier_var
+					value = 0.25
+				}
+			}
+		"
 	}
 }
 

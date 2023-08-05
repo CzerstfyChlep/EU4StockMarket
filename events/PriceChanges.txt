@@ -1976,6 +1976,7 @@ country_event = {
 				}
 				save_event_target_as = bookmarket_here #Used in localization
 			}
+			set_global_flag = printing_paper_prices_rise
 		}
 	}
 	
@@ -2005,6 +2006,8 @@ country_event = {
 			value = 0.25
 			duration = -1
 		}
+		
+		custom_tooltip = stock_market_printing_press_increases_paper_demand
 	}
 	option = {
 		name = prices.33.b
@@ -2021,6 +2024,8 @@ country_event = {
 			value = 0.25
 			duration = -1
 		}
+		
+		custom_tooltip = stock_market_printing_press_increases_paper_demand
 	}
 }
 
@@ -2200,6 +2205,10 @@ country_event = {
 			value = -0.5
 			duration = -1
 		}
+		
+		set_global_flag = hollender_beater_flag
+		
+		custom_tooltip = stock_market_global_supply_of_paper_will_change_by_50
 	}
 }
 
@@ -2252,6 +2261,9 @@ country_event = {
 			value = 0.25
 			duration = -1
 		}
+		set_global_flag = paper_in_bureaucracies
+		
+		custom_tooltip = stock_market_great_powers_and_empires_will_produce_50_more_demand_for_paper
 	}
 }
 
@@ -2338,6 +2350,9 @@ country_event = {
 				duration = 3650
 			}
 		}
+		
+		set_global_flag = popular_literacy
+		custom_tooltip = stock_market_provinces_with_library
 	}
 }
 
@@ -2412,6 +2427,9 @@ country_event = {
 			value = 0.25
 			duration = -1
 		}
+		
+		set_global_flag = columbian_exchange_happened
+		custom_tooltip = stock_market_columbian_exchange_tt
 	}
 }
 
@@ -2471,6 +2489,8 @@ country_event = {
 	
 	option = {
 		name = prices.38.a
+		
+		set_global_flag = faceting_happened
 		event_target:diamond_city = {
 			if = {
 				limit = {
@@ -2483,12 +2503,14 @@ country_event = {
 				duration = -1
 			}
 		}
+		
 		PDX_change_price = {
 			trade_goods = gems
 			key = FACETING
 			value = 0.25
 			duration = -1
 		}
+		custom_tooltip = stock_market_higher_demand_for_gems
 	}
 }
 
@@ -2535,13 +2557,19 @@ country_event = {
 	option = {
 		name = prices.39.a
 		add_years_of_income = 1.5
-		add_prestige = 20
+		add_prestige_or_monarch_power = { amount = 20 }
+		
+		custom_tooltip = " "
+		
 		PDX_change_price = {
 			trade_goods = gems
 			key = BRAZILIAN_DIAMONDS
 			value = -0.5
 			duration = -1
 		}
+		
+		set_global_flag = brazilian_gems_happened
+		custom_tooltip = stock_market_increased_supply_for_gems
 	}
 }
 
@@ -2588,6 +2616,9 @@ country_event = {
 			value = -0.25
 			duration = -1
 		}
+		
+		set_global_flag = incense_rejected
+		custom_tooltip = stock_market_less_incense_demand_from_protestants_and_reformed
 	}
 }
 

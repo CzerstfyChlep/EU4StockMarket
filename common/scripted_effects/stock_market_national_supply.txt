@@ -96,10 +96,26 @@ update_national_supply_for_trade_good_26 = { # glass
 
 }
 update_national_supply_for_trade_good_27 = { # paper
-
+	if = {
+		limit = {
+			has_global_flag = hollender_beater_flag
+		}
+		multiply_variable = { 
+			which = stock_market_supply_for_27
+			value = 1.5
+		}
+	}
 }
 update_national_supply_for_trade_good_28 = { # gems
-
+	if = {
+		limit = {
+			has_global_flag = brazilian_gems_happened
+		}
+		multiply_variable = { 
+			which = stock_market_supply_for_28
+			value = 1.2
+		}
+	}
 }
 update_national_supply_for_trade_good_29 = { # coal
 

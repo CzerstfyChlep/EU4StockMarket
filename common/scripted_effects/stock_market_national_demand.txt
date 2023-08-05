@@ -107,7 +107,7 @@ update_national_demand_for_trade_good_6 = { # salt
 	
 	multiply_variable = {
 		which = tempvar
-		value = 0.2
+		value = 0.05
 	}
 	
 	change_variable = {
