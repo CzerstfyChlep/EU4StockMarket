@@ -156,7 +156,6 @@ country_event = {
 	option = {
 		name = prices.3.a
 		61 = {
-			add_base_production = 4
 			change_trade_goods = chinaware
 			if = {
 				limit = {
@@ -165,6 +164,11 @@ country_event = {
 				hidden_effect = { remove_building = weapons }
 				add_building = mills
 			}
+			
+			add_permanent_province_modifier = {
+				name = stock_market_bottger_manufacture
+				duration = -1
+			}
 		}
 		PDX_change_price = {
 			trade_goods = chinaware
@@ -172,7 +176,12 @@ country_event = {
 			value = -0.5
 			duration = -1
 		}
-		add_prestige = 20
+		
+		custom_tooltip = stock_market_bottger_tooltip
+		
+		custom_tooltip = " "
+		
+		add_prestige_or_monarch_power = { amount = 20 }
 	}
 }
 
@@ -213,6 +222,9 @@ country_event = {
 			value = -0.1
 			duration = -1
 		}
+		
+		set_global_flag = protestant_fish_happened
+		custom_tooltip = stock_market_protestants_dont_eat_fish
 	}
 }
 
@@ -233,10 +245,10 @@ country_event = {
 		OR = {
 			capital_scope = { continent = europe }
 			AND = {
+				dip_tech = 20
 				any_owned_province = {
 					continent =  europe
 				}
-				dip_tech = 20
 			}
 		}
 		NOT = { has_global_flag = coffee_boom_happened }
@@ -265,8 +277,14 @@ country_event = {
 			value = 0.5
 			duration = -1
 		}
-		add_years_of_income  = 0.25
-		add_prestige = 20
+		
+		set_global_flag = coffee_boom_happened
+		add_years_of_income = 0.25
+		add_prestige_or_monarch_power = { amount = 20 }
+		
+		custom_tooltip = " "
+		
+		custom_tooltip = stock_market_coffee_boom_effect
 	}
 }
 
@@ -355,6 +373,11 @@ country_event = {
 			value = 0.20
 			duration = -1
 		}
+		
+		custom_tooltip = stock_market_wool_and_cotton_demand_changes
+		set_country_flag = stock_market_improvement
+		set_global_flag = stock_market_improvement_global
+		
 		add_mercantilism = -2
 	}
 	option = {
@@ -490,8 +513,13 @@ country_event = {
 			value = 0.25
 			duration = -1
 		}
+		set_global_flag = tea_and_sugar_happened
 		add_years_of_income  = 0.25
-		add_prestige = 20
+		add_prestige_or_monarch_power = { amount = 20 }
+		
+		custom_tooltip = " "
+		
+		custom_tooltip = stock_market_tea_will_generate_demand_for_sugar
 	}
 }
 
@@ -548,8 +576,13 @@ country_event = {
 			value = 0.5
 			duration = -1
 		}
-		add_years_of_income  = 0.25
-		add_prestige = 20
+		set_global_flag = spice_trade_happened
+		add_years_of_income = 0.25
+		add_prestige_or_monarch_power = { amount = 20 }
+		
+		custom_tooltip = " "
+		
+		custom_tooltip = stock_market_add_demand_from_european_provs_for_spice # start craze instead?
 	}
 }
 
@@ -576,13 +609,20 @@ country_event = {
 	
 	option = {
 		name = prices.9.a
+		
+		set_global_flag = abolitionism_happened
+		
 		PDX_change_price = {
 			trade_goods = slaves
 			key = ABOLITIONISM
 			value = -0.4
 			duration = -1
 		}
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
+		
+		custom_tooltip = " "
+		
+		custom_tooltip = stock_market_our_colonies_will_not
 	}
 }
 

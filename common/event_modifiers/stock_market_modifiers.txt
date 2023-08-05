@@ -7,3 +7,8 @@ stock_market_huaynaputina = {
 	trade_goods_size = -0.8
 	trade_goods_size_modifier = -1
 }
+
+stock_market_bottger_manufacture = {
+	trade_goods_size = 1
+	trade_value_modifier = 2
+}

@@ -145,6 +145,17 @@ update_demand_for_trade_good_4 = { #fish
 		trade_good_id = 4
 		base = 0.4
 		multiplier = 0.5
+		modifier_1 = "
+			if = {
+				limit = {
+					has_global_flag = protestant_fish_happened
+				}
+				change_variable = {
+					which = modifier_var
+					value = -0.9
+				}
+			}
+		"
 	}
 }
 
@@ -283,7 +294,12 @@ update_demand_for_trade_good_11 = { #slaves
 				trade_goods = sugar
 			}
 			NOT = { 
-				has_country_modifier = the_abolish_slavery_act
+				owner = {
+					OR = {
+						has_country_modifier = the_abolish_slavery_act
+						overlord = { has_country_modifier = the_abolish_slavery_act }
+					}
+				}
 			}
 		}
 		owner = {
@@ -411,6 +427,15 @@ update_demand_for_trade_good_14 = { #chinaware
 				which = tempvar
 				value = 0.15
 			}
+			if = {
+				limit = {
+					has_global_flag = bottger_happened
+				}
+				multiply_variable = { 
+					which = tempvar
+					value = 0.5
+				}
+			}
 			change_variable = {
 				which = stock_market_demand_for_14
 				which = tempvar
@@ -437,6 +462,28 @@ update_demand_for_trade_good_15 = { #spices
 			multiply_variable = { 
 				which = tempvar
 				value = 0.55
+			}
+			change_variable = {
+				which = stock_market_demand_for_15
+				which = tempvar
+			}
+		}
+	}
+	
+	if = {
+		limit = {
+			has_global_flag = spice_trade_happened
+			continent = europe 
+		}
+		owner = {
+			export_to_variable = {
+				which = tempvar
+				value = trigger_value:development
+				who = PREV
+			}
+			multiply_variable = { 
+				which = tempvar
+				value = 0.25
 			}
 			change_variable = {
 				which = stock_market_demand_for_15
