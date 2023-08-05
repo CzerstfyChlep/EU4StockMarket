@@ -257,6 +257,10 @@ set_price_for_trade_good = {
 			which = difference_value_$trade_good_id$
 			which = stock_market_demand_for_$trade_good_id$
 		}
+		change_variable = {
+			which = difference_value_$trade_good_id$
+			which = stock_market_extra_demand_for_$trade_good_id$ #this is demand induced by buying goods. Slowly decays.
+		}
 		subtract_variable = {
 			which = difference_value_$trade_good_id$
 			which = stock_market_supply_for_$trade_good_id$
@@ -268,6 +272,10 @@ set_price_for_trade_good = {
 		change_variable = {
 			which = sum_value_$trade_good_id$
 			which = stock_market_demand_for_$trade_good_id$
+		}
+		change_variable = {
+			which = sum_value_$trade_good_id$
+			which = stock_market_extra_demand_for_$trade_good_id$ #this is demand induced by buying goods. Slowly decays.
 		}
 		set_variable = {
 			which = price_multiplier_$trade_good_id$
