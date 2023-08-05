@@ -5,18 +5,38 @@ update_national_demand_for_trade_good_1 = { # wine
 
 }
 update_national_demand_for_trade_good_2 = { # wool
-	# set_variable = { #supply of cloth = demand for wool
-		# which = tempvar
-		# which = stock_market_supply_for_3
-	# }
-	# multiply_variable = { 
-		# which = tempvar
-		# value = 0.2
-	# }
-	# change_variable = {
-		# which = stock_market_demand_for_2
-		# which = tempvar
-	# }
+	set_variable = { #supply of cloth = demand for wool
+		which = tempvar
+		which = stock_market_supply_for_3
+	}
+	multiply_variable = { 
+		which = tempvar
+		value = 0.05
+	}
+	change_variable = {
+		which = stock_market_demand_for_2
+		which = tempvar
+	}
+	
+	if = {
+		limit = {
+			has_country_flag = stock_market_improvement
+		}
+		multiply_variable = { 
+			which = stock_market_demand_for_2
+			value = 0.5
+		}
+	}
+	
+	if = {
+		limit = {
+			has_global_flag = stock_market_improvement_global
+		}
+		multiply_variable = { 
+			which = stock_market_demand_for_2
+			value = 0.9
+		}
+	}
 }
 update_national_demand_for_trade_good_3 = { # cloth
 
@@ -103,7 +123,15 @@ update_national_demand_for_trade_good_10 = { # iron
 
 }
 update_national_demand_for_trade_good_11 = { # slaves
-
+	if = {
+		limit = {
+			has_global_flag = abolitionism_happened
+		}
+		multiply_variable = { 
+			which = stock_market_demand_for_11
+			value = 0.9
+		}
+	}
 }
 update_national_demand_for_trade_good_12 = { # ivory
 
@@ -145,13 +173,55 @@ update_national_demand_for_trade_good_15 = { # spices
 	}
 }
 update_national_demand_for_trade_good_16 = { # coffee
-
+	if = {
+		limit = {
+			has_global_flag = coffee_boom_happened
+		}
+		multiply_variable = { 
+			which = stock_market_demand_for_16
+			value = 1.15
+		}
+	}
 }
 update_national_demand_for_trade_good_17 = { # cotton
-
+	if = {
+		limit = {
+			has_country_flag = stock_market_improvement
+		}
+		multiply_variable = { 
+			which = stock_market_demand_for_17
+			value = 2
+		}
+	}
+	
+	if = {
+		limit = {
+			has_global_flag = stock_market_improvement_global
+		}
+		multiply_variable = { 
+			which = stock_market_demand_for_17
+			value = 1.25
+		}
+	}
 }
 update_national_demand_for_trade_good_18 = { # sugar
-
+	if = {
+		limit = {
+			has_global_flag = tea_and_sugar_happened
+		}
+		set_variable = {
+			which = tempvar
+			which = stock_market_demand_for_13
+		}
+		multiply_variable = { 
+			which = tempvar
+			value = 0.5
+		}
+		change_variable = {
+			which = stock_market_demand_for_18
+			which = tempvar
+		}
+	}
 }
 update_national_demand_for_trade_good_19 = { # tobacco
 

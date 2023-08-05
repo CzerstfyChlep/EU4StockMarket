@@ -145,7 +145,15 @@
  stock_market_felt_hats_tt: "§YDemand§! for £fur£§YFur§! in §YNorth American§! provinces is increased multiplicatively by §G+50.0%§!."
  stock_market_triangle_trade_effect: "§YAmerican§! Provinces producing §YTobacco§!, §YSugar§! and §YCotton§! goods will now generate demand for £slaves£§YSlaves§! until Slavery is Abolished in the country."
  stock_market_europe_will_now_produce_demand_for_chinaware: "§YEuropean§! Provinces will now generate demand for £chinaware£§YChinaware§!."
+ stock_market_bottger_tooltip: "§YEuropean§! Provinces will now generate half as demand for £chinaware£§YChinaware§!."
+ stock_market_protestants_dont_eat_fish: "§YDemand§! for £fish£§YFish§! in §YProtestant§! provinces is decreased multiplicatively by §R-90.0%§!."
+ stock_market_coffee_boom_effect: "Global §YDemand§! for £coffee£§YCoffee§! is increased multiplicatively by §G+15.0%§!."
+ stock_market_wool_and_cotton_demand_changes: "[Root.GetAdjective] Demand for £wool£§YWool§! will be changed by §R-50.0%§!.\n\n[Root.GetAdjective] Demand for £cotton£§YCotton§! will be changed by §G+100.0%§!.\n\nGlobal Demand £wool£§YWool§! will be decreased multiplicatively by §R-10.0%§!.\n\nGlobal Demand £cotton£§YCotton§! will be decreased multiplicatively by §G+25.0%§!."
+ stock_market_tea_will_generate_demand_for_sugar: "50.0% of Supply of £tea£§YTea§! will generate §YDemand§! for £sugar£§YSugar§!."
+ stock_market_add_demand_from_european_provs_for_spice: "§YEuropean§! Provinces will now generate demand for £spices£§YSpices§!."
+ stock_market_our_colonies_will_not: "Our colonies will not generate Demand for £slaves£§YSlaves§!.\n\nGlobal §YDemand§! for £slaves£§YSlaves§! is decreased multiplicatively by §R-10.0%§!."
  
  stock_market_huaynaputina: "Huaynaputina Eruption"
+ stock_market_bottger_manufacture: "Bottger's Manufacture"
  
  stock_market_local_demand_for_foundry: "Local Cannon Foundry"
