@@ -95,12 +95,12 @@ country_event = {
 
 	option = {
 		name = stock_market_menu_events.331.EVTOPT2
-		custom_tooltip = STOCK_MARKET_TROPICAL_WOOD_BUY_100
+		custom_tooltip = STOCK_MARKET_TROPICAL_WOOD_BUY_200
 		hidden_effect = {
 
 			buy_trade_good_with_given_price_amount = {
-				amount = 100
-				variable_name_total = buying_100_of_23_total
+				amount = 200
+				variable_name_total = buying_200_of_23_total
 				trade_good_id = 23
 			}
 
@@ -109,12 +109,32 @@ country_event = {
 			}			
 		}
 		trigger = {
-			has_country_flag = can_buy_100_23
+			has_country_flag = can_buy_200_23
 		}
 	}
 
 	option = {
 		name = stock_market_menu_events.331.EVTOPT3
+		custom_tooltip = STOCK_MARKET_TROPICAL_WOOD_BUY_50
+		hidden_effect = {
+
+			buy_trade_good_with_given_price_amount = {
+				amount = 50
+				variable_name_total = buying_50_of_23_total
+				trade_good_id = 23
+			}
+
+			country_event = {
+				id = stock_market_menu_events.3310 #Going back to the same option via other event
+			}			
+		}
+		trigger = {
+			has_country_flag = can_buy_50_23
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.331.EVTOPT4
 		custom_tooltip = STOCK_MARKET_TROPICAL_WOOD_BUY_10
 		hidden_effect = {
 
@@ -130,26 +150,6 @@ country_event = {
 		}
 		trigger = {
 			has_country_flag = can_buy_10_23
-		}
-	}
-
-	option = {
-		name = stock_market_menu_events.331.EVTOPT4
-		custom_tooltip = STOCK_MARKET_TROPICAL_WOOD_BUY_1
-		hidden_effect = {
-
-			buy_trade_good_with_given_price_amount = {
-				amount = 1
-				variable_name_total = buying_1_of_23_total
-				trade_good_id = 23
-			}
-
-			country_event = {
-				id = stock_market_menu_events.3310 #Going back to the same option via other event
-			}			
-		}
-		trigger = {
-			has_country_flag = can_buy_1_23
 		}
 	}
 
@@ -398,9 +398,6 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = stock_market_menu_events.33
-			}	
-			country_event = {
-				id = stock_market_menu_events.3312 #Going back to the same option via other event
 			}			
 		}
 	}

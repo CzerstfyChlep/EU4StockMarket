@@ -1,0 +1,779 @@
+defined_text = {
+    name = GetColouredSupplyGrowthFor0
+	random = no
+    text = {
+        localisation_key = positive_supply_growth_for_0
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_supply_growth_for_0
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_supply_growth_for_0
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_supply_growth_for_0
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_supply_growth_for_0
+    }
+}
+
+defined_text = {
+    name = GetColouredSupplyGrowthFor1
+	random = no
+    text = {
+        localisation_key = positive_supply_growth_for_1
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_supply_growth_for_1
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_supply_growth_for_1
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_supply_growth_for_1
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_supply_growth_for_1
+    }
+}
+
+defined_text = {
+    name = GetColouredSupplyGrowthFor2
+	random = no
+    text = {
+        localisation_key = positive_supply_growth_for_2
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_supply_growth_for_2
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_supply_growth_for_2
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_supply_growth_for_2
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_supply_growth_for_2
+    }
+}
+
+defined_text = {
+    name = GetColouredSupplyGrowthFor3
+	random = no
+    text = {
+        localisation_key = positive_supply_growth_for_3
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_supply_growth_for_3
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_supply_growth_for_3
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_supply_growth_for_3
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_supply_growth_for_3
+    }
+}
+
+defined_text = {
+    name = GetColouredSupplyGrowthFor4
+	random = no
+    text = {
+        localisation_key = positive_supply_growth_for_4
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_supply_growth_for_4
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_supply_growth_for_4
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_supply_growth_for_4
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_supply_growth_for_4
+    }
+}
+
+defined_text = {
+    name = GetColouredSupplyGrowthFor5
+	random = no
+    text = {
+        localisation_key = positive_supply_growth_for_5
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_supply_growth_for_5
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_supply_growth_for_5
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_supply_growth_for_5
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_supply_growth_for_5
+    }
+}
+
+defined_text = {
+    name = GetColouredSupplyGrowthFor6
+	random = no
+    text = {
+        localisation_key = positive_supply_growth_for_6
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_supply_growth_for_6
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_supply_growth_for_6
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_supply_growth_for_6
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_supply_growth_for_6
+    }
+}
+
+defined_text = {
+    name = GetColouredSupplyGrowthFor7
+	random = no
+    text = {
+        localisation_key = positive_supply_growth_for_7
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_supply_growth_for_7
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_supply_growth_for_7
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_supply_growth_for_7
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_supply_growth_for_7
+    }
+}
+
+defined_text = {
+    name = GetColouredSupplyGrowthFor8
+	random = no
+    text = {
+        localisation_key = positive_supply_growth_for_8
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_supply_growth_for_8
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_supply_growth_for_8
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_supply_growth_for_8
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_supply_growth_for_8
+    }
+}
+
+defined_text = {
+    name = GetColouredSupplyGrowthFor10
+	random = no
+    text = {
+        localisation_key = positive_supply_growth_for_10
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_supply_growth_for_10
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_supply_growth_for_10
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_supply_growth_for_10
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_supply_growth_for_10
+    }
+}
+
+defined_text = {
+    name = GetColouredSupplyGrowthFor11
+	random = no
+    text = {
+        localisation_key = positive_supply_growth_for_11
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_supply_growth_for_11
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_supply_growth_for_11
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_supply_growth_for_11
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_supply_growth_for_11
+    }
+}
+
+defined_text = {
+    name = GetColouredSupplyGrowthFor12
+	random = no
+    text = {
+        localisation_key = positive_supply_growth_for_12
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_supply_growth_for_12
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_supply_growth_for_12
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_supply_growth_for_12
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_supply_growth_for_12
+    }
+}
+
+defined_text = {
+    name = GetColouredSupplyGrowthFor13
+	random = no
+    text = {
+        localisation_key = positive_supply_growth_for_13
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_supply_growth_for_13
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_supply_growth_for_13
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_supply_growth_for_13
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_supply_growth_for_13
+    }
+}
+
+defined_text = {
+    name = GetColouredSupplyGrowthFor14
+	random = no
+    text = {
+        localisation_key = positive_supply_growth_for_14
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_supply_growth_for_14
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_supply_growth_for_14
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_supply_growth_for_14
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_supply_growth_for_14
+    }
+}
+
+defined_text = {
+    name = GetColouredSupplyGrowthFor15
+	random = no
+    text = {
+        localisation_key = positive_supply_growth_for_15
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_supply_growth_for_15
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_supply_growth_for_15
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_supply_growth_for_15
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_supply_growth_for_15
+    }
+}
+
+defined_text = {
+    name = GetColouredSupplyGrowthFor16
+	random = no
+    text = {
+        localisation_key = positive_supply_growth_for_16
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_supply_growth_for_16
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_supply_growth_for_16
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_supply_growth_for_16
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_supply_growth_for_16
+    }
+}
+
+defined_text = {
+    name = GetColouredSupplyGrowthFor17
+	random = no
+    text = {
+        localisation_key = positive_supply_growth_for_17
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_supply_growth_for_17
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_supply_growth_for_17
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_supply_growth_for_17
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_supply_growth_for_17
+    }
+}
+
+defined_text = {
+    name = GetColouredSupplyGrowthFor18
+	random = no
+    text = {
+        localisation_key = positive_supply_growth_for_18
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_supply_growth_for_18
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_supply_growth_for_18
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_supply_growth_for_18
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_supply_growth_for_18
+    }
+}
+
+defined_text = {
+    name = GetColouredSupplyGrowthFor19
+	random = no
+    text = {
+        localisation_key = positive_supply_growth_for_19
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_supply_growth_for_19
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_supply_growth_for_19
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_supply_growth_for_19
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_supply_growth_for_19
+    }
+}
+
+defined_text = {
+    name = GetColouredSupplyGrowthFor20
+	random = no
+    text = {
+        localisation_key = positive_supply_growth_for_20
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_supply_growth_for_20
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_supply_growth_for_20
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_supply_growth_for_20
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_supply_growth_for_20
+    }
+}
+
+defined_text = {
+    name = GetColouredSupplyGrowthFor21
+	random = no
+    text = {
+        localisation_key = positive_supply_growth_for_21
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_supply_growth_for_21
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_supply_growth_for_21
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_supply_growth_for_21
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_supply_growth_for_21
+    }
+}
+
+defined_text = {
+    name = GetColouredSupplyGrowthFor22
+	random = no
+    text = {
+        localisation_key = positive_supply_growth_for_22
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_supply_growth_for_22
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_supply_growth_for_22
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_supply_growth_for_22
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_supply_growth_for_22
+    }
+}
+
+defined_text = {
+    name = GetColouredSupplyGrowthFor23
+	random = no
+    text = {
+        localisation_key = positive_supply_growth_for_23
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_supply_growth_for_23
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_supply_growth_for_23
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_supply_growth_for_23
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_supply_growth_for_23
+    }
+}
+
+defined_text = {
+    name = GetColouredSupplyGrowthFor24
+	random = no
+    text = {
+        localisation_key = positive_supply_growth_for_24
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_supply_growth_for_24
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_supply_growth_for_24
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_supply_growth_for_24
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_supply_growth_for_24
+    }
+}
+
+defined_text = {
+    name = GetColouredSupplyGrowthFor25
+	random = no
+    text = {
+        localisation_key = positive_supply_growth_for_25
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_supply_growth_for_25
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_supply_growth_for_25
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_supply_growth_for_25
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_supply_growth_for_25
+    }
+}
+
+defined_text = {
+    name = GetColouredSupplyGrowthFor26
+	random = no
+    text = {
+        localisation_key = positive_supply_growth_for_26
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_supply_growth_for_26
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_supply_growth_for_26
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_supply_growth_for_26
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_supply_growth_for_26
+    }
+}
+
+defined_text = {
+    name = GetColouredSupplyGrowthFor27
+	random = no
+    text = {
+        localisation_key = positive_supply_growth_for_27
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_supply_growth_for_27
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_supply_growth_for_27
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_supply_growth_for_27
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_supply_growth_for_27
+    }
+}
+
+defined_text = {
+    name = GetColouredSupplyGrowthFor28
+	random = no
+    text = {
+        localisation_key = positive_supply_growth_for_28
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_supply_growth_for_28
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_supply_growth_for_28
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_supply_growth_for_28
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_supply_growth_for_28
+    }
+}
+
+defined_text = {
+    name = GetColouredSupplyGrowthFor29
+	random = no
+    text = {
+        localisation_key = positive_supply_growth_for_29
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_supply_growth_for_29
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_supply_growth_for_29
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_supply_growth_for_29
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_supply_growth_for_29
+    }
+}
+
+defined_text = {
+    name = GetColouredSupplyGrowthFor30
+	random = no
+    text = {
+        localisation_key = positive_supply_growth_for_30
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_supply_growth_for_30
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_supply_growth_for_30
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_supply_growth_for_30
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_supply_growth_for_30
+    }
+}

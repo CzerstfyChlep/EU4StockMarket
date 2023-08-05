@@ -1,29 +1,3 @@
-stock_market_refresh_prices_bimonthly = {
-	potential = {
-		always = yes
-	}
-
-	hidden = yes 
-	
-	trigger = {
-		had_province_flag = {
-			flag = stock_market_refresh_flag
-			days = 60
-		}
-	}
-	
-	#Province scope
-	on_activation = {
-		clr_province_flag = stock_market_refresh_flag
-		set_province_flag = stock_market_refresh_flag
-		priority_update = yes
-	}
-	
-	on_deactivation = {
-	
-	}
-}
-
 stock_market_refresh_prices_monthly = {
 	potential = {
 		always = yes
@@ -245,11 +219,7 @@ stock_market_refresh_prices_monthly = {
 
 		clr_province_flag = first_game_month_flag
 
-		FRA = {
-			country_event = {
-				id = stock_market_debug_events.4
-			}
-		}
+		priority_update = yes
 	}
 	
 	on_deactivation = {

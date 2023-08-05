@@ -1,0 +1,180 @@
+
+#ivory tea chinaware coffee cotton sugar tobacco cocoa cloves coal(in theory)
+namespace = stock_market_craze
+country_event = {
+	id = stock_market_craze.122 #ivory
+	title = stock_market_craze.122.t
+	desc = he_bought_teaser.122.desc
+	picture = HE_BOUGHT_eventPicture
+	is_triggered_only = yes
+	
+	immediate = {
+		#consumption banned during craze
+		if = {
+			limit = {
+				has_country_flag = consumption_ban_for_12
+			}
+			add_country_modifier = { 
+				name = stock_market_ivory_craze_ban
+				duration = -1  
+				desc = stock_market_ivory_craze_ban_tooltip
+				hidden = yes
+			}
+
+		}
+	}
+}
+
+
+#Craze spreads to province
+province_event = {
+	id = stock_market_craze.120 #ivory $ID$0
+	title = stock_market_craze.120.t
+	desc = he_bought_teaser.120.desc
+	picture = HE_BOUGHT_eventPicture
+	hidden = yes
+
+	mean_time_to_happen = {
+		months = 24
+		modifier = {
+			factor = 0.75
+			province_has_center_of_trade_of_level = 1
+		}
+		modifier = {
+			factor = 0.5
+			province_has_center_of_trade_of_level = 2
+		}
+		modifier = {
+			factor = 0.8
+			development = 9
+		}
+		modifier = {
+			factor = 0.75
+			owner = {
+				trade_income_percentage = 0.33
+			}
+		}
+	}
+
+	trigger = {
+		NOT = {
+			has_province_modifier = stock_market_ivory_craze_province
+			has_province_modifier = stock_market_ivory_consumption_province
+		}
+		OR = {
+			any_neighbor_province = {
+				OR = {
+					has_province_modifier = stock_market_ivory_craze_province
+					has_province_modifier = stock_market_ivory_consumption_province
+				}
+			}
+			AND = {
+				province_has_center_of_trade_of_level = 1
+				any_trade_node_member_province = {
+					OR = {
+						has_province_modifier = stock_market_ivory_craze_province
+						has_province_modifier = stock_market_ivory_consumption_province
+					}
+				}
+			}
+		}
+	}
+
+	immediate = {
+		owner = {
+			if = {
+				limit = {
+					NOT = {
+						num_of_cities = 15
+					}
+				}
+				
+			}
+			else = {
+				random = {
+					chance = 5
+					#Country wide craze event
+				}
+
+				if = {
+					limit = {
+						NOT = {
+							#Country wide craze modifier
+						}
+					}
+
+					if = {
+						limit = {
+							calc_true_if = {
+								all_owned_province = {
+									OR = {
+										has_province_modifier = stock_market_ivory_craze_province
+										has_province_modifier = stock_market_ivory_consumption_province
+									}
+								}
+								amount = 15
+							}
+						}
+						#Country wide craze event
+					}
+				}
+
+			}		
+		}
+		add_permanent_province_modifier = { 
+			name = stock_market_ivory_craze_province
+			duration = -1  
+			desc = stock_market_ivory_craze_province_tooltip
+		}
+	}
+
+	option = {
+		ai_chance = { factor = 1 }
+	}
+}
+
+#Craze spreads to province event helper
+
+
+#Craze ends in province
+province_event = {
+	id = stock_market_craze.124 #ivory $ID$0
+	title = stock_market_craze.124.t
+	desc = he_bought_teaser.124.desc
+	picture = HE_BOUGHT_eventPicture
+	hidden = yes
+
+	mean_time_to_happen = {
+		months = 240
+	}
+
+	trigger = {
+		has_province_modifier = stock_market_ivory_craze_province
+	}
+
+	immediate = {
+		remove_province_modifier = stock_market_ivory_craze_province
+		add_permanent_province_modifier = { 
+			name = stock_market_ivory_consumption_province
+			duration = -1  
+			desc = stock_market_ivory_consumption_province_tooltip
+		}
+		if = {
+			limit = {
+				NOT = {
+					calc_true_if = {
+						all_owned_province = {
+							has_province_modifier = stock_market_ivory_craze_province					
+						}
+						amount = 1
+					}
+				}
+			}
+			#Country wide craze event stop
+		}
+	}
+
+	option = {
+		ai_chance = { factor = 1 }
+	}
+}
