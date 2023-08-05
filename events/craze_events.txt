@@ -4,38 +4,113 @@ namespace = stock_market_craze
 country_event = {
 	id = stock_market_craze.122 #ivory
 	title = stock_market_craze.122.t
-	desc = he_bought_teaser.122.desc
-	picture = HE_BOUGHT_eventPicture
-	is_triggered_only = yes
+	desc = stock_market_craze.122.desc
+	picture = HARBOUR_eventPicture
+
+	mean_time_to_happen = {
+		months = 24
+
+		modifier = {
+			factor = 0.01
+			all_owned_province = {
+				OR = {
+					has_province_modifier = stock_market_12_craze_province
+					has_province_modifier = stock_market_12_consumption_province
+				}
+			}
+		}
+	}
+
+	trigger = {
+		any_owned_province = {
+			OR = {
+				has_province_modifier = stock_market_12_craze_province
+				has_province_modifier = stock_market_12_consumption_province
+			}
+		}
+		NOT = {
+			OR = {
+				has_country_flag = had_12_craze
+				has_country_flag = has_12_craze
+			}
+		}
+	}
+
 	
 	immediate = {
-		#consumption banned during craze
-		if = {
-			limit = {
-				has_country_flag = consumption_ban_for_12
-			}
-			add_country_modifier = { 
-				name = stock_market_ivory_craze_ban
-				duration = -1  
-				desc = stock_market_ivory_craze_ban_tooltip
-				hidden = yes
-			}
+		hidden_effect = {
+			set_country_flag = has_12_craze
+			#consumption banned during craze
+			if = {
+				limit = {
+					has_country_flag = consumption_ban_for_12
+				}
+				add_country_modifier = { 
+					name = stock_market_12_craze_ban
+					duration = -1  
+				}
 
+			}
+		}
+	}
+	option = {
+		name = stock_market_craze.122.EVTOPT1
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {
+	id = stock_market_craze.123 #ivory
+	title = stock_market_craze.123.t
+	desc = stock_market_craze.123.desc
+	picture = HARBOUR_eventPicture
+
+	mean_time_to_happen = {
+		months = 4
+	}
+
+	trigger = {
+		all_owned_province = {
+			OR = {
+				has_province_modifier = stock_market_12_consumption_province
+			}
+		}
+		has_country_flag = has_12_craze
+	}
+
+	
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = has_12_craze
+			set_country_flag = had_12_craze
+			#consumption banned during craze
+			if = {
+				limit = {
+					has_country_flag = consumption_ban_for_12
+				}
+				remove_country_modifier = stock_market_12_craze_ban
+			}
+		}
+	}
+	option = {
+		name = stock_market_craze.123.EVTOPT1
+		ai_chance = {
+			factor = 1
 		}
 	}
 }
 
-
 #Craze spreads to province
 province_event = {
-	id = stock_market_craze.120 #ivory $ID$0
+	id = stock_market_craze.120
 	title = stock_market_craze.120.t
 	desc = he_bought_teaser.120.desc
 	picture = HE_BOUGHT_eventPicture
 	hidden = yes
 
 	mean_time_to_happen = {
-		months = 24
+		months = 48
 		modifier = {
 			factor = 0.75
 			province_has_center_of_trade_of_level = 1
@@ -45,7 +120,7 @@ province_event = {
 			province_has_center_of_trade_of_level = 2
 		}
 		modifier = {
-			factor = 0.8
+			factor = 0.9
 			development = 9
 		}
 		modifier = {
@@ -54,77 +129,51 @@ province_event = {
 				trade_income_percentage = 0.33
 			}
 		}
+		modifier = {
+			factor = 0.25
+			owner = {
+				has_country_flag = has_12_craze
+			}
+		}
 	}
 
 	trigger = {
 		NOT = {
-			has_province_modifier = stock_market_ivory_craze_province
-			has_province_modifier = stock_market_ivory_consumption_province
+			has_province_modifier = stock_market_12_craze_province
+			has_province_modifier = stock_market_12_consumption_province
 		}
 		OR = {
 			any_neighbor_province = {
 				OR = {
-					has_province_modifier = stock_market_ivory_craze_province
-					has_province_modifier = stock_market_ivory_consumption_province
+					has_province_modifier = stock_market_12_craze_province
+					has_province_modifier = stock_market_12_consumption_province
 				}
 			}
 			AND = {
 				province_has_center_of_trade_of_level = 1
 				any_trade_node_member_province = {
 					OR = {
-						has_province_modifier = stock_market_ivory_craze_province
-						has_province_modifier = stock_market_ivory_consumption_province
+						has_province_modifier = stock_market_12_craze_province
+						has_province_modifier = stock_market_12_consumption_province
 					}
 				}
 			}
 		}
+        OR = {
+            continent = europe
+            region = maghreb_region
+            region = egypt_region
+            region = mashriq_region
+            region = anatolia_region
+            region = caucasia_region
+            #for now only those
+        }
 	}
 
 	immediate = {
-		owner = {
-			if = {
-				limit = {
-					NOT = {
-						num_of_cities = 15
-					}
-				}
-				
-			}
-			else = {
-				random = {
-					chance = 5
-					#Country wide craze event
-				}
-
-				if = {
-					limit = {
-						NOT = {
-							#Country wide craze modifier
-						}
-					}
-
-					if = {
-						limit = {
-							calc_true_if = {
-								all_owned_province = {
-									OR = {
-										has_province_modifier = stock_market_ivory_craze_province
-										has_province_modifier = stock_market_ivory_consumption_province
-									}
-								}
-								amount = 15
-							}
-						}
-						#Country wide craze event
-					}
-				}
-
-			}		
-		}
 		add_permanent_province_modifier = { 
-			name = stock_market_ivory_craze_province
+			name = stock_market_12_craze_province
 			duration = -1  
-			desc = stock_market_ivory_craze_province_tooltip
 		}
 	}
 
@@ -138,7 +187,7 @@ province_event = {
 
 #Craze ends in province
 province_event = {
-	id = stock_market_craze.124 #ivory $ID$0
+	id = stock_market_craze.124
 	title = stock_market_craze.124.t
 	desc = he_bought_teaser.124.desc
 	picture = HE_BOUGHT_eventPicture
@@ -149,28 +198,1959 @@ province_event = {
 	}
 
 	trigger = {
-		has_province_modifier = stock_market_ivory_craze_province
+		has_province_modifier = stock_market_12_craze_province
 	}
 
 	immediate = {
-		remove_province_modifier = stock_market_ivory_craze_province
+		remove_province_modifier = stock_market_12_craze_province
 		add_permanent_province_modifier = { 
-			name = stock_market_ivory_consumption_province
-			duration = -1  
-			desc = stock_market_ivory_consumption_province_tooltip
+			name = stock_market_12_consumption_province
+			duration = -1
+			hidden = yes
 		}
-		if = {
-			limit = {
-				NOT = {
-					calc_true_if = {
-						all_owned_province = {
-							has_province_modifier = stock_market_ivory_craze_province					
-						}
-						amount = 1
+	}
+
+	option = {
+		ai_chance = { factor = 1 }
+	}
+}
+
+#ivory tea chinaware coffee cotton sugar tobacco cocoa cloves coal(in theory)
+namespace = stock_market_craze
+country_event = {
+	id = stock_market_craze.132 #ivory
+	title = stock_market_craze.132.t
+	desc = stock_market_craze.132.desc
+	picture = HARBOUR_eventPicture
+
+	mean_time_to_happen = {
+		months = 24
+
+		modifier = {
+			factor = 0.01
+			all_owned_province = {
+				OR = {
+					has_province_modifier = stock_market_13_craze_province
+					has_province_modifier = stock_market_13_consumption_province
+				}
+			}
+		}
+	}
+
+	trigger = {
+		any_owned_province = {
+			OR = {
+				has_province_modifier = stock_market_13_craze_province
+				has_province_modifier = stock_market_13_consumption_province
+			}
+		}
+		NOT = {
+			OR = {
+				has_country_flag = had_13_craze
+				has_country_flag = has_13_craze
+			}
+		}
+	}
+
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = has_13_craze
+			#consumption banned during craze
+			if = {
+				limit = {
+					has_country_flag = consumption_ban_for_13
+				}
+				add_country_modifier = { 
+					name = stock_market_13_craze_ban
+					duration = -1  
+				}
+
+			}
+		}
+	}
+	option = {
+		name = stock_market_craze.132.EVTOPT1
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {
+	id = stock_market_craze.133 #ivory
+	title = stock_market_craze.133.t
+	desc = stock_market_craze.133.desc
+	picture = HARBOUR_eventPicture
+
+	mean_time_to_happen = {
+		months = 4
+	}
+
+	trigger = {
+		all_owned_province = {
+			OR = {
+				has_province_modifier = stock_market_13_consumption_province
+			}
+		}
+		has_country_flag = has_13_craze
+	}
+
+	
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = has_13_craze
+			set_country_flag = had_13_craze
+			#consumption banned during craze
+			if = {
+				limit = {
+					has_country_flag = consumption_ban_for_13
+				}
+				remove_country_modifier = stock_market_13_craze_ban
+			}
+		}
+	}
+	option = {
+		name = stock_market_craze.133.EVTOPT1
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+#Craze spreads to province
+province_event = {
+	id = stock_market_craze.130
+	title = stock_market_craze.130.t
+	desc = he_bought_teaser.130.desc
+	picture = HE_BOUGHT_eventPicture
+	hidden = yes
+
+	mean_time_to_happen = {
+		months = 48
+		modifier = {
+			factor = 0.75
+			province_has_center_of_trade_of_level = 1
+		}
+		modifier = {
+			factor = 0.5
+			province_has_center_of_trade_of_level = 2
+		}
+		modifier = {
+			factor = 0.9
+			development = 9
+		}
+		modifier = {
+			factor = 0.75
+			owner = {
+				trade_income_percentage = 0.33
+			}
+		}
+		modifier = {
+			factor = 0.25
+			owner = {
+				has_country_flag = has_13_craze
+			}
+		}
+	}
+
+	trigger = {
+		NOT = {
+			has_province_modifier = stock_market_13_craze_province
+			has_province_modifier = stock_market_13_consumption_province
+		}
+		OR = {
+			any_neighbor_province = {
+				OR = {
+					has_province_modifier = stock_market_13_craze_province
+					has_province_modifier = stock_market_13_consumption_province
+				}
+			}
+			AND = {
+				province_has_center_of_trade_of_level = 1
+				any_trade_node_member_province = {
+					OR = {
+						has_province_modifier = stock_market_13_craze_province
+						has_province_modifier = stock_market_13_consumption_province
 					}
 				}
 			}
-			#Country wide craze event stop
+		}
+        OR = {
+            continent = europe
+            region = maghreb_region
+            region = egypt_region
+            region = mashriq_region
+            region = anatolia_region
+            region = caucasia_region
+            #for now only those
+        }
+	}
+
+	immediate = {
+		add_permanent_province_modifier = { 
+			name = stock_market_13_craze_province
+			duration = -1  
+		}
+	}
+
+	option = {
+		ai_chance = { factor = 1 }
+	}
+}
+
+#Craze spreads to province event helper
+
+
+#Craze ends in province
+province_event = {
+	id = stock_market_craze.134
+	title = stock_market_craze.134.t
+	desc = he_bought_teaser.134.desc
+	picture = HE_BOUGHT_eventPicture
+	hidden = yes
+
+	mean_time_to_happen = {
+		months = 240
+	}
+
+	trigger = {
+		has_province_modifier = stock_market_13_craze_province
+	}
+
+	immediate = {
+		remove_province_modifier = stock_market_13_craze_province
+		add_permanent_province_modifier = { 
+			name = stock_market_13_consumption_province
+			duration = -1
+			hidden = yes
+		}
+	}
+
+	option = {
+		ai_chance = { factor = 1 }
+	}
+}
+
+#ivory tea chinaware coffee cotton sugar tobacco cocoa cloves coal(in theory)
+namespace = stock_market_craze
+country_event = {
+	id = stock_market_craze.142 #ivory
+	title = stock_market_craze.142.t
+	desc = stock_market_craze.142.desc
+	picture = HARBOUR_eventPicture
+
+	mean_time_to_happen = {
+		months = 24
+
+		modifier = {
+			factor = 0.01
+			all_owned_province = {
+				OR = {
+					has_province_modifier = stock_market_14_craze_province
+					has_province_modifier = stock_market_14_consumption_province
+				}
+			}
+		}
+	}
+
+	trigger = {
+		any_owned_province = {
+			OR = {
+				has_province_modifier = stock_market_14_craze_province
+				has_province_modifier = stock_market_14_consumption_province
+			}
+		}
+		NOT = {
+			OR = {
+				has_country_flag = had_14_craze
+				has_country_flag = has_14_craze
+			}
+		}
+	}
+
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = has_14_craze
+			#consumption banned during craze
+			if = {
+				limit = {
+					has_country_flag = consumption_ban_for_14
+				}
+				add_country_modifier = { 
+					name = stock_market_14_craze_ban
+					duration = -1  
+				}
+
+			}
+		}
+	}
+	option = {
+		name = stock_market_craze.142.EVTOPT1
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {
+	id = stock_market_craze.143 #ivory
+	title = stock_market_craze.143.t
+	desc = stock_market_craze.143.desc
+	picture = HARBOUR_eventPicture
+
+	mean_time_to_happen = {
+		months = 4
+	}
+
+	trigger = {
+		all_owned_province = {
+			OR = {
+				has_province_modifier = stock_market_14_consumption_province
+			}
+		}
+		has_country_flag = has_14_craze
+	}
+
+	
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = has_14_craze
+			set_country_flag = had_14_craze
+			#consumption banned during craze
+			if = {
+				limit = {
+					has_country_flag = consumption_ban_for_14
+				}
+				remove_country_modifier = stock_market_14_craze_ban
+			}
+		}
+	}
+	option = {
+		name = stock_market_craze.143.EVTOPT1
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+#Craze spreads to province
+province_event = {
+	id = stock_market_craze.140
+	title = stock_market_craze.140.t
+	desc = he_bought_teaser.140.desc
+	picture = HE_BOUGHT_eventPicture
+	hidden = yes
+
+	mean_time_to_happen = {
+		months = 48
+		modifier = {
+			factor = 0.75
+			province_has_center_of_trade_of_level = 1
+		}
+		modifier = {
+			factor = 0.5
+			province_has_center_of_trade_of_level = 2
+		}
+		modifier = {
+			factor = 0.9
+			development = 9
+		}
+		modifier = {
+			factor = 0.75
+			owner = {
+				trade_income_percentage = 0.33
+			}
+		}
+		modifier = {
+			factor = 0.25
+			owner = {
+				has_country_flag = has_14_craze
+			}
+		}
+	}
+
+	trigger = {
+		NOT = {
+			has_province_modifier = stock_market_14_craze_province
+			has_province_modifier = stock_market_14_consumption_province
+		}
+		OR = {
+			any_neighbor_province = {
+				OR = {
+					has_province_modifier = stock_market_14_craze_province
+					has_province_modifier = stock_market_14_consumption_province
+				}
+			}
+			AND = {
+				province_has_center_of_trade_of_level = 1
+				any_trade_node_member_province = {
+					OR = {
+						has_province_modifier = stock_market_14_craze_province
+						has_province_modifier = stock_market_14_consumption_province
+					}
+				}
+			}
+		}
+        OR = {
+            continent = europe
+            region = maghreb_region
+            region = egypt_region
+            region = mashriq_region
+            region = anatolia_region
+            region = caucasia_region
+            #for now only those
+        }
+	}
+
+	immediate = {
+		add_permanent_province_modifier = { 
+			name = stock_market_14_craze_province
+			duration = -1  
+		}
+	}
+
+	option = {
+		ai_chance = { factor = 1 }
+	}
+}
+
+#Craze spreads to province event helper
+
+
+#Craze ends in province
+province_event = {
+	id = stock_market_craze.144
+	title = stock_market_craze.144.t
+	desc = he_bought_teaser.144.desc
+	picture = HE_BOUGHT_eventPicture
+	hidden = yes
+
+	mean_time_to_happen = {
+		months = 240
+	}
+
+	trigger = {
+		has_province_modifier = stock_market_14_craze_province
+	}
+
+	immediate = {
+		remove_province_modifier = stock_market_14_craze_province
+		add_permanent_province_modifier = { 
+			name = stock_market_14_consumption_province
+			duration = -1
+			hidden = yes
+		}
+	}
+
+	option = {
+		ai_chance = { factor = 1 }
+	}
+}
+
+#ivory tea chinaware coffee cotton sugar tobacco cocoa cloves coal(in theory)
+namespace = stock_market_craze
+country_event = {
+	id = stock_market_craze.162 #ivory
+	title = stock_market_craze.162.t
+	desc = stock_market_craze.162.desc
+	picture = HARBOUR_eventPicture
+
+	mean_time_to_happen = {
+		months = 24
+
+		modifier = {
+			factor = 0.01
+			all_owned_province = {
+				OR = {
+					has_province_modifier = stock_market_16_craze_province
+					has_province_modifier = stock_market_16_consumption_province
+				}
+			}
+		}
+	}
+
+	trigger = {
+		any_owned_province = {
+			OR = {
+				has_province_modifier = stock_market_16_craze_province
+				has_province_modifier = stock_market_16_consumption_province
+			}
+		}
+		NOT = {
+			OR = {
+				has_country_flag = had_16_craze
+				has_country_flag = has_16_craze
+			}
+		}
+	}
+
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = has_16_craze
+			#consumption banned during craze
+			if = {
+				limit = {
+					has_country_flag = consumption_ban_for_16
+				}
+				add_country_modifier = { 
+					name = stock_market_16_craze_ban
+					duration = -1  
+				}
+
+			}
+		}
+	}
+	option = {
+		name = stock_market_craze.162.EVTOPT1
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {
+	id = stock_market_craze.163 #ivory
+	title = stock_market_craze.163.t
+	desc = stock_market_craze.163.desc
+	picture = HARBOUR_eventPicture
+
+	mean_time_to_happen = {
+		months = 4
+	}
+
+	trigger = {
+		all_owned_province = {
+			OR = {
+				has_province_modifier = stock_market_16_consumption_province
+			}
+		}
+		has_country_flag = has_16_craze
+	}
+
+	
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = has_16_craze
+			set_country_flag = had_16_craze
+			#consumption banned during craze
+			if = {
+				limit = {
+					has_country_flag = consumption_ban_for_16
+				}
+				remove_country_modifier = stock_market_16_craze_ban
+			}
+		}
+	}
+	option = {
+		name = stock_market_craze.163.EVTOPT1
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+#Craze spreads to province
+province_event = {
+	id = stock_market_craze.160
+	title = stock_market_craze.160.t
+	desc = he_bought_teaser.160.desc
+	picture = HE_BOUGHT_eventPicture
+	hidden = yes
+
+	mean_time_to_happen = {
+		months = 48
+		modifier = {
+			factor = 0.75
+			province_has_center_of_trade_of_level = 1
+		}
+		modifier = {
+			factor = 0.5
+			province_has_center_of_trade_of_level = 2
+		}
+		modifier = {
+			factor = 0.9
+			development = 9
+		}
+		modifier = {
+			factor = 0.75
+			owner = {
+				trade_income_percentage = 0.33
+			}
+		}
+		modifier = {
+			factor = 0.25
+			owner = {
+				has_country_flag = has_16_craze
+			}
+		}
+	}
+
+	trigger = {
+		NOT = {
+			has_province_modifier = stock_market_16_craze_province
+			has_province_modifier = stock_market_16_consumption_province
+		}
+		OR = {
+			any_neighbor_province = {
+				OR = {
+					has_province_modifier = stock_market_16_craze_province
+					has_province_modifier = stock_market_16_consumption_province
+				}
+			}
+			AND = {
+				province_has_center_of_trade_of_level = 1
+				any_trade_node_member_province = {
+					OR = {
+						has_province_modifier = stock_market_16_craze_province
+						has_province_modifier = stock_market_16_consumption_province
+					}
+				}
+			}
+		}
+        OR = {
+            continent = europe
+            region = maghreb_region
+            region = egypt_region
+            region = mashriq_region
+            region = anatolia_region
+            region = caucasia_region
+            #for now only those
+        }
+	}
+
+	immediate = {
+		add_permanent_province_modifier = { 
+			name = stock_market_16_craze_province
+			duration = -1  
+		}
+	}
+
+	option = {
+		ai_chance = { factor = 1 }
+	}
+}
+
+#Craze spreads to province event helper
+
+
+#Craze ends in province
+province_event = {
+	id = stock_market_craze.164
+	title = stock_market_craze.164.t
+	desc = he_bought_teaser.164.desc
+	picture = HE_BOUGHT_eventPicture
+	hidden = yes
+
+	mean_time_to_happen = {
+		months = 240
+	}
+
+	trigger = {
+		has_province_modifier = stock_market_16_craze_province
+	}
+
+	immediate = {
+		remove_province_modifier = stock_market_16_craze_province
+		add_permanent_province_modifier = { 
+			name = stock_market_16_consumption_province
+			duration = -1
+			hidden = yes
+		}
+	}
+
+	option = {
+		ai_chance = { factor = 1 }
+	}
+}
+
+#ivory tea chinaware coffee cotton sugar tobacco cocoa cloves coal(in theory)
+namespace = stock_market_craze
+country_event = {
+	id = stock_market_craze.172 #ivory
+	title = stock_market_craze.172.t
+	desc = stock_market_craze.172.desc
+	picture = HARBOUR_eventPicture
+
+	mean_time_to_happen = {
+		months = 24
+
+		modifier = {
+			factor = 0.01
+			all_owned_province = {
+				OR = {
+					has_province_modifier = stock_market_17_craze_province
+					has_province_modifier = stock_market_17_consumption_province
+				}
+			}
+		}
+	}
+
+	trigger = {
+		any_owned_province = {
+			OR = {
+				has_province_modifier = stock_market_17_craze_province
+				has_province_modifier = stock_market_17_consumption_province
+			}
+		}
+		NOT = {
+			OR = {
+				has_country_flag = had_17_craze
+				has_country_flag = has_17_craze
+			}
+		}
+	}
+
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = has_17_craze
+			#consumption banned during craze
+			if = {
+				limit = {
+					has_country_flag = consumption_ban_for_17
+				}
+				add_country_modifier = { 
+					name = stock_market_17_craze_ban
+					duration = -1  
+				}
+
+			}
+		}
+	}
+	option = {
+		name = stock_market_craze.172.EVTOPT1
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {
+	id = stock_market_craze.173 #ivory
+	title = stock_market_craze.173.t
+	desc = stock_market_craze.173.desc
+	picture = HARBOUR_eventPicture
+
+	mean_time_to_happen = {
+		months = 4
+	}
+
+	trigger = {
+		all_owned_province = {
+			OR = {
+				has_province_modifier = stock_market_17_consumption_province
+			}
+		}
+		has_country_flag = has_17_craze
+	}
+
+	
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = has_17_craze
+			set_country_flag = had_17_craze
+			#consumption banned during craze
+			if = {
+				limit = {
+					has_country_flag = consumption_ban_for_17
+				}
+				remove_country_modifier = stock_market_17_craze_ban
+			}
+		}
+	}
+	option = {
+		name = stock_market_craze.173.EVTOPT1
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+#Craze spreads to province
+province_event = {
+	id = stock_market_craze.170
+	title = stock_market_craze.170.t
+	desc = he_bought_teaser.170.desc
+	picture = HE_BOUGHT_eventPicture
+	hidden = yes
+
+	mean_time_to_happen = {
+		months = 48
+		modifier = {
+			factor = 0.75
+			province_has_center_of_trade_of_level = 1
+		}
+		modifier = {
+			factor = 0.5
+			province_has_center_of_trade_of_level = 2
+		}
+		modifier = {
+			factor = 0.9
+			development = 9
+		}
+		modifier = {
+			factor = 0.75
+			owner = {
+				trade_income_percentage = 0.33
+			}
+		}
+		modifier = {
+			factor = 0.25
+			owner = {
+				has_country_flag = has_17_craze
+			}
+		}
+	}
+
+	trigger = {
+		NOT = {
+			has_province_modifier = stock_market_17_craze_province
+			has_province_modifier = stock_market_17_consumption_province
+		}
+		OR = {
+			any_neighbor_province = {
+				OR = {
+					has_province_modifier = stock_market_17_craze_province
+					has_province_modifier = stock_market_17_consumption_province
+				}
+			}
+			AND = {
+				province_has_center_of_trade_of_level = 1
+				any_trade_node_member_province = {
+					OR = {
+						has_province_modifier = stock_market_17_craze_province
+						has_province_modifier = stock_market_17_consumption_province
+					}
+				}
+			}
+		}
+        OR = {
+            continent = europe
+            region = maghreb_region
+            region = egypt_region
+            region = mashriq_region
+            region = anatolia_region
+            region = caucasia_region
+            #for now only those
+        }
+	}
+
+	immediate = {
+		add_permanent_province_modifier = { 
+			name = stock_market_17_craze_province
+			duration = -1  
+		}
+	}
+
+	option = {
+		ai_chance = { factor = 1 }
+	}
+}
+
+#Craze spreads to province event helper
+
+
+#Craze ends in province
+province_event = {
+	id = stock_market_craze.174
+	title = stock_market_craze.174.t
+	desc = he_bought_teaser.174.desc
+	picture = HE_BOUGHT_eventPicture
+	hidden = yes
+
+	mean_time_to_happen = {
+		months = 240
+	}
+
+	trigger = {
+		has_province_modifier = stock_market_17_craze_province
+	}
+
+	immediate = {
+		remove_province_modifier = stock_market_17_craze_province
+		add_permanent_province_modifier = { 
+			name = stock_market_17_consumption_province
+			duration = -1
+			hidden = yes
+		}
+	}
+
+	option = {
+		ai_chance = { factor = 1 }
+	}
+}
+
+#ivory tea chinaware coffee cotton sugar tobacco cocoa cloves coal(in theory)
+namespace = stock_market_craze
+country_event = {
+	id = stock_market_craze.182 #ivory
+	title = stock_market_craze.182.t
+	desc = stock_market_craze.182.desc
+	picture = HARBOUR_eventPicture
+
+	mean_time_to_happen = {
+		months = 24
+
+		modifier = {
+			factor = 0.01
+			all_owned_province = {
+				OR = {
+					has_province_modifier = stock_market_18_craze_province
+					has_province_modifier = stock_market_18_consumption_province
+				}
+			}
+		}
+	}
+
+	trigger = {
+		any_owned_province = {
+			OR = {
+				has_province_modifier = stock_market_18_craze_province
+				has_province_modifier = stock_market_18_consumption_province
+			}
+		}
+		NOT = {
+			OR = {
+				has_country_flag = had_18_craze
+				has_country_flag = has_18_craze
+			}
+		}
+	}
+
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = has_18_craze
+			#consumption banned during craze
+			if = {
+				limit = {
+					has_country_flag = consumption_ban_for_18
+				}
+				add_country_modifier = { 
+					name = stock_market_18_craze_ban
+					duration = -1  
+				}
+
+			}
+		}
+	}
+	option = {
+		name = stock_market_craze.182.EVTOPT1
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {
+	id = stock_market_craze.183 #ivory
+	title = stock_market_craze.183.t
+	desc = stock_market_craze.183.desc
+	picture = HARBOUR_eventPicture
+
+	mean_time_to_happen = {
+		months = 4
+	}
+
+	trigger = {
+		all_owned_province = {
+			OR = {
+				has_province_modifier = stock_market_18_consumption_province
+			}
+		}
+		has_country_flag = has_18_craze
+	}
+
+	
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = has_18_craze
+			set_country_flag = had_18_craze
+			#consumption banned during craze
+			if = {
+				limit = {
+					has_country_flag = consumption_ban_for_18
+				}
+				remove_country_modifier = stock_market_18_craze_ban
+			}
+		}
+	}
+	option = {
+		name = stock_market_craze.183.EVTOPT1
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+#Craze spreads to province
+province_event = {
+	id = stock_market_craze.180
+	title = stock_market_craze.180.t
+	desc = he_bought_teaser.180.desc
+	picture = HE_BOUGHT_eventPicture
+	hidden = yes
+
+	mean_time_to_happen = {
+		months = 48
+		modifier = {
+			factor = 0.75
+			province_has_center_of_trade_of_level = 1
+		}
+		modifier = {
+			factor = 0.5
+			province_has_center_of_trade_of_level = 2
+		}
+		modifier = {
+			factor = 0.9
+			development = 9
+		}
+		modifier = {
+			factor = 0.75
+			owner = {
+				trade_income_percentage = 0.33
+			}
+		}
+		modifier = {
+			factor = 0.25
+			owner = {
+				has_country_flag = has_18_craze
+			}
+		}
+	}
+
+	trigger = {
+		NOT = {
+			has_province_modifier = stock_market_18_craze_province
+			has_province_modifier = stock_market_18_consumption_province
+		}
+		OR = {
+			any_neighbor_province = {
+				OR = {
+					has_province_modifier = stock_market_18_craze_province
+					has_province_modifier = stock_market_18_consumption_province
+				}
+			}
+			AND = {
+				province_has_center_of_trade_of_level = 1
+				any_trade_node_member_province = {
+					OR = {
+						has_province_modifier = stock_market_18_craze_province
+						has_province_modifier = stock_market_18_consumption_province
+					}
+				}
+			}
+		}
+        OR = {
+            continent = europe
+            region = maghreb_region
+            region = egypt_region
+            region = mashriq_region
+            region = anatolia_region
+            region = caucasia_region
+            #for now only those
+        }
+	}
+
+	immediate = {
+		add_permanent_province_modifier = { 
+			name = stock_market_18_craze_province
+			duration = -1  
+		}
+	}
+
+	option = {
+		ai_chance = { factor = 1 }
+	}
+}
+
+#Craze spreads to province event helper
+
+
+#Craze ends in province
+province_event = {
+	id = stock_market_craze.184
+	title = stock_market_craze.184.t
+	desc = he_bought_teaser.184.desc
+	picture = HE_BOUGHT_eventPicture
+	hidden = yes
+
+	mean_time_to_happen = {
+		months = 240
+	}
+
+	trigger = {
+		has_province_modifier = stock_market_18_craze_province
+	}
+
+	immediate = {
+		remove_province_modifier = stock_market_18_craze_province
+		add_permanent_province_modifier = { 
+			name = stock_market_18_consumption_province
+			duration = -1
+			hidden = yes
+		}
+	}
+
+	option = {
+		ai_chance = { factor = 1 }
+	}
+}
+
+#ivory tea chinaware coffee cotton sugar tobacco cocoa cloves coal(in theory)
+namespace = stock_market_craze
+country_event = {
+	id = stock_market_craze.192 #ivory
+	title = stock_market_craze.192.t
+	desc = stock_market_craze.192.desc
+	picture = HARBOUR_eventPicture
+
+	mean_time_to_happen = {
+		months = 24
+
+		modifier = {
+			factor = 0.01
+			all_owned_province = {
+				OR = {
+					has_province_modifier = stock_market_19_craze_province
+					has_province_modifier = stock_market_19_consumption_province
+				}
+			}
+		}
+	}
+
+	trigger = {
+		any_owned_province = {
+			OR = {
+				has_province_modifier = stock_market_19_craze_province
+				has_province_modifier = stock_market_19_consumption_province
+			}
+		}
+		NOT = {
+			OR = {
+				has_country_flag = had_19_craze
+				has_country_flag = has_19_craze
+			}
+		}
+	}
+
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = has_19_craze
+			#consumption banned during craze
+			if = {
+				limit = {
+					has_country_flag = consumption_ban_for_19
+				}
+				add_country_modifier = { 
+					name = stock_market_19_craze_ban
+					duration = -1  
+				}
+
+			}
+		}
+	}
+	option = {
+		name = stock_market_craze.192.EVTOPT1
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {
+	id = stock_market_craze.193 #ivory
+	title = stock_market_craze.193.t
+	desc = stock_market_craze.193.desc
+	picture = HARBOUR_eventPicture
+
+	mean_time_to_happen = {
+		months = 4
+	}
+
+	trigger = {
+		all_owned_province = {
+			OR = {
+				has_province_modifier = stock_market_19_consumption_province
+			}
+		}
+		has_country_flag = has_19_craze
+	}
+
+	
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = has_19_craze
+			set_country_flag = had_19_craze
+			#consumption banned during craze
+			if = {
+				limit = {
+					has_country_flag = consumption_ban_for_19
+				}
+				remove_country_modifier = stock_market_19_craze_ban
+			}
+		}
+	}
+	option = {
+		name = stock_market_craze.193.EVTOPT1
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+#Craze spreads to province
+province_event = {
+	id = stock_market_craze.190
+	title = stock_market_craze.190.t
+	desc = he_bought_teaser.190.desc
+	picture = HE_BOUGHT_eventPicture
+	hidden = yes
+
+	mean_time_to_happen = {
+		months = 48
+		modifier = {
+			factor = 0.75
+			province_has_center_of_trade_of_level = 1
+		}
+		modifier = {
+			factor = 0.5
+			province_has_center_of_trade_of_level = 2
+		}
+		modifier = {
+			factor = 0.9
+			development = 9
+		}
+		modifier = {
+			factor = 0.75
+			owner = {
+				trade_income_percentage = 0.33
+			}
+		}
+		modifier = {
+			factor = 0.25
+			owner = {
+				has_country_flag = has_19_craze
+			}
+		}
+	}
+
+	trigger = {
+		NOT = {
+			has_province_modifier = stock_market_19_craze_province
+			has_province_modifier = stock_market_19_consumption_province
+		}
+		OR = {
+			any_neighbor_province = {
+				OR = {
+					has_province_modifier = stock_market_19_craze_province
+					has_province_modifier = stock_market_19_consumption_province
+				}
+			}
+			AND = {
+				province_has_center_of_trade_of_level = 1
+				any_trade_node_member_province = {
+					OR = {
+						has_province_modifier = stock_market_19_craze_province
+						has_province_modifier = stock_market_19_consumption_province
+					}
+				}
+			}
+		}
+        OR = {
+            continent = europe
+            region = maghreb_region
+            region = egypt_region
+            region = mashriq_region
+            region = anatolia_region
+            region = caucasia_region
+            #for now only those
+        }
+	}
+
+	immediate = {
+		add_permanent_province_modifier = { 
+			name = stock_market_19_craze_province
+			duration = -1  
+		}
+	}
+
+	option = {
+		ai_chance = { factor = 1 }
+	}
+}
+
+#Craze spreads to province event helper
+
+
+#Craze ends in province
+province_event = {
+	id = stock_market_craze.194
+	title = stock_market_craze.194.t
+	desc = he_bought_teaser.194.desc
+	picture = HE_BOUGHT_eventPicture
+	hidden = yes
+
+	mean_time_to_happen = {
+		months = 240
+	}
+
+	trigger = {
+		has_province_modifier = stock_market_19_craze_province
+	}
+
+	immediate = {
+		remove_province_modifier = stock_market_19_craze_province
+		add_permanent_province_modifier = { 
+			name = stock_market_19_consumption_province
+			duration = -1
+			hidden = yes
+		}
+	}
+
+	option = {
+		ai_chance = { factor = 1 }
+	}
+}
+
+#ivory tea chinaware coffee cotton sugar tobacco cocoa cloves coal(in theory)
+namespace = stock_market_craze
+country_event = {
+	id = stock_market_craze.202 #ivory
+	title = stock_market_craze.202.t
+	desc = stock_market_craze.202.desc
+	picture = HARBOUR_eventPicture
+
+	mean_time_to_happen = {
+		months = 24
+
+		modifier = {
+			factor = 0.01
+			all_owned_province = {
+				OR = {
+					has_province_modifier = stock_market_20_craze_province
+					has_province_modifier = stock_market_20_consumption_province
+				}
+			}
+		}
+	}
+
+	trigger = {
+		any_owned_province = {
+			OR = {
+				has_province_modifier = stock_market_20_craze_province
+				has_province_modifier = stock_market_20_consumption_province
+			}
+		}
+		NOT = {
+			OR = {
+				has_country_flag = had_20_craze
+				has_country_flag = has_20_craze
+			}
+		}
+	}
+
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = has_20_craze
+			#consumption banned during craze
+			if = {
+				limit = {
+					has_country_flag = consumption_ban_for_20
+				}
+				add_country_modifier = { 
+					name = stock_market_20_craze_ban
+					duration = -1  
+				}
+
+			}
+		}
+	}
+	option = {
+		name = stock_market_craze.202.EVTOPT1
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {
+	id = stock_market_craze.203 #ivory
+	title = stock_market_craze.203.t
+	desc = stock_market_craze.203.desc
+	picture = HARBOUR_eventPicture
+
+	mean_time_to_happen = {
+		months = 4
+	}
+
+	trigger = {
+		all_owned_province = {
+			OR = {
+				has_province_modifier = stock_market_20_consumption_province
+			}
+		}
+		has_country_flag = has_20_craze
+	}
+
+	
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = has_20_craze
+			set_country_flag = had_20_craze
+			#consumption banned during craze
+			if = {
+				limit = {
+					has_country_flag = consumption_ban_for_20
+				}
+				remove_country_modifier = stock_market_20_craze_ban
+			}
+		}
+	}
+	option = {
+		name = stock_market_craze.203.EVTOPT1
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+#Craze spreads to province
+province_event = {
+	id = stock_market_craze.200
+	title = stock_market_craze.200.t
+	desc = he_bought_teaser.200.desc
+	picture = HE_BOUGHT_eventPicture
+	hidden = yes
+
+	mean_time_to_happen = {
+		months = 48
+		modifier = {
+			factor = 0.75
+			province_has_center_of_trade_of_level = 1
+		}
+		modifier = {
+			factor = 0.5
+			province_has_center_of_trade_of_level = 2
+		}
+		modifier = {
+			factor = 0.9
+			development = 9
+		}
+		modifier = {
+			factor = 0.75
+			owner = {
+				trade_income_percentage = 0.33
+			}
+		}
+		modifier = {
+			factor = 0.25
+			owner = {
+				has_country_flag = has_20_craze
+			}
+		}
+	}
+
+	trigger = {
+		NOT = {
+			has_province_modifier = stock_market_20_craze_province
+			has_province_modifier = stock_market_20_consumption_province
+		}
+		OR = {
+			any_neighbor_province = {
+				OR = {
+					has_province_modifier = stock_market_20_craze_province
+					has_province_modifier = stock_market_20_consumption_province
+				}
+			}
+			AND = {
+				province_has_center_of_trade_of_level = 1
+				any_trade_node_member_province = {
+					OR = {
+						has_province_modifier = stock_market_20_craze_province
+						has_province_modifier = stock_market_20_consumption_province
+					}
+				}
+			}
+		}
+        OR = {
+            continent = europe
+            region = maghreb_region
+            region = egypt_region
+            region = mashriq_region
+            region = anatolia_region
+            region = caucasia_region
+            #for now only those
+        }
+	}
+
+	immediate = {
+		add_permanent_province_modifier = { 
+			name = stock_market_20_craze_province
+			duration = -1  
+		}
+	}
+
+	option = {
+		ai_chance = { factor = 1 }
+	}
+}
+
+#Craze spreads to province event helper
+
+
+#Craze ends in province
+province_event = {
+	id = stock_market_craze.204
+	title = stock_market_craze.204.t
+	desc = he_bought_teaser.204.desc
+	picture = HE_BOUGHT_eventPicture
+	hidden = yes
+
+	mean_time_to_happen = {
+		months = 240
+	}
+
+	trigger = {
+		has_province_modifier = stock_market_20_craze_province
+	}
+
+	immediate = {
+		remove_province_modifier = stock_market_20_craze_province
+		add_permanent_province_modifier = { 
+			name = stock_market_20_consumption_province
+			duration = -1
+			hidden = yes
+		}
+	}
+
+	option = {
+		ai_chance = { factor = 1 }
+	}
+}
+
+#ivory tea chinaware coffee cotton sugar tobacco cocoa cloves coal(in theory)
+namespace = stock_market_craze
+country_event = {
+	id = stock_market_craze.292 #ivory
+	title = stock_market_craze.292.t
+	desc = stock_market_craze.292.desc
+	picture = HARBOUR_eventPicture
+
+	mean_time_to_happen = {
+		months = 24
+
+		modifier = {
+			factor = 0.01
+			all_owned_province = {
+				OR = {
+					has_province_modifier = stock_market_29_craze_province
+					has_province_modifier = stock_market_29_consumption_province
+				}
+			}
+		}
+	}
+
+	trigger = {
+		any_owned_province = {
+			OR = {
+				has_province_modifier = stock_market_29_craze_province
+				has_province_modifier = stock_market_29_consumption_province
+			}
+		}
+		NOT = {
+			OR = {
+				has_country_flag = had_29_craze
+				has_country_flag = has_29_craze
+			}
+		}
+	}
+
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = has_29_craze
+			#consumption banned during craze
+			if = {
+				limit = {
+					has_country_flag = consumption_ban_for_29
+				}
+				add_country_modifier = { 
+					name = stock_market_29_craze_ban
+					duration = -1  
+				}
+
+			}
+		}
+	}
+	option = {
+		name = stock_market_craze.292.EVTOPT1
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {
+	id = stock_market_craze.293 #ivory
+	title = stock_market_craze.293.t
+	desc = stock_market_craze.293.desc
+	picture = HARBOUR_eventPicture
+
+	mean_time_to_happen = {
+		months = 4
+	}
+
+	trigger = {
+		all_owned_province = {
+			OR = {
+				has_province_modifier = stock_market_29_consumption_province
+			}
+		}
+		has_country_flag = has_29_craze
+	}
+
+	
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = has_29_craze
+			set_country_flag = had_29_craze
+			#consumption banned during craze
+			if = {
+				limit = {
+					has_country_flag = consumption_ban_for_29
+				}
+				remove_country_modifier = stock_market_29_craze_ban
+			}
+		}
+	}
+	option = {
+		name = stock_market_craze.293.EVTOPT1
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+#Craze spreads to province
+province_event = {
+	id = stock_market_craze.290
+	title = stock_market_craze.290.t
+	desc = he_bought_teaser.290.desc
+	picture = HE_BOUGHT_eventPicture
+	hidden = yes
+
+	mean_time_to_happen = {
+		months = 48
+		modifier = {
+			factor = 0.75
+			province_has_center_of_trade_of_level = 1
+		}
+		modifier = {
+			factor = 0.5
+			province_has_center_of_trade_of_level = 2
+		}
+		modifier = {
+			factor = 0.9
+			development = 9
+		}
+		modifier = {
+			factor = 0.75
+			owner = {
+				trade_income_percentage = 0.33
+			}
+		}
+		modifier = {
+			factor = 0.25
+			owner = {
+				has_country_flag = has_29_craze
+			}
+		}
+	}
+
+	trigger = {
+		NOT = {
+			has_province_modifier = stock_market_29_craze_province
+			has_province_modifier = stock_market_29_consumption_province
+		}
+		OR = {
+			any_neighbor_province = {
+				OR = {
+					has_province_modifier = stock_market_29_craze_province
+					has_province_modifier = stock_market_29_consumption_province
+				}
+			}
+			AND = {
+				province_has_center_of_trade_of_level = 1
+				any_trade_node_member_province = {
+					OR = {
+						has_province_modifier = stock_market_29_craze_province
+						has_province_modifier = stock_market_29_consumption_province
+					}
+				}
+			}
+		}
+        OR = {
+            continent = europe
+            region = maghreb_region
+            region = egypt_region
+            region = mashriq_region
+            region = anatolia_region
+            region = caucasia_region
+            #for now only those
+        }
+	}
+
+	immediate = {
+		add_permanent_province_modifier = { 
+			name = stock_market_29_craze_province
+			duration = -1  
+		}
+	}
+
+	option = {
+		ai_chance = { factor = 1 }
+	}
+}
+
+#Craze spreads to province event helper
+
+
+#Craze ends in province
+province_event = {
+	id = stock_market_craze.294
+	title = stock_market_craze.294.t
+	desc = he_bought_teaser.294.desc
+	picture = HE_BOUGHT_eventPicture
+	hidden = yes
+
+	mean_time_to_happen = {
+		months = 240
+	}
+
+	trigger = {
+		has_province_modifier = stock_market_29_craze_province
+	}
+
+	immediate = {
+		remove_province_modifier = stock_market_29_craze_province
+		add_permanent_province_modifier = { 
+			name = stock_market_29_consumption_province
+			duration = -1
+			hidden = yes
+		}
+	}
+
+	option = {
+		ai_chance = { factor = 1 }
+	}
+}
+
+#ivory tea chinaware coffee cotton sugar tobacco cocoa cloves coal(in theory)
+namespace = stock_market_craze
+country_event = {
+	id = stock_market_craze.302 #ivory
+	title = stock_market_craze.302.t
+	desc = stock_market_craze.302.desc
+	picture = HARBOUR_eventPicture
+
+	mean_time_to_happen = {
+		months = 24
+
+		modifier = {
+			factor = 0.01
+			all_owned_province = {
+				OR = {
+					has_province_modifier = stock_market_30_craze_province
+					has_province_modifier = stock_market_30_consumption_province
+				}
+			}
+		}
+	}
+
+	trigger = {
+		any_owned_province = {
+			OR = {
+				has_province_modifier = stock_market_30_craze_province
+				has_province_modifier = stock_market_30_consumption_province
+			}
+		}
+		NOT = {
+			OR = {
+				has_country_flag = had_30_craze
+				has_country_flag = has_30_craze
+			}
+		}
+	}
+
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = has_30_craze
+			#consumption banned during craze
+			if = {
+				limit = {
+					has_country_flag = consumption_ban_for_30
+				}
+				add_country_modifier = { 
+					name = stock_market_30_craze_ban
+					duration = -1  
+				}
+
+			}
+		}
+	}
+	option = {
+		name = stock_market_craze.302.EVTOPT1
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {
+	id = stock_market_craze.303 #ivory
+	title = stock_market_craze.303.t
+	desc = stock_market_craze.303.desc
+	picture = HARBOUR_eventPicture
+
+	mean_time_to_happen = {
+		months = 4
+	}
+
+	trigger = {
+		all_owned_province = {
+			OR = {
+				has_province_modifier = stock_market_30_consumption_province
+			}
+		}
+		has_country_flag = has_30_craze
+	}
+
+	
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = has_30_craze
+			set_country_flag = had_30_craze
+			#consumption banned during craze
+			if = {
+				limit = {
+					has_country_flag = consumption_ban_for_30
+				}
+				remove_country_modifier = stock_market_30_craze_ban
+			}
+		}
+	}
+	option = {
+		name = stock_market_craze.303.EVTOPT1
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+#Craze spreads to province
+province_event = {
+	id = stock_market_craze.300
+	title = stock_market_craze.300.t
+	desc = he_bought_teaser.300.desc
+	picture = HE_BOUGHT_eventPicture
+	hidden = yes
+
+	mean_time_to_happen = {
+		months = 48
+		modifier = {
+			factor = 0.75
+			province_has_center_of_trade_of_level = 1
+		}
+		modifier = {
+			factor = 0.5
+			province_has_center_of_trade_of_level = 2
+		}
+		modifier = {
+			factor = 0.9
+			development = 9
+		}
+		modifier = {
+			factor = 0.75
+			owner = {
+				trade_income_percentage = 0.33
+			}
+		}
+		modifier = {
+			factor = 0.25
+			owner = {
+				has_country_flag = has_30_craze
+			}
+		}
+	}
+
+	trigger = {
+		NOT = {
+			has_province_modifier = stock_market_30_craze_province
+			has_province_modifier = stock_market_30_consumption_province
+		}
+		OR = {
+			any_neighbor_province = {
+				OR = {
+					has_province_modifier = stock_market_30_craze_province
+					has_province_modifier = stock_market_30_consumption_province
+				}
+			}
+			AND = {
+				province_has_center_of_trade_of_level = 1
+				any_trade_node_member_province = {
+					OR = {
+						has_province_modifier = stock_market_30_craze_province
+						has_province_modifier = stock_market_30_consumption_province
+					}
+				}
+			}
+		}
+        OR = {
+            continent = europe
+            region = maghreb_region
+            region = egypt_region
+            region = mashriq_region
+            region = anatolia_region
+            region = caucasia_region
+            #for now only those
+        }
+	}
+
+	immediate = {
+		add_permanent_province_modifier = { 
+			name = stock_market_30_craze_province
+			duration = -1  
+		}
+	}
+
+	option = {
+		ai_chance = { factor = 1 }
+	}
+}
+
+#Craze spreads to province event helper
+
+
+#Craze ends in province
+province_event = {
+	id = stock_market_craze.304
+	title = stock_market_craze.304.t
+	desc = he_bought_teaser.304.desc
+	picture = HE_BOUGHT_eventPicture
+	hidden = yes
+
+	mean_time_to_happen = {
+		months = 240
+	}
+
+	trigger = {
+		has_province_modifier = stock_market_30_craze_province
+	}
+
+	immediate = {
+		remove_province_modifier = stock_market_30_craze_province
+		add_permanent_province_modifier = { 
+			name = stock_market_30_consumption_province
+			duration = -1
+			hidden = yes
 		}
 	}
 

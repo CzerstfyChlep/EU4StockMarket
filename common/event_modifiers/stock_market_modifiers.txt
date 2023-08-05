@@ -28,15 +28,123 @@ stock_market_ivory_shortage = {
 	trade_goods_size_modifier = -0.5
 }
 
-stock_market_ivory_craze_ban = {
-
+stock_market_12_craze_ban = {
+	global_unrest = 1
 }
 
-stock_market_ivory_craze_province = {
+stock_market_12_craze_province = {
 	province_trade_power_modifier = 0.05
-	picture = "modifier_icon_ivory_craze"
+	picture = "modifier_icon_12_craze"
 }
 
-stock_market_ivory_consumption_province = {
-	province_trade_power_modifier = 0.005
+stock_market_12_consumption_province = {
+
+}
+stock_market_13_craze_ban = {
+	global_unrest = 1
+}
+
+stock_market_13_craze_province = {
+	province_trade_power_modifier = 0.05
+	picture = "modifier_icon_13_craze"
+}
+
+stock_market_13_consumption_province = {
+
+}
+stock_market_14_craze_ban = {
+	global_unrest = 1
+}
+
+stock_market_14_craze_province = {
+	province_trade_power_modifier = 0.05
+	picture = "modifier_icon_14_craze"
+}
+
+stock_market_14_consumption_province = {
+
+}
+stock_market_16_craze_ban = {
+	global_unrest = 1
+}
+
+stock_market_16_craze_province = {
+	province_trade_power_modifier = 0.05
+	picture = "modifier_icon_16_craze"
+}
+
+stock_market_16_consumption_province = {
+
+}
+stock_market_17_craze_ban = {
+	global_unrest = 1
+}
+
+stock_market_17_craze_province = {
+	province_trade_power_modifier = 0.05
+	picture = "modifier_icon_17_craze"
+}
+
+stock_market_17_consumption_province = {
+
+}
+stock_market_18_craze_ban = {
+	global_unrest = 1
+}
+
+stock_market_18_craze_province = {
+	province_trade_power_modifier = 0.05
+	picture = "modifier_icon_18_craze"
+}
+
+stock_market_18_consumption_province = {
+
+}
+stock_market_19_craze_ban = {
+	global_unrest = 1
+}
+
+stock_market_19_craze_province = {
+	province_trade_power_modifier = 0.05
+	picture = "modifier_icon_19_craze"
+}
+
+stock_market_19_consumption_province = {
+
+}
+stock_market_20_craze_ban = {
+	global_unrest = 1
+}
+
+stock_market_20_craze_province = {
+	province_trade_power_modifier = 0.05
+	picture = "modifier_icon_20_craze"
+}
+
+stock_market_20_consumption_province = {
+
+}
+stock_market_29_craze_ban = {
+	global_unrest = 1
+}
+
+stock_market_29_craze_province = {
+	province_trade_power_modifier = 0.05
+	picture = "modifier_icon_29_craze"
+}
+
+stock_market_29_consumption_province = {
+
+}
+stock_market_30_craze_ban = {
+	global_unrest = 1
+}
+
+stock_market_30_craze_province = {
+	province_trade_power_modifier = 0.05
+	picture = "modifier_icon_30_craze"
+}
+
+stock_market_30_consumption_province = {
+
 }

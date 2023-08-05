@@ -1,6 +1,42 @@
 spriteTypes = {
     spriteType = {
-        name = "GFX_modifier_icon_ivory_craze"
-        textureFile = "gfx/interface/ideas_EU4/modifier_icon_ivory_craze.dds"
+        name = "GFX_modifier_icon_12_craze"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_12_craze.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_13_craze"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_13_craze.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_14_craze"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_14_craze.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_16_craze"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_16_craze.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_17_craze"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_17_craze.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_18_craze"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_18_craze.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_19_craze"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_19_craze.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_20_craze"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_20_craze.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_29_craze"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_29_craze.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_30_craze"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_30_craze.dds"
 	}
 }

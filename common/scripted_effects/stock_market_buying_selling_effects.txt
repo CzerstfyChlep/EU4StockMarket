@@ -490,9 +490,9 @@ gain_ducats_based_on_variable = {
 
 prepare_immediate_values_for_buying = {
 	clr_country_flag = can_buy_1000_$trade_good_id$
-	clr_country_flag = can_buy_100_$trade_good_id$
+	clr_country_flag = can_buy_200_$trade_good_id$
+	clr_country_flag = can_buy_50_$trade_good_id$
 	clr_country_flag = can_buy_10_$trade_good_id$
-	clr_country_flag = can_buy_1_$trade_good_id$
 
 	export_to_variable = {
 		which = current_treasury
@@ -500,39 +500,39 @@ prepare_immediate_values_for_buying = {
 		who = ROOT
 	}
 
-	get_average_price_for_buying_trade_good = { amount = 1 trade_good_id = $trade_good_id$ }
+	get_average_price_for_buying_trade_good = { amount = 10 trade_good_id = $trade_good_id$ }
 
 	if = {
 		limit = {
 			check_variable = {
 				which = current_treasury
-				which = buying_1_of_$trade_good_id$_total
+				which = buying_10_of_$trade_good_id$_total
 			}
 		}
 
-		set_country_flag = can_buy_1_$trade_good_id$
+		set_country_flag = can_buy_10_$trade_good_id$
 
 		#we can buy more?
-		get_average_price_for_buying_trade_good = { amount = 10 trade_good_id = $trade_good_id$ }
+		get_average_price_for_buying_trade_good = { amount = 50 trade_good_id = $trade_good_id$ }
 		if = {
 			limit = {
 				check_variable = {
 					which = current_treasury
-					which = buying_10_of_$trade_good_id$_total
+					which = buying_50_of_$trade_good_id$_total
 				}
 			}
 
-			set_country_flag = can_buy_10_$trade_good_id$
-			get_average_price_for_buying_trade_good = { amount = 100 trade_good_id = $trade_good_id$ }
+			set_country_flag = can_buy_50_$trade_good_id$
+			get_average_price_for_buying_trade_good = { amount = 200 trade_good_id = $trade_good_id$ }
 			if = {
 				limit = {
 					check_variable = {
 						which = current_treasury
-						which = buying_100_of_$trade_good_id$_total
+						which = buying_200_of_$trade_good_id$_total
 					}
 				}
 	
-				set_country_flag = can_buy_100_$trade_good_id$
+				set_country_flag = can_buy_200_$trade_good_id$
 				get_average_price_for_buying_trade_good = { amount = 1000 trade_good_id = $trade_good_id$ }
 				if = {
 					limit = {
@@ -558,20 +558,30 @@ prepare_immediate_values_for_selling = {
 			}
 		}
 		get_average_price_for_selling_trade_good = { amount = 1000 trade_good_id = $trade_good_id$ }
-		get_average_price_for_selling_trade_good = { amount = 100 trade_good_id = $trade_good_id$ }
+		get_average_price_for_selling_trade_good = { amount = 200 trade_good_id = $trade_good_id$ }
+		get_average_price_for_selling_trade_good = { amount = 50 trade_good_id = $trade_good_id$ }
 		get_average_price_for_selling_trade_good = { amount = 10 trade_good_id = $trade_good_id$ }
-		get_average_price_for_selling_trade_good = { amount = 1 trade_good_id = $trade_good_id$ }
 	}
 	else_if = {
 		limit = {
 			check_variable = {
 				which = country_stock_market_stockpile_for_$trade_good_id$
-				value = 100
+				value = 200
 			}
 		}
-		get_average_price_for_selling_trade_good = { amount = 100 trade_good_id = $trade_good_id$ }
+		get_average_price_for_selling_trade_good = { amount = 200 trade_good_id = $trade_good_id$ }
+		get_average_price_for_selling_trade_good = { amount = 50 trade_good_id = $trade_good_id$ }
 		get_average_price_for_selling_trade_good = { amount = 10 trade_good_id = $trade_good_id$ }
-		get_average_price_for_selling_trade_good = { amount = 1 trade_good_id = $trade_good_id$ }
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = country_stock_market_stockpile_for_$trade_good_id$
+				value = 50
+			}
+		}
+		get_average_price_for_selling_trade_good = { amount = 50 trade_good_id = $trade_good_id$ }
+		get_average_price_for_selling_trade_good = { amount = 10 trade_good_id = $trade_good_id$ }
 	}
 	else_if = {
 		limit = {
@@ -581,16 +591,6 @@ prepare_immediate_values_for_selling = {
 			}
 		}
 		get_average_price_for_selling_trade_good = { amount = 10 trade_good_id = $trade_good_id$ }
-		get_average_price_for_selling_trade_good = { amount = 1 trade_good_id = $trade_good_id$ }
-	}
-	else_if = {
-		limit = {
-			check_variable = {
-				which = country_stock_market_stockpile_for_$trade_good_id$
-				value = 1
-			}
-		}
-		get_average_price_for_selling_trade_good = { amount = 1 trade_good_id = $trade_good_id$ }
 	}
 }
 
