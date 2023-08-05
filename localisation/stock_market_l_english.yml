@@ -159,6 +159,8 @@
  stock_market_nations_above_mil_tech_21: "Countries with §YMilitary Technology§! of at least 21 will now contribute to §YDemand§! for £dyes£§YDyes§! and £cloth£§YCloth§! with the size of their army."
  stock_market_supply_of_fish_is_inceased: "§YSupply§! of £fish£§YFish§! is increased by §Y+20.0%§!."
  stock_market_cotton_demand: "§YDemand§! for £cotton£§YCotton§! is increased multiplicatively by §G+35.0%§!."
+ stock_market_sugar_demand: "§G10.0%§! of Supply of £tea£§YTea§!, £coffee£§YCoffee§! and £cocoa£§YCocoa§! will generate §YDemand§! for £sugar£§YSugar§!."
+ stock_market_increase_demand_for_silk_by_25_percent: "Demand for £silk£§YSilk§! is increased multiplicatively by §G+25.0%§!."
  
  stock_market_huaynaputina: "Huaynaputina Eruption"
  stock_market_bottger_manufacture: "Bottger's Manufacture"

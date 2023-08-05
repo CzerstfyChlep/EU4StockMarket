@@ -1418,6 +1418,9 @@ country_event = {
 			value = 0.5
 			duration = -1
 		}
+		set_global_flag = popularization_of_sugar_happened
+		
+		custom_tooltip = stock_market_sugar_demand
 	}
 }
 
@@ -1500,6 +1503,9 @@ country_event = {
 			value = 0.25
 			duration = -1
 		}
+		
+		set_global_flag = popular_silk_happened
+		custom_tooltip = stock_market_increase_demand_for_silk_by_25_percent
 	}
 }
 

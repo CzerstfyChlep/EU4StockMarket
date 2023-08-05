@@ -313,6 +313,48 @@ update_national_demand_for_trade_good_18 = { # sugar
 			which = tempvar
 		}
 	}
+	
+	if = {
+		limit = {
+			has_global_flag = popularization_of_sugar_happened
+		}
+		set_variable = {
+			which = tempvar
+			which = stock_market_supply_for_16 #coffee
+		}
+		multiply_variable = { 
+			which = tempvar
+			value = 0.1
+		}
+		change_variable = {
+			which = stock_market_demand_for_18
+			which = tempvar
+		}
+		set_variable = {
+			which = tempvar
+			which = stock_market_supply_for_20 #cocoa
+		}
+		multiply_variable = { 
+			which = tempvar
+			value = 0.1
+		}
+		change_variable = {
+			which = stock_market_demand_for_18
+			which = tempvar
+		}
+		set_variable = {
+			which = tempvar
+			which = stock_market_supply_for_13 #tea
+		}
+		multiply_variable = { 
+			which = tempvar
+			value = 0.1
+		}
+		change_variable = {
+			which = stock_market_demand_for_18
+			which = tempvar
+		}
+	}
 }
 update_national_demand_for_trade_good_19 = { # tobacco
 
@@ -321,7 +363,15 @@ update_national_demand_for_trade_good_20 = { # cocoa
 
 }
 update_national_demand_for_trade_good_21 = { # silk
-
+	if = {
+		limit = {
+			has_global_flag = popular_silk_happened
+		}
+		multiply_variable = { 
+			which = stock_market_demand_for_21
+			value = 1.25
+		}
+	}
 }
 update_national_demand_for_trade_good_22 = { # dyes
 	if = {
