@@ -231,7 +231,7 @@ get_average_price_for_buying_trade_good = {
 
 	multiply_variable = {
 		which = buying_$amount$_of_$trade_good_id$_price
-		which = 0.01
+		value = 0.01
 	}
 
 	set_variable = {
