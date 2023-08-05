@@ -1,0 +1,98 @@
+estate_special = {
+		modifier_definition = {
+		key = good_0_demand_modifier
+	}
+	modifier_definition = {
+		key = good_1_demand_modifier
+	}
+	modifier_definition = {
+		key = good_2_demand_modifier
+	}
+	modifier_definition = {
+		key = good_3_demand_modifier
+	}
+	modifier_definition = {
+		key = good_4_demand_modifier
+	}
+	modifier_definition = {
+		key = good_5_demand_modifier
+	}
+	modifier_definition = {
+		key = good_6_demand_modifier
+	}
+	modifier_definition = {
+		key = good_7_demand_modifier
+	}
+	modifier_definition = {
+		key = good_8_demand_modifier
+	}
+	modifier_definition = {
+		key = good_9_demand_modifier
+	}
+	modifier_definition = {
+		key = good_10_demand_modifier
+	}
+	modifier_definition = {
+		key = good_11_demand_modifier
+	}
+	modifier_definition = {
+		key = good_12_demand_modifier
+	}
+	modifier_definition = {
+		key = good_13_demand_modifier
+	}
+	modifier_definition = {
+		key = good_14_demand_modifier
+	}
+	modifier_definition = {
+		key = good_15_demand_modifier
+	}
+	modifier_definition = {
+		key = good_16_demand_modifier
+	}
+	modifier_definition = {
+		key = good_17_demand_modifier
+	}
+	modifier_definition = {
+		key = good_18_demand_modifier
+	}
+	modifier_definition = {
+		key = good_19_demand_modifier
+	}
+	modifier_definition = {
+		key = good_20_demand_modifier
+	}
+	modifier_definition = {
+		key = good_21_demand_modifier
+	}
+	modifier_definition = {
+		key = good_22_demand_modifier
+	}
+	modifier_definition = {
+		key = good_23_demand_modifier
+	}
+	modifier_definition = {
+		key = good_24_demand_modifier
+	}
+	modifier_definition = {
+		key = good_25_demand_modifier
+	}
+	modifier_definition = {
+		key = good_26_demand_modifier
+	}
+	modifier_definition = {
+		key = good_27_demand_modifier
+	}
+	modifier_definition = {
+		key = good_28_demand_modifier
+	}
+	modifier_definition = {
+		key = good_29_demand_modifier
+	}
+	modifier_definition = {
+		key = good_30_demand_modifier
+	}
+	modifier_definition = {
+		key = good_31_demand_modifier
+	}
+}

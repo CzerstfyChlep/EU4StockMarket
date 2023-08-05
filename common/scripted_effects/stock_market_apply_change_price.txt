@@ -1,6 +1,16 @@
 apply_change_price = {
 
 	REB = {
+		multiply_variable = {
+			which = stock_market_extra_demand_for_$trade_good_id$
+			value = 0.8
+		}
+	
+		multiply_variable = {
+			which = stock_market_extra_supply_for_$trade_good_id$
+			value = 0.8
+		}
+		
 		set_variable = {
 			which = temp_work_var_$trade_good_id$
 			which = price_multiplier_$trade_good_id$
