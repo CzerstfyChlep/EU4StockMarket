@@ -265,9 +265,17 @@ set_price_for_trade_good = {
 			which = difference_value_$trade_good_id$
 			which = stock_market_supply_for_$trade_good_id$
 		}
+		subtract_variable = {
+			which = difference_value_$trade_good_id$
+			which = stock_market_extra_supply_for_$trade_good_id$
+		}
 		set_variable = {
 			which = sum_value_$trade_good_id$
 			which = stock_market_supply_for_$trade_good_id$
+		}
+		change_variable = {
+			which = sum_value_$trade_good_id$
+			which = stock_market_extra_supply_for_$trade_good_id$
 		}
 		change_variable = {
 			which = sum_value_$trade_good_id$

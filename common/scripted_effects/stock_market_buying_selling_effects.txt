@@ -149,7 +149,7 @@ sell_trade_good_with_given_price_amount = {
 	
 		REB = {
 			change_variable = {
-				which = stock_market_supply_for_$trade_good_id$
+				which = stock_market_extra_supply_for_$trade_good_id$
 				value = $amount$
 			}
 			set_price_for_trade_good = {
