@@ -1541,6 +1541,10 @@ country_event = {
 				NOT = { trade_goods = dyes }
 			}
 			change_trade_goods = dyes
+			add_permanent_province_modifier = {
+				name = stock_market_bengali_indigo
+				duration = -1
+			}
 		}
 		random_owned_province = {
 			limit = {
@@ -1549,6 +1553,10 @@ country_event = {
 				NOT = { trade_goods = dyes }
 			}
 			change_trade_goods = dyes
+			add_permanent_province_modifier = {
+				name = stock_market_bengali_indigo
+				duration = -1
+			}
 		}
 		every_owned_province = {
 			limit = { trade_goods = dyes }
@@ -1633,6 +1641,14 @@ country_event = {
 			value = 0.5
 			duration = -1
 		}
+		set_global_flag = veneering_happened
+		
+		custom_tooltip = stock_market_veneering
+		
+		custom_tooltip = " "
+		
+		add_prestige_or_monarch_power = { amount = 40 }
+		add_splendor = 100
 	}
 }
 
@@ -1665,6 +1681,26 @@ country_event = {
 			value = 0.25
 			duration = -1
 		}
+		set_global_flag = ivory_shortage_happened
+		
+		custom_tooltip = stock_market_every_province_in_indochina
+		tooltip = {
+			add_permanent_province_modifier = {
+				name = stock_market_ivory_shortage
+				duration = -1
+			}
+		}
+		hidden_effect = {
+			indo_china_region = {
+				limit = {
+					trade_goods = ivory
+				}
+				add_permanent_province_modifier = {
+					name = stock_market_ivory_shortage
+					duration = -1
+				}
+			}
+		}
 	}
 }
 
@@ -1690,6 +1726,8 @@ country_event = {
 	
 	option = {
 		name = prices.28.a
+		
+		set_global_flag = iron_working_happened
 		PDX_change_price = {
 			trade_goods = iron
 			key = IRON_WORKING
@@ -1702,6 +1740,8 @@ country_event = {
 			value = -0.35
 			duration = -1
 		}
+		
+		custom_tooltip = stock_market_iron_and_copper_exchange
 	}
 }
 
@@ -1717,6 +1757,7 @@ country_event = {
 	major = yes
 
 	trigger = {
+		always = no #TODO
 		dip_tech = 16
 		colony = 1
 		any_subject_country = {
@@ -1759,6 +1800,7 @@ country_event = {
 	major = yes
 
 	trigger = {
+		always = no #TODO probably done via craze
 		dip_tech = 16
 		colony = 1
 		NOT = { has_global_flag = popularization_of_tobacco_happened }
@@ -1839,14 +1881,23 @@ country_event = {
 	
 	option = {
 		name = prices.31.a
-		add_years_of_income  = 1
-		add_prestige = 20
+		set_global_flag = mocha_killed
+		add_years_of_income = 1
+		add_prestige_or_monarch_power = { amount = 20 }
+		
+		custom_tooltip = " "
+		
 		PDX_change_price = {
 			trade_goods = coffee
 			key = JAVA_COFFEE
 			value = -0.4
 			duration = -1
 		}
+		
+		custom_tooltip = stock_market_increase_supply_for_coffee
+		
+		custom_tooltip = " "
+		
 		387 = {
 			tooltip = { remove_province_modifier = coffea_arabica_modifier }
 		}

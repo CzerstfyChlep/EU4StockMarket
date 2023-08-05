@@ -181,6 +181,17 @@ update_national_demand_for_trade_good_8 = { # copper
 			value = 0.35
 		}
 		
+		if = {
+			limit = {
+				has_global_flag = iron_working_happened
+				mil_tech = 18
+			}
+			multiply_variable = {
+				which = tempvar
+				value = 0.5
+			}
+		}
+		
 		change_variable = {
 			which = stock_market_demand_for_8
 			which = tempvar
@@ -201,7 +212,27 @@ update_national_demand_for_trade_good_9 = { # gold
 
 }
 update_national_demand_for_trade_good_10 = { # iron
-
+	if = {
+		limit = {
+			has_global_flag = iron_working_happened
+				mil_tech = 18
+		}
+		
+		export_to_variable = {
+			which = tempvar
+			value = trigger_value:num_of_artillery
+		}
+		
+		multiply_variable = {
+			which = tempvar
+			value = 0.5
+		}
+		
+		change_variable = {
+			which = stock_market_demand_for_10
+			which = tempvar
+		}
+	}
 }
 update_national_demand_for_trade_good_11 = { # slaves
 	if = {
@@ -396,7 +427,15 @@ update_national_demand_for_trade_good_22 = { # dyes
 	}
 }
 update_national_demand_for_trade_good_23 = { # tropical_wood
-
+	if = {
+		limit = {
+			has_global_flag = veneering_happened
+		}
+		multiply_variable = { 
+			which = stock_market_demand_for_23
+			value = 1.5
+		}
+	}
 }
 update_national_demand_for_trade_good_24 = { # livestock
 	if = {

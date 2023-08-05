@@ -161,9 +161,15 @@
  stock_market_cotton_demand: "§YDemand§! for £cotton£§YCotton§! is increased multiplicatively by §G+35.0%§!."
  stock_market_sugar_demand: "§G10.0%§! of Supply of £tea£§YTea§!, £coffee£§YCoffee§! and £cocoa£§YCocoa§! will generate §YDemand§! for £sugar£§YSugar§!."
  stock_market_increase_demand_for_silk_by_25_percent: "Demand for £silk£§YSilk§! is increased multiplicatively by §G+25.0%§!."
+ stock_market_veneering: "Demand for £tropical_wood£§YTropical Wood§! is increased multiplicatively by §G+50.0%§!."
+ stock_market_every_province_in_indochina: "Every province in §YIndochina§! Region producing £ivory£§YIvory§!:"
+ stock_market_iron_and_copper_exchange: "Countries with §YMilitary Technology§! will have their §YArtillery§! generate half as much demand for £copper£§YCopper§! and will now generate Demand for £iron£§YIron§!."
+ stock_market_increase_supply_for_coffee: "Supply for §YCoffee§! will be increased multiplicatively by §Y+10.0%§!."
  
  stock_market_huaynaputina: "Huaynaputina Eruption"
  stock_market_bottger_manufacture: "Bottger's Manufacture"
  stock_market_little_ice_age: "Little Ice Age"
+ stock_market_bengali_indigo: "Bengali Indigo"
+ stock_market_ivory_shortage: "Ivory Shortage"
  
  stock_market_local_demand_for_foundry: "Local Cannon Foundry"
