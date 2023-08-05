@@ -27,3 +27,16 @@ stock_market_ivory_shortage = {
 	trade_goods_size = -0.4
 	trade_goods_size_modifier = -0.5
 }
+
+stock_market_ivory_craze_ban = {
+
+}
+
+stock_market_ivory_craze_province = {
+	province_trade_power_modifier = 0.05
+	picture = "modifier_icon_ivory_craze"
+}
+
+stock_market_ivory_consumption_province = {
+	province_trade_power_modifier = 0.005
+}

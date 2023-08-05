@@ -95,12 +95,12 @@ country_event = {
 
 	option = {
 		name = stock_market_menu_events.231.EVTOPT2
-		custom_tooltip = STOCK_MARKET_TEA_BUY_100
+		custom_tooltip = STOCK_MARKET_TEA_BUY_200
 		hidden_effect = {
 
 			buy_trade_good_with_given_price_amount = {
-				amount = 100
-				variable_name_total = buying_100_of_13_total
+				amount = 200
+				variable_name_total = buying_200_of_13_total
 				trade_good_id = 13
 			}
 
@@ -109,12 +109,32 @@ country_event = {
 			}			
 		}
 		trigger = {
-			has_country_flag = can_buy_100_13
+			has_country_flag = can_buy_200_13
 		}
 	}
 
 	option = {
 		name = stock_market_menu_events.231.EVTOPT3
+		custom_tooltip = STOCK_MARKET_TEA_BUY_50
+		hidden_effect = {
+
+			buy_trade_good_with_given_price_amount = {
+				amount = 50
+				variable_name_total = buying_50_of_13_total
+				trade_good_id = 13
+			}
+
+			country_event = {
+				id = stock_market_menu_events.2310 #Going back to the same option via other event
+			}			
+		}
+		trigger = {
+			has_country_flag = can_buy_50_13
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.231.EVTOPT4
 		custom_tooltip = STOCK_MARKET_TEA_BUY_10
 		hidden_effect = {
 
@@ -130,26 +150,6 @@ country_event = {
 		}
 		trigger = {
 			has_country_flag = can_buy_10_13
-		}
-	}
-
-	option = {
-		name = stock_market_menu_events.231.EVTOPT4
-		custom_tooltip = STOCK_MARKET_TEA_BUY_1
-		hidden_effect = {
-
-			buy_trade_good_with_given_price_amount = {
-				amount = 1
-				variable_name_total = buying_1_of_13_total
-				trade_good_id = 13
-			}
-
-			country_event = {
-				id = stock_market_menu_events.2310 #Going back to the same option via other event
-			}			
-		}
-		trigger = {
-			has_country_flag = can_buy_1_13
 		}
 	}
 
@@ -398,9 +398,6 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = stock_market_menu_events.23
-			}	
-			country_event = {
-				id = stock_market_menu_events.2312 #Going back to the same option via other event
 			}			
 		}
 	}
