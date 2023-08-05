@@ -11,7 +11,15 @@ update_national_supply_for_trade_good_3 = { # cloth
 
 }
 update_national_supply_for_trade_good_4 = { # fish
-
+	if = {
+		limit = {
+			has_global_flag = great_fisheries_happened
+		}
+		multiply_variable = { 
+			which = stock_market_supply_for_4
+			value = 1.2
+		}
+	}
 }
 update_national_supply_for_trade_good_5 = { # fur
 

@@ -790,6 +790,33 @@ country_event = {
 			value = 0.25
 			duration = 3650
 		}
+		
+		custom_tooltip = stock_market_every_province_producing_fish_wine_livestock_grain
+		tooltip = {
+			add_permanent_province_modifier = {
+				name = stock_market_little_ice_age
+				duration = 3650
+			}
+		}
+		hidden_effect = {
+			every_province = {
+				limit = {
+					OR = {
+						trade_goods = livestock
+						trade_goods = wine
+						trade_goods = fish
+						trade_goods = grain
+					}
+				}
+				add_permanent_province_modifier = {
+					name = stock_market_little_ice_age
+					duration = 3650
+				}
+			}
+		}
+		
+		custom_tooltip = stock_market_temporarily_increase_demand_for_fur_and_salt
+		set_global_flag = stock_market_ice_age
 	}
 }
 
@@ -817,6 +844,10 @@ country_event = {
 	
 	option = {
 		name = prices.12.a
+		
+		set_global_flag = wine_corks_happened
+		
+		custom_tooltip = stock_market_wine_supply
 		PDX_change_price = {
 			trade_goods = wine
 			key = WINE_CORKS
@@ -855,6 +886,11 @@ country_event = {
 	
 	option = {
 		name = prices.13.a
+		
+		set_global_flag = new_draperies_happened
+		
+		custom_tooltip = stock_market_new_draperies_tt
+		
 		PDX_change_price = {
 			trade_goods = cloth
 			key = NEW_DRAPERIES
@@ -892,6 +928,9 @@ country_event = {
 	
 	option = {
 		name = prices.14.a
+		
+		set_global_flag = regulated_uniforms_happened
+		
 		PDX_change_price = {
 			trade_goods = cloth
 			key = REGULATED_UNIFORMS
@@ -910,6 +949,8 @@ country_event = {
 			value = 0.25
 			duration = -1
 		}
+		
+		custom_tooltip = stock_market_nations_above_mil_tech_21
 	}
 }
 
@@ -953,6 +994,9 @@ country_event = {
 			value = 0.1
 			duration = -1
 		}
+		set_global_flag = great_fisheries_happened
+		custom_tooltip = stock_market_supply_of_fish_is_inceased
+		
 		newfoundland_area = {
 			add_permanent_province_modifier = {
 				name = "grand_bank_fisheries"
@@ -1018,6 +1062,9 @@ country_event = {
 			value = 0.45
 			duration = -1
 		}
+		
+		set_global_flag = calicoes_happened
+		custom_tooltip = stock_market_cotton_demand
 	}
 }
 

@@ -149,6 +149,7 @@ update_demand_for_trade_good_4 = { #fish
 			if = {
 				limit = {
 					has_global_flag = protestant_fish_happened
+					PREV = { religion = protestant }
 				}
 				change_variable = {
 					which = modifier_var
