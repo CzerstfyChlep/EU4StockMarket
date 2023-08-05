@@ -13,6 +13,21 @@ stock_market_bottger_manufacture = {
 	trade_value_modifier = 2
 }
 
+stock_market_little_ice_age = {
+	trade_goods_size = -0.4
+	trade_goods_size_modifier = -0.5
+}
+
+stock_market_bengali_indigo = {
+	trade_goods_size = 3
+	trade_goods_size_modifier = 0.5
+}
+
+stock_market_ivory_shortage = {
+	trade_goods_size = -0.4
+	trade_goods_size_modifier = -0.5
+}
+
 stock_market_ivory_craze_ban = {
 
 }

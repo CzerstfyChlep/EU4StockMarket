@@ -13,6 +13,15 @@ update_national_demand_for_trade_good_2 = { # wool
 		which = tempvar
 		value = 0.05
 	}
+	if = {
+		limit = {
+			has_global_flag = new_draperies_happened
+		}
+		multiply_variable = { 
+			which = tempvar
+			value = 0.5
+		}
+	}
 	change_variable = {
 		which = stock_market_demand_for_2
 		which = tempvar
@@ -37,18 +46,100 @@ update_national_demand_for_trade_good_2 = { # wool
 			value = 0.9
 		}
 	}
+	
+	if = {
+		limit = {
+			has_global_flag = selective_breeding_happened
+		}
+		multiply_variable = { 
+			which = stock_market_demand_for_2
+			value = 1.1
+		}
+	}
 }
 update_national_demand_for_trade_good_3 = { # cloth
-
+	if = {
+		limit = {
+			has_global_flag = regulated_uniforms_happened
+			mil_tech = 21
+		}
+		export_to_variable = {
+			which = tempvar
+			value = trigger_value:army_size
+		}
+		
+		multiply_variable = {
+			which = tempvar
+			value = 0.35
+		}
+		
+		change_variable = {
+			which = stock_market_demand_for_3
+			which = tempvar
+		}
+	}
+	
+	if = {
+		limit = {
+			has_global_flag = new_draperies_happened
+		}
+		multiply_variable = { 
+			which = stock_market_demand_for_3
+			value = 1.1
+		}
+	}
 }
 update_national_demand_for_trade_good_4 = { # fish
 
 }
 update_national_demand_for_trade_good_5 = { # fur
-
+	if = {
+		limit = {
+			has_global_flag = stock_market_ice_age
+			NOT = { 
+				had_global_flag = {
+					flag = stock_market_ice_age
+					days = 3650
+				}
+			}
+		}
+		multiply_variable = { 
+			which = stock_market_demand_for_5
+			value = 1.5
+		}
+	}
 }
 update_national_demand_for_trade_good_6 = { # salt
-
+	set_variable = {
+		which = tempvar
+		which = stock_market_supply_for_4 #fish supply generates demand for salt (preservation)
+	}
+	
+	multiply_variable = {
+		which = tempvar
+		value = 0.05
+	}
+	
+	change_variable = {
+		which = stock_market_demand_for_6
+		which = tempvar
+	}
+	
+	if = {
+		limit = {
+			has_global_flag = stock_market_ice_age
+			NOT = { 
+				had_global_flag = {
+					flag = stock_market_ice_age
+					days = 3650
+				}
+			}
+		}
+		multiply_variable = { 
+			which = stock_market_demand_for_6
+			value = 1.5
+		}
+	}
 }
 update_national_demand_for_trade_good_7 = { # naval_supplies
 	export_to_variable = {
@@ -100,6 +191,17 @@ update_national_demand_for_trade_good_8 = { # copper
 			value = 0.35
 		}
 		
+		if = {
+			limit = {
+				has_global_flag = iron_working_happened
+				mil_tech = 18
+			}
+			multiply_variable = {
+				which = tempvar
+				value = 0.5
+			}
+		}
+		
 		change_variable = {
 			which = stock_market_demand_for_8
 			which = tempvar
@@ -120,7 +222,27 @@ update_national_demand_for_trade_good_9 = { # gold
 
 }
 update_national_demand_for_trade_good_10 = { # iron
-
+	if = {
+		limit = {
+			has_global_flag = iron_working_happened
+				mil_tech = 18
+		}
+		
+		export_to_variable = {
+			which = tempvar
+			value = trigger_value:num_of_artillery
+		}
+		
+		multiply_variable = {
+			which = tempvar
+			value = 0.5
+		}
+		
+		change_variable = {
+			which = stock_market_demand_for_10
+			which = tempvar
+		}
+	}
 }
 update_national_demand_for_trade_good_11 = { # slaves
 	if = {
@@ -203,6 +325,16 @@ update_national_demand_for_trade_good_17 = { # cotton
 			value = 1.25
 		}
 	}
+	
+	if = {
+		limit = {
+			has_global_flag = calicoes_happened
+		}
+		multiply_variable = { 
+			which = stock_market_demand_for_17
+			value = 1.35
+		}
+	}
 }
 update_national_demand_for_trade_good_18 = { # sugar
 	if = {
@@ -222,6 +354,48 @@ update_national_demand_for_trade_good_18 = { # sugar
 			which = tempvar
 		}
 	}
+	
+	if = {
+		limit = {
+			has_global_flag = popularization_of_sugar_happened
+		}
+		set_variable = {
+			which = tempvar
+			which = stock_market_supply_for_16 #coffee
+		}
+		multiply_variable = { 
+			which = tempvar
+			value = 0.1
+		}
+		change_variable = {
+			which = stock_market_demand_for_18
+			which = tempvar
+		}
+		set_variable = {
+			which = tempvar
+			which = stock_market_supply_for_20 #cocoa
+		}
+		multiply_variable = { 
+			which = tempvar
+			value = 0.1
+		}
+		change_variable = {
+			which = stock_market_demand_for_18
+			which = tempvar
+		}
+		set_variable = {
+			which = tempvar
+			which = stock_market_supply_for_13 #tea
+		}
+		multiply_variable = { 
+			which = tempvar
+			value = 0.1
+		}
+		change_variable = {
+			which = stock_market_demand_for_18
+			which = tempvar
+		}
+	}
 }
 update_national_demand_for_trade_good_19 = { # tobacco
 
@@ -230,13 +404,48 @@ update_national_demand_for_trade_good_20 = { # cocoa
 
 }
 update_national_demand_for_trade_good_21 = { # silk
-
+	if = {
+		limit = {
+			has_global_flag = popular_silk_happened
+		}
+		multiply_variable = { 
+			which = stock_market_demand_for_21
+			value = 1.25
+		}
+	}
 }
 update_national_demand_for_trade_good_22 = { # dyes
-
+	if = {
+		limit = {
+			has_global_flag = regulated_uniforms_happened
+			mil_tech = 21
+		}
+		export_to_variable = {
+			which = tempvar
+			value = trigger_value:army_size
+		}
+		
+		multiply_variable = {
+			which = tempvar
+			value = 0.25
+		}
+		
+		change_variable = {
+			which = stock_market_demand_for_22
+			which = tempvar
+		}
+	}
 }
 update_national_demand_for_trade_good_23 = { # tropical_wood
-
+	if = {
+		limit = {
+			has_global_flag = veneering_happened
+		}
+		multiply_variable = { 
+			which = stock_market_demand_for_23
+			value = 1.5
+		}
+	}
 }
 update_national_demand_for_trade_good_24 = { # livestock
 	if = {
@@ -269,12 +478,59 @@ update_national_demand_for_trade_good_24 = { # livestock
 			value = 2
 		}
 	}
+	if = {
+		limit = {
+			has_global_flag = selective_breeding_happened
+		}
+		multiply_variable = { 
+			which = stock_market_demand_for_24
+			value = 1.2
+		}
+	}
 }
 update_national_demand_for_trade_good_25 = { # incense
-
+	if = {
+		limit = {
+			has_global_flag = perfume_industry
+		}
+		multiply_variable = { 
+			which = stock_market_demand_for_24
+			value = 1.15
+		}
+	}
 }
 update_national_demand_for_trade_good_26 = { # glass
-
+	if = {
+		limit = {
+			has_global_flag = wine_corks_happened
+		}
+		set_variable = {
+			which = tempvar
+			which = stock_market_supply_for_1
+		}
+		multiply_variable = { 
+			which = tempvar
+			value = 0.5
+		}
+		change_variable = {
+			which = stock_market_demand_for_26
+			which = tempvar
+		}
+	}
+	
+	if = {
+		limit = {
+			has_global_flag = development_of_optics
+			OR = {
+				innovativeness = 20
+				has_idea_group = innovativeness_ideas 
+			}
+		}
+		multiply_variable = { 
+			which = stock_market_demand_for_26
+			value = 3
+		}
+	}
 }
 update_national_demand_for_trade_good_27 = { # paper
 
@@ -283,7 +539,15 @@ update_national_demand_for_trade_good_28 = { # gems
 
 }
 update_national_demand_for_trade_good_29 = { # coal
-
+	if = {
+		limit = {
+			has_global_flag = stock_market_improved_coal_mining
+		}
+		multiply_variable = { 
+			which = stock_market_demand_for_29
+			value = 0.7
+		}
+	}
 }
 update_national_demand_for_trade_good_30 = { # cloves
 
