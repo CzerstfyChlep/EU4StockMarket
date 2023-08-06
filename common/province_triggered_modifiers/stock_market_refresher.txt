@@ -220,6 +220,11 @@ stock_market_refresh_prices_monthly = {
 		clr_province_flag = first_game_month_flag
 
 		priority_update = yes
+
+
+		#TODO NEED TO OPTIMIZE THIS, IT GOES THROUGH ALL COUNTRIES BUT WE ARE DOING THAT ALREADY WITH PRIORITY UPDATE!
+		gain_merchant_capacity_monthly_for_all = yes
+
 	}
 	
 	on_deactivation = {

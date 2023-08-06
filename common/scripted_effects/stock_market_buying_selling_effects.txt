@@ -120,6 +120,11 @@ buy_trade_good_with_given_price_amount = {
 		value = $amount$
 	}
 
+	subtract_variable = {
+		which = merchant_capacity_left
+		value = $amount$
+	}
+
 	REB = {
 		change_variable = {
 			which = stock_market_extra_demand_for_$trade_good_id$
@@ -147,6 +152,11 @@ sell_trade_good_with_given_price_amount = {
 			value = $amount$
 		}
 	
+		subtract_variable = {
+			which = merchant_capacity_left
+			value = $amount$
+		}
+
 		REB = {
 			change_variable = {
 				which = stock_market_extra_supply_for_$trade_good_id$
@@ -508,6 +518,10 @@ prepare_immediate_values_for_buying = {
 				which = current_treasury
 				which = buying_10_of_$trade_good_id$_total
 			}
+			check_variable = {
+				which = merchant_capacity_left
+				value = 10
+			}
 		}
 
 		set_country_flag = can_buy_10_$trade_good_id$
@@ -520,6 +534,10 @@ prepare_immediate_values_for_buying = {
 					which = current_treasury
 					which = buying_50_of_$trade_good_id$_total
 				}
+				check_variable = {
+					which = merchant_capacity_left
+					value = 50
+				}
 			}
 
 			set_country_flag = can_buy_50_$trade_good_id$
@@ -529,6 +547,10 @@ prepare_immediate_values_for_buying = {
 					check_variable = {
 						which = current_treasury
 						which = buying_200_of_$trade_good_id$_total
+					}
+					check_variable = {
+						which = merchant_capacity_left
+						value = 200
 					}
 				}
 	
@@ -540,6 +562,10 @@ prepare_immediate_values_for_buying = {
 							which = current_treasury
 							which = buying_1000_of_$trade_good_id$_total
 						}
+						check_variable = {
+							which = merchant_capacity_left
+							value = 1000
+						}
 					}
 		
 					set_country_flag = can_buy_1000_$trade_good_id$
@@ -550,47 +576,78 @@ prepare_immediate_values_for_buying = {
 }
 
 prepare_immediate_values_for_selling = {
+	
 	if = {
 		limit = {
 			check_variable = {
 				which = country_stock_market_stockpile_for_$trade_good_id$
-				value = 1000
+				value = 0.001
 			}
-		}
-		get_average_price_for_selling_trade_good = { amount = 1000 trade_good_id = $trade_good_id$ }
-		get_average_price_for_selling_trade_good = { amount = 200 trade_good_id = $trade_good_id$ }
-		get_average_price_for_selling_trade_good = { amount = 50 trade_good_id = $trade_good_id$ }
-		get_average_price_for_selling_trade_good = { amount = 10 trade_good_id = $trade_good_id$ }
-	}
-	else_if = {
-		limit = {
 			check_variable = {
-				which = country_stock_market_stockpile_for_$trade_good_id$
-				value = 200
+				which = merchant_capacity_left
+				value = 0.001
 			}
 		}
-		get_average_price_for_selling_trade_good = { amount = 200 trade_good_id = $trade_good_id$ }
-		get_average_price_for_selling_trade_good = { amount = 50 trade_good_id = $trade_good_id$ }
-		get_average_price_for_selling_trade_good = { amount = 10 trade_good_id = $trade_good_id$ }
-	}
-	else_if = {
-		limit = {
-			check_variable = {
-				which = country_stock_market_stockpile_for_$trade_good_id$
-				value = 50
+
+		get_average_price_for_selling_all_of_trade_good = { trade_good_id = $trade_good_id$ }
+		if = {
+			limit = {
+				check_variable = {
+					which = country_stock_market_stockpile_for_$trade_good_id$
+					value = 1000
+				}
+				check_variable = {
+					which = merchant_capacity_left
+					value = 1000
+				}
 			}
+			get_average_price_for_selling_trade_good = { amount = 1000 trade_good_id = $trade_good_id$ }
+			get_average_price_for_selling_trade_good = { amount = 200 trade_good_id = $trade_good_id$ }
+			get_average_price_for_selling_trade_good = { amount = 50 trade_good_id = $trade_good_id$ }
+			get_average_price_for_selling_trade_good = { amount = 10 trade_good_id = $trade_good_id$ }
 		}
-		get_average_price_for_selling_trade_good = { amount = 50 trade_good_id = $trade_good_id$ }
-		get_average_price_for_selling_trade_good = { amount = 10 trade_good_id = $trade_good_id$ }
-	}
-	else_if = {
-		limit = {
-			check_variable = {
-				which = country_stock_market_stockpile_for_$trade_good_id$
-				value = 10
+		else_if = {
+			limit = {
+				check_variable = {
+					which = country_stock_market_stockpile_for_$trade_good_id$
+					value = 200
+				}
+				check_variable = {
+					which = merchant_capacity_left
+					value = 200
+				}
 			}
+			get_average_price_for_selling_trade_good = { amount = 200 trade_good_id = $trade_good_id$ }
+			get_average_price_for_selling_trade_good = { amount = 50 trade_good_id = $trade_good_id$ }
+			get_average_price_for_selling_trade_good = { amount = 10 trade_good_id = $trade_good_id$ }
 		}
-		get_average_price_for_selling_trade_good = { amount = 10 trade_good_id = $trade_good_id$ }
+		else_if = {
+			limit = {
+				check_variable = {
+					which = country_stock_market_stockpile_for_$trade_good_id$
+					value = 50
+				}
+				check_variable = {
+					which = merchant_capacity_left
+					value = 50
+				}
+			}
+			get_average_price_for_selling_trade_good = { amount = 50 trade_good_id = $trade_good_id$ }
+			get_average_price_for_selling_trade_good = { amount = 10 trade_good_id = $trade_good_id$ }
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = country_stock_market_stockpile_for_$trade_good_id$
+					value = 10
+				}
+				check_variable = {
+					which = merchant_capacity_left
+					value = 10
+				}
+			}
+			get_average_price_for_selling_trade_good = { amount = 10 trade_good_id = $trade_good_id$ }
+		}
 	}
 }
 
@@ -604,5 +661,221 @@ switch_trade_good_policy = {
 	}
 	else = {
 		set_country_flag = $policy$_for_$trade_good_id$
+	}
+}
+
+update_merchant_capacity_modifiers_for_country = {
+	set_variable = {
+		which = merchant_capacity_total
+		value = 12000
+	}
+
+	#here any flags changing it
+
+
+	set_variable = {
+		which = merchant_capacity_monthly
+		value = 1000
+	}
+
+	#here any flags changing it
+}
+
+update_merchant_capacity_modifiers_for_all = {
+	every_country = {
+		update_merchant_capacity_modifiers_for_country = yes
+	}
+}
+
+gain_merchant_capacity_monthly_for_country = {
+	update_merchant_capacity_modifiers_for_country = yes
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					which = merchant_capacity_left
+					which = merchant_capacity_total
+				}
+			}
+		}
+		change_variable = {
+			which = merchant_capacity_left
+			which = merchant_capacity_monthly
+		}
+
+		if = {
+			limit = {
+				check_variable = {
+					which = merchant_capacity_left
+					which = merchant_capacity_total
+				}
+			}
+			set_variable = {
+				which = merchant_capacity_left
+				which = merchant_capacity_total
+			}
+		}	
+	}
+}
+
+gain_merchant_capacity_monthly_for_all = {
+	every_country = {
+		gain_merchant_capacity_monthly_for_country = yes
+	}
+}
+
+get_average_price_for_selling_all_of_trade_good = {
+	REB = {
+		ROOT = {
+			set_variable = {
+				which = stock_market_price_value_$trade_good_id$
+				which = PREV
+			}
+
+			set_variable = {
+				which = sum_value_$trade_good_id$
+				which = PREV
+			}
+
+			set_variable = {
+				which = difference_value_$trade_good_id$
+				which = PREV
+			}
+		}
+	}
+
+	set_variable = {
+		which = temp_sell_all_variable
+		which = country_stock_market_stockpile_for_$trade_good_id$
+	}
+
+	if = {
+		limit = {
+			check_variable = {
+				which = temp_sell_all_variable
+				which = merchant_capacity_left
+			}
+		}
+
+		set_variable = {
+			which = temp_sell_all_variable
+			which = merchant_capacity_left
+		}
+	}
+
+	subtract_variable = {
+		which = difference_value_$trade_good_id$
+		which = temp_sell_all_variable
+	}
+
+	change_variable = {
+		which = sum_value_$trade_good_id$
+		which = temp_sell_all_variable
+	}
+
+	divide_variable = {
+		which = difference_value_$trade_good_id$
+		which = sum_value_$trade_good_id$
+	}
+
+	change_variable = {
+		which = difference_value_$trade_good_id$
+		value = 1
+	}
+
+	multiply_variable = {
+		which = difference_value_$trade_good_id$
+		which = difference_value_$trade_good_id$
+	}
+
+	multiply_variable = {
+		which = difference_value_$trade_good_id$
+		value = 5
+	}
+
+	#Difference is now the final price!
+
+	change_variable = {
+		which = stock_market_price_value_$trade_good_id$
+		which = difference_value_$trade_good_id$
+	}
+
+
+	divide_variable = {
+		which = stock_market_price_value_$trade_good_id$
+		value = 2
+	}
+
+	set_variable = {
+		which = selling_all_of_$trade_good_id$_price
+		which = stock_market_price_value_$trade_good_id$
+	}
+
+	multiply_variable = {
+		which = selling_all_of_$trade_good_id$_price
+		value = 0.01
+	}
+
+	set_variable = {
+		which = selling_all_of_$trade_good_id$_total
+		which = selling_all_of_$trade_good_id$_price
+	}
+
+	multiply_variable = {
+		which = selling_all_of_$trade_good_id$_total
+		which = temp_sell_all_variable
+	}
+}
+
+sell_all_of_trade_good_with_given_price = {
+	set_variable = {
+		which = temp_sell_all_variable
+		which = country_stock_market_stockpile_for_$trade_good_id$
+	}
+
+	if = {
+		limit = {
+			check_variable = {
+				which = temp_sell_all_variable
+				which = merchant_capacity_left
+			}
+		}
+
+		set_variable = {
+			which = temp_sell_all_variable
+			which = merchant_capacity_left
+		}
+	}
+
+
+	if = {
+		limit = {
+			check_variable = {
+				which = country_stock_market_stockpile_for_$trade_good_id$
+				which = temp_sell_all_variable
+			}
+		}
+
+		gain_ducats_based_on_variable = { variable_name = $variable_name_total$ }
+
+		subtract_variable = {
+			which = country_stock_market_stockpile_for_$trade_good_id$
+			which = temp_sell_all_variable
+		}
+	
+		subtract_variable = {
+			which = merchant_capacity_left
+			which = temp_sell_all_variable
+		}
+
+		REB = {
+			change_variable = {
+				which = stock_market_extra_supply_for_$trade_good_id$
+				which = temp_sell_all_variable
+			}
+			set_price_for_trade_good = {
+				trade_good_id = $trade_good_id$
+			}
+		}
 	}
 }

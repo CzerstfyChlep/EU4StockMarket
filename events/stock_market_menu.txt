@@ -65,6 +65,9 @@ country_event = {
 	option = {
 		name = stock_market_menu_events.1.EVTOPT6
 		custom_tooltip = STOCK_MARKET_EXIT_MENU_TT
+		hidden_effect = {
+			clr_country_flag = stock_market_opened_menu
+		}
 	}
 }
 

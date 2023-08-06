@@ -74,10 +74,6 @@ release_update_for_trade_good = {
 			which = country_stock_market_supply_for_$trade_good_id$
 		}
 
-		update_tab_num = {
-			variable_name = country_total_stock_market_supply_for_$trade_good_id$ 
-		}
-
 		#This one is redundant but I want it to be safe and unchanged
 		set_variable = {
 			which = country_total_stock_market_demand_for_$trade_good_id$ 
@@ -325,6 +321,15 @@ stock_market_on_startup = {
 	measure_startup = yes
 	priority_update = yes 
 	apply_change_price_for_all_with_duration = { duration = 19 }
+
+	every_country = {
+		update_merchant_capacity_modifiers_for_country = yes
+		set_variable = {
+			which = merchant_capacity_left
+			which = merchant_capacity_total
+		}
+	}
+
 }
 
 priority_update = {

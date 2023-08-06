@@ -5,9 +5,18 @@ country_decisions = {
 			always = yes
 		}
 		allow = {
-			ai = no
+			custom_trigger_tooltip = {
+				tooltip = OPEN_MENU_REQUIREMENTS
+				ai = no
+				NOT = {
+					has_country_flag = stock_market_opened_menu
+				}
+			}
 		}
 		effect = {
+			hidden_effect = {
+				set_country_flag = stock_market_opened_menu
+			}
 			country_event = {
 				id = stock_market_menu_events.1
 			}

@@ -4,7 +4,7 @@ country_event = {
 	id = stock_market_menu_events.20
 	title = stock_market_menu_events.EVTNAME20
 	desc = stock_market_menu_events.EVTDESC20
-	picture = KING_SICK_IN_BED_eventPicture
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
 
 	is_triggered_only = yes
 
@@ -57,7 +57,7 @@ country_event = {
 	id = stock_market_menu_events.201
 	title = stock_market_menu_events.EVTNAME201
 	desc = stock_market_menu_events.EVTDESC201
-	picture = KING_SICK_IN_BED_eventPicture
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
 
 	is_triggered_only = yes
 
@@ -168,7 +168,7 @@ country_event = {
 	id = stock_market_menu_events.2010
 	title = stock_market_menu_events.EVTNAME201
 	desc = stock_market_menu_events.EVTDESC201
-	picture = KING_SICK_IN_BED_eventPicture
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
 
 	is_triggered_only = yes
 	hidden = yes
@@ -191,7 +191,7 @@ country_event = {
 	id = stock_market_menu_events.202
 	title = stock_market_menu_events.EVTNAME202
 	desc = stock_market_menu_events.EVTDESC202
-	picture = KING_SICK_IN_BED_eventPicture
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
 
 	is_triggered_only = yes
 
@@ -204,6 +204,33 @@ country_event = {
 
 		# selling_$amount$_of_$trade_good_id$_price
 		# selling_$amount$_of_$trade_good_id$_total
+	}
+
+	option = {
+		name = stock_market_menu_events.202.EVTOPT0
+		custom_tooltip = STOCK_MARKET_IRON_SELL_ALL
+		hidden_effect = {
+
+			sell_all_of_trade_good_with_given_price = {
+				variable_name_total = selling_all_of_10_total
+				trade_good_id = 10
+			}
+
+			country_event = {
+				id = stock_market_menu_events.2011 #Going back to the same option via other event
+			}			
+		}
+
+		trigger = {
+			check_variable = {
+				which = country_stock_market_stockpile_for_10
+				value = 0.001
+			}
+			check_variable = {
+				which = merchant_capacity_left
+				value = 0.001
+			}
+		}
 	}
 
 	option = {
@@ -227,17 +254,21 @@ country_event = {
 				which = country_stock_market_stockpile_for_10
 				value = 1000
 			}
+			check_variable = {
+				which = merchant_capacity_left
+				value = 1000
+			}
 		}
 	}
 
 	option = {
 		name = stock_market_menu_events.202.EVTOPT2
-		custom_tooltip = STOCK_MARKET_IRON_SELL_100
+		custom_tooltip = STOCK_MARKET_IRON_SELL_200
 		hidden_effect = {
 
 			sell_trade_good_with_given_price_amount = {
-				amount = 100
-				variable_name_total = selling_100_of_10_total
+				amount = 200
+				variable_name_total = selling_200_of_10_total
 				trade_good_id = 10
 			}
 
@@ -248,13 +279,44 @@ country_event = {
 		trigger = {
 			check_variable = {
 				which = country_stock_market_stockpile_for_10
-				value = 100
+				value = 200
+			}
+			check_variable = {
+				which = merchant_capacity_left
+				value = 200
 			}
 		}
 	}
 
 	option = {
 		name = stock_market_menu_events.202.EVTOPT3
+		custom_tooltip = STOCK_MARKET_IRON_SELL_50
+		hidden_effect = {
+
+			sell_trade_good_with_given_price_amount = {
+				amount = 50
+				variable_name_total = selling_50_of_10_total
+				trade_good_id = 10
+			}
+
+			country_event = {
+				id = stock_market_menu_events.2011 #Going back to the same option via other event
+			}			
+		}
+		trigger = {
+			check_variable = {
+				which = country_stock_market_stockpile_for_10
+				value = 50
+			}
+			check_variable = {
+				which = merchant_capacity_left
+				value = 50
+			}
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.202.EVTOPT4
 		custom_tooltip = STOCK_MARKET_IRON_SELL_10
 		hidden_effect = {
 
@@ -273,28 +335,9 @@ country_event = {
 				which = country_stock_market_stockpile_for_10
 				value = 10
 			}
-		}
-	}
-
-	option = {
-		name = stock_market_menu_events.202.EVTOPT4
-		custom_tooltip = STOCK_MARKET_IRON_SELL_1
-		hidden_effect = {
-
-			sell_trade_good_with_given_price_amount = {
-				amount = 1
-				variable_name_total = selling_1_of_10_total
-				trade_good_id = 10
-			}
-
-			country_event = {
-				id = stock_market_menu_events.2011 #Going back to the same option via other event
-			}			
-		}
-		trigger = {
 			check_variable = {
-				which = country_stock_market_stockpile_for_10
-				value = 1
+				which = merchant_capacity_left
+				value = 10
 			}
 		}
 	}
@@ -314,7 +357,7 @@ country_event = {
 	id = stock_market_menu_events.2011
 	title = stock_market_menu_events.EVTNAME201
 	desc = stock_market_menu_events.EVTDESC201
-	picture = KING_SICK_IN_BED_eventPicture
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
 
 	is_triggered_only = yes
 	hidden = yes
@@ -337,7 +380,7 @@ country_event = {
 	id = stock_market_menu_events.203
 	title = stock_market_menu_events.EVTNAME203
 	desc = stock_market_menu_events.EVTDESC203
-	picture = KING_SICK_IN_BED_eventPicture
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
 
 	is_triggered_only = yes
 
@@ -407,7 +450,7 @@ country_event = {
 	id = stock_market_menu_events.2012
 	title = stock_market_menu_events.EVTNAME201
 	desc = stock_market_menu_events.EVTDESC201
-	picture = KING_SICK_IN_BED_eventPicture
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
 
 	is_triggered_only = yes
 	hidden = yes

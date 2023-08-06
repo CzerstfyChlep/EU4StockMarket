@@ -465,7 +465,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_text_naval_supplies"
-		texturefile = "gfx/interface/icon_naval.dds"
+		texturefile = "gfx/interface/icon_naval_supplies.dds"
 	}
 	spriteType = {
 		name = "GFX_text_copper"
@@ -473,7 +473,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_text_gold"
-		texturefile = "gfx/interface/icon_gold.dds"
+		texturefile = "gfx/interface/icon_gold_good.dds"
 	}
 	spriteType = {
 		name = "GFX_text_iron"
