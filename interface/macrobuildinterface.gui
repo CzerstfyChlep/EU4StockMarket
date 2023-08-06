@@ -1250,7 +1250,7 @@ guiTypes = {
 		iconType = {
 			name = "stock_market_banner"
 			position = { x = 4 y = 494 }
-			spriteType = "GFX_banner_left_3"
+			spriteType = "GFX_banner_left_6"
 		}
 
 		instantTextBoxType={
