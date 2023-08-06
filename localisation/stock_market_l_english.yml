@@ -204,6 +204,25 @@
  
  stock_market_local_demand_for_foundry: "Local Cannon Foundry"
  
+ #buildings
+ building_crop_farm: "Farm"
+ building_crop_farm_desc: "May only be built in §YGrasslands§!, §YFarmlands§! and §YDrylands§!.\n\nProduces §G+50.0§! Units of £grain£§YGrain§! and £livestock£§YLivestock§!.\n\n"
+ building_coffee_inn: "Coffee Inn"
+ building_windmill: "Windmill"
+ building_forester: "Forester"
+ building_forester_desc: "May only be built in §YForest§!, §YWoods§! and §YJungle§!.\n\nProduces §G+50.0§! Units of £naval_supplies£§YNaval Supplies§! and, if in §YJungle§! or §YTropical§!, also produces §G+50.0§! Units of £tropical_wood£§YTropical Wood§!.\n\n"
+ building_mine: "Mine"
+ building_mine_desc: "May only be built in §YHighlands§!, §YHills§! and §YMountains§!.\n\nProduces §G+50.0§! Units of £copper£§YCopper§! and £iron£§YIron§!.\n\n"
+ building_cannon_tower: "Cannon Tower"
+ building_brewery: "Brewery"
+ building_printing_house: "Printing House"
+ building_tailor: "Tailor"
+ building_mayoral_house: "Mayoral House"
+ building_salt_mine: "Salt Mine"
+ building_salt_mine_desc: "Produces §G+50.0§! Units of £salt£§YSalt§!.\n\n"
+ building_fishing_dock: "Fishing Dock"
+ building_fishing_dock_desc: "May only be built in §YCoastal§! provinces.\n\nProduces §G+50.0§! Units of £fish£§YFish§!.\n\n"
+ 
  good_0_demand_modifier: "Demand for Grain Modifier"
  good_1_demand_modifier: "Demand for Wine Modifier"
  good_2_demand_modifier: "Demand for Wool Modifier"

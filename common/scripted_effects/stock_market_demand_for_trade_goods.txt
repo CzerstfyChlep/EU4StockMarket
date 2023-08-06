@@ -44,6 +44,109 @@ demand_from_province_dev = {	#this serves a as a baseline for many trade goods
 	}
 }
 
+on_supply_creation_building_built = {
+	set_province_flag = supply_creation_building
+}
+on_supply_creation_building_destroyed = {
+	if = {
+		limit = {
+			NOT = {
+				OR = {
+					has_building = fishing_dock
+					has_building = salt_mine
+					has_building = mine
+					has_building = forester
+					has_building = crop_farm
+				}
+			}
+		}
+		clr_province_flag = supply_creation_building 
+	}
+}
+update_supply_and_demand_based_on_buildings = {
+	if = {
+		limit = {
+			has_province_flag = supply_creation_building
+		}
+		if = {
+			limit = {
+				has_building = crop_farm
+			}
+			owner = {
+				change_variable = {
+					which = country_stock_market_supply_for_0
+					value = 50
+				}
+				change_variable = {
+					which = country_stock_market_supply_for_24
+					value = 50
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_building = mine
+			}
+			owner = {
+				change_variable = {
+					which = country_stock_market_supply_for_8
+					value = 50
+				}
+				change_variable = {
+					which = country_stock_market_supply_for_10
+					value = 50
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_building = salt_mine
+			}
+			owner = {
+				change_variable = {
+					which = country_stock_market_supply_for_6
+					value = 50
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_building = forester
+			}
+			owner = {
+				change_variable = {
+					which = country_stock_market_supply_for_7
+					value = 50
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						has_climate = tropical
+						has_terrain = jungle
+					}
+				}
+				owner = {
+					change_variable = {
+						which = country_stock_market_supply_for_23
+						value = 50
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_building = fishing_dock
+			}
+			owner = {
+				change_variable = {
+					which = country_stock_market_supply_for_4
+					value = 50
+				}
+			}
+		}
+	}
+}
 
 update_demand_for_trade_good_0 = { #grain
 	demand_from_province_dev = {
