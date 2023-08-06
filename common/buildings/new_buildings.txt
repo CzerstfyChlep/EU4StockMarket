@@ -1,0 +1,246 @@
+crop_farm = {
+	cost = 100
+	time = 12
+
+	modifier = {
+	}
+	
+	build_trigger = {
+		OR = {
+			has_terrain = grasslands
+			has_terrain = farmlands
+			has_terrain = drylands
+		}
+	}
+	
+	on_built = {
+		on_supply_creation_building_built = yes
+	}
+	on_destroyed = {
+		on_supply_creation_building_destroyed = yes
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+coffee_inn = {
+	cost = 100
+	time = 12
+
+	modifier = {
+		local_production_efficiency = 0.25
+		local_prosperity_growth = 0.25
+	}
+	
+	build_trigger = {
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+windmill = {
+	cost = 100
+	time = 12
+
+	modifier = {
+		
+	}
+	
+	build_trigger = {
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+forester = {
+	cost = 100
+	time = 12
+
+	modifier = {
+		
+	}
+	
+	build_trigger = {
+		OR = {
+			has_terrain = forest
+			has_terrain = woods
+			has_terrain = jungle
+		}
+	}
+
+	on_built = {
+		on_supply_creation_building_built = yes
+	}
+	on_destroyed = {
+		on_supply_creation_building_destroyed = yes
+	}
+	
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+mine = {
+	cost = 100
+	time = 12
+
+	modifier = {
+		
+	}
+	
+	build_trigger = {
+		OR = {
+			has_terrain = highlands
+			has_terrain = hills
+			has_terrain = mountains
+		}
+	}
+	
+	on_built = {
+	}
+	on_destroyed = {
+	}
+	
+	on_built = {
+		on_supply_creation_building_built = yes
+	}
+	on_destroyed = {
+		on_supply_creation_building_destroyed = yes
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+cannon_tower = {
+	cost = 100
+	time = 12
+
+	modifier = {
+		
+	}
+	
+	build_trigger = {
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+brewery = {
+	cost = 100
+	time = 12
+
+	modifier = {
+		
+	}
+	
+	build_trigger = {
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+printing_house = {
+	cost = 100
+	time = 12
+
+	modifier = {
+		
+	}
+	
+	build_trigger = {
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+tailor = {
+	cost = 100
+	time = 12
+
+	modifier = {
+		
+	}
+	
+	build_trigger = {
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+mayoral_house = {
+	cost = 100
+	time = 12
+
+	modifier = {
+		
+	}
+	
+	build_trigger = {
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+salt_mine = {
+	cost = 100
+	time = 12
+
+	modifier = {
+		
+	}
+	
+	build_trigger = {
+	}
+	
+	on_built = {
+		on_supply_creation_building_built = yes
+	}
+	on_destroyed = {
+		on_supply_creation_building_destroyed = yes
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+fishing_dock = {
+	cost = 100
+	time = 12
+
+	modifier = {
+	}
+	
+	build_trigger = {
+		has_port = yes
+	}
+	
+	on_built = {
+		on_supply_creation_building_built = yes
+	}
+	on_destroyed = {
+		on_supply_creation_building_destroyed = yes
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+}

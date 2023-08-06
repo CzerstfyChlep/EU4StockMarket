@@ -57,6 +57,7 @@ release_update_for_trade_good = {
 		}
 
 		every_owned_province = {
+			update_supply_and_demand_based_on_buildings = yes
 			update_supply_for_trade_good = {
 				trade_good_id = $trade_good_id$
 			}
