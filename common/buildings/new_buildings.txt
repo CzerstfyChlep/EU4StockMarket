@@ -37,6 +37,13 @@ coffee_inn = {
 	build_trigger = {
 	}
 
+	on_built = {
+		on_demand_creation_building_built = yes
+	}
+	on_destroyed = {
+		on_demand_creation_building_destroyed = yes
+	}
+	
 	ai_will_do = {
 		factor = 0
 	}
@@ -51,6 +58,12 @@ windmill = {
 	}
 	
 	build_trigger = {
+	}
+	on_built = {
+		on_supply_creation_building_built = yes
+	}
+	on_destroyed = {
+		on_supply_creation_building_destroyed = yes
 	}
 
 	ai_will_do = {
@@ -129,6 +142,12 @@ cannon_tower = {
 	
 	build_trigger = {
 	}
+	on_built = {
+		on_supply_creation_building_built = yes
+	}
+	on_destroyed = {
+		on_supply_creation_building_destroyed = yes
+	}
 
 	ai_will_do = {
 		factor = 0
@@ -145,15 +164,20 @@ brewery = {
 	
 	build_trigger = {
 	}
-
+	on_built = {
+		on_supply_creation_building_built = yes
+	}
+	on_destroyed = {
+		on_supply_creation_building_destroyed = yes
+	}
 	ai_will_do = {
 		factor = 0
 	}
 }
 
 printing_house = {
-	cost = 100
-	time = 12
+	cost = 500
+	time = 24
 
 	modifier = {
 		
@@ -161,9 +185,29 @@ printing_house = {
 	
 	build_trigger = {
 	}
+	
+	on_built = {
+		on_demand_creation_building_built = yes
+		add_province_triggered_modifier = printing_house_modifier
+	}
+	on_destroyed = {
+		on_demand_creation_building_destroyed = yes
+		remove_province_triggered_modifier = printing_house_modifier
+	}
 
 	ai_will_do = {
-		factor = 0
+		factor = 10
+		modifier = {
+			factor = 0
+			owner = {
+				OR = {
+					NOT = { paper = 5 }
+					any_owned_province = {
+						has_building =	printing_house
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -177,7 +221,12 @@ tailor = {
 	
 	build_trigger = {
 	}
-
+	on_built = {
+		on_supply_creation_building_built = yes
+	}
+	on_destroyed = {
+		on_supply_creation_building_destroyed = yes
+	}
 	ai_will_do = {
 		factor = 0
 	}
@@ -193,7 +242,12 @@ mayoral_house = {
 	
 	build_trigger = {
 	}
-
+	on_built = {
+		on_supply_creation_building_built = yes
+	}
+	on_destroyed = {
+		on_supply_creation_building_destroyed = yes
+	}
 	ai_will_do = {
 		factor = 0
 	}

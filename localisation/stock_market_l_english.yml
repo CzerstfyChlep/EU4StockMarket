@@ -216,6 +216,7 @@
  building_cannon_tower: "Cannon Tower"
  building_brewery: "Brewery"
  building_printing_house: "Printing House"
+ building_printing_house_desc: "Generates §Y+200.0§! Demand for £paper£§YPaper§!.\n\nInstitution Growth: §G+0.25§!\n\n§MWarning§!\nThis modifier is only active while we have enough §YSupply§! of £paper£§YPaper§!."
  building_tailor: "Tailor"
  building_mayoral_house: "Mayoral House"
  building_salt_mine: "Salt Mine"

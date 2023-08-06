@@ -47,6 +47,9 @@ demand_from_province_dev = {	#this serves a as a baseline for many trade goods
 on_supply_creation_building_built = {
 	set_province_flag = supply_creation_building
 }
+on_demand_creation_building_built = {
+	set_province_flag = demand_creation_building
+}
 on_supply_creation_building_destroyed = {
 	if = {
 		limit = {
@@ -57,6 +60,24 @@ on_supply_creation_building_destroyed = {
 					has_building = mine
 					has_building = forester
 					has_building = crop_farm
+				}
+			}
+		}
+		clr_province_flag = supply_creation_building 
+	}
+}
+on_demand_creation_building_destroyed = {
+	if = {
+		limit = {
+			NOT = {
+				OR = {
+					has_building = printing_house
+					has_building = coffee_inn
+					has_building = windmill
+					has_building = cannon_tower
+					has_building = brewery
+					has_building = tailor
+					has_building = mayoral_house
 				}
 			}
 		}
@@ -142,6 +163,22 @@ update_supply_and_demand_based_on_buildings = {
 				change_variable = {
 					which = country_stock_market_supply_for_4
 					value = 50
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_province_flag = demand_creation_building
+		}
+		if = {
+			limit = {
+				has_building = printing_house
+			}
+			owner = {
+				change_variable = {
+					which = stock_market_demand_for_27
+					value = 200
 				}
 			}
 		}

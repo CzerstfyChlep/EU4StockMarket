@@ -1,0 +1,11 @@
+printing_house_modifier = {
+	potential = { always = yes }
+	
+	institution_growth = 3
+	
+	hidden = yes 
+	
+	trigger = {
+		owner = { always = yes } #TODO
+	}
+}
