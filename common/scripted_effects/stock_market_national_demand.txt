@@ -22,7 +22,7 @@ update_national_demand_for_trade_good_1 = { # wine
 update_national_demand_for_trade_good_2 = { # wool
 	set_variable = { #supply of cloth = demand for wool
 		which = tempvar
-		which = stock_market_supply_for_3
+		which = country_stock_market_supply_for_3
 	}
 	multiply_variable = { 
 		which = tempvar
@@ -132,7 +132,7 @@ update_national_demand_for_trade_good_5 = { # fur
 update_national_demand_for_trade_good_6 = { # salt
 	set_variable = {
 		which = tempvar
-		which = stock_market_supply_for_4 #fish supply generates demand for salt (preservation)
+		which = country_stock_market_supply_for_4 #fish supply generates demand for salt (preservation)
 	}
 	
 	multiply_variable = {
@@ -395,7 +395,7 @@ update_national_demand_for_trade_good_18 = { # sugar
 		}
 		set_variable = {
 			which = tempvar
-			which = stock_market_supply_for_16 #coffee
+			which = country_stock_market_supply_for_16 #coffee
 		}
 		multiply_variable = { 
 			which = tempvar
@@ -407,7 +407,7 @@ update_national_demand_for_trade_good_18 = { # sugar
 		}
 		set_variable = {
 			which = tempvar
-			which = stock_market_supply_for_20 #cocoa
+			which = country_stock_market_supply_for_20 #cocoa
 		}
 		multiply_variable = { 
 			which = tempvar
@@ -419,7 +419,7 @@ update_national_demand_for_trade_good_18 = { # sugar
 		}
 		set_variable = {
 			which = tempvar
-			which = stock_market_supply_for_13 #tea
+			which = country_stock_market_supply_for_13 #tea
 		}
 		multiply_variable = { 
 			which = tempvar
@@ -549,7 +549,7 @@ update_national_demand_for_trade_good_26 = { # glass
 		}
 		set_variable = {
 			which = tempvar
-			which = stock_market_supply_for_1
+			which = country_stock_market_supply_for_1
 		}
 		multiply_variable = { 
 			which = tempvar
