@@ -158,9 +158,10 @@ release_update = {
 
 		every_owned_province = {
 			update_supply_and_demand_based_on_buildings = yes
-			execute_effect_for_every_trade_good = {
-				scripted_effect = "update_supply_for_trade_good"
-			}
+			# execute_effect_for_every_trade_good = {
+				# scripted_effect = "update_supply_for_trade_good"
+			# }
+			update_supply_for_trade_goods = yes
 			execute_effect_for_every_trade_good = {
 				scripted_effect = "update_demand_for_trade_good"
 			}
@@ -188,56 +189,6 @@ release_update = {
 	}
 }
 
-update_supply_for_trade_good = {
-	set_variable = {
-		which = tempvar
-		value = $trade_good_id$
-	}
-	if = {
-		limit = {
-			is_variable_equal = {
-				which = stock_market_good_index
-				which = tempvar
-			}
-		}
-		owner = {
-			export_to_variable = {
-				variable_name = tempvar
-				value = modifier:trade_goods_size
-				who = PREV
-			}
-			export_to_variable = {
-				variable_name = tempvar2
-				value = modifier:trade_goods_size_modifier
-				who = PREV
-			}
-			change_variable = {
-				which = tempvar
-				which = temp_global_trade_goods_size
-			}
-			change_variable = {
-				which = tempvar2
-				which = temp_global_trade_goods_size_modifier
-			}
-			change_variable = {
-				which = tempvar2
-				value = 1
-			}
-			multiply_variable = {
-				which = tempvar
-				which = tempvar2
-			}
-			multiply_variable = {
-				which = tempvar
-				value = 100
-			}
-			change_variable = {
-				which = country_stock_market_supply_for_$trade_good_id$
-				which = tempvar
-			}
-		}
-	}
-}
 
 update_national_supply_for_trade_good = {
 	update_national_supply_for_trade_good_$trade_good_id$ = yes

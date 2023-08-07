@@ -1,0 +1,295 @@
+update_supply_for_trade_good = {
+	owner = {
+		export_to_variable = {
+			variable_name = tempvar
+			value = modifier:trade_goods_size
+			who = PREV
+		}
+		export_to_variable = {
+			variable_name = tempvar2
+			value = modifier:trade_goods_size_modifier
+			who = PREV
+		}
+		change_variable = {
+			which = tempvar
+			which = temp_global_trade_goods_size
+		}
+		change_variable = {
+			which = tempvar2
+			which = temp_global_trade_goods_size_modifier
+		}
+		change_variable = {
+			which = tempvar2
+			value = 1
+		}
+		multiply_variable = {
+			which = tempvar
+			which = tempvar2
+		}
+		multiply_variable = {
+			which = tempvar
+			value = 100
+		}
+		change_variable = {
+			which = country_stock_market_supply_for_$trade_good_id$
+			which = tempvar
+		}
+	}
+}
+
+
+update_supply_for_trade_goods = {
+	set_variable = {
+		which = tempvar
+		value = $trade_good_id$
+	}
+	if = {
+		limit = {
+			check_variable = { which = stock_market_good_index value = 16 }
+		}
+		if = {
+			limit = {
+				check_variable = { which = stock_market_good_index value = 24 }
+			}
+			if = {
+				limit = {
+					check_variable = { which = stock_market_good_index value = 28 }
+				}
+				if = {
+					limit = {
+						check_variable = { which = stock_market_good_index value = 30 }
+					}
+					if = {
+						limit = {
+							check_variable = { which = stock_market_good_index value = 31 }
+						}
+						update_supply_for_trade_good = { trade_good_id = 31 }
+					}
+					else = {
+						update_supply_for_trade_good = { trade_good_id = 30 }
+					}
+				}
+				else = {
+					if = {
+						limit = {
+							check_variable = { which = stock_market_good_index value = 29 }
+						}
+						update_supply_for_trade_good = { trade_good_id = 29 }
+					}
+					else = {
+						update_supply_for_trade_good = { trade_good_id = 28 }
+					}
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						check_variable = { which = stock_market_good_index value = 26 }
+					}
+					if = {
+						limit = {
+							check_variable = { which = stock_market_good_index value = 27 }
+						}
+						update_supply_for_trade_good = { trade_good_id = 27 }
+					}
+					else = {
+						update_supply_for_trade_good = { trade_good_id = 26 }
+					}
+				}
+				else = {
+					if = {
+						limit = {
+							check_variable = { which = stock_market_good_index value = 25 }
+						}
+						update_supply_for_trade_good = { trade_good_id = 25 }
+					}
+					else = {
+						update_supply_for_trade_good = { trade_good_id = 24 }
+					}
+				}
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					check_variable = { which = stock_market_good_index value = 20 }
+				}
+				if = {
+					limit = {
+						check_variable = { which = stock_market_good_index value = 22 }
+					}
+					if = {
+						limit = {
+							check_variable = { which = stock_market_good_index value = 23 }
+						}
+						update_supply_for_trade_good = { trade_good_id = 23 }
+					}
+					else = {
+						update_supply_for_trade_good = { trade_good_id = 22 }
+					}
+				}
+				else = {
+					if = {
+						limit = {
+							check_variable = { which = stock_market_good_index value = 21 }
+						}
+						update_supply_for_trade_good = { trade_good_id = 21 }
+					}
+					else = {
+						update_supply_for_trade_good = { trade_good_id = 20 }
+					}
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						check_variable = { which = stock_market_good_index value = 18 }
+					}
+					if = {
+						limit = {
+							check_variable = { which = stock_market_good_index value = 19 }
+						}
+						update_supply_for_trade_good = { trade_good_id = 19 }
+					}
+					else = {
+						update_supply_for_trade_good = { trade_good_id = 18 }
+					}
+				}
+				else = {
+					if = {
+						limit = {
+							check_variable = { which = stock_market_good_index value = 17 }
+						}
+						update_supply_for_trade_good = { trade_good_id = 17 }
+					}
+					else = {
+						update_supply_for_trade_good = { trade_good_id = 16 }
+					}
+				}
+			}
+		}
+	}
+	else = {
+		if = {
+			limit = {
+				check_variable = { which = stock_market_good_index value = 8 }
+			}
+			if = {
+				limit = {
+					check_variable = { which = stock_market_good_index value = 12 }
+				}
+				if = {
+					limit = {
+						check_variable = { which = stock_market_good_index value = 14 }
+					}
+					if = {
+						limit = {
+							check_variable = { which = stock_market_good_index value = 15 }
+						}
+						update_supply_for_trade_good = { trade_good_id = 15 }
+					}
+					else = {
+						update_supply_for_trade_good = { trade_good_id = 14 }
+					}
+				}
+				else = {
+					if = {
+						limit = {
+							check_variable = { which = stock_market_good_index value = 13 }
+						}
+						update_supply_for_trade_good = { trade_good_id = 13 }
+					}
+					else = {
+						update_supply_for_trade_good = { trade_good_id = 12 }
+					}
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						check_variable = { which = stock_market_good_index value = 10 }
+					}
+					if = {
+						limit = {
+							check_variable = { which = stock_market_good_index value = 11 }
+						}
+						update_supply_for_trade_good = { trade_good_id = 11 }
+					}
+					else = {
+						update_supply_for_trade_good = { trade_good_id = 10 }
+					}
+				}
+				else = {
+					if = {
+						limit = {
+							check_variable = { which = stock_market_good_index value = 9 }
+						}
+						update_supply_for_trade_good = { trade_good_id = 9 }
+					}
+					else = {
+						update_supply_for_trade_good = { trade_good_id = 8 }
+					}
+				}
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					check_variable = { which = stock_market_good_index value = 4 }
+				}
+				if = {
+					limit = {
+						check_variable = { which = stock_market_good_index value = 6 }
+					}
+					if = {
+						limit = {
+							check_variable = { which = stock_market_good_index value = 7 }
+						}
+						update_supply_for_trade_good = { trade_good_id = 7 }
+					}
+					else = {
+						update_supply_for_trade_good = { trade_good_id = 6 }
+					}
+				}
+				else = {
+					if = {
+						limit = {
+							check_variable = { which = stock_market_good_index value = 5 }
+						}
+						update_supply_for_trade_good = { trade_good_id = 5 }
+					}
+					else = {
+						update_supply_for_trade_good = { trade_good_id = 4 }
+					}
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						check_variable = { which = stock_market_good_index value = 2 }
+					}
+					if = {
+						limit = {
+							check_variable = { which = stock_market_good_index value = 3 }
+						}
+						update_supply_for_trade_good = { trade_good_id = 3 }
+					}
+					else = {
+						update_supply_for_trade_good = { trade_good_id = 2 }
+					}
+				}
+				else = {
+					if = {
+						limit = {
+							check_variable = { which = stock_market_good_index value = 1 }
+						}
+						update_supply_for_trade_good = { trade_good_id = 1 }
+					}
+					else = {
+						update_supply_for_trade_good = { trade_good_id = 0 }
+					}
+				}
+			}
+		}
+	}
+}
