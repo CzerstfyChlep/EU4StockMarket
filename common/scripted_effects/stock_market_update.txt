@@ -295,7 +295,7 @@ stock_market_on_startup = {
 		set_province_flag = first_game_month_flag
 	}
 
-	measure_startup = yes
+	#measure_startup = yes
 	priority_update = yes 
 	apply_change_price_for_all_with_duration = { duration = 19 }
 
