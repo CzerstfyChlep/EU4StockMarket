@@ -3,4 +3,64 @@ spriteTypes = {
 		name = "GFX_banner_left_6"
 		texturefile = "gfx//interface//banner_left_6.dds"
 	}
+	spriteType = {
+		name = "GFX_brewery"
+		texturefile = "gfx//interface//buildings//brewery.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_cannon_tower"
+		texturefile = "gfx//interface//buildings//cannon_tower.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_coffee_inn"
+		texturefile = "gfx//interface//buildings//coffee_inn.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_crop_farm"
+		texturefile = "gfx//interface//buildings//crop_farm.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_fishing_dock"
+		texturefile = "gfx//interface//buildings//fishing_dock.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_forester"
+		texturefile = "gfx//interface//buildings//forester.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_livestock_farm"
+		texturefile = "gfx//interface//buildings//livestock_farm.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_mayoral_house"
+		texturefile = "gfx//interface//buildings//mayoral_house.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_mine"
+		texturefile = "gfx//interface//buildings//mine.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_printing_press"
+		texturefile = "gfx//interface//buildings//printing_press.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_salt_mine"
+		texturefile = "gfx//interface//buildings//salt_mine.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_tailor"
+		texturefile = "gfx//interface//buildings//tailor.dds"
+		loadType = "INGAME"
+	}
 }
