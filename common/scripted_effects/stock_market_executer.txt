@@ -1,0 +1,34 @@
+execute_effect_for_every_trade_good = {
+	$scripted_effect$ = { trade_good_id = 3 }
+	$scripted_effect$ = { trade_good_id = 0 }
+	$scripted_effect$ = { trade_good_id = 1 }
+	$scripted_effect$ = { trade_good_id = 2 }
+	$scripted_effect$ = { trade_good_id = 4 }
+	$scripted_effect$ = { trade_good_id = 5 }
+	$scripted_effect$ = { trade_good_id = 6 }
+	$scripted_effect$ = { trade_good_id = 7 }
+	$scripted_effect$ = { trade_good_id = 8 }
+	# $scripted_effect$ = { trade_good_id = 9 } gold
+	$scripted_effect$ = { trade_good_id = 10 }
+	$scripted_effect$ = { trade_good_id = 11 }
+	$scripted_effect$ = { trade_good_id = 12 }
+	$scripted_effect$ = { trade_good_id = 13 }
+	$scripted_effect$ = { trade_good_id = 14 }
+	$scripted_effect$ = { trade_good_id = 15 }
+	$scripted_effect$ = { trade_good_id = 16 }
+	$scripted_effect$ = { trade_good_id = 17 }
+	$scripted_effect$ = { trade_good_id = 18 }
+	$scripted_effect$ = { trade_good_id = 19 }
+	$scripted_effect$ = { trade_good_id = 20 }
+	$scripted_effect$ = { trade_good_id = 21 }
+	$scripted_effect$ = { trade_good_id = 22 }
+	$scripted_effect$ = { trade_good_id = 23 }
+	$scripted_effect$ = { trade_good_id = 24 }
+	$scripted_effect$ = { trade_good_id = 25 }
+	$scripted_effect$ = { trade_good_id = 26 }
+	$scripted_effect$ = { trade_good_id = 27 }
+	$scripted_effect$ = { trade_good_id = 28 }
+	$scripted_effect$ = { trade_good_id = 29 }
+	$scripted_effect$ = { trade_good_id = 30 }
+	# $scripted_effect$ = { trade_good_id = 31 } unknown
+}
