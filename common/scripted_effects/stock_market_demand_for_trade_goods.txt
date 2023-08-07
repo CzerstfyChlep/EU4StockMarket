@@ -5,10 +5,9 @@ demand_from_province_dev = {	#this serves a as a baseline for many trade goods
 								
 								#this is designed to provide a stable basis for most trade goods
 	owner = {
-		export_to_variable = {
+		set_variable = {
 			which = tempvar
-			value = trigger_value:development
-			who = PREV
+			which = tempvardev
 		}
 		multiply_variable = { 
 			which = tempvar
@@ -373,10 +372,9 @@ update_demand_for_trade_good_1 = { #wine
 			}
 		}
 		owner = {
-			export_to_variable = {
+			set_variable = {
 				which = tempvar
-				value = trigger_value:development
-				who = PREV
+				which = tempvardev
 			}
 			multiply_variable = {
 				which = tempvar
@@ -569,10 +567,9 @@ update_demand_for_trade_good_11 = { #slaves
 			NOT = { region = maghreb_region }
 		}
 		owner = {
-			export_to_variable = {
+			set_variable = {
 				which = tempvar
-				value = trigger_value:development
-				who = PREV
+				which = tempvardev
 			}
 			multiply_variable = { 
 				which = tempvar
@@ -606,10 +603,9 @@ update_demand_for_trade_good_11 = { #slaves
 			}
 		}
 		owner = {
-			export_to_variable = {
+			set_variable = {
 				which = tempvar
-				value = trigger_value:development
-				who = PREV
+				which = tempvardev
 			}
 			multiply_variable = { 
 				which = tempvar
@@ -635,10 +631,9 @@ update_demand_for_trade_good_12 = { #ivory
 			NOT = { region = maghreb_region }
 		}
 		owner = {
-			export_to_variable = {
+			set_variable = {
 				which = tempvar
-				value = trigger_value:development
-				who = PREV
+				which = tempvardev
 			}
 			multiply_variable = { 
 				which = tempvar
@@ -663,10 +658,9 @@ update_demand_for_trade_good_13 = { #tea
 			}
 		}
 		owner = {
-			export_to_variable = {
+			set_variable = {
 				which = tempvar
-				value = trigger_value:development
-				who = PREV
+				which = tempvardev
 			}
 			multiply_variable = { 
 				which = tempvar
@@ -700,10 +694,9 @@ update_demand_for_trade_good_14 = { #chinaware
 			}
 		}
 		owner = {
-			export_to_variable = {
+			set_variable = {
 				which = tempvar
-				value = trigger_value:development
-				who = PREV
+				which = tempvardev
 			}
 			multiply_variable = { 
 				which = tempvar
@@ -721,10 +714,9 @@ update_demand_for_trade_good_14 = { #chinaware
 			continent = europe
 		}
 		owner = {
-			export_to_variable = {
+			set_variable = {
 				which = tempvar
-				value = trigger_value:development
-				who = PREV
+				which = tempvardev
 			}
 			multiply_variable = { 
 				which = tempvar
@@ -757,10 +749,9 @@ update_demand_for_trade_good_15 = { #spices
 			}
 		}
 		owner = {
-			export_to_variable = {
+			set_variable = {
 				which = tempvar
-				value = trigger_value:development
-				who = PREV
+				which = tempvardev
 			}
 			multiply_variable = { 
 				which = tempvar
@@ -779,10 +770,9 @@ update_demand_for_trade_good_15 = { #spices
 			continent = europe 
 		}
 		owner = {
-			export_to_variable = {
+			set_variable = {
 				which = tempvar
-				value = trigger_value:development
-				who = PREV
+				which = tempvardev
 			}
 			multiply_variable = { 
 				which = tempvar
@@ -808,10 +798,9 @@ update_demand_for_trade_good_16 = { #coffee
 			NOT = { region = maghreb_region }
 		}
 		owner = {
-			export_to_variable = {
+			set_variable = {
 				which = tempvar
-				value = trigger_value:development
-				who = PREV
+				which = tempvardev
 			}
 			multiply_variable = { 
 				which = tempvar
@@ -838,10 +827,9 @@ update_demand_for_trade_good_17 = { #cotton
 			}
 		}
 		owner = {
-			export_to_variable = {
+			set_variable = {
 				which = tempvar
-				value = trigger_value:development
-				who = PREV
+				which = tempvardev
 			}
 			multiply_variable = { 
 				which = tempvar
@@ -868,10 +856,9 @@ update_demand_for_trade_good_18 = { #sugar
 			NOT = { region = central_america_region }
 		}
 		owner = {
-			export_to_variable = {
+			set_variable = {
 				which = tempvar
-				value = trigger_value:development
-				who = PREV
+				which = tempvardev
 			}
 			multiply_variable = { 
 				which = tempvar
@@ -897,10 +884,9 @@ update_demand_for_trade_good_19 = { #tobacco
 			}
 		}
 		owner = {
-			export_to_variable = {
+			set_variable = {
 				which = tempvar
-				value = trigger_value:development
-				who = PREV
+				which = tempvardev
 			}
 			multiply_variable = { 
 				which = tempvar
@@ -925,10 +911,9 @@ update_demand_for_trade_good_20 = { #cocoa
 			}
 		}
 		owner = {
-			export_to_variable = {
+			set_variable = {
 				which = tempvar
-				value = trigger_value:development
-				who = PREV
+				which = tempvardev
 			}
 			multiply_variable = { 
 				which = tempvar
@@ -952,10 +937,9 @@ update_demand_for_trade_good_21 = { #silk
 			}
 		}
 		owner = {
-			export_to_variable = {
+			set_variable = {
 				which = tempvar
-				value = trigger_value:development
-				who = PREV
+				which = tempvardev
 			}
 			multiply_variable = { 
 				which = tempvar
@@ -979,10 +963,9 @@ update_demand_for_trade_good_22 = { #dyes
 			}
 		}
 		owner = {
-			export_to_variable = {
+			set_variable = {
 				which = tempvar
-				value = trigger_value:development
-				who = PREV
+				which = tempvardev
 			}
 			multiply_variable = { 
 				which = tempvar
@@ -1011,10 +994,9 @@ update_demand_for_trade_good_23 = { #tropical wood
 			}
 		}
 		owner = {
-			export_to_variable = {
+			set_variable = {
 				which = tempvar
-				value = trigger_value:development
-				who = PREV
+				which = tempvardev
 			}
 			multiply_variable = { 
 				which = tempvar
@@ -1074,10 +1056,9 @@ update_demand_for_trade_good_25 = { #incense
 			}
 		}
 		owner = {
-			export_to_variable = {
+			set_variable = {
 				which = tempvar
-				value = trigger_value:development
-				who = PREV
+				which = tempvardev
 			}
 			multiply_variable = { 
 				which = tempvar
@@ -1203,10 +1184,9 @@ update_demand_for_trade_good_29 = { #coal
 			enlightenment = 100
 		}
 		owner = {
-			export_to_variable = {
+			set_variable = {
 				which = tempvar
-				value = trigger_value:development
-				who = PREV
+				which = tempvardev
 			}
 			multiply_variable = { 
 				which = tempvar
@@ -1226,10 +1206,9 @@ update_demand_for_trade_good_30 = { #cloves
 			region = moluccas_region
 		}
 		owner = {
-			export_to_variable = {
+			set_variable = {
 				which = tempvar
-				value = trigger_value:development
-				who = PREV
+				which = tempvardev
 			}
 			multiply_variable = { 
 				which = tempvar
