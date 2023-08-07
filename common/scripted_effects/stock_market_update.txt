@@ -1,12 +1,137 @@
-release_update_for_trade_good = {
+release_update_setup = {
+	#For displaying history
+	set_variable = {
+		which = history_stock_market_demand_for_$trade_good_id$
+		which = country_total_stock_market_demand_for_$trade_good_id$ 
+	}
+	set_variable = {
+		which = history_stock_market_supply_for_$trade_good_id$
+		which = country_total_stock_market_supply_for_$trade_good_id$ 
+	}
+	set_variable = {
+		which = history_stock_market_balance_for_$trade_good_id$
+		which = history_stock_market_supply_for_$trade_good_id$
+	}
+	subtract_variable = {
+		which = history_stock_market_balance_for_$trade_good_id$
+		which = history_stock_market_demand_for_$trade_good_id$
+	}
+	
+
+
+	set_variable = {
+		which = stock_market_demand_for_$trade_good_id$
+		value = 0
+	}
+	set_variable = {
+		which = country_stock_market_supply_for_$trade_good_id$
+		value = 0
+	}
+}
+
+post_province_evaluation = {
+	#We get country_stock_market_supply_for_$trade_good_id$ from those functions
+	#Here we determine how much we sell globally
+
+	
+	#For localisation
+	set_variable = {
+		which = country_total_stock_market_supply_for_$trade_good_id$ 
+		which = country_stock_market_supply_for_$trade_good_id$
+	}
+
+	#This one is redundant but I want it to be safe and unchanged
+	set_variable = {
+		which = country_total_stock_market_demand_for_$trade_good_id$ 
+		which = stock_market_demand_for_$trade_good_id$
+	}
+
+	#Balance for localisation, also maybe later for calculations?
+	set_variable = {
+		which = country_total_stock_market_balance_for_$trade_good_id$ 
+		which = country_total_stock_market_supply_for_$trade_good_id$ 
+	}
+	subtract_variable = {
+		which = country_total_stock_market_balance_for_$trade_good_id$ 
+		which = country_total_stock_market_demand_for_$trade_good_id$ 
+	}
+
+
+	#Growth since last month
+	set_variable = {
+		which = country_total_stock_market_supply_growth_for_$trade_good_id$ 
+		which = country_total_stock_market_supply_for_$trade_good_id$ 
+	}
+	subtract_variable = {
+		which = country_total_stock_market_supply_growth_for_$trade_good_id$ 
+		which = history_stock_market_supply_for_$trade_good_id$
+	}
+	set_variable = {
+		which = country_total_stock_market_demand_growth_for_$trade_good_id$ 
+		which = country_total_stock_market_demand_for_$trade_good_id$ 
+	}
+	subtract_variable = {
+		which = country_total_stock_market_demand_growth_for_$trade_good_id$ 
+		which = history_stock_market_demand_for_$trade_good_id$
+	}
+	set_variable = {
+		which = country_total_stock_market_balance_growth_for_$trade_good_id$ 
+		which = country_total_stock_market_balance_for_$trade_good_id$ 
+	}
+	subtract_variable = {
+		which = country_total_stock_market_balance_growth_for_$trade_good_id$ 
+		which = history_stock_market_balance_for_$trade_good_id$
+	}
+
+	set_variable = {
+		which = stock_market_supply_for_$trade_good_id$ 
+		which = country_stock_market_supply_for_$trade_good_id$
+	}
+
+	# 75% goes to the global market
+	multiply_variable = {
+		which = stock_market_supply_for_$trade_good_id$ 
+		value = 0.75
+	}
+
+	# 25% goes to the stockpile
+	multiply_variable = {
+		which = country_stock_market_supply_for_$trade_good_id$
+		value = 0.25
+	}
+
+	change_variable = {
+		which = country_stock_market_stockpile_for_$trade_good_id$
+		which = country_stock_market_supply_for_$trade_good_id$
+	}
+}
+
+set_REB_initial_variable = {
+	set_variable = {
+		which = stock_market_supply_for_$trade_good_id$
+		value = 0
+	}
+	set_variable = {
+		which = stock_market_demand_for_$trade_good_id$
+		value = 0
+	}
+}
+
+change_REB_variable = {
+	change_variable = {
+		which = stock_market_supply_for_$trade_good_id$
+		which = PREV
+	}
+	change_variable = {
+		which = stock_market_demand_for_$trade_good_id$
+		which = PREV
+	}
+}
+
+release_update = {
 	REB = {
-		set_variable = {
-			which = stock_market_supply_for_$trade_good_id$
-			value = 0
-		}
-		set_variable = {
-			which = stock_market_demand_for_$trade_good_id$
-			value = 0
+		execute_effect_for_every_trade_good = {
+			scripted_effect = "set_REB_initial_variable"
 		}
 	}
 	every_country = {
@@ -16,35 +141,10 @@ release_update_for_trade_good = {
 			}
 		}
 
-
-		#For displaying history
-		set_variable = {
-			which = history_stock_market_demand_for_$trade_good_id$
-			which = country_total_stock_market_demand_for_$trade_good_id$ 
-		}
-		set_variable = {
-			which = history_stock_market_supply_for_$trade_good_id$
-			which = country_total_stock_market_supply_for_$trade_good_id$ 
-		}
-		set_variable = {
-			which = history_stock_market_balance_for_$trade_good_id$
-			which = history_stock_market_supply_for_$trade_good_id$
-		}
-		subtract_variable = {
-			which = history_stock_market_balance_for_$trade_good_id$
-			which = history_stock_market_demand_for_$trade_good_id$
+		execute_effect_for_every_trade_good = {
+			scripted_effect = "release_update_setup"
 		}
 		
-
-
-		set_variable = {
-			which = stock_market_demand_for_$trade_good_id$
-			value = 0
-		}
-		set_variable = {
-			which = country_stock_market_supply_for_$trade_good_id$
-			value = 0
-		}
 		export_to_variable = {
 			variable_name = temp_global_trade_goods_size_modifier
 			value = modifier:global_trade_goods_size_modifier
@@ -58,108 +158,33 @@ release_update_for_trade_good = {
 
 		every_owned_province = {
 			update_supply_and_demand_based_on_buildings = yes
-			update_supply_for_trade_good = {
-				trade_good_id = $trade_good_id$
+			execute_effect_for_every_trade_good = {
+				scripted_effect = "update_supply_for_trade_good"
 			}
-			update_demand_for_trade_good = {
-				trade_good_id = $trade_good_id$
+			execute_effect_for_every_trade_good = {
+				scripted_effect = "update_demand_for_trade_good"
 			}
 		}
 
-		#We get country_stock_market_supply_for_$trade_good_id$ from those functions
-		#Here we determine how much we sell globally
-
-		#For localisation
-		set_variable = {
-			which = country_total_stock_market_supply_for_$trade_good_id$ 
-			which = country_stock_market_supply_for_$trade_good_id$
+		execute_effect_for_every_trade_good = {
+			scripted_effect = "post_province_evaluation"
 		}
 
-		#This one is redundant but I want it to be safe and unchanged
-		set_variable = {
-			which = country_total_stock_market_demand_for_$trade_good_id$ 
-			which = stock_market_demand_for_$trade_good_id$
+		execute_effect_for_every_trade_good = {
+			scripted_effect = "update_national_supply_for_trade_good"
 		}
-
-		#Balance for localisation, also maybe later for calculations?
-		set_variable = {
-			which = country_total_stock_market_balance_for_$trade_good_id$ 
-			which = country_total_stock_market_supply_for_$trade_good_id$ 
-		}
-		subtract_variable = {
-			which = country_total_stock_market_balance_for_$trade_good_id$ 
-			which = country_total_stock_market_demand_for_$trade_good_id$ 
-		}
-
-
-		#Growth since last month
-		set_variable = {
-			which = country_total_stock_market_supply_growth_for_$trade_good_id$ 
-			which = country_total_stock_market_supply_for_$trade_good_id$ 
-		}
-		subtract_variable = {
-			which = country_total_stock_market_supply_growth_for_$trade_good_id$ 
-			which = history_stock_market_supply_for_$trade_good_id$
-		}
-		set_variable = {
-			which = country_total_stock_market_demand_growth_for_$trade_good_id$ 
-			which = country_total_stock_market_demand_for_$trade_good_id$ 
-		}
-		subtract_variable = {
-			which = country_total_stock_market_demand_growth_for_$trade_good_id$ 
-			which = history_stock_market_demand_for_$trade_good_id$
-		}
-		set_variable = {
-			which = country_total_stock_market_balance_growth_for_$trade_good_id$ 
-			which = country_total_stock_market_balance_for_$trade_good_id$ 
-		}
-		subtract_variable = {
-			which = country_total_stock_market_balance_growth_for_$trade_good_id$ 
-			which = history_stock_market_balance_for_$trade_good_id$
-		}
-
-		set_variable = {
-			which = stock_market_supply_for_$trade_good_id$ 
-			which = country_stock_market_supply_for_$trade_good_id$
-		}
-	
-		# 75% goes to the global market
-		multiply_variable = {
-			which = stock_market_supply_for_$trade_good_id$ 
-			value = 0.75
-		}
-
-		# 25% goes to the stockpile
-		multiply_variable = {
-			which = country_stock_market_supply_for_$trade_good_id$
-			value = 0.25
-		}
-
-		change_variable = {
-			which = country_stock_market_stockpile_for_$trade_good_id$
-			which = country_stock_market_supply_for_$trade_good_id$
-		}
-
-
-		update_national_supply_for_trade_good = {
-			trade_good_id = $trade_good_id$
-		}
-		update_national_demand_for_trade_good = {
-			trade_good_id = $trade_good_id$
+		execute_effect_for_every_trade_good = {
+			scripted_effect = "update_national_demand_for_trade_good"
 		}
 		REB = {
-			change_variable = {
-				which = stock_market_supply_for_$trade_good_id$
-				which = PREV
-			}
-			change_variable = {
-				which = stock_market_demand_for_$trade_good_id$
-				which = PREV
+			execute_effect_for_every_trade_good = {
+				scripted_effect = "change_REB_variable"
 			}
 		}
 	}
-	set_price_for_trade_good = {
-		trade_good_id = $trade_good_id$
+	
+	execute_effect_for_every_trade_good = {
+		scripted_effect = "set_price_for_trade_good"
 	}
 }
 
@@ -334,94 +359,5 @@ stock_market_on_startup = {
 }
 
 priority_update = {
-	release_update_for_trade_good = {
-		trade_good_id = 3
-	}	#cloth
-	release_update_for_trade_good = {
-		trade_good_id = 2
-	}	#wool (we need cloth supply to determine supply) 
-	release_update_for_trade_good = {
-		trade_good_id = 1
-	}	#wool
-	release_update_for_trade_good = {
-		trade_good_id = 0
-	}	#grain
-	release_update_for_trade_good = {
-		trade_good_id = 4 
-	} 	#fish
-	release_update_for_trade_good = {
-		trade_good_id = 5
-	}	#fur
-	release_update_for_trade_good = {
-		trade_good_id = 6
-	}	#salt
-	release_update_for_trade_good = {
-		trade_good_id = 7
-	}	#naval supplies
-	release_update_for_trade_good = {
-		trade_good_id = 8
-	}	#copper
-	release_update_for_trade_good = {
-		trade_good_id = 10
-	}	#iron
-	release_update_for_trade_good = {
-		trade_good_id = 11
-	}	#slaves
-	release_update_for_trade_good = {
-		trade_good_id = 12
-	}	#ivory
-	release_update_for_trade_good = {
-		trade_good_id = 13
-	} 	#tea
-	release_update_for_trade_good = {
-		trade_good_id = 14
-	} 	#chinaware
-	release_update_for_trade_good = {
-		trade_good_id = 15
-	} 	#spices
-	release_update_for_trade_good = {
-		trade_good_id = 16
-	} 	#coffee
-	release_update_for_trade_good = {
-		trade_good_id = 17
-	} 	#cotton
-	release_update_for_trade_good = {
-		trade_good_id = 18
-	} 	#sugar
-	release_update_for_trade_good = {
-		trade_good_id = 19
-	} 	#tobacco
-	release_update_for_trade_good = {
-		trade_good_id = 20
-	} 	#cocoa
-	release_update_for_trade_good = {
-		trade_good_id = 21
-	} 	#silk
-	release_update_for_trade_good = {
-		trade_good_id = 22
-	} 	#dyes
-	release_update_for_trade_good = {
-		trade_good_id = 23
-	} 	#tropical wood
-	release_update_for_trade_good = {
-		trade_good_id = 24
-	}	#livestock
-	release_update_for_trade_good = {
-		trade_good_id = 25
-	}	#incense	
-	release_update_for_trade_good = {
-		trade_good_id = 26
-	}	#glass	
-	release_update_for_trade_good = {
-		trade_good_id = 27
-	}	#paper	
-	release_update_for_trade_good = {
-		trade_good_id = 28
-	}	#gems
-	release_update_for_trade_good = {
-		trade_good_id = 29
-	}	#coal
-	release_update_for_trade_good = {
-		trade_good_id = 30
-	}	#cloves
+	release_update = yes
 }
