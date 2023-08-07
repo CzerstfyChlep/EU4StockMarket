@@ -1,0 +1,36 @@
+namespace = stock_market_buildings_events
+
+province_event = { 
+	id = stock_market_buildings_events.1
+	title = "doesnt exist"
+	desc = "doesnt exist"
+	
+	hidden = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		
+		add_province_triggered_modifier = printing_house_modifier
+	}
+	
+	option = {
+		name = "idk "
+	}
+}
+
+province_event = { 
+	id = stock_market_buildings_events.2
+	title = "doesnt exist"
+	desc = "doesnt exist"
+	
+	is_triggered_only = yes
+	hidden = yes
+	
+	immediate = {
+		remove_province_triggered_modifier = printing_house_modifier
+	}
+	
+	option = {
+		name = "idk "
+	}
+}

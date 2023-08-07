@@ -78,6 +78,10 @@ on_demand_creation_building_destroyed = {
 					has_building = brewery
 					has_building = tailor
 					has_building = mayoral_house
+					has_building = fort_15th
+					has_building = fort_16th
+					has_building = fort_17th
+					has_building = fort_18th
 				}
 			}
 		}
@@ -182,6 +186,131 @@ update_supply_and_demand_based_on_buildings = {
 				}
 			}
 		}
+		if = {
+			limit = {
+				has_building = coffee_inn
+			}
+			owner = {
+				change_variable = {
+					which = stock_market_demand_for_16
+					value = 50
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_building = cannon_tower
+			}
+			owner = {
+				change_variable = {
+					which = stock_market_demand_for_8
+					value = 25
+				}
+				change_variable = {
+					which = stock_market_demand_for_10
+					value = 25
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_building = brewery
+			}
+			if = {
+				limit = {
+					trade_goods = wine
+				}
+				owner = {
+					change_variable = {
+						which = stock_market_demand_for_1
+						value = 50
+					}
+				}
+			}
+			else = {
+				owner = {
+					change_variable = {
+						which = stock_market_demand_for_0
+						value = 50
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_building = tailor
+			}
+			owner = {
+				change_variable = {
+					which = stock_market_demand_for_3
+					value = 35
+				}
+				change_variable = {
+					which = stock_market_demand_for_22
+					value = 15
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_building = mayoral_house
+			}
+			owner = {
+				change_variable = {
+					which = stock_market_demand_for_27
+					value = 60
+				}
+				change_variable = {
+					which = stock_market_demand_for_26
+					value = 40
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_building = fort_15th
+			}
+			owner = {
+				change_variable = {
+					which = stock_market_demand_for_6
+					value = 20
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_building = fort_16th
+			}
+			owner = {
+				change_variable = {
+					which = stock_market_demand_for_6
+					value = 40
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_building = fort_17th
+			}
+			owner = {
+				change_variable = {
+					which = stock_market_demand_for_6
+					value = 60
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_building = fort_18th
+			}
+			owner = {
+				change_variable = {
+					which = stock_market_demand_for_6
+					value = 80
+				}
+			}
+		}
+		else = { }
 	}
 }
 

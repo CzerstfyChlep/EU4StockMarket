@@ -111,7 +111,7 @@ mine = {
 		OR = {
 			has_terrain = highlands
 			has_terrain = hills
-			has_terrain = mountains
+			has_terrain = mountain
 		}
 	}
 	
@@ -133,11 +133,13 @@ mine = {
 }
 
 cannon_tower = {
-	cost = 100
+	cost = 150
 	time = 12
 
 	modifier = {
-		
+		local_hostile_attrition = 1
+		local_garrison_damage = 1
+		local_garrison_size = 0.25
 	}
 	
 	build_trigger = {
@@ -159,7 +161,8 @@ brewery = {
 	time = 12
 
 	modifier = {
-		
+		tax_income = 1
+		local_tax_modifier = 0.05
 	}
 	
 	build_trigger = {
@@ -188,11 +191,11 @@ printing_house = {
 	
 	on_built = {
 		on_demand_creation_building_built = yes
-		add_province_triggered_modifier = printing_house_modifier
+		province_event = { id = stock_market_buildings_events.1 }
 	}
 	on_destroyed = {
 		on_demand_creation_building_destroyed = yes
-		remove_province_triggered_modifier = printing_house_modifier
+		province_event = { id = stock_market_buildings_events.2 }
 	}
 
 	ai_will_do = {
@@ -212,11 +215,12 @@ printing_house = {
 }
 
 tailor = {
-	cost = 100
+	cost = 150
 	time = 12
 
 	modifier = {
-		
+		local_manpower = 0.25
+		local_manpower_modifier = 0.1
 	}
 	
 	build_trigger = {
@@ -233,11 +237,11 @@ tailor = {
 }
 
 mayoral_house = {
-	cost = 100
+	cost = 200
 	time = 12
 
 	modifier = {
-		
+		allowed_num_of_buildings = 4
 	}
 	
 	build_trigger = {
