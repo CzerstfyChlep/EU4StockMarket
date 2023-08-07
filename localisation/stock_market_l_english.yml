@@ -208,10 +208,11 @@
  
  #buildings
  building_crop_farm: "Farm"
- building_crop_farm_desc: "May only be built in §YGrasslands§!, §YFarmlands§! and §YDrylands§!.\n\nProduces §G+50.0§! Units of £grain£§YGrain§! and £livestock£§YLivestock§!.\n\n"
+ building_crop_farm_desc: "May only be built in §YGrasslands§!, §YFarmlands§! and §YDrylands§!.\n\nProduces §G+50.0§! Units of £grain£§YGrain§!.\n\n"
  building_coffee_inn: "Coffee Inn"
  building_coffee_inn_desc: "Generates §Y+50.0§! Demand for £coffee£§YCoffee§!."
- building_windmill: "Windmill"
+ building_livestock_farm_desc: "May only be built in §YGrasslands§!, §YFarmlands§!, §YDrylands§! and §YSteppes§!.\n\nProduces §G+50.0§! Units of £livestock£§YLivestock§!.\n\n"
+ building_livestock_farm: "Livestock Farm"
  building_forester: "Forester"
  building_forester_desc: "May only be built in §YForest§!, §YWoods§! and §YJungle§!.\n\nProduces §G+50.0§! Units of £naval_supplies£§YNaval Supplies§! and, if in §YJungle§! or §YTropical§!, also produces §G+50.0§! Units of £tropical_wood£§YTropical Wood§!.\n\n"
  building_mine: "Mine"

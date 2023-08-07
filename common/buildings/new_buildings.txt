@@ -49,21 +49,26 @@ coffee_inn = {
 	}
 }
 
-windmill = {
+livestock_farm = {
 	cost = 100
 	time = 12
 
 	modifier = {
-		
 	}
 	
 	build_trigger = {
+		OR = {
+			has_terrain = grasslands
+			has_terrain = farmlands
+			has_terrain = drylands
+			has_terrain = steppe
+		}
 	}
 	on_built = {
-		on_supply_creation_building_built = yes
+		on_demand_creation_building_built = yes
 	}
 	on_destroyed = {
-		on_supply_creation_building_destroyed = yes
+		on_demand_creation_building_destroyed = yes
 	}
 
 	ai_will_do = {

@@ -59,6 +59,7 @@ on_supply_creation_building_destroyed = {
 					has_building = mine
 					has_building = forester
 					has_building = crop_farm
+					has_building = livestock_farm
 				}
 			}
 		}
@@ -72,7 +73,6 @@ on_demand_creation_building_destroyed = {
 				OR = {
 					has_building = printing_house
 					has_building = coffee_inn
-					has_building = windmill
 					has_building = cannon_tower
 					has_building = brewery
 					has_building = tailor
@@ -101,6 +101,13 @@ update_supply_and_demand_based_on_buildings = {
 					which = country_stock_market_supply_for_0
 					value = 50
 				}
+			}
+		}
+		if = {
+			limit = {
+				has_building = livestock_farm
+			}
+			owner = {
 				change_variable = {
 					which = country_stock_market_supply_for_24
 					value = 50

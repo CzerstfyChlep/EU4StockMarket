@@ -124,7 +124,7 @@ technology = { #Naval Ambitions
 	range					= 115
 	impressment_offices 	= yes
 	naval_engagement_width = 10
-	windmill = yes
+	livestock_farm = yes
 }
 
 technology  = { #Docks

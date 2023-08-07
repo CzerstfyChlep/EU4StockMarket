@@ -6711,13 +6711,13 @@ guiTypes = {
 		}
 
 		checkboxType = {
-			name = "build_windmill"
+			name = "build_livestock_farm"
 			position = { x = 269 y = 517 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx"
 		}
 
 		instantTextBoxType={
-			name = "windmill_cost"
+			name = "livestock_farm_cost"
 			position = {x = 269 y = 567 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
