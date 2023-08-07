@@ -715,35 +715,35 @@ update_demand_for_trade_good_14 = { #chinaware
 			}
 		}
 	}
-	if = {
-		limit = {
-			has_global_flag = europeans_in_china_happened
-			continent = europe
-		}
-		owner = {
-			set_variable = {
-				which = tempvar
-				which = tempvardev
-			}
-			multiply_variable = { 
-				which = tempvar
-				value = 0.15
-			}
-			if = {
-				limit = {
-					has_global_flag = bottger_happened
-				}
-				multiply_variable = { 
-					which = tempvar
-					value = 0.5
-				}
-			}
-			change_variable = {
-				which = stock_market_demand_for_14
-				which = tempvar
-			}
-		}
-	}
+	# if = {
+		# limit = {
+			# has_global_flag = europeans_in_china_happened
+			# continent = europe
+		# }
+		# owner = {
+			# set_variable = {
+				# which = tempvar
+				# which = tempvardev
+			# }
+			# multiply_variable = { 
+				# which = tempvar
+				# value = 0.15
+			# }
+			# if = {
+				# limit = {
+					# has_global_flag = bottger_happened
+				# }
+				# multiply_variable = { 
+					# which = tempvar
+					# value = 0.5
+				# }
+			# }
+			# change_variable = {
+				# which = stock_market_demand_for_14
+				# which = tempvar
+			# }
+		# }
+	# }
 }
 
 update_demand_for_trade_good_15 = { #spices

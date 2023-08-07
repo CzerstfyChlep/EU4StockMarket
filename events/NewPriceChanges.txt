@@ -7,36 +7,253 @@ namespace = new_prices
 # high demand of paper in protestant provs
 
 country_event = {
-	id = new_prices.1
-	title = prices.1.t
-	desc = prices.1.d
+	id = new_prices.1 
+	title = new_prices.1.t
+	desc = new_prices.1.d
 	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
 
 	fire_only_once = yes
-	is_triggered_only = yes
 	major = yes
 
 	trigger = {
-		
+		ivory = 3
+		capital_scope = {
+			continent = europe
+		}
+		num_of_colonists = 1
 	}
 	mean_time_to_happen = {
 		months = 1
 	}
 	
+	immediate = {
+		hidden_effect = {
+			capital_scope = {
+				random_trade_node_member_province = {
+					limit = {
+						owned_by = ROOT
+					}
+					save_event_target_as = ivory_craze_start
+				}
+				random_trade_node_member_province = {
+					limit = {
+						owned_by = ROOT 
+						province_has_center_of_trade_of_level = 1 
+					}
+					save_event_target_as = ivory_craze_start
+				}
+				random_trade_node_member_province = {
+					limit = {
+						owned_by = ROOT 
+						province_has_center_of_trade_of_level = 2 
+					}
+					save_event_target_as = ivory_craze_start
+				}
+			}
+		}
+	}
+	
 	
 	option = {
-		name = prices.1.a
-		PDX_change_price = {
-			trade_goods = slaves
-			key = TRIANGLE_TRADE
-			value = 0.5
-			duration = -1
+		name = new_prices.1.a
+		
+		event_target:ivory_craze_start = {
+			add_permanent_province_modifier = { 
+				name = stock_market_12_craze_province
+				duration = -1  
+			}
 		}
-		custom_tooltip = stock_market_triangle_trade_effect
+		custom_tooltip = stock_market_craze_will_begin_to_spread
+	}
+}
+
+country_event = {
+	id = new_prices.2 
+	title = new_prices.2.t
+	desc = new_prices.2.d
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
+
+	fire_only_once = yes
+	major = yes
+
+	trigger = {
+		capital_scope = {
+			continent = europe
+		}
+		num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+			trade_goods = tea
+			value = 3
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	immediate = {
+		hidden_effect = {
+			capital_scope = {
+				random_trade_node_member_province = {
+					limit = {
+						owned_by = ROOT
+					}
+					save_event_target_as = tea_craze_start
+				}
+				random_trade_node_member_province = {
+					limit = {
+						owned_by = ROOT 
+						province_has_center_of_trade_of_level = 1 
+					}
+					save_event_target_as = tea_craze_start
+				}
+				random_trade_node_member_province = {
+					limit = {
+						owned_by = ROOT 
+						province_has_center_of_trade_of_level = 2 
+					}
+					save_event_target_as = tea_craze_start
+				}
+			}
+		}
+	}
+	
+	
+	option = {
+		name = new_prices.2.a
 		
-		add_years_of_income  = 0.25
+		event_target:tea_craze_start = {
+			add_permanent_province_modifier = { 
+				name = stock_market_13_craze_province
+				duration = -1  
+			}
+		}
+		custom_tooltip = stock_market_craze_will_begin_to_spread
+	}
+}
+
+country_event = {
+	id = new_prices.3 
+	title = new_prices.3.t
+	desc = new_prices.3.d
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
+
+	fire_only_once = yes
+	major = yes
+
+	trigger = {
+		capital_scope = {
+			continent = europe
+		}
+		num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+			trade_goods = cotton
+			NOT = { continent = europe }
+			value = 3
+		}
+		num_of_colonists = 1
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	immediate = {
+		hidden_effect = {
+			capital_scope = {
+				random_trade_node_member_province = {
+					limit = {
+						owned_by = ROOT
+					}
+					save_event_target_as = cotton_craze_start
+				}
+				random_trade_node_member_province = {
+					limit = {
+						owned_by = ROOT 
+						province_has_center_of_trade_of_level = 1 
+					}
+					save_event_target_as = cotton_craze_start
+				}
+				random_trade_node_member_province = {
+					limit = {
+						owned_by = ROOT 
+						province_has_center_of_trade_of_level = 2 
+					}
+					save_event_target_as = cotton_craze_start
+				}
+			}
+		}
+	}
+	
+	
+	option = {
+		name = new_prices.3.a
 		
-		add_prestige_or_monarch_power = { amount = 20 }
-		set_global_flag = triangle_happened
+		event_target:cotton_craze_start = {
+			add_permanent_province_modifier = { 
+				name = stock_market_17_craze_province
+				duration = -1  
+			}
+		}
+		custom_tooltip = stock_market_craze_will_begin_to_spread
+	}
+}
+
+country_event = {
+	id = new_prices.4 
+	title = new_prices.4.t
+	desc = new_prices.4.d
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
+
+	fire_only_once = yes
+	major = yes
+
+	trigger = {
+		capital_scope = {
+			continent = europe
+		}
+		num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+			trade_goods = sugar
+			value = 4
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	immediate = {
+		hidden_effect = {
+			capital_scope = {
+				random_trade_node_member_province = {
+					limit = {
+						owned_by = ROOT
+					}
+					save_event_target_as = sugar_craze_start
+				}
+				random_trade_node_member_province = {
+					limit = {
+						owned_by = ROOT 
+						province_has_center_of_trade_of_level = 1 
+					}
+					save_event_target_as = sugar_craze_start
+				}
+				random_trade_node_member_province = {
+					limit = {
+						owned_by = ROOT 
+						province_has_center_of_trade_of_level = 2 
+					}
+					save_event_target_as = sugar_craze_start
+				}
+			}
+		}
+	}
+	
+	
+	option = {
+		name = new_prices.4.a
+		
+		event_target:sugar_craze_start = {
+			add_permanent_province_modifier = { 
+				name = stock_market_18_craze_province
+				duration = -1  
+			}
+		}
+		custom_tooltip = stock_market_craze_will_begin_to_spread
 	}
 }
