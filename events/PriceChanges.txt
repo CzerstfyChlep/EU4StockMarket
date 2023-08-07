@@ -576,13 +576,19 @@ country_event = {
 			value = 0.5
 			duration = -1
 		}
-		set_global_flag = spice_trade_happened
+		#set_global_flag = spice_trade_happened
 		add_years_of_income = 0.25
 		add_prestige_or_monarch_power = { amount = 20 }
 		
 		custom_tooltip = " "
 		
-		custom_tooltip = stock_market_add_demand_from_european_provs_for_spice # start craze instead?
+		capital_scope = {
+			add_permanent_province_modifier = { 
+				name = stock_market_15_craze_province
+				duration = -1  
+			}
+		}
+		custom_tooltip = stock_market_craze_will_begin_to_spread
 	}
 }
 
@@ -1332,6 +1338,7 @@ country_event = {
 	major = yes
 
 	trigger = {
+		always = no 
 		is_year = 1600
 		capital_scope = { continent = europe }
 		religion_group = christian
@@ -1757,8 +1764,7 @@ country_event = {
 	major = yes
 
 	trigger = {
-		always = no #TODO
-		dip_tech = 16
+		dip_tech = 14
 		colony = 1
 		any_subject_country = {
 			is_colonial_nation = yes
@@ -1785,6 +1791,14 @@ country_event = {
 			value = 0.35
 			duration = -1
 		}
+		
+		capital_scope = {
+			add_permanent_province_modifier = { 
+				name = stock_market_20_craze_province
+				duration = -1  
+			}
+		}
+		custom_tooltip = stock_market_craze_will_begin_to_spread
 	}
 }
 
@@ -1800,7 +1814,6 @@ country_event = {
 	major = yes
 
 	trigger = {
-		always = no #TODO probably done via craze
 		dip_tech = 16
 		colony = 1
 		NOT = { has_global_flag = popularization_of_tobacco_happened }
@@ -1827,6 +1840,14 @@ country_event = {
 			value = 0.5
 			duration = -1
 		}
+		
+		capital_scope = {
+			add_permanent_province_modifier = { 
+				name = stock_market_19_craze_province
+				duration = -1  
+			}
+		}
+		custom_tooltip = stock_market_craze_will_begin_to_spread
 	}
 }
 
