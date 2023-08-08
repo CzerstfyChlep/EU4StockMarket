@@ -49,8 +49,8 @@ spriteTypes = {
 		loadType = "INGAME"
 	}
 	spriteType = {
-		name = "GFX_printing_press"
-		texturefile = "gfx//interface//buildings//printing_press.dds"
+		name = "GFX_printing_house"
+		texturefile = "gfx//interface//buildings//printing_house.dds"
 		loadType = "INGAME"
 	}
 	spriteType = {

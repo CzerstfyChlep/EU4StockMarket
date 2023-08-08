@@ -718,12 +718,6 @@ gain_merchant_capacity_monthly_for_country = {
 	}
 }
 
-gain_merchant_capacity_monthly_for_all = {
-	every_country = {
-		gain_merchant_capacity_monthly_for_country = yes
-	}
-}
-
 get_average_price_for_selling_all_of_trade_good = {
 	REB = {
 		ROOT = {

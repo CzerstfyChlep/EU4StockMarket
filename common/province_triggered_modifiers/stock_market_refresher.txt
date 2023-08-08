@@ -221,10 +221,6 @@ stock_market_refresh_prices_monthly = {
 
 		priority_update = yes
 
-
-		#TODO NEED TO OPTIMIZE THIS, IT GOES THROUGH ALL COUNTRIES BUT WE ARE DOING THAT ALREADY WITH PRIORITY UPDATE!
-		gain_merchant_capacity_monthly_for_all = yes
-
 	}
 	
 	on_deactivation = {

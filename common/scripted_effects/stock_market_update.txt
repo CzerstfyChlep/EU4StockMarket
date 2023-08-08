@@ -141,6 +141,11 @@ release_update = {
 			}
 		}
 
+		gain_merchant_capacity_monthly_for_country = yes
+
+		set_country_flag = transaction_lock #use this to lock buying and selling if a month tick happens
+		#while the event is open
+
 		execute_effect_for_every_trade_good = {
 			scripted_effect = "release_update_setup"
 		}
@@ -193,6 +198,32 @@ release_update = {
 	
 	execute_effect_for_every_trade_good = {
 		scripted_effect = "set_price_for_trade_good"
+	}
+
+
+	#BUY / SELL needed goods
+	every_country = {
+		limit = {
+			NOT = {
+				tag = REB
+			}
+		}		
+
+		execute_effect_for_every_trade_good = {
+			scripted_effect = "post_province_evaluation"
+		}
+
+		execute_effect_for_every_trade_good = {
+			scripted_effect = "update_national_supply_for_trade_good"
+		}
+		execute_effect_for_every_trade_good = {
+			scripted_effect = "update_national_demand_for_trade_good"
+		}
+		REB = {
+			execute_effect_for_every_trade_good = {
+				scripted_effect = "change_REB_variable"
+			}
+		}
 	}
 }
 
@@ -318,4 +349,274 @@ stock_market_on_startup = {
 
 priority_update = {
 	release_update = yes
+}
+
+check_trade_good_satisfaction = {
+	#$trade_good_id$
+
+	clear_satisfaction_modifier_for = { trade_good_id = $trade_good_id$ }
+	REB = {
+		ROOT = {
+			set_variable = {
+				which = stock_market_price_value_$trade_good_id$
+				which = PREV
+			}
+		}
+	}
+
+ 	#country_total_stock_market_balance_for_$trade_good_id$ #Balance
+	#country_stock_market_supply_for_$trade_good_id$ #Stockpile this month
+	set_variable = {
+		which = temp_calc_balance
+		which = stock_market_supply_for_$trade_good_id$ 
+	}
+	subtract_variable = {
+		which = temp_calc_balance
+		which = stock_market_demand_for_$trade_good_id$
+	}
+
+	#Balance without stockpile
+	if = {
+		limit = {
+			check_variable = {
+				which = temp_calc_balance
+				value = 0
+			}
+		}
+
+		if = {
+			limit = {
+				NOT = {
+					is_variable_equal = {
+						which = stock_market_demand_for_$trade_good_id$
+						value = 0
+					}
+				}
+			}
+
+			divide_variable = {
+				which = temp_calc_balance
+				which = stock_market_demand_for_$trade_good_id$
+			}
+
+
+			if = {
+				limit = {
+					check_variable = {
+						which = temp_calc_balance
+						value = 2
+					}
+				}
+				add_country_modifier = { 
+					name = over_satisfaction_of_$trade_good_id$
+					duration = -1  
+				}
+
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = temp_calc_balance
+						value = 1.5
+					}
+				}
+				add_country_modifier = { 
+					name = high_satisfaction_of_$trade_good_id$
+					duration = -1  
+				}
+			}
+		}
+
+		set_variable = {
+			which = temp_total_autosell
+			which = temp_calc_balance
+		}
+		multiply_variable = {
+			which = temp_total_autosell
+			which = stock_market_price_value_$trade_good_id$
+		}
+
+		gain_ducats_based_on_variable = {
+			variable_name = temp_total_autosell
+		}
+
+		#We can sell the rest
+		#We won't send the supply globaly as it was already done
+
+
+	}
+	else = {
+		#Check if we can use stockpile
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = stockpile_usage_for_$trade_good_id$_disabled
+				}
+			}
+
+			#Use stockpile
+			change_variable = {
+				which = temp_calc_balance
+				which = country_stock_market_stockpile_for_$trade_good_id$
+			}			
+		}
+
+		#If temp is positive, that's our stockpile, if it's negative, we buy
+
+		if = {
+			limit = {
+				check_variable = {
+					which = temp_calc_balance
+					value = 0
+				}
+			}
+
+			set_variable = {
+				which = country_stock_market_stockpile_for_$trade_good_id$
+				which = temp_calc_balance
+			}
+		}
+		else = {
+			#We use up stockpile and buy
+			set_variable = {
+				which = country_stock_market_stockpile_for_$trade_good_id$
+				value = 0
+			}
+
+			multiply_variable = {
+				which = temp_calc_balance
+				value = -1
+			}
+
+			#buy trade good based on variable don't change price
+
+			#check how much we can buy
+
+			if = {
+				limit = {
+					NOT = { has_country_flag = autobuy_for_$trade_good_id$_disabled }
+				}
+
+				set_variable = {
+					which = temp_total_autobuy
+					which = temp_calc_balance
+				}
+
+				multiply_variable = {
+					which = temp_total_autobuy
+					which = stock_market_price_value_$trade_good_id$
+				}
+
+				#Total cash
+
+				export_to_variable = {
+					variable_name = stock_market_cash
+					value = treasury
+				}
+
+
+				if = {
+					limit = {
+						check_variable = {
+							which = stock_market_cash
+							which = temp_total_autobuy
+						}				
+					}
+					#We are fine
+					spend_ducats_based_on_variable = {
+						variable_name = temp_total_autobuy
+					}
+				}
+				else = {
+					subtract_variable = {
+						which = temp_total_autobuy
+						which = stock_market_cash
+					}
+					spend_ducats_based_on_variable = {
+						variable_name = stock_market_cash
+					}
+
+					set_variable = {
+						which = temp_calc_balance
+						which = temp_total_autobuy
+					}
+					divide_variable = {
+						which = temp_calc_balance
+						which = stock_market_price_value_$trade_good_id$
+					}
+
+				}
+
+			}
+		}
+		#check if any balance left
+		if = {
+			limit = {
+				check_variable = {
+					which = temp_calc_balance
+					value = 0
+				}
+				NOT = {
+					is_variable_equal = {
+						which = stock_market_demand_for_$trade_good_id$
+						value = 0
+					}
+				}
+			}
+
+			#change balance to percentage
+			divide_variable = {
+				which = temp_calc_balance
+				which = stock_market_demand_for_$trade_good_id$
+			}
+
+			if = {
+				limit = {
+					check_variable = {
+						which = temp_calc_balance
+						value = 0.5
+					}
+				}
+				add_country_modifier = { 
+					name = severe_shortage_of_$trade_good_id$
+					duration = -1  
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = temp_calc_balance
+						value = 0.25
+					}
+				}
+				add_country_modifier = { 
+					name = mediocre_shortage_of_$trade_good_id$
+					duration = -1  
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = temp_calc_balance
+						value = 0.1
+					}
+					development = 500
+				}
+
+				add_country_modifier = { 
+					name = acute_shortage_of_$trade_good_id$
+					duration = -1  
+				}
+			}
+		}
+	}
+	
+}
+
+clear_satisfaction_modifier_for = {
+	remove_country_modifier = severe_shortage_of_$trade_good_id$
+	remove_country_modifier = mediocre_shortage_of_$trade_good_id$
+	remove_country_modifier = acute_shortage_of_$trade_good_id$
+	remove_country_modifier = high_satisfaction_of_$trade_good_id$
+	remove_country_modifier = over_satisfaction_of_$trade_good_id$
 }
