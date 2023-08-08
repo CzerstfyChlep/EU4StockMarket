@@ -232,6 +232,23 @@
  building_fishing_dock: "Fishing Dock"
  building_fishing_dock_desc: "May only be built in §YCoastal§! provinces.\n\nProduces §G+50.0§! Units of £fish£§YFish§!.\n\n"
  
+ new_prices.1.t: "Growth of the Ivory Trade"
+ new_prices.1.d: "Placeholder. Ivory has been known since ancient times but has always been costly imported or hunted blah blah. "
+ new_prices.1.a: "Let me seclude myself in the Ivory Tower!"
+ 
+ new_prices.2.t: "Fascination with Tea"
+ new_prices.2.d: "About tea and stuff."
+ new_prices.2.a: "The Golden Beverage!"
+ 
+ new_prices.3.t: "Higher Availabity of Cotton"
+ new_prices.3.d: ""
+ new_prices.3.a: "This is sure to make a furore!"
+ 
+ new_prices.4.t: "Higher Availabity of Sugar"
+ new_prices.4.d: ""
+ new_prices.4.a: "This is pretty sweet!"
+ 
+ 
  building_fort_15th_desc: "Generates §Y+20.0§! Demand for £salt£§YSalt§!."
  building_fort_16th_desc: "Generates §Y+40.0§! Demand for £salt£§YSalt§!."
  building_fort_17th_desc: "Generates §Y+60.0§! Demand for £salt£§YSalt§!."

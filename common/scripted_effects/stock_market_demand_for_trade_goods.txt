@@ -320,6 +320,60 @@ update_supply_and_demand_based_on_buildings = {
 	}
 }
 
+update_demand_based_on_craze_individual = {
+	if = {
+		limit = {
+			has_province_modifier = stock_market_$trade_good_id$_craze_province
+		}
+		owner = {
+			set_variable = {
+				which = tempvar
+				which = tempvardev
+			}
+			multiply_variable = { 
+				which = tempvar
+				value = 0.35
+			}
+			change_variable = {
+				which = stock_market_demand_for_$trade_good_id$
+				which = tempvar
+			}
+		}
+	}
+	else_if ={
+		limit = {
+			has_province_modifier = stock_market_$trade_good_id$_consumption_province
+		}
+		owner = {
+			set_variable = {
+				which = tempvar
+				which = tempvardev
+			}
+			multiply_variable = { 
+				which = tempvar
+				value = 0.1
+			}
+			change_variable = {
+				which = stock_market_demand_for_$trade_good_id$
+				which = tempvar
+			}
+		}
+	}
+	else = { }
+}
+
+update_demand_based_on_craze = {
+	update_demand_based_on_craze_individual = { trade_good_id = 12 }
+	update_demand_based_on_craze_individual = { trade_good_id = 13 }
+	update_demand_based_on_craze_individual = { trade_good_id = 14 }
+	update_demand_based_on_craze_individual = { trade_good_id = 15 }
+	update_demand_based_on_craze_individual = { trade_good_id = 16 }
+	update_demand_based_on_craze_individual = { trade_good_id = 17 }
+	update_demand_based_on_craze_individual = { trade_good_id = 18 }
+	update_demand_based_on_craze_individual = { trade_good_id = 19 }
+	update_demand_based_on_craze_individual = { trade_good_id = 20 }
+}
+
 update_demand_for_trade_good_0 = { #grain
 	demand_from_province_dev = {
 		trade_good_id = 0
@@ -715,35 +769,35 @@ update_demand_for_trade_good_14 = { #chinaware
 			}
 		}
 	}
-	if = {
-		limit = {
-			has_global_flag = europeans_in_china_happened
-			continent = europe
-		}
-		owner = {
-			set_variable = {
-				which = tempvar
-				which = tempvardev
-			}
-			multiply_variable = { 
-				which = tempvar
-				value = 0.15
-			}
-			if = {
-				limit = {
-					has_global_flag = bottger_happened
-				}
-				multiply_variable = { 
-					which = tempvar
-					value = 0.5
-				}
-			}
-			change_variable = {
-				which = stock_market_demand_for_14
-				which = tempvar
-			}
-		}
-	}
+	# if = {
+		# limit = {
+			# has_global_flag = europeans_in_china_happened
+			# continent = europe
+		# }
+		# owner = {
+			# set_variable = {
+				# which = tempvar
+				# which = tempvardev
+			# }
+			# multiply_variable = { 
+				# which = tempvar
+				# value = 0.15
+			# }
+			# if = {
+				# limit = {
+					# has_global_flag = bottger_happened
+				# }
+				# multiply_variable = { 
+					# which = tempvar
+					# value = 0.5
+				# }
+			# }
+			# change_variable = {
+				# which = stock_market_demand_for_14
+				# which = tempvar
+			# }
+		# }
+	# }
 }
 
 update_demand_for_trade_good_15 = { #spices
