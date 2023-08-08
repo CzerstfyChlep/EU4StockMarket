@@ -323,7 +323,7 @@ update_supply_and_demand_based_on_buildings = {
 update_demand_based_on_craze_individual = {
 	if = {
 		limit = {
-			has_country_modifier = stock_market_$trade_good_id$_craze_province
+			has_province_modifier = stock_market_$trade_good_id$_craze_province
 		}
 		owner = {
 			set_variable = {
@@ -342,7 +342,7 @@ update_demand_based_on_craze_individual = {
 	}
 	else_if ={
 		limit = {
-			has_country_modifier = stock_market_$trade_good_id$_consumption_province
+			has_province_modifier = stock_market_$trade_good_id$_consumption_province
 		}
 		owner = {
 			set_variable = {
