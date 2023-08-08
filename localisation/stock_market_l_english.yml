@@ -233,19 +233,19 @@
  building_fishing_dock_desc: "May only be built in §YCoastal§! provinces.\n\nProduces §G+50.0§! Units of £fish£§YFish§!.\n\n"
  
  new_prices.1.t: "Growth of the Ivory Trade"
- new_prices.1.d: "Placeholder. Ivory has been known since ancient times but has always been costly imported or hunted blah blah. "
+ new_prices.1.d: "Ivory is one the oldest materials used for ornaments by mankind. It's relatively sturdy and easy to carve. As such it's widely popular across the world.\nEurope reached it's peak Ivory demand during the classical era, bringing the elephants, that those tusks were harvest from, to extinction. In the middle ages the usage of Ivory decreased. But with the newfound supply our country has found in overseas colonies, the facination of Ivories has restarted in our capital and the interest is spreading through the rest of our nation."
  new_prices.1.a: "Let me seclude myself in the Ivory Tower!"
  
  new_prices.2.t: "Fascination with Tea"
- new_prices.2.d: "About tea and stuff."
+ new_prices.2.d: "The Tea plant originates in South East Asia, where at first locals were eating or chewing the plant leaves. Putting herbs in boiled water came from China, where it was thought that tea had healing effects.\nOur countrymen first encoutered this drink while doing trade in East Asia and found themselves quite fond of it. With the first shipments of tea leaves arrving in the country everyone who can afford the high prices are rushing to try this new product, while the poor, atleast for now, are casting envious glances."
  new_prices.2.a: "The Golden Beverage!"
  
  new_prices.3.t: "Higher Availabity of Cotton"
- new_prices.3.d: ""
+ new_prices.3.d: "While a small production of Cotton exists in Europe, the newly aquired overseas provinces are much more suited for a way larger production of it. As such new textiles are being developed and they're proving to be popular back home."
  new_prices.3.a: "This is sure to make a furore!"
  
  new_prices.4.t: "Higher Availabity of Sugar"
- new_prices.4.d: ""
+ new_prices.4.d: "The availability of Sugar in Europe increased in the 14th centuary. Now with our new colonies producing bigger numbers of it, even more people are able to aquire it for their own consumption."
  new_prices.4.a: "This is pretty sweet!"
  
  
