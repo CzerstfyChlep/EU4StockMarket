@@ -524,36 +524,19 @@ update_demand_for_trade_good_4 = { #fish
 update_demand_for_trade_good_5 = { #fur
 	demand_from_province_dev = {
 		trade_good_id = 5
-		base = 0.2
-		modifier_1 = "
-			if = {
-				limit = {
-					PREV = { has_winter = mild_winter }
-				}
-				change_variable = {
-					which = modifier_var
-					value = 0.5
-				}
-			}
-			else_if = {
-				limit = {
-					PREV = { has_winter = normal_winter }
-				}
-				change_variable = {
-					which = modifier_var
-					value = 2
-				}
-			}
-			if = {
-				limit = {
-					PREV = { has_winter = severe_winter }
-				}
-				change_variable = {
-					which = modifier_var
-					value = 4
-				}
-			}
-		"
+		base = 0.25
+modifier_1 = "
+if = {
+limit = { PREV = { has_local_modifier_value = { which = winter_modifier_test value = 3 } } }
+change_variable = { which = modifier_var value = 4 }
+}else_if = {
+limit = { PREV = { has_local_modifier_value = { which = winter_modifier_test value = 2 } } } 
+change_variable = { which = modifier_var value = 2 }
+}else_if = {
+limit = { PREV = { has_local_modifier_value = { which = winter_modifier_test value = 1 } } }
+change_variable = { which = modifier_var value = 0.5 }
+}else = { }
+"
 		modifier_2 = "
 			if = {
 				limit = {
