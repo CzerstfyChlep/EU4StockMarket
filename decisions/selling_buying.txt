@@ -16,6 +16,7 @@ country_decisions = {
 		effect = {
 			hidden_effect = {
 				set_country_flag = stock_market_opened_menu
+				clr_country_flag = transaction_lock
 			}
 			country_event = {
 				id = stock_market_menu_events.1

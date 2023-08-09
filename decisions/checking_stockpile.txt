@@ -99,4 +99,24 @@ country_decisions = {
 		}
 	}
 
+	income_check = {
+		
+		color = { 190 40 35 }
+		potential = {
+			always = yes
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = CHECK_INCOME_TEXT			
+				always = no
+			}
+		}
+		effect = {
+			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 }

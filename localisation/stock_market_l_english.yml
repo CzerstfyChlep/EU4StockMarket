@@ -20,6 +20,10 @@
 
  CHECK_BALANCE_TEXT: "Last month balance:\n£grain£: [This.country_total_stock_market_balance_for_0.GetValue]\n£wine£: [This.country_total_stock_market_balance_for_1.GetValue]\n£wool£: [This.country_total_stock_market_balance_for_2.GetValue]\n£cloth£: [This.country_total_stock_market_balance_for_3.GetValue]\n£fish£: [This.country_total_stock_market_balance_for_4.GetValue]\n£fur£: [This.country_total_stock_market_balance_for_5.GetValue]\n£salt£: [This.country_total_stock_market_balance_for_6.GetValue]\n£naval_supplies£: [This.country_total_stock_market_balance_for_7.GetValue]\n£copper£: [This.country_total_stock_market_balance_for_8.GetValue]\n£iron£: [This.country_total_stock_market_balance_for_10.GetValue]\n£slaves£: [This.country_total_stock_market_balance_for_11.GetValue]\n£ivory£: [This.country_total_stock_market_balance_for_12.GetValue]\n£tea£: [This.country_total_stock_market_balance_for_13.GetValue]\n£chinaware£: [This.country_total_stock_market_balance_for_14.GetValue]\n£spices£: [This.country_total_stock_market_balance_for_15.GetValue]\n£coffee£: [This.country_total_stock_market_balance_for_16.GetValue]\n£cotton£: [This.country_total_stock_market_balance_for_17.GetValue]\n£sugar£: [This.country_total_stock_market_balance_for_18.GetValue]\n£tobacco£: [This.country_total_stock_market_balance_for_19.GetValue]\n£cocoa£: [This.country_total_stock_market_balance_for_20.GetValue]\n£silk£: [This.country_total_stock_market_balance_for_21.GetValue]\n£dyes£: [This.country_total_stock_market_balance_for_22.GetValue]\n£tropical_wood£: [This.country_total_stock_market_balance_for_23.GetValue]\n£livestock£: [This.country_total_stock_market_balance_for_24.GetValue]\n£incense£: [This.country_total_stock_market_balance_for_25.GetValue]\n£glass£: [This.country_total_stock_market_balance_for_26.GetValue]\n£paper£: [This.country_total_stock_market_balance_for_27.GetValue]\n£gems£: [This.country_total_stock_market_balance_for_28.GetValue]\n£coal£: [This.country_total_stock_market_balance_for_29.GetValue]\n£cloves£: [This.country_total_stock_market_balance_for_30.GetValue]"
  CHECK_GLOBAL_VALUES_TEXT: "Last month production:\n£grain£: [This.country_total_stock_market_supply_for_0.GetValue]\n£wine£: [This.country_total_stock_market_supply_for_1.GetValue]\n£wool£: [This.country_total_stock_market_supply_for_2.GetValue]\n£cloth£: [This.country_total_stock_market_supply_for_3.GetValue]\n£fish£: [This.country_total_stock_market_supply_for_4.GetValue]\n£fur£: [This.country_total_stock_market_supply_for_5.GetValue]\n£salt£: [This.country_total_stock_market_supply_for_6.GetValue]\n£naval_supplies£: [This.country_total_stock_market_supply_for_7.GetValue]\n£copper£: [This.country_total_stock_market_supply_for_8.GetValue]\n£iron£: [This.country_total_stock_market_supply_for_10.GetValue]\n£slaves£: [This.country_total_stock_market_supply_for_11.GetValue]\n£ivory£: [This.country_total_stock_market_supply_for_12.GetValue]\n£tea£: [This.country_total_stock_market_supply_for_13.GetValue]\n£chinaware£: [This.country_total_stock_market_supply_for_14.GetValue]\n£spices£: [This.country_total_stock_market_supply_for_15.GetValue]\n£coffee£: [This.country_total_stock_market_supply_for_16.GetValue]\n£cotton£: [This.country_total_stock_market_supply_for_17.GetValue]\n£sugar£: [This.country_total_stock_market_supply_for_18.GetValue]\n£tobacco£: [This.country_total_stock_market_supply_for_19.GetValue]\n£cocoa£: [This.country_total_stock_market_supply_for_20.GetValue]\n£silk£: [This.country_total_stock_market_supply_for_21.GetValue]\n£dyes£: [This.country_total_stock_market_supply_for_22.GetValue]\n£tropical_wood£: [This.country_total_stock_market_supply_for_23.GetValue]\n£livestock£: [This.country_total_stock_market_supply_for_24.GetValue]\n£incense£: [This.country_total_stock_market_supply_for_25.GetValue]\n£glass£: [This.country_total_stock_market_supply_for_26.GetValue]\n£paper£: [This.country_total_stock_market_supply_for_27.GetValue]\n£gems£: [This.country_total_stock_market_supply_for_28.GetValue]\n£coal£: [This.country_total_stock_market_supply_for_29.GetValue]\n£cloves£: [This.country_total_stock_market_supply_for_30.GetValue]"
+ income_check_title: "Check Income"
+ income_check_desc: "Check your incomes for all goods"
+ CHECK_INCOME_TEXT: "Last month incomes:\n£grain£: [This.last_month_income_from_0.GetValue]\n£wine£: [This.last_month_income_from_1.GetValue]\n£wool£: [This.last_month_income_from_2.GetValue]\n£cloth£: [This.last_month_income_from_3.GetValue]\n£fish£: [This.last_month_income_from_4.GetValue]\n£fur£: [This.last_month_income_from_5.GetValue]\n£salt£: [This.last_month_income_from_6.GetValue]\n£naval_supplies£: [This.last_month_income_from_7.GetValue]\n£copper£: [This.last_month_income_from_8.GetValue]\n£iron£: [This.last_month_income_from_10.GetValue]\n£slaves£: [This.last_month_income_from_11.GetValue]\n£ivory£: [This.last_month_income_from_12.GetValue]\n£tea£: [This.last_month_income_from_13.GetValue]\n£chinaware£: [This.last_month_income_from_14.GetValue]\n£spices£: [This.last_month_income_from_15.GetValue]\n£coffee£: [This.last_month_income_from_16.GetValue]\n£cotton£: [This.last_month_income_from_17.GetValue]\n£sugar£: [This.last_month_income_from_18.GetValue]\n£tobacco£: [This.last_month_income_from_19.GetValue]\n£cocoa£: [This.last_month_income_from_20.GetValue]\n£silk£: [This.last_month_income_from_21.GetValue]\n£dyes£: [This.last_month_income_from_22.GetValue]\n£tropical_wood£: [This.last_month_income_from_23.GetValue]\n£livestock£: [This.last_month_income_from_24.GetValue]\n£incense£: [This.last_month_income_from_25.GetValue]\n£glass£: [This.last_month_income_from_26.GetValue]\n£paper£: [This.last_month_income_from_27.GetValue]\n£gems£: [This.last_month_income_from_28.GetValue]\n£coal£: [This.last_month_income_from_29.GetValue]\n£cloves£: [This.last_month_income_from_30.GetValue]"
+
 
  prices_check_title: "Check Prices"
  prices_check_desc: "Check the current prices of all goods. It is more recent than the price shown in the game UI, due to slow updating."
@@ -62,7 +66,7 @@
  STOCK_MARKET_FUR_MENU_TT: "Opens £fur£ §YFur§! menu"
  stock_market_menu_events.2.EVTOPT6: "£salt£ Salt"
  STOCK_MARKET_SALT_MENU_TT: "Opens £salt£ §YSalt§! menu"
- stock_market_menu_events.2.EVTOPT7: "ArrowLeft Back"
+ stock_market_menu_events.2.EVTOPT7: "Back"
  STOCK_MARKET_GO_BACK_MENU_TT: "Opens §YMarket Menu§!"
 
  stock_market_menu_events.EVTNAME10: "Market menu: Grain"
@@ -92,7 +96,7 @@
  STOCK_MARKET_DYES_MENU_TT: "Opens £dyes£ §YDyes§! menu"
  stock_market_menu_events.3.EVTOPT7: "£incense£ Incense"
  STOCK_MARKET_INCENSE_MENU_TT: "Opens £incense£ §YIncense§! menu"
- stock_market_menu_events.3.EVTOPT8: "ArrowLeft Back"
+ stock_market_menu_events.3.EVTOPT8: "Back"
  STOCK_MARKET_GO_BACK_MENU_TT: "Opens §YMarket Menu§!"
 
  stock_market_menu_events.EVTNAME4: "Market menu: Industrial"
@@ -105,7 +109,7 @@
  STOCK_MARKET_IRON_MENU_TT: "Opens £iron£ §YIron§! menu"
  stock_market_menu_events.4.EVTOPT4: "£coal£ Coal"
  STOCK_MARKET_COAL_MENU_TT: "Opens £coal£ §YCoal§! menu"
- stock_market_menu_events.4.EVTOPT5: "ArrowLeft Back"
+ stock_market_menu_events.4.EVTOPT5: "Back"
  STOCK_MARKET_GO_BACK_MENU_TT: "Opens §YMarket Menu§!"
 
  stock_market_menu_events.EVTNAME5: "Market menu: Oriental"
@@ -124,7 +128,7 @@
  STOCK_MARKET_TROPICAL_WOOD_MENU_TT: "Opens £tropical_wood£ §YTropical Wood§! menu"
  stock_market_menu_events.5.EVTOPT7: "£cloves£ Cloves"
  STOCK_MARKET_CLOVES_MENU_TT: "Opens £cloves£ §YCloves§! menu"
- stock_market_menu_events.5.EVTOPT8: "ArrowLeft Back"
+ stock_market_menu_events.5.EVTOPT8: "Back"
  STOCK_MARKET_GO_BACK_MENU_TT: "Opens §YMarket Menu§!"
 
  stock_market_menu_events.EVTNAME6: "Market menu: Colonial"
@@ -148,7 +152,7 @@
  stock_market_menu_events.6.EVTOPT6: "£ivory£ Ivory"
  STOCK_MARKET_IVORY_MENU_TT: "Opens £ivory£ §YIvory§! menu"
 
- stock_market_menu_events.6.EVTOPT7: "ArrowLeft Back"
+ stock_market_menu_events.6.EVTOPT7: "Back"
  STOCK_MARKET_GO_BACK_MENU_TT: "Opens §YMarket Menu§!"
  #New Event Localisation
  stock_market_impact_of_navy_size: "The Impact of §YNumber of Ships§! on the §YDemand§! for £naval_supplies£ §YNaval Supplies§! is §Ydoubled§!.\n\n§YNumber of Ships§! will now generate §YDemand§! for £livestock£ §YLivestock§!."
@@ -479,3 +483,9 @@
  stock_market_craze.303.desc: "Cloves is no longer popular."
  stock_market_craze.303.EVTOPT1: "Finaly it's over"
  OPEN_MENU_REQUIREMENTS: "Menu isn't already opened"
+ stock_market_complete_ban: "§RComplete Ban§!"
+ stock_market_high_taxes: "High Taxes"
+ stock_market_medium_taxes: "Medium Taxes"
+ stock_market_low_taxes: "Low Taxes"
+ stock_market_no_taxes: "No taxes"
+ stock_market_unlimited_budget: "Unlimited"

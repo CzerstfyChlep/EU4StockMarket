@@ -190,6 +190,7 @@ release_update = {
 		execute_effect_for_every_trade_good = {
 			scripted_effect = "update_national_demand_for_trade_good"
 		}
+
 		REB = {
 			execute_effect_for_every_trade_good = {
 				scripted_effect = "change_REB_variable"
@@ -209,22 +210,10 @@ release_update = {
 				tag = REB
 			}
 		}		
+		execute_effect_for_every_trade_good = {
+			scripted_effect = "check_trade_good_satisfaction"
+		}
 
-		execute_effect_for_every_trade_good = {
-			scripted_effect = "post_province_evaluation"
-		}
-
-		execute_effect_for_every_trade_good = {
-			scripted_effect = "update_national_supply_for_trade_good"
-		}
-		execute_effect_for_every_trade_good = {
-			scripted_effect = "update_national_demand_for_trade_good"
-		}
-		REB = {
-			execute_effect_for_every_trade_good = {
-				scripted_effect = "change_REB_variable"
-			}
-		}
 	}
 }
 
@@ -357,7 +346,7 @@ check_trade_good_satisfaction = {
 
 	clear_satisfaction_modifier_for = { trade_good_id = $trade_good_id$ }
 	REB = {
-		ROOT = {
+		PREV = {
 			set_variable = {
 				which = stock_market_price_value_$trade_good_id$
 				which = PREV
@@ -375,6 +364,12 @@ check_trade_good_satisfaction = {
 		which = temp_calc_balance
 		which = stock_market_demand_for_$trade_good_id$
 	}
+
+	set_variable = {
+		which = checking
+		value = 0
+	}
+
 
 	#Balance without stockpile
 	if = {
@@ -395,16 +390,20 @@ check_trade_good_satisfaction = {
 				}
 			}
 
-			divide_variable = {
+			set_variable = {
+				which = temp_calc_percentage
 				which = temp_calc_balance
-				which = stock_market_demand_for_$trade_good_id$
 			}
 
+			divide_variable = {
+				which = temp_calc_percentage
+				which = stock_market_demand_for_$trade_good_id$
+			}
 
 			if = {
 				limit = {
 					check_variable = {
-						which = temp_calc_balance
+						which = temp_calc_percentage
 						value = 2
 					}
 				}
@@ -417,7 +416,7 @@ check_trade_good_satisfaction = {
 			else_if = {
 				limit = {
 					check_variable = {
-						which = temp_calc_balance
+						which = temp_calc_percentage
 						value = 1.5
 					}
 				}
@@ -436,22 +435,29 @@ check_trade_good_satisfaction = {
 			which = temp_total_autosell
 			which = stock_market_price_value_$trade_good_id$
 		}
+		multiply_variable = {
+			which = temp_total_autosell
+			value = 0.01
+		}
 
 		gain_ducats_based_on_variable = {
 			variable_name = temp_total_autosell
 		}
 
+		set_variable = {
+			which = last_month_income_from_$trade_good_id$
+			which = temp_total_autosell
+		}
+
 		#We can sell the rest
 		#We won't send the supply globaly as it was already done
-
-
 	}
 	else = {
 		#Check if we can use stockpile
 		if = {
 			limit = {
 				NOT = {
-					has_country_flag = stockpile_usage_for_$trade_good_id$_disabled
+					has_country_flag = block_stockpile_1_for_$trade_good_id$
 				}
 			}
 
@@ -459,7 +465,8 @@ check_trade_good_satisfaction = {
 			change_variable = {
 				which = temp_calc_balance
 				which = country_stock_market_stockpile_for_$trade_good_id$
-			}			
+			}	
+	
 		}
 
 		#If temp is positive, that's our stockpile, if it's negative, we buy
@@ -489,13 +496,14 @@ check_trade_good_satisfaction = {
 				value = -1
 			}
 
+		
 			#buy trade good based on variable don't change price
 
 			#check how much we can buy
 
 			if = {
 				limit = {
-					NOT = { has_country_flag = autobuy_for_$trade_good_id$_disabled }
+					NOT = { has_country_flag = block_import_1_for_$trade_good_id$ }
 				}
 
 				set_variable = {
@@ -508,13 +516,17 @@ check_trade_good_satisfaction = {
 					which = stock_market_price_value_$trade_good_id$
 				}
 
+				multiply_variable = {
+					which = temp_total_autobuy
+					value = 0.01
+				}
+
 				#Total cash
 
 				export_to_variable = {
 					variable_name = stock_market_cash
 					value = treasury
 				}
-
 
 				if = {
 					limit = {
@@ -527,6 +539,14 @@ check_trade_good_satisfaction = {
 					spend_ducats_based_on_variable = {
 						variable_name = temp_total_autobuy
 					}
+					set_variable = {
+						which = last_month_income_from_$trade_good_id$
+						which = temp_total_autobuy
+					}
+					multiply_variable = {
+						which = last_month_income_from_$trade_good_id$
+						value = -1
+					}
 				}
 				else = {
 					subtract_variable = {
@@ -536,6 +556,14 @@ check_trade_good_satisfaction = {
 					spend_ducats_based_on_variable = {
 						variable_name = stock_market_cash
 					}
+					set_variable = {
+						which = last_month_income_from_$trade_good_id$
+						which = stock_market_cash
+					}
+					multiply_variable = {
+						which = last_month_income_from_$trade_good_id$
+						value = -1
+					}
 
 					set_variable = {
 						which = temp_calc_balance
@@ -544,6 +572,10 @@ check_trade_good_satisfaction = {
 					divide_variable = {
 						which = temp_calc_balance
 						which = stock_market_price_value_$trade_good_id$
+					}
+					multiply_variable = {
+						which = temp_calc_balance
+						which = 100
 					}
 
 				}
@@ -601,7 +633,7 @@ check_trade_good_satisfaction = {
 						which = temp_calc_balance
 						value = 0.1
 					}
-					development = 500
+					total_development = 500
 				}
 
 				add_country_modifier = { 
