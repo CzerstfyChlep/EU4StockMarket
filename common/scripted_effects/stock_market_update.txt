@@ -591,6 +591,10 @@ check_trade_good_satisfaction = {
 						which = last_month_income_from_$trade_good_id$
 						value = -1
 					}
+					set_variable = {
+						which = temp_calc_balance
+						value = 0
+					}
 				}
 				else = {
 					subtract_variable = {
