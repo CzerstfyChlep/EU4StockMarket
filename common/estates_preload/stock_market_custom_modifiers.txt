@@ -95,4 +95,8 @@ estate_special = {
 	modifier_definition = {
 		key = good_31_demand_modifier
 	}
+	modifier_definition = {
+		key = winter_modifier_test
+		trigger = { always = no }
+	}
 }

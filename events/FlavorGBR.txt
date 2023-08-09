@@ -463,12 +463,12 @@ country_event = {
 				NOT = { has_global_flag = had_fur_trade_event }
 			}
 			add_treasury = 500
-			PDX_change_price = {
-				trade_goods = fur
-				key = FUR_TRADE
-				value = 0.25
-				duration = 3650
-			}
+			# PDX_change_price = {
+				# trade_goods = fur
+				# key = FUR_TRADE
+				# value = 0.25
+				# duration = 3650
+			# }
 		}
 		else = {
 			add_treasury = 2000
