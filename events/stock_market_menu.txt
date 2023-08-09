@@ -75,7 +75,7 @@ country_event = {
 	id = stock_market_menu_events.2
 	title = stock_market_menu_events.EVTNAME2
 	desc = stock_market_menu_events.EVTDESC2
-	picture = KING_SICK_IN_BED_eventPicture
+	picture = HARBOUR_eventPicture
 
 	is_triggered_only = yes
 
@@ -158,7 +158,7 @@ country_event = {
 	id = stock_market_menu_events.3
 	title = stock_market_menu_events.EVTNAME3
 	desc = stock_market_menu_events.EVTDESC3
-	picture = KING_SICK_IN_BED_eventPicture
+	picture = HARBOUR_eventPicture
 
 	is_triggered_only = yes
 
@@ -251,7 +251,7 @@ country_event = {
 	id = stock_market_menu_events.4
 	title = stock_market_menu_events.EVTNAME4
 	desc = stock_market_menu_events.EVTDESC4
-	picture = KING_SICK_IN_BED_eventPicture
+	picture = HARBOUR_eventPicture
 
 	is_triggered_only = yes
 
@@ -314,7 +314,7 @@ country_event = {
 	id = stock_market_menu_events.5
 	title = stock_market_menu_events.EVTNAME5
 	desc = stock_market_menu_events.EVTDESC5
-	picture = KING_SICK_IN_BED_eventPicture
+	picture = HARBOUR_eventPicture
 
 	is_triggered_only = yes
 
@@ -407,7 +407,7 @@ country_event = {
 	id = stock_market_menu_events.6
 	title = stock_market_menu_events.EVTNAME6
 	desc = stock_market_menu_events.EVTDESC6
-	picture = KING_SICK_IN_BED_eventPicture
+	picture = HARBOUR_eventPicture
 
 	is_triggered_only = yes
 
