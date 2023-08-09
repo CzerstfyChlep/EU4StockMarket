@@ -462,19 +462,21 @@ over_satisfaction_of_27 = {
 	core_creation = -0.05
 }
 severe_shortage_of_28 = {
-
+	all_power_cost = 0.05
+	nobles_loyalty_modifier = -0.05
 }
 mediocre_shortage_of_28 = {
-
+	nobles_loyalty_modifier = -0.05
 }
 acute_shortage_of_28 = {
 
 }
 high_satisfaction_of_28 = {
-
-}
+	nobles_loyalty_modifier = 0.05
+}	
 over_satisfaction_of_28 = {
-
+	nobles_loyalty_modifier = 0.05	
+	all_power_cost = -0.01
 }
 severe_shortage_of_29 = {
 	global_trade_goods_size_modifier = -0.05
