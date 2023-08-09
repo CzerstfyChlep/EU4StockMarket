@@ -6,6 +6,6 @@ printing_house_modifier = {
 	hidden = yes 
 	
 	trigger = {
-		owner = { always = yes } #TODO
+		# owner = { always = yes }
 	}
 }
