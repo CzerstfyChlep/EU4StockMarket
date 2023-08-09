@@ -128,6 +128,47 @@ change_REB_variable = {
 	}
 }
 
+apply_policies = {
+	if = {
+		limit = {
+			has_country_modifier = taxes_1_for_$trade_good_id$_modifier
+		}
+		multiply_variable = {
+			which = stock_market_supply_for_$trade_good_id$
+			value = 0.9
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_modifier = taxes_2_for_$trade_good_id$_modifier
+		}
+		multiply_variable = {
+			which = stock_market_supply_for_$trade_good_id$
+			value = 0.6
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_modifier = taxes_3_for_$trade_good_id$_modifier
+		}
+		multiply_variable = {
+			which = stock_market_supply_for_$trade_good_id$
+			value = 0.3
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_modifier = taxes_4_for_$trade_good_id$_modifier
+		}
+		multiply_variable = {
+			which = stock_market_supply_for_$trade_good_id$
+			value = 0.1
+		}
+	}
+	else = { }
+
+}
+
 release_update = {
 	REB = {
 		execute_effect_for_every_trade_good = {
@@ -189,6 +230,10 @@ release_update = {
 		}
 		execute_effect_for_every_trade_good = {
 			scripted_effect = "update_national_demand_for_trade_good"
+		}
+		
+		execute_effect_for_every_trade_good = {
+			scripted_effect = "apply_policies"
 		}
 		REB = {
 			execute_effect_for_every_trade_good = {
