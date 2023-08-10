@@ -137,7 +137,7 @@ update_national_demand_for_trade_good_6 = { # salt
 	
 	multiply_variable = {
 		which = tempvar
-		value = 0.05
+		value = 0.1
 	}
 	
 	change_variable = {
@@ -506,6 +506,22 @@ update_national_demand_for_trade_good_24 = { # livestock
 			which = stock_market_demand_for_24
 			which = tempvar
 		}
+	}
+	
+	
+	export_to_variable = {
+		which = tempvar
+		value = trigger_value:num_of_cavalry
+	}
+	
+	multiply_variable = {
+		which = tempvar
+		value = 0.35
+	}
+	
+	change_variable = {
+		which = stock_market_demand_for_24
+		which = tempvar
 	}
 	
 	if = {
