@@ -203,7 +203,7 @@ cannon_tower = {
 	}
 
 	ai_will_do = {
-		factor = 2
+		factor = 60
 		# modifier = {
 			# factor = 0
 			# FROM = {
@@ -379,7 +379,7 @@ mayoral_house = {
 		on_supply_creation_building_destroyed = yes
 	}
 	ai_will_do = {
-		factor = 0.5
+		factor = 24
 		modifier = {
 			factor = 2
 			NOT = { num_free_building_slots = 3 }
