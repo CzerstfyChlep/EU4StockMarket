@@ -227,11 +227,6 @@ release_update = {
 				scripted_effect = "update_demand_for_trade_good"
 			}
 		}
-
-		execute_effect_for_every_trade_good = {
-			scripted_effect = "post_province_evaluation"
-		}
-
 		execute_effect_for_every_trade_good = {
 			scripted_effect = "update_national_supply_for_trade_good"
 		}
@@ -242,6 +237,11 @@ release_update = {
 		execute_effect_for_every_trade_good = {
 			scripted_effect = "apply_policies"
 		}
+		
+		execute_effect_for_every_trade_good = {
+			scripted_effect = "post_province_evaluation"
+		}
+		
 		REB = {
 			execute_effect_for_every_trade_good = {
 				scripted_effect = "change_REB_variable"
