@@ -21,7 +21,18 @@ crop_farm = {
 	}
 
 	ai_will_do = {
-		factor = 0
+		factor = 10
+		modifier = {
+			factor = 0
+			NOT = {
+				FROM = {
+					OR = {
+						has_country_modifier = severe_shortage_of_0
+						has_country_modifier = mediocre_shortage_of_0
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -45,7 +56,7 @@ coffee_inn = {
 	}
 	
 	ai_will_do = {
-		factor = 0
+		factor = 0 #better this way
 	}
 }
 
@@ -72,7 +83,18 @@ livestock_farm = {
 	}
 
 	ai_will_do = {
-		factor = 0
+		factor = 10
+		modifier = {
+			factor = 0
+			NOT = {
+				FROM = {
+					OR = {
+						has_country_modifier = severe_shortage_of_24
+						has_country_modifier = mediocre_shortage_of_24
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -100,7 +122,18 @@ forester = {
 	}
 	
 	ai_will_do = {
-		factor = 0
+		factor = 10
+		modifier = {
+			factor = 0
+			NOT = {
+				FROM = {
+					OR = {
+						has_country_modifier = severe_shortage_of_7
+						has_country_modifier = mediocre_shortage_of_7
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -133,7 +166,20 @@ mine = {
 	}
 
 	ai_will_do = {
-		factor = 0
+		factor = 10
+		modifier = {
+			factor = 0
+			NOT = {
+				FROM = {
+					OR = {
+						has_country_modifier = severe_shortage_of_8
+						has_country_modifier = mediocre_shortage_of_8
+						has_country_modifier = severe_shortage_of_10
+						has_country_modifier = mediocre_shortage_of_10
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -157,7 +203,34 @@ cannon_tower = {
 	}
 
 	ai_will_do = {
-		factor = 0
+		factor = 2
+		# modifier = {
+			# factor = 0
+			# FROM = {
+				# any_owned_province = {
+					# has_construction = cannon_tower
+				# }
+			# }
+		# }
+		modifier = {
+			factor = 0
+			NOT = { fort_level = 2 }
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				FROM = {
+					OR = {
+						has_country_modifier = over_satisfaction_of_10
+						has_country_modifier = high_satisfaction_of_10
+					}
+					OR = {
+						has_country_modifier = over_satisfaction_of_8
+						has_country_modifier = high_satisfaction_of_8
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -179,7 +252,44 @@ brewery = {
 		on_supply_creation_building_destroyed = yes
 	}
 	ai_will_do = {
-		factor = 0
+		factor = 2
+		# modifier = {
+			# factor = 0
+			# FROM = {
+				# any_owned_province = {
+					# has_construction = brewery
+				# }
+			# }
+		# }
+		modifier = {
+			factor = 0
+			OR = {
+				AND = {
+					trade_goods = wine
+					NOT = {
+						FROM = {
+							OR = {
+								has_country_modifier = over_satisfaction_of_1
+								has_country_modifier = high_satisfaction_of_1
+							}
+						}
+					}
+				}
+				AND = {
+					NOT = {
+						trade_goods = wine
+					}
+					NOT = {
+						FROM = {
+							OR = {
+								has_country_modifier = over_satisfaction_of_0
+								has_country_modifier = high_satisfaction_of_0
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -207,7 +317,7 @@ printing_house = {
 		factor = 10
 		modifier = {
 			factor = 0
-			owner = {
+			FROM = {
 				OR = {
 					NOT = { paper = 5 }
 					any_owned_province = {
@@ -237,7 +347,18 @@ tailor = {
 		on_supply_creation_building_destroyed = yes
 	}
 	ai_will_do = {
-		factor = 0
+		factor = 2
+		modifier = {
+			factor = 0
+			NOT = {
+				FROM = {
+					OR = {
+						has_country_modifier = over_satisfaction_of_3
+						has_country_modifier = high_satisfaction_of_3
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -258,7 +379,34 @@ mayoral_house = {
 		on_supply_creation_building_destroyed = yes
 	}
 	ai_will_do = {
-		factor = 0
+		factor = 0.5
+		modifier = {
+			factor = 2
+			NOT = { num_free_building_slots = 3 }
+		}
+		modifier = {
+			factor = 2
+			NOT = { num_free_building_slots = 2 }
+		}
+		modifier = {
+			factor = 10
+			NOT = { num_free_building_slots = 1 }
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				FROM = {
+					OR = {
+						has_country_modifier = over_satisfaction_of_26
+						has_country_modifier = high_satisfaction_of_26
+					}
+					OR = {
+						has_country_modifier = over_satisfaction_of_27
+						has_country_modifier = high_satisfaction_of_27
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -281,7 +429,18 @@ salt_mine = {
 	}
 
 	ai_will_do = {
-		factor = 0
+		factor = 10
+		modifier = {
+			factor = 0
+			NOT = {
+				FROM = {
+					OR = {
+						has_country_modifier = severe_shortage_of_6
+						has_country_modifier = mediocre_shortage_of_6
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -304,6 +463,17 @@ fishing_dock = {
 	}
 
 	ai_will_do = {
-		factor = 0
+		factor = 10
+		modifier = {
+			factor = 0
+			NOT = {
+				FROM = {
+					OR = {
+						has_country_modifier = severe_shortage_of_4
+						has_country_modifier = mediocre_shortage_of_4
+					}
+				}
+			}
+		}
 	}
 }
