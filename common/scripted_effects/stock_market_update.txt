@@ -317,6 +317,10 @@ save_old_prices = {
 		which = country_total_stock_market_supply_growth_for_$trade_good_id$
 		which = stock_market_supply_for_$trade_good_id$
 	}
+	multiply_variable = {
+		which = country_total_stock_market_supply_growth_for_$trade_good_id$
+		value = -1
+	}
 	set_variable = {
 		which = stock_market_old_supply_for_$trade_good_id$
 		which = stock_market_supply_for_$trade_good_id$
@@ -328,6 +332,10 @@ save_old_prices = {
 	subtract_variable = {
 		which = country_total_stock_market_demand_growth_for_$trade_good_id$
 		which = stock_market_demand_for_$trade_good_id$
+	}
+	multiply_variable = {
+		which = country_total_stock_market_demand_growth_for_$trade_good_id$
+		value = -1
 	}
 	set_variable = {
 		which = stock_market_old_demand_for_$trade_good_id$
