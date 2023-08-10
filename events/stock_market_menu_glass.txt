@@ -76,15 +76,25 @@ country_event = {
 		custom_tooltip = STOCK_MARKET_GLASS_BUY_1000
 		hidden_effect = {
 
-			buy_trade_good_with_given_price_amount = {
-				amount = 1000
-				variable_name_total = buying_1000_of_26_total
-				trade_good_id = 26
+			if = {
+				limit = {
+					has_country_flag = transaction_lock
+				}
+				country_event = {
+					id = stock_market_menu_events.7 #transaction lock
+				}
 			}
+			else = {
+				buy_trade_good_with_given_price_amount = {
+					amount = 1000
+					variable_name_total = buying_1000_of_26_total
+					trade_good_id = 26
+				}
 
-			country_event = {
-				id = stock_market_menu_events.3610 #Going back to the same option via other event
-			}			
+				country_event = {
+					id = stock_market_menu_events.3610 #Going back to the same option via other event
+				}			
+			}
 		}
 
 		trigger = {
@@ -97,16 +107,25 @@ country_event = {
 		name = stock_market_menu_events.361.EVTOPT2
 		custom_tooltip = STOCK_MARKET_GLASS_BUY_200
 		hidden_effect = {
-
-			buy_trade_good_with_given_price_amount = {
-				amount = 200
-				variable_name_total = buying_200_of_26_total
-				trade_good_id = 26
+			if = {
+				limit = {
+					has_country_flag = transaction_lock
+				}
+				country_event = {
+					id = stock_market_menu_events.7 #transaction lock
+				}
 			}
+			else = {
+				buy_trade_good_with_given_price_amount = {
+					amount = 200
+					variable_name_total = buying_200_of_26_total
+					trade_good_id = 26
+				}
 
-			country_event = {
-				id = stock_market_menu_events.3610 #Going back to the same option via other event
-			}			
+				country_event = {
+					id = stock_market_menu_events.3610 #Going back to the same option via other event
+				}	
+			}		
 		}
 		trigger = {
 			has_country_flag = can_buy_200_26
@@ -117,16 +136,25 @@ country_event = {
 		name = stock_market_menu_events.361.EVTOPT3
 		custom_tooltip = STOCK_MARKET_GLASS_BUY_50
 		hidden_effect = {
-
-			buy_trade_good_with_given_price_amount = {
-				amount = 50
-				variable_name_total = buying_50_of_26_total
-				trade_good_id = 26
+			if = {
+				limit = {
+					has_country_flag = transaction_lock
+				}
+				country_event = {
+					id = stock_market_menu_events.7 #transaction lock
+				}
 			}
+			else = {
+				buy_trade_good_with_given_price_amount = {
+					amount = 50
+					variable_name_total = buying_50_of_26_total
+					trade_good_id = 26
+				}
 
-			country_event = {
-				id = stock_market_menu_events.3610 #Going back to the same option via other event
-			}			
+				country_event = {
+					id = stock_market_menu_events.3610 #Going back to the same option via other event
+				}		
+			}	
 		}
 		trigger = {
 			has_country_flag = can_buy_50_26
@@ -137,16 +165,25 @@ country_event = {
 		name = stock_market_menu_events.361.EVTOPT4
 		custom_tooltip = STOCK_MARKET_GLASS_BUY_10
 		hidden_effect = {
-
-			buy_trade_good_with_given_price_amount = {
-				amount = 10
-				variable_name_total = buying_10_of_26_total
-				trade_good_id = 26
+			if = {
+				limit = {
+					has_country_flag = transaction_lock
+				}
+				country_event = {
+					id = stock_market_menu_events.7 #transaction lock
+				}
 			}
+			else = {
+				buy_trade_good_with_given_price_amount = {
+					amount = 10
+					variable_name_total = buying_10_of_26_total
+					trade_good_id = 26
+				}
 
-			country_event = {
-				id = stock_market_menu_events.3610 #Going back to the same option via other event
-			}			
+				country_event = {
+					id = stock_market_menu_events.3610 #Going back to the same option via other event
+				}	
+			}		
 		}
 		trigger = {
 			has_country_flag = can_buy_10_26
@@ -211,14 +248,24 @@ country_event = {
 		custom_tooltip = STOCK_MARKET_GLASS_SELL_ALL
 		hidden_effect = {
 
-			sell_all_of_trade_good_with_given_price = {
-				variable_name_total = selling_all_of_26_total
-				trade_good_id = 26
+			if = {
+				limit = {
+					has_country_flag = transaction_lock
+				}
+				country_event = {
+					id = stock_market_menu_events.7 #transaction lock
+				}
 			}
+			else = {
+				sell_all_of_trade_good_with_given_price = {
+					variable_name_total = selling_all_of_26_total
+					trade_good_id = 26
+				}
 
-			country_event = {
-				id = stock_market_menu_events.3611 #Going back to the same option via other event
-			}			
+				country_event = {
+					id = stock_market_menu_events.3611 #Going back to the same option via other event
+				}		
+			}	
 		}
 
 		trigger = {
@@ -237,16 +284,25 @@ country_event = {
 		name = stock_market_menu_events.362.EVTOPT1
 		custom_tooltip = STOCK_MARKET_GLASS_SELL_1000
 		hidden_effect = {
-
-			sell_trade_good_with_given_price_amount = {
-				amount = 1000
-				variable_name_total = selling_1000_of_26_total
-				trade_good_id = 26
+			if = {
+				limit = {
+					has_country_flag = transaction_lock
+				}
+				country_event = {
+					id = stock_market_menu_events.7 #transaction lock
+				}
 			}
+			else = {
+				sell_trade_good_with_given_price_amount = {
+					amount = 1000
+					variable_name_total = selling_1000_of_26_total
+					trade_good_id = 26
+				}
 
-			country_event = {
-				id = stock_market_menu_events.3611 #Going back to the same option via other event
-			}			
+				country_event = {
+					id = stock_market_menu_events.3611 #Going back to the same option via other event
+				}			
+			}
 		}
 
 		trigger = {
@@ -265,16 +321,25 @@ country_event = {
 		name = stock_market_menu_events.362.EVTOPT2
 		custom_tooltip = STOCK_MARKET_GLASS_SELL_200
 		hidden_effect = {
-
-			sell_trade_good_with_given_price_amount = {
-				amount = 200
-				variable_name_total = selling_200_of_26_total
-				trade_good_id = 26
+			if = {
+				limit = {
+					has_country_flag = transaction_lock
+				}
+				country_event = {
+					id = stock_market_menu_events.7 #transaction lock
+				}
 			}
+			else = {
+				sell_trade_good_with_given_price_amount = {
+					amount = 200
+					variable_name_total = selling_200_of_26_total
+					trade_good_id = 26
+				}
 
-			country_event = {
-				id = stock_market_menu_events.3611 #Going back to the same option via other event
-			}			
+				country_event = {
+					id = stock_market_menu_events.3611 #Going back to the same option via other event
+				}		
+			}	
 		}
 		trigger = {
 			check_variable = {
@@ -292,16 +357,25 @@ country_event = {
 		name = stock_market_menu_events.362.EVTOPT3
 		custom_tooltip = STOCK_MARKET_GLASS_SELL_50
 		hidden_effect = {
-
-			sell_trade_good_with_given_price_amount = {
-				amount = 50
-				variable_name_total = selling_50_of_26_total
-				trade_good_id = 26
+			if = {
+				limit = {
+					has_country_flag = transaction_lock
+				}
+				country_event = {
+					id = stock_market_menu_events.7 #transaction lock
+				}
 			}
+			else = {
+				sell_trade_good_with_given_price_amount = {
+					amount = 50
+					variable_name_total = selling_50_of_26_total
+					trade_good_id = 26
+				}
 
-			country_event = {
-				id = stock_market_menu_events.3611 #Going back to the same option via other event
-			}			
+				country_event = {
+					id = stock_market_menu_events.3611 #Going back to the same option via other event
+				}			
+			}
 		}
 		trigger = {
 			check_variable = {
@@ -319,16 +393,25 @@ country_event = {
 		name = stock_market_menu_events.362.EVTOPT4
 		custom_tooltip = STOCK_MARKET_GLASS_SELL_10
 		hidden_effect = {
-
-			sell_trade_good_with_given_price_amount = {
-				amount = 10
-				variable_name_total = selling_10_of_26_total
-				trade_good_id = 26
+			if = {
+				limit = {
+					has_country_flag = transaction_lock
+				}
+				country_event = {
+					id = stock_market_menu_events.7 #transaction lock
+				}
 			}
+			else = {
+				sell_trade_good_with_given_price_amount = {
+					amount = 10
+					variable_name_total = selling_10_of_26_total
+					trade_good_id = 26
+				}
 
-			country_event = {
-				id = stock_market_menu_events.3611 #Going back to the same option via other event
-			}			
+				country_event = {
+					id = stock_market_menu_events.3611 #Going back to the same option via other event
+				}			
+			}
 		}
 		trigger = {
 			check_variable = {
@@ -389,14 +472,10 @@ country_event = {
 
 	option = {
 		name = stock_market_menu_events.363.EVTOPT1
-		custom_tooltip = STOCK_MARKET_GLASS_CONSUMPTION_BAN
+		custom_tooltip = STOCK_MARKET_GLASS_CONSUMPTION_POLICY
 		hidden_effect = {
-			switch_trade_good_policy = {
-				policy = "consumption_ban"
-				trade_good_id = 26
-			}
 			country_event = {
-				id = stock_market_menu_events.3612 #Going back to the same option via other event
+				id = stock_market_menu_events.364
 			}		
 		}
 
@@ -404,15 +483,11 @@ country_event = {
 
 	option = {
 		name = stock_market_menu_events.363.EVTOPT2
-		custom_tooltip = STOCK_MARKET_GLASS_IMPORT_BAN
+		custom_tooltip = STOCK_MARKET_GLASS_IMPORT_POLICY
 		hidden_effect = {
 			hidden_effect = {
-				switch_trade_good_policy = {
-					policy = "import_ban"
-					trade_good_id = 26
-				}
 				country_event = {
-					id = stock_market_menu_events.3612 #Going back to the same option via other event
+					id = stock_market_menu_events.365
 				}		
 			}		
 		}
@@ -420,19 +495,15 @@ country_event = {
 
 	option = {
 		name = stock_market_menu_events.363.EVTOPT3
-		custom_tooltip = STOCK_MARKET_GLASS_EXPORT_BAN
+		custom_tooltip = STOCK_MARKET_GLASS_EXPORT_POLICY
 		hidden_effect = {
 			hidden_effect = {
-				switch_trade_good_policy = {
-					policy = "export_ban"
-					trade_good_id = 26
-				}
 				country_event = {
-					id = stock_market_menu_events.3612 #Going back to the same option via other event
+					id = stock_market_menu_events.366
 				}		
 			}		
 		}
-
+		trigger = { always = no }
 	}
 
 	option = {
@@ -446,8 +517,122 @@ country_event = {
 	}
 }
 
+
 country_event = {
-	id = stock_market_menu_events.3612
+	id = stock_market_menu_events.364
+	title = stock_market_menu_events.EVTNAME364
+	desc = stock_market_menu_events.EVTDESC364
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+
+	option = {
+		name = stock_market_menu_events.364.EVTOPT1
+		custom_tooltip = STOCK_MARKET_GLASS_NO_TAXES
+		hidden_effect = {
+			switch_trade_good_policy = {
+				trade_good_id = 26
+				policy = taxes
+				level = 0
+				set_modifiers = yes
+			}
+
+			country_event = {
+				id = stock_market_menu_events.3640 #Going back to the same option via other event
+			}		
+		}
+
+	}
+
+	option = {
+		name = stock_market_menu_events.364.EVTOPT2
+		custom_tooltip = STOCK_MARKET_GLASS_LOW_TAXES
+		hidden_effect = {
+			hidden_effect = {
+				switch_trade_good_policy = {
+					trade_good_id = 26
+					policy = taxes
+					level = 1
+					set_modifiers = yes
+				}
+
+				country_event = {
+					id = stock_market_menu_events.3640 #Going back to the same option via other event
+				}		
+			}		
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.364.EVTOPT3
+		custom_tooltip = STOCK_MARKET_GLASS_MEDIUM_TAXES
+		hidden_effect = {
+			hidden_effect = {
+				switch_trade_good_policy = {
+					trade_good_id = 26
+					policy = taxes
+					level = 2
+					set_modifiers = yes
+				}
+				country_event = {
+					id = stock_market_menu_events.3640 #Going back to the same option via other event
+				}		
+			}		
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.364.EVTOPT4
+		custom_tooltip = STOCK_MARKET_GLASS_HIGH_TAXES
+		hidden_effect = {
+			hidden_effect = {
+				switch_trade_good_policy = {
+					trade_good_id = 26
+					policy = taxes
+					level = 3
+					set_modifiers = yes
+				}
+				country_event = {
+					id = stock_market_menu_events.3640 #Going back to the same option via other event
+				}		
+			}		
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.364.EVTOPT5
+		custom_tooltip = STOCK_MARKET_GLASS_COMPLETE_BAN
+		hidden_effect = {
+			hidden_effect = {
+				switch_trade_good_policy = {
+					trade_good_id = 26
+					policy = taxes
+					level = 4
+					set_modifiers = yes
+				}
+				country_event = {
+					id = stock_market_menu_events.3640 #Going back to the same option via other event
+				}		
+			}		
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.364.EVTOPT6
+		custom_tooltip = GO_BACK_TO_GLASS_POLICY_MENU
+		hidden_effect = {
+			country_event = {
+				id = stock_market_menu_events.336
+			}			
+		}
+	}
+}
+
+country_event = {
+	id = stock_market_menu_events.3640
 	title = stock_market_menu_events.EVTNAME361
 	desc = stock_market_menu_events.EVTDESC361
 	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
@@ -461,7 +646,255 @@ country_event = {
 
 	option = {
 		country_event = {
-			id = stock_market_menu_events.363 #Going back to the same option
+			id = stock_market_menu_events.364 #Going back to the same option
+		}			
+		ai_chance = { 
+			factor = 1
+		}
+	}
+}
+
+
+country_event = {
+	id = stock_market_menu_events.365
+	title = stock_market_menu_events.EVTNAME365
+	desc = stock_market_menu_events.EVTDESC365
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+
+	option = {
+		name = stock_market_menu_events.365.EVTOPT00
+		custom_tooltip = STOCK_MARKET_GLASS_BLOCK_STOCKPILE
+		hidden_effect = {
+			switch_trade_good_policy = {
+				trade_good_id = 26
+				policy = block_stockpile
+				level = 1
+			}
+
+			country_event = {
+				id = stock_market_menu_events.3650 #Going back to the same option via other event
+			}		
+		}
+		trigger = {
+			NOT = { has_country_flag = block_stockpile_1_for_26 }
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.365.EVTOPT01
+		custom_tooltip = STOCK_MARKET_GLASS_UNBLOCK_STOCKPILE
+		hidden_effect = {
+			switch_trade_good_policy = {
+				trade_good_id = 26
+				policy = block_stockpile
+				level = 0
+			}
+
+			country_event = {
+				id = stock_market_menu_events.3650 #Going back to the same option via other event
+			}		
+		}
+		trigger = {
+			has_country_flag = block_stockpile_1_for_26
+		}
+	}
+
+
+	option = {
+		name = stock_market_menu_events.365.EVTOPT10
+		custom_tooltip = STOCK_MARKET_GLASS_BLOCK_IMPORT
+		hidden_effect = {
+			switch_trade_good_policy = {
+				trade_good_id = 26
+				policy = block_import
+				level = 1
+			}
+
+			country_event = {
+				id = stock_market_menu_events.3650 #Going back to the same option via other event
+			}		
+		}
+		trigger = {
+			NOT = { has_country_flag = block_import_1_for_26 }
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.365.EVTOPT11
+		custom_tooltip = STOCK_MARKET_GLASS_UNBLOCK_IMPORT
+		hidden_effect = {
+			switch_trade_good_policy = {
+				trade_good_id = 26
+				policy = block_import
+				level = 0
+			}
+
+			country_event = {
+				id = stock_market_menu_events.3650 #Going back to the same option via other event
+			}		
+		}
+		trigger = {
+			has_country_flag = block_import_1_for_26
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.365.EVTOPT2
+		custom_tooltip = STOCK_MARKET_GLASS_RESET_BUDGET
+		hidden_effect = {
+			hidden_effect = {
+				set_country_flag = unlimited_budget_for_26
+				set_variable = {
+					which = stock_market_budget_for_26
+					value = 0
+				}
+				country_event = {
+					id = stock_market_menu_events.3650 #Going back to the same option via other event
+				}		
+			}		
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.365.EVTOPT3
+		custom_tooltip = STOCK_MARKET_GLASS_ADD_5_BUDGET
+		hidden_effect = {
+			hidden_effect = {
+				clr_country_flag = unlimited_budget_for_26
+
+				change_variable = {
+					which = stock_market_budget_for_26
+					value = 5
+				}
+
+				country_event = {
+					id = stock_market_menu_events.3650 #Going back to the same option via other event
+				}		
+			}		
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.365.EVTOPT4
+		custom_tooltip = STOCK_MARKET_GLASS_ADD_25_BUDGET
+		hidden_effect = {
+			hidden_effect = {
+				clr_country_flag = unlimited_budget_for_26
+
+				change_variable = {
+					which = stock_market_budget_for_26
+					value = 25
+				}
+
+				country_event = {
+					id = stock_market_menu_events.3650 #Going back to the same option via other event
+				}		
+			}		
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.365.EVTOPT5
+		custom_tooltip = STOCK_MARKET_GLASS_REMOVE_5_BUDGET
+		hidden_effect = {
+			hidden_effect = {
+				subtract_variable = {
+					which = stock_market_budget_for_26
+					value = 5
+				}
+
+				if = {
+					limit = {
+						is_variable_equal = {
+							which = stock_market_budget_for_26
+							value = 0
+						}
+					}
+
+					set_country_flag = unlimited_budget_for_26
+
+				}
+
+				country_event = {
+					id = stock_market_menu_events.3650 #Going back to the same option via other event
+				}		
+			}		
+		}
+		trigger = {
+			check_variable = {
+				which = stock_market_budget_for_26
+				value = 5
+			}
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.365.EVTOPT6
+		custom_tooltip = STOCK_MARKET_GLASS_REMOVE_25_BUDGET
+		hidden_effect = {
+			hidden_effect = {
+				subtract_variable = {
+					which = stock_market_budget_for_26
+					value = 25
+				}
+
+				if = {
+					limit = {
+						is_variable_equal = {
+							which = stock_market_budget_for_26
+							value = 0
+						}
+					}
+
+					set_country_flag = unlimited_budget_for_26
+
+				}
+
+				country_event = {
+					id = stock_market_menu_events.3650 #Going back to the same option via other event
+				}		
+			}		
+		}
+		trigger = {
+			check_variable = {
+				which = stock_market_budget_for_26
+				value = 25
+			}
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.365.EVTOPT7
+		custom_tooltip = GO_BACK_TO_GLASS_POLICY_MENU
+		hidden_effect = {
+			country_event = {
+				id = stock_market_menu_events.336
+			}			
+		}
+	}
+}
+
+country_event = {
+	id = stock_market_menu_events.3650
+	title = stock_market_menu_events.EVTNAME361
+	desc = stock_market_menu_events.EVTDESC361
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		country_event = {
+			id = stock_market_menu_events.365 #Going back to the same option
 		}			
 		ai_chance = { 
 			factor = 1

@@ -1,441 +1,561 @@
 taxes_1_for_0_modifier = { #grain is bound to upset everyone
 	global_unrest = 1
+	picture = "modifier_icon_taxes_1_for_0"
 }
 taxes_2_for_0_modifier = {
 	global_unrest = 2.5
+	picture = "modifier_icon_taxes_2_for_0"
 }
 taxes_3_for_0_modifier = {
 	global_unrest = 5
+	picture = "modifier_icon_taxes_3_for_0"
 }
 taxes_4_for_0_modifier = {
 	global_unrest = 10
+	picture = "modifier_icon_taxes_4_for_0"
 }
 taxes_1_for_1_modifier = {
 	burghers_loyalty_modifier = -0.025
 	nobles_loyalty_modifier = -0.025
+	picture = "modifier_icon_taxes_1_for_1"
 }
 taxes_2_for_1_modifier = {
 	burghers_loyalty_modifier = -0.05
 	nobles_loyalty_modifier = -0.05
+	picture = "modifier_icon_taxes_2_for_1"
 }
 taxes_3_for_1_modifier = {
 	burghers_loyalty_modifier = -0.1
 	nobles_loyalty_modifier = -0.1
+	picture = "modifier_icon_taxes_3_for_1"
 }
 taxes_4_for_1_modifier = {
 	burghers_loyalty_modifier = -0.15
 	nobles_loyalty_modifier = -0.15
+	picture = "modifier_icon_taxes_4_for_1"
 }
 taxes_1_for_2_modifier = {
 	global_unrest = 0.5
+	picture = "modifier_icon_taxes_1_for_2"
 }
 taxes_2_for_2_modifier = {
 	global_unrest = 1
+	picture = "modifier_icon_taxes_2_for_2"
 }
 taxes_3_for_2_modifier = {
 	global_unrest = 1.5
+	picture = "modifier_icon_taxes_3_for_2"
 }
 taxes_4_for_2_modifier = {
 	global_unrest = 2.5
+	picture = "modifier_icon_taxes_4_for_2"
 }
 taxes_1_for_3_modifier = {
 	burghers_loyalty_modifier = -0.025
 	nobles_loyalty_modifier = -0.025
+	picture = "modifier_icon_taxes_1_for_3"
 }
 taxes_2_for_3_modifier = {
 	burghers_loyalty_modifier = -0.05
 	nobles_loyalty_modifier = -0.05
+	picture = "modifier_icon_taxes_2_for_3"
 }
 taxes_3_for_3_modifier = {
 	burghers_loyalty_modifier = -0.1
 	nobles_loyalty_modifier = -0.1
+	picture = "modifier_icon_taxes_3_for_3"
 }
 taxes_4_for_3_modifier = {
 	burghers_loyalty_modifier = -0.15
 	nobles_loyalty_modifier = -0.15
+	picture = "modifier_icon_taxes_4_for_3"
 }
 taxes_1_for_4_modifier = {
 	global_unrest = 0.5
+	picture = "modifier_icon_taxes_1_for_4"
 }
 taxes_2_for_4_modifier = {
 	global_unrest = 1
+	picture = "modifier_icon_taxes_2_for_4"
 }
 taxes_3_for_4_modifier = {
 	global_unrest = 1.5
+	picture = "modifier_icon_taxes_3_for_4"
 }
 taxes_4_for_4_modifier = {
 	global_unrest = 2.5
+	picture = "modifier_icon_taxes_4_for_4"
 }
 taxes_1_for_5_modifier = {
 	global_unrest = 0.5
+	picture = "modifier_icon_taxes_1_for_5"
 }
 taxes_2_for_5_modifier = {
 	global_unrest = 1
+	picture = "modifier_icon_taxes_2_for_5"
 }
 taxes_3_for_5_modifier = {
 	global_unrest = 1.5
+	picture = "modifier_icon_taxes_3_for_5"
 }
 taxes_4_for_5_modifier = {
 	global_unrest = 2.5
+	picture = "modifier_icon_taxes_4_for_5"
 }
 taxes_1_for_6_modifier = {
 	global_unrest = 0.5
 	garrison_size = -0.1
+	picture = "modifier_icon_taxes_1_for_6"
 }
 taxes_2_for_6_modifier = {
 	global_unrest = 1
 	garrison_size = -0.2
+	picture = "modifier_icon_taxes_2_for_6"
 }
 taxes_3_for_6_modifier = {
 	global_unrest = 1.5
 	garrison_size = -0.35
+	picture = "modifier_icon_taxes_3_for_6"
 }
 taxes_4_for_6_modifier = {
 	global_unrest = 2.5
 	garrison_size = -0.5
+	picture = "modifier_icon_taxes_4_for_6"
 }
 taxes_1_for_7_modifier = {
 	global_ship_cost = 0.25
 	global_ship_recruit_speed = -0.25
+	picture = "modifier_icon_taxes_1_for_7"
 }
 taxes_2_for_7_modifier = {
 	global_ship_cost = 0.5
 	global_ship_recruit_speed = -0.5
+	picture = "modifier_icon_taxes_2_for_7"
 }
 taxes_3_for_7_modifier = {
 	global_ship_cost = 0.75
 	global_ship_recruit_speed = -0.75
+	picture = "modifier_icon_taxes_3_for_7"
 }
 taxes_4_for_7_modifier = {
 	global_ship_cost = 1
 	global_ship_recruit_speed = -1
+	picture = "modifier_icon_taxes_4_for_7"
 }
 taxes_1_for_8_modifier = {
 	infantry_cost = 0.05
 	artillery_cost = 0.05
+	picture = "modifier_icon_taxes_1_for_8"
 }
 taxes_2_for_8_modifier = {
 	infantry_cost = 0.1
 	artillery_cost = 0.1
+	picture = "modifier_icon_taxes_2_for_8"
 }
 taxes_3_for_8_modifier = {
 	infantry_cost = 0.25
 	artillery_cost = 0.25
+	picture = "modifier_icon_taxes_3_for_8"
 }
 taxes_4_for_8_modifier = {
 	infantry_cost = 0.5
 	artillery_cost = 0.5
+	picture = "modifier_icon_taxes_4_for_8"
 }
 taxes_1_for_10_modifier = {
 	infantry_cost = 0.05
 	artillery_cost = 0.05
+	picture = "modifier_icon_taxes_1_for_10"
 }
 taxes_2_for_10_modifier = {
 	infantry_cost = 0.1
 	artillery_cost = 0.1
+	picture = "modifier_icon_taxes_2_for_10"
 }
 taxes_3_for_10_modifier = {
 	infantry_cost = 0.25
 	artillery_cost = 0.25
+	picture = "modifier_icon_taxes_3_for_10"
 }
 taxes_4_for_10_modifier = {
 	infantry_cost = 0.5
 	artillery_cost = 0.5
+	picture = "modifier_icon_taxes_4_for_10"
 }
 taxes_1_for_11_modifier = {
 	burghers_loyalty_modifier = -0.05
+	picture = "modifier_icon_taxes_1_for_11"
 }
 taxes_2_for_11_modifier = {
 	burghers_loyalty_modifier = -0.1
+	picture = "modifier_icon_taxes_2_for_11"
 }
 taxes_3_for_11_modifier = {
 	burghers_loyalty_modifier = -0.15
+	picture = "modifier_icon_taxes_3_for_11"
 }
 taxes_4_for_11_modifier = {
 	burghers_loyalty_modifier = -0.25
 	technology_cost = -0.05
+	picture = "modifier_icon_taxes_4_for_11"
 }
 taxes_1_for_12_modifier = {
 	burghers_loyalty_modifier = -0.025
 	nobles_loyalty_modifier = -0.025
+	picture = "modifier_icon_taxes_1_for_12"
 }
 taxes_2_for_12_modifier = {
 	burghers_loyalty_modifier = -0.05
 	nobles_loyalty_modifier = -0.05
+	picture = "modifier_icon_taxes_2_for_12"
 }
 taxes_3_for_12_modifier = {
 	burghers_loyalty_modifier = -0.1
 	nobles_loyalty_modifier = -0.1
+	picture = "modifier_icon_taxes_3_for_12"
 }
 taxes_4_for_12_modifier = {
 	burghers_loyalty_modifier = -0.15
 	nobles_loyalty_modifier = -0.15
+	picture = "modifier_icon_taxes_4_for_12"
 }
 taxes_1_for_13_modifier = {
 	burghers_loyalty_modifier = -0.025
 	nobles_loyalty_modifier = -0.025
+	picture = "modifier_icon_taxes_1_for_13"
 }
 taxes_2_for_13_modifier = {
 	burghers_loyalty_modifier = -0.05
 	nobles_loyalty_modifier = -0.05
+	picture = "modifier_icon_taxes_2_for_13"
 }
 taxes_3_for_13_modifier = {
 	burghers_loyalty_modifier = -0.1
 	nobles_loyalty_modifier = -0.1
+	picture = "modifier_icon_taxes_3_for_13"
 }
 taxes_4_for_13_modifier = {
 	burghers_loyalty_modifier = -0.15
 	nobles_loyalty_modifier = -0.15
+	picture = "modifier_icon_taxes_4_for_13"
 }
 taxes_1_for_14_modifier = {
 	burghers_loyalty_modifier = -0.025
 	nobles_loyalty_modifier = -0.025
+	picture = "modifier_icon_taxes_1_for_14"
 }
 taxes_2_for_14_modifier = {
 	burghers_loyalty_modifier = -0.05
 	nobles_loyalty_modifier = -0.05
+	picture = "modifier_icon_taxes_2_for_14"
 }
 taxes_3_for_14_modifier = {
 	burghers_loyalty_modifier = -0.1
 	nobles_loyalty_modifier = -0.1
+	picture = "modifier_icon_taxes_3_for_14"
 }
 taxes_4_for_14_modifier = {
 	burghers_loyalty_modifier = -0.15
 	nobles_loyalty_modifier = -0.15
+	picture = "modifier_icon_taxes_4_for_14"
 }
 taxes_1_for_15_modifier = {
 	trade_efficiency = -0.025
+	picture = "modifier_icon_taxes_1_for_15"
 }
 taxes_2_for_15_modifier = {
 	trade_efficiency = -0.05
+	picture = "modifier_icon_taxes_2_for_15"
 }
 taxes_3_for_15_modifier = {
 	trade_efficiency = -0.075
+	picture = "modifier_icon_taxes_3_for_15"
 }
 taxes_4_for_15_modifier = {
 	trade_efficiency = -0.1
+	picture = "modifier_icon_taxes_4_for_15"
 }
 taxes_1_for_16_modifier = {
 	burghers_loyalty_modifier = -0.025
 	nobles_loyalty_modifier = -0.025
+	picture = "modifier_icon_taxes_1_for_16"
 }
 taxes_2_for_16_modifier = {
 	burghers_loyalty_modifier = -0.05
 	nobles_loyalty_modifier = -0.05
+	picture = "modifier_icon_taxes_2_for_16"	
 }
 taxes_3_for_16_modifier = {
 	burghers_loyalty_modifier = -0.1
 	nobles_loyalty_modifier = -0.1
+	picture = "modifier_icon_taxes_3_for_16"
 }
 taxes_4_for_16_modifier = {
 	burghers_loyalty_modifier = -0.15
 	nobles_loyalty_modifier = -0.15
+	picture = "modifier_icon_taxes_4_for_16"
 }
 taxes_1_for_17_modifier = {
 	trade_steering = -0.025
+	picture = "modifier_icon_taxes_1_for_17"
 }
 taxes_2_for_17_modifier = {
 	trade_steering = -0.05
+	picture = "modifier_icon_taxes_2_for_17"
 }
 taxes_3_for_17_modifier = {
 	trade_steering = -0.1
+	picture = "modifier_icon_taxes_3_for_17"
 }
 taxes_4_for_17_modifier = {
 	trade_steering = -0.2
+	picture = "modifier_icon_taxes_4_for_17"
 }
 taxes_1_for_18_modifier = {
 	burghers_loyalty_modifier = -0.025
 	nobles_loyalty_modifier = -0.025
+	picture = "modifier_icon_taxes_1_for_18"
 }
 taxes_2_for_18_modifier = {
 	burghers_loyalty_modifier = -0.05
 	nobles_loyalty_modifier = -0.05
+	picture = "modifier_icon_taxes_2_for_18"
 }
 taxes_3_for_18_modifier = {
 	burghers_loyalty_modifier = -0.1
 	nobles_loyalty_modifier = -0.1
+	picture = "modifier_icon_taxes_3_for_18"
 }
 taxes_4_for_18_modifier = {
 	burghers_loyalty_modifier = -0.15
 	nobles_loyalty_modifier = -0.15
+	picture = "modifier_icon_taxes_4_for_18"
 }
 taxes_1_for_19_modifier = {
 	burghers_loyalty_modifier = -0.025
 	nobles_loyalty_modifier = -0.025
+	picture = "modifier_icon_taxes_1_for_19"
 }
 taxes_2_for_19_modifier = {
 	burghers_loyalty_modifier = -0.05
 	nobles_loyalty_modifier = -0.05
+	picture = "modifier_icon_taxes_2_for_19"
 }
 taxes_3_for_19_modifier = {
 	burghers_loyalty_modifier = -0.1
 	nobles_loyalty_modifier = -0.1
+	picture = "modifier_icon_taxes_3_for_19"
 }
 taxes_4_for_19_modifier = {
 	burghers_loyalty_modifier = -0.15
 	nobles_loyalty_modifier = -0.15
+	picture = "modifier_icon_taxes_4_for_19"
 }
 taxes_1_for_20_modifier = {
 	burghers_loyalty_modifier = -0.025
 	nobles_loyalty_modifier = -0.025
+	picture = "modifier_icon_taxes_1_for_20"
 }
 taxes_2_for_20_modifier = {
 	burghers_loyalty_modifier = -0.05
 	nobles_loyalty_modifier = -0.05
+	picture = "modifier_icon_taxes_2_for_20"
 }
 taxes_3_for_20_modifier = {
 	burghers_loyalty_modifier = -0.1
 	nobles_loyalty_modifier = -0.1
+	picture = "modifier_icon_taxes_3_for_20"
 }
 taxes_4_for_20_modifier = {
 	burghers_loyalty_modifier = -0.15
 	nobles_loyalty_modifier = -0.15
+	picture = "modifier_icon_taxes_4_for_20"
 }
 taxes_1_for_21_modifier = {
 	global_foreign_trade_power = -0.025
 	nobles_loyalty_modifier = -0.025
+	picture = "modifier_icon_taxes_1_for_21"
 }
 taxes_2_for_21_modifier = {
 	global_foreign_trade_power = -0.075
 	nobles_loyalty_modifier = -0.05
+	picture = "modifier_icon_taxes_2_for_21"
 }
 taxes_3_for_21_modifier = {
 	global_foreign_trade_power = -0.15
 	nobles_loyalty_modifier = -0.1
+	picture = "modifier_icon_taxes_3_for_21"
 }
 taxes_4_for_21_modifier = {
 	global_foreign_trade_power = -0.25
 	nobles_loyalty_modifier = -0.15
+	picture = "modifier_icon_taxes_4_for_21"
 }
 taxes_1_for_22_modifier = {
 	global_foreign_trade_power = -0.025
 	nobles_loyalty_modifier = -0.025
+	picture = "modifier_icon_taxes_1_for_22"
 }
 taxes_2_for_22_modifier = {
 	global_foreign_trade_power = -0.075
 	nobles_loyalty_modifier = -0.05
+	picture = "modifier_icon_taxes_2_for_22"
 }
 taxes_3_for_22_modifier = {
 	global_foreign_trade_power = -0.15
 	nobles_loyalty_modifier = -0.1
+	picture = "modifier_icon_taxes_3_for_22"
 }
 taxes_4_for_22_modifier = {
 	global_foreign_trade_power = -0.25
 	nobles_loyalty_modifier = -0.15
+	picture = "modifier_icon_taxes_4_for_22"
 }
 taxes_1_for_23_modifier = {
 	global_foreign_trade_power = -0.025
 	nobles_loyalty_modifier = -0.025
+	picture = "modifier_icon_taxes_1_for_23"
 }
 taxes_2_for_23_modifier = {
 	global_foreign_trade_power = -0.075
 	nobles_loyalty_modifier = -0.05
+	picture = "modifier_icon_taxes_2_for_23"
 }
 taxes_3_for_23_modifier = {
 	global_foreign_trade_power = -0.15
 	nobles_loyalty_modifier = -0.1
+	picture = "modifier_icon_taxes_3_for_23"
 }
 taxes_4_for_23_modifier = {
 	global_foreign_trade_power = -0.25
 	nobles_loyalty_modifier = -0.15
+	picture = "modifier_icon_taxes_4_for_23"
 }
 taxes_1_for_24_modifier = {
 	cavalry_cost = 0.05
 	global_unrest = 0.5
+	picture = "modifier_icon_taxes_1_for_24"
 }
 taxes_2_for_24_modifier = {
 	cavalry_cost = 0.15
 	global_unrest = 1
+	picture = "modifier_icon_taxes_2_for_24"
 }
 taxes_3_for_24_modifier = {
 	cavalry_cost = 0.25
 	global_unrest = 2
+	picture = "modifier_icon_taxes_3_for_24"
 }
 taxes_4_for_24_modifier = {
 	cavalry_cost = 0.5
 	global_unrest = 5
+	picture = "modifier_icon_taxes_4_for_24"
 }
 taxes_1_for_25_modifier = {
 	church_loyalty_modifier = -0.025
+	picture = "modifier_icon_taxes_1_for_25"
 }
 taxes_2_for_25_modifier = {
 	church_loyalty_modifier = -0.05
+	picture = "modifier_icon_taxes_2_for_25"
 }	
 taxes_3_for_25_modifier = {
 	church_loyalty_modifier = -0.075
+	picture = "modifier_icon_taxes_3_for_25"
 }
 taxes_4_for_25_modifier = {
 	church_loyalty_modifier = -0.15
+	picture = "modifier_icon_taxes_4_for_25"
 }
 taxes_1_for_26_modifier = {
 	burghers_loyalty_modifier = -0.025
 	nobles_loyalty_modifier = -0.025
+	picture = "modifier_icon_taxes_1_for_26"
 }
 taxes_2_for_26_modifier = {
 	burghers_loyalty_modifier = -0.05
 	nobles_loyalty_modifier = -0.05
+	picture = "modifier_icon_taxes_2_for_26"
 }
 taxes_3_for_26_modifier = {
 	burghers_loyalty_modifier = -0.1
 	nobles_loyalty_modifier = -0.1
+	picture = "modifier_icon_taxes_3_for_26"
 }
 taxes_4_for_26_modifier = {
 	burghers_loyalty_modifier = -0.15
 	nobles_loyalty_modifier = -0.15
+	picture = "modifier_icon_taxes_4_for_26"
 }
 taxes_1_for_27_modifier = {
 	adm_tech_cost_modifier = 0.025
+	picture = "modifier_icon_taxes_1_for_27"
 }
 taxes_2_for_27_modifier = {
 	adm_tech_cost_modifier = 0.05
+	picture = "modifier_icon_taxes_2_for_27"
 }
 taxes_3_for_27_modifier = {
 	adm_tech_cost_modifier = 0.1
+	picture = "modifier_icon_taxes_3_for_27"
 }
 taxes_4_for_27_modifier = {
 	adm_tech_cost_modifier = 0.15
+	picture = "modifier_icon_taxes_4_for_27"
 }
 taxes_1_for_28_modifier = {
 	burghers_loyalty_modifier = -0.025
 	nobles_loyalty_modifier = -0.025
+	picture = "modifier_icon_taxes_1_for_28"
 }
 taxes_2_for_28_modifier = {
 	burghers_loyalty_modifier = -0.05
 	nobles_loyalty_modifier = -0.05
+	picture = "modifier_icon_taxes_2_for_28"
 }
 taxes_3_for_28_modifier = {
 	burghers_loyalty_modifier = -0.1
 	nobles_loyalty_modifier = -0.1
+	picture = "modifier_icon_taxes_3_for_28"
 }
 taxes_4_for_28_modifier = {
 	burghers_loyalty_modifier = -0.15
 	nobles_loyalty_modifier = -0.15
+	picture = "modifier_icon_taxes_4_for_28"
 }
 taxes_1_for_29_modifier = {
 	trade_goods_size_modifier = -0.05
+	picture = "modifier_icon_taxes_1_for_29"
 }
 taxes_2_for_29_modifier = {
 	trade_goods_size_modifier = -0.1
+	picture = "modifier_icon_taxes_2_for_29"
 }
 taxes_3_for_29_modifier = {
 	trade_goods_size_modifier = -0.15
+	picture = "modifier_icon_taxes_3_for_29"
 }
 taxes_4_for_29_modifier = {
 	trade_goods_size_modifier = -0.25
+	picture = "modifier_icon_taxes_4_for_29"
 }
 taxes_1_for_30_modifier = {
 	burghers_loyalty_modifier = -0.015
 	nobles_loyalty_modifier = -0.015
+	picture = "modifier_icon_taxes_1_for_30"
 }
 taxes_2_for_30_modifier = {
 	burghers_loyalty_modifier = -0.025
 	nobles_loyalty_modifier = -0.025
+	picture = "modifier_icon_taxes_2_for_30"
 }
 taxes_3_for_30_modifier = {
 	burghers_loyalty_modifier = -0.05
 	nobles_loyalty_modifier = -0.05
+	picture = "modifier_icon_taxes_3_for_30"
 }
 taxes_4_for_30_modifier = {
 	burghers_loyalty_modifier = -0.1
 	nobles_loyalty_modifier = -0.1
+	picture = "modifier_icon_taxes_4_for_30"
 }

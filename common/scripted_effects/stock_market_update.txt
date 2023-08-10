@@ -16,7 +16,14 @@ release_update_setup = {
 		which = history_stock_market_balance_for_$trade_good_id$
 		which = history_stock_market_demand_for_$trade_good_id$
 	}
-	
+	set_variable = {
+		which = history_stock_market_stockpile_for_$trade_good_id$
+		which = country_stock_market_stockpile_for_$trade_good_id$
+	}
+	set_variable = {
+		which = history_last_month_income_from_$trade_good_id$
+		which = last_month_income_from_$trade_good_id$
+	}
 
 
 	set_variable = {
@@ -242,10 +249,21 @@ release_update = {
 		}
 	}
 	
+	REB = {
+		execute_effect_for_every_trade_good = {
+			scripted_effect = "save_old_prices"
+		}
+	}
+
 	execute_effect_for_every_trade_good = {
 		scripted_effect = "set_price_for_trade_good"
 	}
 
+	REB = {
+		execute_effect_for_every_trade_good = {
+			scripted_effect = "get_price_growth"
+		}
+	}
 
 	#BUY / SELL needed goods
 	every_country = {
@@ -287,6 +305,23 @@ stock_market_change_price = {
 		key = "Current Market Conditions"
 		value = $value$
 		duration = $duration$
+	}
+}
+
+save_old_prices = {
+	set_variable = {
+		which = history_stock_market_price_for_$trade_good_id$
+		which = stock_market_price_value_$trade_good_id$
+	}
+}
+get_price_growth = {
+	set_variable = {
+		which = stock_market_prices_growth_for_$trade_good_id$
+		which = stock_market_price_value_$trade_good_id$
+	}
+	subtract_variable = {
+		which = stock_market_prices_growth_for_$trade_good_id$
+		which = history_stock_market_price_for_$trade_good_id$
 	}
 }
 
@@ -409,12 +444,6 @@ check_trade_good_satisfaction = {
 		which = stock_market_demand_for_$trade_good_id$
 	}
 
-	set_variable = {
-		which = checking
-		value = 0
-	}
-
-
 	#Balance without stockpile
 	if = {
 		limit = {
@@ -526,6 +555,10 @@ check_trade_good_satisfaction = {
 			set_variable = {
 				which = country_stock_market_stockpile_for_$trade_good_id$
 				which = temp_calc_balance
+			}
+			set_variable = {
+				which = temp_calc_balance
+				value = 0
 			}
 		}
 		else = {
@@ -691,7 +724,25 @@ check_trade_good_satisfaction = {
 			}
 		}
 	}
-	
+
+	set_variable = {
+		which = stock_market_stockpile_growth_for_$trade_good_id$
+		which = country_stock_market_stockpile_for_$trade_good_id$
+	}
+	subtract_variable = {
+		which = stock_market_stockpile_growth_for_$trade_good_id$
+		which = history_stock_market_stockpile_for_$trade_good_id$
+	}
+
+	set_variable = {
+		which = country_total_stock_market_income_growth_for_$trade_good_id$
+		which = last_month_income_from_$trade_good_id$
+	}
+	subtract_variable = {
+		which = country_total_stock_market_income_growth_for_$trade_good_id$
+		which = history_last_month_income_from_$trade_good_id$
+	}
+
 }
 
 clear_satisfaction_modifier_for = {

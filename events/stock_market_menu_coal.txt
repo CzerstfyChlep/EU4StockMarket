@@ -76,15 +76,25 @@ country_event = {
 		custom_tooltip = STOCK_MARKET_COAL_BUY_1000
 		hidden_effect = {
 
-			buy_trade_good_with_given_price_amount = {
-				amount = 1000
-				variable_name_total = buying_1000_of_29_total
-				trade_good_id = 29
+			if = {
+				limit = {
+					has_country_flag = transaction_lock
+				}
+				country_event = {
+					id = stock_market_menu_events.7 #transaction lock
+				}
 			}
+			else = {
+				buy_trade_good_with_given_price_amount = {
+					amount = 1000
+					variable_name_total = buying_1000_of_29_total
+					trade_good_id = 29
+				}
 
-			country_event = {
-				id = stock_market_menu_events.3910 #Going back to the same option via other event
-			}			
+				country_event = {
+					id = stock_market_menu_events.3910 #Going back to the same option via other event
+				}			
+			}
 		}
 
 		trigger = {
@@ -97,16 +107,25 @@ country_event = {
 		name = stock_market_menu_events.391.EVTOPT2
 		custom_tooltip = STOCK_MARKET_COAL_BUY_200
 		hidden_effect = {
-
-			buy_trade_good_with_given_price_amount = {
-				amount = 200
-				variable_name_total = buying_200_of_29_total
-				trade_good_id = 29
+			if = {
+				limit = {
+					has_country_flag = transaction_lock
+				}
+				country_event = {
+					id = stock_market_menu_events.7 #transaction lock
+				}
 			}
+			else = {
+				buy_trade_good_with_given_price_amount = {
+					amount = 200
+					variable_name_total = buying_200_of_29_total
+					trade_good_id = 29
+				}
 
-			country_event = {
-				id = stock_market_menu_events.3910 #Going back to the same option via other event
-			}			
+				country_event = {
+					id = stock_market_menu_events.3910 #Going back to the same option via other event
+				}	
+			}		
 		}
 		trigger = {
 			has_country_flag = can_buy_200_29
@@ -117,16 +136,25 @@ country_event = {
 		name = stock_market_menu_events.391.EVTOPT3
 		custom_tooltip = STOCK_MARKET_COAL_BUY_50
 		hidden_effect = {
-
-			buy_trade_good_with_given_price_amount = {
-				amount = 50
-				variable_name_total = buying_50_of_29_total
-				trade_good_id = 29
+			if = {
+				limit = {
+					has_country_flag = transaction_lock
+				}
+				country_event = {
+					id = stock_market_menu_events.7 #transaction lock
+				}
 			}
+			else = {
+				buy_trade_good_with_given_price_amount = {
+					amount = 50
+					variable_name_total = buying_50_of_29_total
+					trade_good_id = 29
+				}
 
-			country_event = {
-				id = stock_market_menu_events.3910 #Going back to the same option via other event
-			}			
+				country_event = {
+					id = stock_market_menu_events.3910 #Going back to the same option via other event
+				}		
+			}	
 		}
 		trigger = {
 			has_country_flag = can_buy_50_29
@@ -137,16 +165,25 @@ country_event = {
 		name = stock_market_menu_events.391.EVTOPT4
 		custom_tooltip = STOCK_MARKET_COAL_BUY_10
 		hidden_effect = {
-
-			buy_trade_good_with_given_price_amount = {
-				amount = 10
-				variable_name_total = buying_10_of_29_total
-				trade_good_id = 29
+			if = {
+				limit = {
+					has_country_flag = transaction_lock
+				}
+				country_event = {
+					id = stock_market_menu_events.7 #transaction lock
+				}
 			}
+			else = {
+				buy_trade_good_with_given_price_amount = {
+					amount = 10
+					variable_name_total = buying_10_of_29_total
+					trade_good_id = 29
+				}
 
-			country_event = {
-				id = stock_market_menu_events.3910 #Going back to the same option via other event
-			}			
+				country_event = {
+					id = stock_market_menu_events.3910 #Going back to the same option via other event
+				}	
+			}		
 		}
 		trigger = {
 			has_country_flag = can_buy_10_29
@@ -211,14 +248,24 @@ country_event = {
 		custom_tooltip = STOCK_MARKET_COAL_SELL_ALL
 		hidden_effect = {
 
-			sell_all_of_trade_good_with_given_price = {
-				variable_name_total = selling_all_of_29_total
-				trade_good_id = 29
+			if = {
+				limit = {
+					has_country_flag = transaction_lock
+				}
+				country_event = {
+					id = stock_market_menu_events.7 #transaction lock
+				}
 			}
+			else = {
+				sell_all_of_trade_good_with_given_price = {
+					variable_name_total = selling_all_of_29_total
+					trade_good_id = 29
+				}
 
-			country_event = {
-				id = stock_market_menu_events.3911 #Going back to the same option via other event
-			}			
+				country_event = {
+					id = stock_market_menu_events.3911 #Going back to the same option via other event
+				}		
+			}	
 		}
 
 		trigger = {
@@ -237,16 +284,25 @@ country_event = {
 		name = stock_market_menu_events.392.EVTOPT1
 		custom_tooltip = STOCK_MARKET_COAL_SELL_1000
 		hidden_effect = {
-
-			sell_trade_good_with_given_price_amount = {
-				amount = 1000
-				variable_name_total = selling_1000_of_29_total
-				trade_good_id = 29
+			if = {
+				limit = {
+					has_country_flag = transaction_lock
+				}
+				country_event = {
+					id = stock_market_menu_events.7 #transaction lock
+				}
 			}
+			else = {
+				sell_trade_good_with_given_price_amount = {
+					amount = 1000
+					variable_name_total = selling_1000_of_29_total
+					trade_good_id = 29
+				}
 
-			country_event = {
-				id = stock_market_menu_events.3911 #Going back to the same option via other event
-			}			
+				country_event = {
+					id = stock_market_menu_events.3911 #Going back to the same option via other event
+				}			
+			}
 		}
 
 		trigger = {
@@ -265,16 +321,25 @@ country_event = {
 		name = stock_market_menu_events.392.EVTOPT2
 		custom_tooltip = STOCK_MARKET_COAL_SELL_200
 		hidden_effect = {
-
-			sell_trade_good_with_given_price_amount = {
-				amount = 200
-				variable_name_total = selling_200_of_29_total
-				trade_good_id = 29
+			if = {
+				limit = {
+					has_country_flag = transaction_lock
+				}
+				country_event = {
+					id = stock_market_menu_events.7 #transaction lock
+				}
 			}
+			else = {
+				sell_trade_good_with_given_price_amount = {
+					amount = 200
+					variable_name_total = selling_200_of_29_total
+					trade_good_id = 29
+				}
 
-			country_event = {
-				id = stock_market_menu_events.3911 #Going back to the same option via other event
-			}			
+				country_event = {
+					id = stock_market_menu_events.3911 #Going back to the same option via other event
+				}		
+			}	
 		}
 		trigger = {
 			check_variable = {
@@ -292,16 +357,25 @@ country_event = {
 		name = stock_market_menu_events.392.EVTOPT3
 		custom_tooltip = STOCK_MARKET_COAL_SELL_50
 		hidden_effect = {
-
-			sell_trade_good_with_given_price_amount = {
-				amount = 50
-				variable_name_total = selling_50_of_29_total
-				trade_good_id = 29
+			if = {
+				limit = {
+					has_country_flag = transaction_lock
+				}
+				country_event = {
+					id = stock_market_menu_events.7 #transaction lock
+				}
 			}
+			else = {
+				sell_trade_good_with_given_price_amount = {
+					amount = 50
+					variable_name_total = selling_50_of_29_total
+					trade_good_id = 29
+				}
 
-			country_event = {
-				id = stock_market_menu_events.3911 #Going back to the same option via other event
-			}			
+				country_event = {
+					id = stock_market_menu_events.3911 #Going back to the same option via other event
+				}			
+			}
 		}
 		trigger = {
 			check_variable = {
@@ -319,16 +393,25 @@ country_event = {
 		name = stock_market_menu_events.392.EVTOPT4
 		custom_tooltip = STOCK_MARKET_COAL_SELL_10
 		hidden_effect = {
-
-			sell_trade_good_with_given_price_amount = {
-				amount = 10
-				variable_name_total = selling_10_of_29_total
-				trade_good_id = 29
+			if = {
+				limit = {
+					has_country_flag = transaction_lock
+				}
+				country_event = {
+					id = stock_market_menu_events.7 #transaction lock
+				}
 			}
+			else = {
+				sell_trade_good_with_given_price_amount = {
+					amount = 10
+					variable_name_total = selling_10_of_29_total
+					trade_good_id = 29
+				}
 
-			country_event = {
-				id = stock_market_menu_events.3911 #Going back to the same option via other event
-			}			
+				country_event = {
+					id = stock_market_menu_events.3911 #Going back to the same option via other event
+				}			
+			}
 		}
 		trigger = {
 			check_variable = {
@@ -389,14 +472,10 @@ country_event = {
 
 	option = {
 		name = stock_market_menu_events.393.EVTOPT1
-		custom_tooltip = STOCK_MARKET_COAL_CONSUMPTION_BAN
+		custom_tooltip = STOCK_MARKET_COAL_CONSUMPTION_POLICY
 		hidden_effect = {
-			switch_trade_good_policy = {
-				policy = "consumption_ban"
-				trade_good_id = 29
-			}
 			country_event = {
-				id = stock_market_menu_events.3912 #Going back to the same option via other event
+				id = stock_market_menu_events.394
 			}		
 		}
 
@@ -404,15 +483,11 @@ country_event = {
 
 	option = {
 		name = stock_market_menu_events.393.EVTOPT2
-		custom_tooltip = STOCK_MARKET_COAL_IMPORT_BAN
+		custom_tooltip = STOCK_MARKET_COAL_IMPORT_POLICY
 		hidden_effect = {
 			hidden_effect = {
-				switch_trade_good_policy = {
-					policy = "import_ban"
-					trade_good_id = 29
-				}
 				country_event = {
-					id = stock_market_menu_events.3912 #Going back to the same option via other event
+					id = stock_market_menu_events.395
 				}		
 			}		
 		}
@@ -420,19 +495,15 @@ country_event = {
 
 	option = {
 		name = stock_market_menu_events.393.EVTOPT3
-		custom_tooltip = STOCK_MARKET_COAL_EXPORT_BAN
+		custom_tooltip = STOCK_MARKET_COAL_EXPORT_POLICY
 		hidden_effect = {
 			hidden_effect = {
-				switch_trade_good_policy = {
-					policy = "export_ban"
-					trade_good_id = 29
-				}
 				country_event = {
-					id = stock_market_menu_events.3912 #Going back to the same option via other event
+					id = stock_market_menu_events.396
 				}		
 			}		
 		}
-
+		trigger = { always = no }
 	}
 
 	option = {
@@ -446,8 +517,122 @@ country_event = {
 	}
 }
 
+
 country_event = {
-	id = stock_market_menu_events.3912
+	id = stock_market_menu_events.394
+	title = stock_market_menu_events.EVTNAME394
+	desc = stock_market_menu_events.EVTDESC394
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+
+	option = {
+		name = stock_market_menu_events.394.EVTOPT1
+		custom_tooltip = STOCK_MARKET_COAL_NO_TAXES
+		hidden_effect = {
+			switch_trade_good_policy = {
+				trade_good_id = 29
+				policy = taxes
+				level = 0
+				set_modifiers = yes
+			}
+
+			country_event = {
+				id = stock_market_menu_events.3940 #Going back to the same option via other event
+			}		
+		}
+
+	}
+
+	option = {
+		name = stock_market_menu_events.394.EVTOPT2
+		custom_tooltip = STOCK_MARKET_COAL_LOW_TAXES
+		hidden_effect = {
+			hidden_effect = {
+				switch_trade_good_policy = {
+					trade_good_id = 29
+					policy = taxes
+					level = 1
+					set_modifiers = yes
+				}
+
+				country_event = {
+					id = stock_market_menu_events.3940 #Going back to the same option via other event
+				}		
+			}		
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.394.EVTOPT3
+		custom_tooltip = STOCK_MARKET_COAL_MEDIUM_TAXES
+		hidden_effect = {
+			hidden_effect = {
+				switch_trade_good_policy = {
+					trade_good_id = 29
+					policy = taxes
+					level = 2
+					set_modifiers = yes
+				}
+				country_event = {
+					id = stock_market_menu_events.3940 #Going back to the same option via other event
+				}		
+			}		
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.394.EVTOPT4
+		custom_tooltip = STOCK_MARKET_COAL_HIGH_TAXES
+		hidden_effect = {
+			hidden_effect = {
+				switch_trade_good_policy = {
+					trade_good_id = 29
+					policy = taxes
+					level = 3
+					set_modifiers = yes
+				}
+				country_event = {
+					id = stock_market_menu_events.3940 #Going back to the same option via other event
+				}		
+			}		
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.394.EVTOPT5
+		custom_tooltip = STOCK_MARKET_COAL_COMPLETE_BAN
+		hidden_effect = {
+			hidden_effect = {
+				switch_trade_good_policy = {
+					trade_good_id = 29
+					policy = taxes
+					level = 4
+					set_modifiers = yes
+				}
+				country_event = {
+					id = stock_market_menu_events.3940 #Going back to the same option via other event
+				}		
+			}		
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.394.EVTOPT6
+		custom_tooltip = GO_BACK_TO_COAL_POLICY_MENU
+		hidden_effect = {
+			country_event = {
+				id = stock_market_menu_events.339
+			}			
+		}
+	}
+}
+
+country_event = {
+	id = stock_market_menu_events.3940
 	title = stock_market_menu_events.EVTNAME391
 	desc = stock_market_menu_events.EVTDESC391
 	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
@@ -461,7 +646,255 @@ country_event = {
 
 	option = {
 		country_event = {
-			id = stock_market_menu_events.393 #Going back to the same option
+			id = stock_market_menu_events.394 #Going back to the same option
+		}			
+		ai_chance = { 
+			factor = 1
+		}
+	}
+}
+
+
+country_event = {
+	id = stock_market_menu_events.395
+	title = stock_market_menu_events.EVTNAME395
+	desc = stock_market_menu_events.EVTDESC395
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+
+	option = {
+		name = stock_market_menu_events.395.EVTOPT00
+		custom_tooltip = STOCK_MARKET_COAL_BLOCK_STOCKPILE
+		hidden_effect = {
+			switch_trade_good_policy = {
+				trade_good_id = 29
+				policy = block_stockpile
+				level = 1
+			}
+
+			country_event = {
+				id = stock_market_menu_events.3950 #Going back to the same option via other event
+			}		
+		}
+		trigger = {
+			NOT = { has_country_flag = block_stockpile_1_for_29 }
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.395.EVTOPT01
+		custom_tooltip = STOCK_MARKET_COAL_UNBLOCK_STOCKPILE
+		hidden_effect = {
+			switch_trade_good_policy = {
+				trade_good_id = 29
+				policy = block_stockpile
+				level = 0
+			}
+
+			country_event = {
+				id = stock_market_menu_events.3950 #Going back to the same option via other event
+			}		
+		}
+		trigger = {
+			has_country_flag = block_stockpile_1_for_29
+		}
+	}
+
+
+	option = {
+		name = stock_market_menu_events.395.EVTOPT10
+		custom_tooltip = STOCK_MARKET_COAL_BLOCK_IMPORT
+		hidden_effect = {
+			switch_trade_good_policy = {
+				trade_good_id = 29
+				policy = block_import
+				level = 1
+			}
+
+			country_event = {
+				id = stock_market_menu_events.3950 #Going back to the same option via other event
+			}		
+		}
+		trigger = {
+			NOT = { has_country_flag = block_import_1_for_29 }
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.395.EVTOPT11
+		custom_tooltip = STOCK_MARKET_COAL_UNBLOCK_IMPORT
+		hidden_effect = {
+			switch_trade_good_policy = {
+				trade_good_id = 29
+				policy = block_import
+				level = 0
+			}
+
+			country_event = {
+				id = stock_market_menu_events.3950 #Going back to the same option via other event
+			}		
+		}
+		trigger = {
+			has_country_flag = block_import_1_for_29
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.395.EVTOPT2
+		custom_tooltip = STOCK_MARKET_COAL_RESET_BUDGET
+		hidden_effect = {
+			hidden_effect = {
+				set_country_flag = unlimited_budget_for_29
+				set_variable = {
+					which = stock_market_budget_for_29
+					value = 0
+				}
+				country_event = {
+					id = stock_market_menu_events.3950 #Going back to the same option via other event
+				}		
+			}		
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.395.EVTOPT3
+		custom_tooltip = STOCK_MARKET_COAL_ADD_5_BUDGET
+		hidden_effect = {
+			hidden_effect = {
+				clr_country_flag = unlimited_budget_for_29
+
+				change_variable = {
+					which = stock_market_budget_for_29
+					value = 5
+				}
+
+				country_event = {
+					id = stock_market_menu_events.3950 #Going back to the same option via other event
+				}		
+			}		
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.395.EVTOPT4
+		custom_tooltip = STOCK_MARKET_COAL_ADD_25_BUDGET
+		hidden_effect = {
+			hidden_effect = {
+				clr_country_flag = unlimited_budget_for_29
+
+				change_variable = {
+					which = stock_market_budget_for_29
+					value = 25
+				}
+
+				country_event = {
+					id = stock_market_menu_events.3950 #Going back to the same option via other event
+				}		
+			}		
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.395.EVTOPT5
+		custom_tooltip = STOCK_MARKET_COAL_REMOVE_5_BUDGET
+		hidden_effect = {
+			hidden_effect = {
+				subtract_variable = {
+					which = stock_market_budget_for_29
+					value = 5
+				}
+
+				if = {
+					limit = {
+						is_variable_equal = {
+							which = stock_market_budget_for_29
+							value = 0
+						}
+					}
+
+					set_country_flag = unlimited_budget_for_29
+
+				}
+
+				country_event = {
+					id = stock_market_menu_events.3950 #Going back to the same option via other event
+				}		
+			}		
+		}
+		trigger = {
+			check_variable = {
+				which = stock_market_budget_for_29
+				value = 5
+			}
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.395.EVTOPT6
+		custom_tooltip = STOCK_MARKET_COAL_REMOVE_25_BUDGET
+		hidden_effect = {
+			hidden_effect = {
+				subtract_variable = {
+					which = stock_market_budget_for_29
+					value = 25
+				}
+
+				if = {
+					limit = {
+						is_variable_equal = {
+							which = stock_market_budget_for_29
+							value = 0
+						}
+					}
+
+					set_country_flag = unlimited_budget_for_29
+
+				}
+
+				country_event = {
+					id = stock_market_menu_events.3950 #Going back to the same option via other event
+				}		
+			}		
+		}
+		trigger = {
+			check_variable = {
+				which = stock_market_budget_for_29
+				value = 25
+			}
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.395.EVTOPT7
+		custom_tooltip = GO_BACK_TO_COAL_POLICY_MENU
+		hidden_effect = {
+			country_event = {
+				id = stock_market_menu_events.339
+			}			
+		}
+	}
+}
+
+country_event = {
+	id = stock_market_menu_events.3950
+	title = stock_market_menu_events.EVTNAME391
+	desc = stock_market_menu_events.EVTDESC391
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		country_event = {
+			id = stock_market_menu_events.395 #Going back to the same option
 		}			
 		ai_chance = { 
 			factor = 1

@@ -2,145 +2,181 @@ severe_shortage_of_0 = {
 	land_maintenance_modifier = 0.25
 	global_manpower_modifier = -0.33
 	development_cost = 0.1
+	picture = "modifier_icon_severe_shortage_of_0"
 }
 mediocre_shortage_of_0 = {
 	land_maintenance_modifier = 0.1
 	global_manpower_modifier = -0.1
+	picture = "modifier_icon_mediocre_shortage_of_0"
 }
 acute_shortage_of_0 = {
 	land_maintenance_modifier = 0.05
+	picture = "modifier_icon_acute_shortage_of_0"
 }
 high_satisfaction_of_0 = {
 	land_maintenance_modifier = -0.05
+	picture = "modifier_icon_high_satisfaction_of_0"
 }
 over_satisfaction_of_0 = {
 	land_maintenance_modifier = -0.05
+	picture = "modifier_icon_over_satisfaction_of_0"
 }
 severe_shortage_of_1 = {
 	global_unrest = 1.5
 	stability_cost_modifier = 0.15
+	picture = "modifier_icon_severe_shortage_of_1"
 }
 mediocre_shortage_of_1 = {
 	global_unrest = 0.5
+	picture = "modifier_icon_mediocre_shortage_of_1"
 }
 acute_shortage_of_1 = {
-	
+	picture = "modifier_icon_acute_shortage_of_1"
 }
 high_satisfaction_of_1 = {
 	global_unrest = -1
+	picture = "modifier_icon_high_satisfaction_of_1"
 }
 over_satisfaction_of_1 = {
 	global_unrest = -1
+	picture = "modifier_icon_over_satisfaction_of_1"
 }
 severe_shortage_of_2 = {
 	global_monthly_devastation = 0.07
 	infantry_power = -0.1
+	picture = "modifier_icon_severe_shortage_of_2"
 }
 mediocre_shortage_of_2 = {
 	global_monthly_devastation = 0.05
 	infantry_power = -0.05
+	picture = "modifier_icon_mediocre_shortage_of_2"
 }
 acute_shortage_of_2 = {
-	
+	picture = "modifier_icon_acute_shortage_of_2"
 }
 high_satisfaction_of_2 = {
 	global_monthly_devastation = -0.03
 	infantry_cost = -0.1
+	picture = "modifier_icon_high_satisfaction_of_2"
 }
 over_satisfaction_of_2 = {
 	global_monthly_devastation = -0.03
 	infantry_cost = -0.1
+	picture = "modifier_icon_over_satisfaction_of_2"
 }
 severe_shortage_of_3 = {
 	development_cost_modifier = 0.1
 	global_foreign_trade_power = -0.25
+	picture = "modifier_icon_severe_shortage_of_3"
 }
 mediocre_shortage_of_3 = {
 	development_cost_modifier = 0.05
 	global_foreign_trade_power = -0.1
+	picture = "modifier_icon_mediocre_shortage_of_3"
 }
 acute_shortage_of_3 = {
-	
+	picture = "modifier_icon_acute_shortage_of_3"
 }
 high_satisfaction_of_3 = {
 	development_cost = -0.05
 	global_foreign_trade_power = 0.1
+	picture = "modifier_icon_high_satisfaction_of_3"
 }
 over_satisfaction_of_3 = {
 	development_cost = -0.05
 	global_foreign_trade_power = 0.1
+	picture = "modifier_icon_over_satisfaction_of_3"
 }
 severe_shortage_of_4 = {
 	naval_maintenance_modifier = 0.2
+	picture = "modifier_icon_severe_shortage_of_4"
 }
 mediocre_shortage_of_4 = {
 	naval_maintenance_modifier = 0.1
+	picture = "modifier_icon_mediocre_shortage_of_4"
 }
 acute_shortage_of_4 = {
 	naval_maintenance_modifier = 0.05
+	picture = "modifier_icon_acute_shortage_of_4"
 }
 high_satisfaction_of_4 = {
 	naval_maintenance_modifier = -0.05
+	picture = "modifier_icon_high_satisfaction_of_4"
 }
 over_satisfaction_of_4 = {
 	naval_maintenance_modifier = -0.05
+	picture = "modifier_icon_over_satisfaction_of_4"
 }
 severe_shortage_of_5 = {
 	land_attrition = 0.25
+	picture = "modifier_icon_severe_shortage_of_5"
 }
 mediocre_shortage_of_5 = {
 	land_attrition = 0.1
+	picture = "modifier_icon_mediocre_shortage_of_5"
 }
 acute_shortage_of_5 = {
-	
+	picture = "modifier_icon_acute_shortage_of_5"
 }
 high_satisfaction_of_5 = {
 	land_attrition = -0.05
+	picture = "modifier_icon_high_satisfaction_of_5"
 }
 over_satisfaction_of_5 = {
 	land_attrition = -0.05
+	picture = "modifier_icon_over_satisfaction_of_5"
 }
 severe_shortage_of_6 = {
 	defensiveness = -0.33
 	garrison_size = -0.5
 	naval_morale = -0.15
+	picture = "modifier_icon_severe_shortage_of_6"
 }
 mediocre_shortage_of_6 = {
 	defensiveness = -0.2
 	garrison_size = -0.25
 	naval_morale = -0.1
+	picture = "modifier_icon_mediocre_shortage_of_6"
 }
 acute_shortage_of_6 = {
 	defensiveness = -0.1
 	garrison_size = -0.1
+	picture = "modifier_icon_acute_shortage_of_6"
 }
 high_satisfaction_of_6 = {
 	garrison_size = 0.1
 	naval_morale = 0.05
+	picture = "modifier_icon_high_satisfaction_of_6"
 }
 over_satisfaction_of_6 = {
 	garrison_size = 0.1
 	naval_morale = 0.05
+	picture = "modifier_icon_over_satisfaction_of_6"
 }
 severe_shortage_of_7 = {
 	ship_durability = -0.33
 	global_ship_cost = 0.5
+	picture = "modifier_icon_severe_shortage_of_7"
 }
 mediocre_shortage_of_7 = {
 	ship_durability = -0.1
 	global_ship_cost = 0.15
+	picture = "modifier_icon_mediocre_shortage_of_7"
 }
 acute_shortage_of_7 = {
 	ship_durability = -0.05
 	global_ship_cost = 0.05
+	picture = "modifier_icon_acute_shortage_of_7"
 }
 high_satisfaction_of_7 = {
 	global_ship_cost = -0.1
 	ship_durability = 0.05
+	picture = "modifier_icon_high_satisfaction_of_7"
 }
 over_satisfaction_of_7 = {
 	global_ship_cost = -0.1
 	ship_durability = 0.05
+	picture = "modifier_icon_over_satisfaction_of_7"
 }
 severe_shortage_of_8 = {
 	mil_tech_cost_modifier = 0.1
@@ -149,17 +185,21 @@ severe_shortage_of_8 = {
 mediocre_shortage_of_8 = {
 	mil_tech_cost_modifier = 0.05
 	build_time = 0.15
+	picture = "modifier_icon_mediocre_shortage_of_8"
 }
 acute_shortage_of_8 = {
 	build_time = 0.05
+	picture = "modifier_icon_acute_shortage_of_8"
 }
 high_satisfaction_of_8 = {
 	mil_tech_cost_modifier = -0.05
 	build_time = -0.1
+	picture = "modifier_icon_high_satisfaction_of_8"
 }
 over_satisfaction_of_8 = {
 	mil_tech_cost_modifier = -0.05
 	build_time = -0.2
+	picture = "modifier_icon_over_satisfaction_of_8"
 }
 # severe_shortage_of_9 = {
  #gold nah
@@ -168,343 +208,426 @@ severe_shortage_of_10 = {
 	siege_ability = -0.1
 	artillery_power = -0.1
 	artillery_cost = 0.5
+	picture = "modifier_icon_severe_shortage_of_10"
 }
 mediocre_shortage_of_10 = {
 	siege_ability = -0.05
 	artillery_power = -0.05
 	artillery_cost = 0.25
+	picture = "modifier_icon_mediocre_shortage_of_10"
 }
 acute_shortage_of_10 = {
 	artillery_cost = 0.1
+	picture = "modifier_icon_acute_shortage_of_10"
 }
 high_satisfaction_of_10 = {
 	artillery_cost = -0.1
 	assault_fort_ability = 0.25
+	picture = "modifier_icon_high_satisfaction_of_10"
 }
 over_satisfaction_of_10 = {
 	artillery_cost = -0.1
 	assault_fort_ability = 0.25
+	picture = "modifier_icon_over_satisfaction_of_10"
 }
 severe_shortage_of_11 = {
 	global_autonomy = 0.025
+	picture = "modifier_icon_severe_shortage_of_11"
 	
 }
 mediocre_shortage_of_11 = {
-
+	picture = "modifier_icon_mediocre_shortage_of_11"
 }
 acute_shortage_of_11 = {
-
+	picture = "modifier_icon_acute_shortage_of_11"
 }
 high_satisfaction_of_11 = {
-	
+	picture = "modifier_icon_high_satisfaction_of_11"
 }
 over_satisfaction_of_11 = {
 	max_absolutism = 5
+	picture = "modifier_icon_over_satisfaction_of_11"
 }
 severe_shortage_of_12 = {
 	legitimacy = -1
 	nobles_loyalty_modifier = -0.05
+	picture = "modifier_icon_severe_shortage_of_12"
 }
 mediocre_shortage_of_12 = {
-
+	picture = "modifier_icon_mediocre_shortage_of_12"
 }
 acute_shortage_of_12 = {
-
+	picture = "modifier_icon_acute_shortage_of_12"
 }
 high_satisfaction_of_12 = {
 	prestige = 0.5
 	legitimacy = 1
 	republican_tradition = 0.3
+	picture = "modifier_icon_high_satisfaction_of_12"
 }
 over_satisfaction_of_12 = {
 	prestige = 0.5
 	legitimacy = 1
 	republican_tradition = 0.3
+	picture = "modifier_icon_over_satisfaction_of_12"
 }
 severe_shortage_of_13 = {
 	reform_progress_growth = -0.15
+	picture = "modifier_icon_severe_shortage_of_13"
 }
 mediocre_shortage_of_13 = {
 	reform_progress_growth = -0.05
+	picture = "modifier_icon_mediocre_shortage_of_13"
 }
 acute_shortage_of_13 = {
-	
+	picture = "modifier_icon_acute_shortage_of_13"
 }
 high_satisfaction_of_13 = {
 	advisor_cost = -0.05
 	reform_progress_growth = 0.1
+	picture = "modifier_icon_high_satisfaction_of_13"
 }
 over_satisfaction_of_13 = {
 	advisor_cost = -0.05
 	reform_progress_growth = 0.1
+	picture = "modifier_icon_over_satisfaction_of_13"
 }
 severe_shortage_of_14 = {
 	state_governing_cost = 0.15
+	picture = "modifier_icon_severe_shortage_of_14"
 }
 mediocre_shortage_of_14 = {
 	state_governing_cost = 0.05
+	picture = "modifier_icon_mediocre_shortage_of_14"
 }
 acute_shortage_of_14 = {
-
+	picture = "modifier_icon_acute_shortage_of_14"
 }
 high_satisfaction_of_14 = {
 	dip_tech_cost_modifier = -0.05
+	picture = "modifier_icon_high_satisfaction_of_14"
 }
 over_satisfaction_of_14 = {
 	dip_tech_cost_modifier = -0.05
+	picture = "modifier_icon_over_satisfaction_of_14"
 }
 severe_shortage_of_15 = {
 	global_trade_power = -0.15
+	picture = "modifier_icon_severe_shortage_of_15"
 }
 mediocre_shortage_of_15 = {
 	global_trade_power = -0.05
+	picture = "modifier_icon_mediocre_shortage_of_15"
 }
 acute_shortage_of_15 = {
-
+	picture = "modifier_icon_acute_shortage_of_15"
 }
 high_satisfaction_of_15 = {
 	global_trade_power = 0.1
+	picture = "modifier_icon_high_satisfaction_of_15"
 }
 over_satisfaction_of_15 = {
 	global_trade_power = 0.1
+	picture = "modifier_icon_over_satisfaction_of_15"
 }
 severe_shortage_of_16 = {
 	idea_cost = 0.15
+	picture = "modifier_icon_severe_shortage_of_16"
 }
 mediocre_shortage_of_16 = {
 	idea_cost = 0.05
+	picture = "modifier_icon_mediocre_shortage_of_16"
 }
 acute_shortage_of_16 = {
-
+	picture = "modifier_icon_acute_shortage_of_16"
 }
 high_satisfaction_of_16 = {
 	idea_cost = -0.05
+	picture = "modifier_icon_high_satisfaction_of_16"
 }
 over_satisfaction_of_16 = {
 	idea_cost = -0.05
+	picture = "modifier_icon_over_satisfaction_of_16"
 }
 severe_shortage_of_17 = {
 	land_attrition = 0.1
 	infantry_cost = 0.15
+	picture = "modifier_icon_severe_shortage_of_17"
 }
 mediocre_shortage_of_17 = {
 	infantry_cost = 0.05
+	picture = "modifier_icon_mediocre_shortage_of_17"
 }
 acute_shortage_of_17 = {
-
+	picture = "modifier_icon_acute_shortage_of_17"
 }
 high_satisfaction_of_17 = {
 	infantry_cost = -0.05
 	infantry_power = 0.05
+	picture = "modifier_icon_high_satisfaction_of_17"
 }	
 over_satisfaction_of_17 = {
 	infantry_cost = -0.05
 	infantry_power = 0.05
+	picture = "modifier_icon_over_satisfaction_of_17"
 }
 severe_shortage_of_18 = {
 	colonist_placement_chance = 0.1
+	picture = "modifier_icon_severe_shortage_of_18"
 }
 mediocre_shortage_of_18 = {
 	colonist_placement_chance = 0.05
+	picture = "modifier_icon_mediocre_shortage_of_18"
 }
 acute_shortage_of_18 = {
-
+	picture = "modifier_icon_acute_shortage_of_18"
 }
 high_satisfaction_of_18 = {
 	colonist_placement_chance = 0.05
+	picture = "modifier_icon_high_satisfaction_of_18"
 }
 over_satisfaction_of_18 = {
 	colonist_placement_chance = 0.05
+	picture = "modifier_icon_over_satisfaction_of_18"
 }
 severe_shortage_of_19 = {
 	yearly_corruption = 0.1
+	picture = "modifier_icon_severe_shortage_of_19"
 }
 mediocre_shortage_of_19 = {
 	yearly_corruption = 0.05
+	picture = "modifier_icon_mediocre_shortage_of_19"
 }
 acute_shortage_of_19 = {
-
+	picture = "modifier_icon_acute_shortage_of_19"
 }
 high_satisfaction_of_19 = {
 	yearly_corruption = -0.05
+	picture = "modifier_icon_high_satisfaction_of_19"
 }
 over_satisfaction_of_19 = {
 	yearly_corruption = -0.05
 	advisor_pool = -1
+	picture = "modifier_icon_over_satisfaction_of_19"
 }
 severe_shortage_of_20 = {
 	reinforce_speed = -0.15
+	picture = "modifier_icon_severe_shortage_of_20"
 }
 mediocre_shortage_of_20 = {
 	reinforce_speed = -0.05
+	picture = "modifier_icon_mediocre_shortage_of_20"
 }
 acute_shortage_of_20 = {
-
+	picture = "modifier_icon_acute_shortage_of_20"
 }
 high_satisfaction_of_20 = {
 	reinforce_speed = 0.1
+	picture = "modifier_icon_high_satisfaction_of_20"
 }
 over_satisfaction_of_20 = {
 	reinforce_speed = 0.1
+	picture = "modifier_icon_over_satisfaction_of_20"
 }
 severe_shortage_of_21 = {
 	all_estate_influence_modifier = -0.1
+	picture = "modifier_icon_severe_shortage_of_21"
 }
 mediocre_shortage_of_21 = {
 	all_estate_influence_modifier = -0.05
+	picture = "modifier_icon_mediocre_shortage_of_21"
 }
 acute_shortage_of_21 = {
-
+	picture = "modifier_icon_acute_shortage_of_21"
 }
 high_satisfaction_of_21 = {
 	all_estate_influence_modifier = 0.05
+	picture = "modifier_icon_high_satisfaction_of_21"
 }
 over_satisfaction_of_21 = {
 	all_estate_influence_modifier = 0.05
+	picture = "modifier_icon_over_satisfaction_of_21"
 }
 severe_shortage_of_22 = {
 	yearly_army_professionalism = -0.01
+	picture = "modifier_icon_severe_shortage_of_22"
 }
 mediocre_shortage_of_22 = {
 	yearly_army_professionalism = -0.005
+	picture = "modifier_icon_mediocre_shortage_of_22"
 }
 acute_shortage_of_22 = {
-
+	picture = "modifier_icon_acute_shortage_of_22"
 }
 high_satisfaction_of_22 = {
 	drill_gain_modifier = 0.25
+	picture = "modifier_icon_high_satisfaction_of_22"
 }
 over_satisfaction_of_22 = {
 	drill_gain_modifier = 0.5
 	drill_decay_modifier = -0.1
+	picture = "modifier_icon_over_satisfaction_of_22"
 }
 severe_shortage_of_23 = {
 	build_cost = 0.1
+	picture = "modifier_icon_severe_shortage_of_23"
 }
 mediocre_shortage_of_23 = {
 	build_cost = 0.05
+	picture = "modifier_icon_mediocre_shortage_of_23"
 }
 acute_shortage_of_23 = {
-
+	picture = "modifier_icon_acute_shortage_of_23"
 }
 high_satisfaction_of_23 = {
 	build_cost = -0.05
+	picture = "modifier_icon_high_satisfaction_of_23"
 }
 over_satisfaction_of_23 = {
 	build_cost = -0.05
+	picture = "modifier_icon_over_satisfaction_of_23"
 }
 severe_shortage_of_24 = {
 	cavalry_cost = 0.33
 	movement_speed = -0.1
 	cavalry_power = -0.15
+	picture = "modifier_icon_severe_shortage_of_24"
 }
 mediocre_shortage_of_24 = {
 	cavalry_cost = 0.25
 	cavalry_power = -0.05
+	picture = "modifier_icon_mediocre_shortage_of_24"
 }
 acute_shortage_of_24 = {
 	cavalry_cost = 0.1
+	picture = "modifier_icon_acute_shortage_of_24"
 }
 high_satisfaction_of_24 = {
 	cavalry_power = 0.05
 	cavalry_cost = -0.1
+	picture = "modifier_icon_high_satisfaction_of_24"
 }
 over_satisfaction_of_24 = {
 	cavalry_power = 0.05
 	cavalry_cost = -0.1
+	picture = "modifier_icon_over_satisfaction_of_24"
 }
 severe_shortage_of_25 = {
 	tolerance_own = -1.5
+	picture = "modifier_icon_severe_shortage_of_25"
 }
 mediocre_shortage_of_25 = {
 	tolerance_own = -1
+	picture = "modifier_icon_mediocre_shortage_of_25"
 }
 acute_shortage_of_25 = {
 	tolerance_own = -0.5
+	picture = "modifier_icon_acute_shortage_of_25"
 }
 high_satisfaction_of_25 = {
 	tolerance_own = 1
 	global_missionary_strength = 0.01
+	picture = "modifier_icon_high_satisfaction_of_25"
 }
 over_satisfaction_of_25 = {
 	tolerance_own = 1
 	global_missionary_strength = 0.01
+	picture = "modifier_icon_over_satisfaction_of_25"
 }
 severe_shortage_of_26 = {
 	development_cost = 0.1
+	picture = "modifier_icon_severe_shortage_of_26"
 }
 mediocre_shortage_of_26 = {
 	development_cost = 0.05
+	picture = "modifier_icon_mediocre_shortage_of_26"
 }
 acute_shortage_of_26 = {
-
+	picture = "modifier_icon_acute_shortage_of_26"
 }
 high_satisfaction_of_26 = {
 	production_efficiency = 0.1
+	picture = "modifier_icon_high_satisfaction_of_26"
 }
 over_satisfaction_of_26 = {
 	production_efficiency = 0.1
+	picture = "modifier_icon_over_satisfaction_of_26"
 }
 severe_shortage_of_27 = {
 	core_creation = 0.15
+	picture = "modifier_icon_severe_shortage_of_27"
 }
 mediocre_shortage_of_27 = {
 	core_creation = 0.05
+	picture = "modifier_icon_mediocre_shortage_of_27"
 }
 acute_shortage_of_27 = {
-
+	picture = "modifier_icon_acute_shortage_of_27"
 }
 high_satisfaction_of_27 = {
 	technology_cost = -0.05
+	picture = "modifier_icon_high_satisfaction_of_27"
 }
 over_satisfaction_of_27 = {
 	technology_cost = -0.05
 	core_creation = -0.05
+	picture = "modifier_icon_over_satisfaction_of_27"
 }
 severe_shortage_of_28 = {
 	all_power_cost = 0.05
 	nobles_loyalty_modifier = -0.05
+	picture = "modifier_icon_severe_shortage_of_28"
 }
 mediocre_shortage_of_28 = {
 	nobles_loyalty_modifier = -0.05
+	picture = "modifier_icon_mediocre_shortage_of_28"
 }
 acute_shortage_of_28 = {
-
+	picture = "modifier_icon_acute_shortage_of_28"
 }
 high_satisfaction_of_28 = {
 	nobles_loyalty_modifier = 0.05
+	picture = "modifier_icon_high_satisfaction_of_28"
 }	
 over_satisfaction_of_28 = {
 	nobles_loyalty_modifier = 0.05	
 	all_power_cost = -0.01
+	picture = "modifier_icon_over_satisfaction_of_28"
 }
 severe_shortage_of_29 = {
 	global_trade_goods_size_modifier = -0.05
+	picture = "modifier_icon_severe_shortage_of_29"
 }
 mediocre_shortage_of_29 = {
-
+	picture = "modifier_icon_mediocre_shortage_of_29"
 }
 acute_shortage_of_29 = {
-
+	picture = "modifier_icon_acute_shortage_of_29"
 }
 high_satisfaction_of_29 = {
 	global_trade_goods_size = 0.1
+	picture = "modifier_icon_high_satisfaction_of_29"
 }
 over_satisfaction_of_29 = {
 	global_trade_goods_size = 0.15
+	picture = "modifier_icon_over_satisfaction_of_29"
 }
 severe_shortage_of_30 = {
 	trade_efficiency = -0.1
+	picture = "modifier_icon_severe_shortage_of_30"
 }
 mediocre_shortage_of_30 = {
 	trade_efficiency = -0.05
+	picture = "modifier_icon_mediocre_shortage_of_30"
 }
 acute_shortage_of_30 = {
-
+	picture = "modifier_icon_acute_shortage_of_30"
 }
 high_satisfaction_of_30 = {
 	trade_steering = 0.1
+	picture = "modifier_icon_high_satisfaction_of_30"
 }
 over_satisfaction_of_30 = {
 	trade_steering = 0.1
+	picture = "modifier_icon_over_satisfaction_of_30"
 }

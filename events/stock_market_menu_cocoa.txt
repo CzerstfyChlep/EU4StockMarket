@@ -76,15 +76,25 @@ country_event = {
 		custom_tooltip = STOCK_MARKET_COCOA_BUY_1000
 		hidden_effect = {
 
-			buy_trade_good_with_given_price_amount = {
-				amount = 1000
-				variable_name_total = buying_1000_of_20_total
-				trade_good_id = 20
+			if = {
+				limit = {
+					has_country_flag = transaction_lock
+				}
+				country_event = {
+					id = stock_market_menu_events.7 #transaction lock
+				}
 			}
+			else = {
+				buy_trade_good_with_given_price_amount = {
+					amount = 1000
+					variable_name_total = buying_1000_of_20_total
+					trade_good_id = 20
+				}
 
-			country_event = {
-				id = stock_market_menu_events.3010 #Going back to the same option via other event
-			}			
+				country_event = {
+					id = stock_market_menu_events.3010 #Going back to the same option via other event
+				}			
+			}
 		}
 
 		trigger = {
@@ -97,16 +107,25 @@ country_event = {
 		name = stock_market_menu_events.301.EVTOPT2
 		custom_tooltip = STOCK_MARKET_COCOA_BUY_200
 		hidden_effect = {
-
-			buy_trade_good_with_given_price_amount = {
-				amount = 200
-				variable_name_total = buying_200_of_20_total
-				trade_good_id = 20
+			if = {
+				limit = {
+					has_country_flag = transaction_lock
+				}
+				country_event = {
+					id = stock_market_menu_events.7 #transaction lock
+				}
 			}
+			else = {
+				buy_trade_good_with_given_price_amount = {
+					amount = 200
+					variable_name_total = buying_200_of_20_total
+					trade_good_id = 20
+				}
 
-			country_event = {
-				id = stock_market_menu_events.3010 #Going back to the same option via other event
-			}			
+				country_event = {
+					id = stock_market_menu_events.3010 #Going back to the same option via other event
+				}	
+			}		
 		}
 		trigger = {
 			has_country_flag = can_buy_200_20
@@ -117,16 +136,25 @@ country_event = {
 		name = stock_market_menu_events.301.EVTOPT3
 		custom_tooltip = STOCK_MARKET_COCOA_BUY_50
 		hidden_effect = {
-
-			buy_trade_good_with_given_price_amount = {
-				amount = 50
-				variable_name_total = buying_50_of_20_total
-				trade_good_id = 20
+			if = {
+				limit = {
+					has_country_flag = transaction_lock
+				}
+				country_event = {
+					id = stock_market_menu_events.7 #transaction lock
+				}
 			}
+			else = {
+				buy_trade_good_with_given_price_amount = {
+					amount = 50
+					variable_name_total = buying_50_of_20_total
+					trade_good_id = 20
+				}
 
-			country_event = {
-				id = stock_market_menu_events.3010 #Going back to the same option via other event
-			}			
+				country_event = {
+					id = stock_market_menu_events.3010 #Going back to the same option via other event
+				}		
+			}	
 		}
 		trigger = {
 			has_country_flag = can_buy_50_20
@@ -137,16 +165,25 @@ country_event = {
 		name = stock_market_menu_events.301.EVTOPT4
 		custom_tooltip = STOCK_MARKET_COCOA_BUY_10
 		hidden_effect = {
-
-			buy_trade_good_with_given_price_amount = {
-				amount = 10
-				variable_name_total = buying_10_of_20_total
-				trade_good_id = 20
+			if = {
+				limit = {
+					has_country_flag = transaction_lock
+				}
+				country_event = {
+					id = stock_market_menu_events.7 #transaction lock
+				}
 			}
+			else = {
+				buy_trade_good_with_given_price_amount = {
+					amount = 10
+					variable_name_total = buying_10_of_20_total
+					trade_good_id = 20
+				}
 
-			country_event = {
-				id = stock_market_menu_events.3010 #Going back to the same option via other event
-			}			
+				country_event = {
+					id = stock_market_menu_events.3010 #Going back to the same option via other event
+				}	
+			}		
 		}
 		trigger = {
 			has_country_flag = can_buy_10_20
@@ -211,14 +248,24 @@ country_event = {
 		custom_tooltip = STOCK_MARKET_COCOA_SELL_ALL
 		hidden_effect = {
 
-			sell_all_of_trade_good_with_given_price = {
-				variable_name_total = selling_all_of_20_total
-				trade_good_id = 20
+			if = {
+				limit = {
+					has_country_flag = transaction_lock
+				}
+				country_event = {
+					id = stock_market_menu_events.7 #transaction lock
+				}
 			}
+			else = {
+				sell_all_of_trade_good_with_given_price = {
+					variable_name_total = selling_all_of_20_total
+					trade_good_id = 20
+				}
 
-			country_event = {
-				id = stock_market_menu_events.3011 #Going back to the same option via other event
-			}			
+				country_event = {
+					id = stock_market_menu_events.3011 #Going back to the same option via other event
+				}		
+			}	
 		}
 
 		trigger = {
@@ -237,16 +284,25 @@ country_event = {
 		name = stock_market_menu_events.302.EVTOPT1
 		custom_tooltip = STOCK_MARKET_COCOA_SELL_1000
 		hidden_effect = {
-
-			sell_trade_good_with_given_price_amount = {
-				amount = 1000
-				variable_name_total = selling_1000_of_20_total
-				trade_good_id = 20
+			if = {
+				limit = {
+					has_country_flag = transaction_lock
+				}
+				country_event = {
+					id = stock_market_menu_events.7 #transaction lock
+				}
 			}
+			else = {
+				sell_trade_good_with_given_price_amount = {
+					amount = 1000
+					variable_name_total = selling_1000_of_20_total
+					trade_good_id = 20
+				}
 
-			country_event = {
-				id = stock_market_menu_events.3011 #Going back to the same option via other event
-			}			
+				country_event = {
+					id = stock_market_menu_events.3011 #Going back to the same option via other event
+				}			
+			}
 		}
 
 		trigger = {
@@ -265,16 +321,25 @@ country_event = {
 		name = stock_market_menu_events.302.EVTOPT2
 		custom_tooltip = STOCK_MARKET_COCOA_SELL_200
 		hidden_effect = {
-
-			sell_trade_good_with_given_price_amount = {
-				amount = 200
-				variable_name_total = selling_200_of_20_total
-				trade_good_id = 20
+			if = {
+				limit = {
+					has_country_flag = transaction_lock
+				}
+				country_event = {
+					id = stock_market_menu_events.7 #transaction lock
+				}
 			}
+			else = {
+				sell_trade_good_with_given_price_amount = {
+					amount = 200
+					variable_name_total = selling_200_of_20_total
+					trade_good_id = 20
+				}
 
-			country_event = {
-				id = stock_market_menu_events.3011 #Going back to the same option via other event
-			}			
+				country_event = {
+					id = stock_market_menu_events.3011 #Going back to the same option via other event
+				}		
+			}	
 		}
 		trigger = {
 			check_variable = {
@@ -292,16 +357,25 @@ country_event = {
 		name = stock_market_menu_events.302.EVTOPT3
 		custom_tooltip = STOCK_MARKET_COCOA_SELL_50
 		hidden_effect = {
-
-			sell_trade_good_with_given_price_amount = {
-				amount = 50
-				variable_name_total = selling_50_of_20_total
-				trade_good_id = 20
+			if = {
+				limit = {
+					has_country_flag = transaction_lock
+				}
+				country_event = {
+					id = stock_market_menu_events.7 #transaction lock
+				}
 			}
+			else = {
+				sell_trade_good_with_given_price_amount = {
+					amount = 50
+					variable_name_total = selling_50_of_20_total
+					trade_good_id = 20
+				}
 
-			country_event = {
-				id = stock_market_menu_events.3011 #Going back to the same option via other event
-			}			
+				country_event = {
+					id = stock_market_menu_events.3011 #Going back to the same option via other event
+				}			
+			}
 		}
 		trigger = {
 			check_variable = {
@@ -319,16 +393,25 @@ country_event = {
 		name = stock_market_menu_events.302.EVTOPT4
 		custom_tooltip = STOCK_MARKET_COCOA_SELL_10
 		hidden_effect = {
-
-			sell_trade_good_with_given_price_amount = {
-				amount = 10
-				variable_name_total = selling_10_of_20_total
-				trade_good_id = 20
+			if = {
+				limit = {
+					has_country_flag = transaction_lock
+				}
+				country_event = {
+					id = stock_market_menu_events.7 #transaction lock
+				}
 			}
+			else = {
+				sell_trade_good_with_given_price_amount = {
+					amount = 10
+					variable_name_total = selling_10_of_20_total
+					trade_good_id = 20
+				}
 
-			country_event = {
-				id = stock_market_menu_events.3011 #Going back to the same option via other event
-			}			
+				country_event = {
+					id = stock_market_menu_events.3011 #Going back to the same option via other event
+				}			
+			}
 		}
 		trigger = {
 			check_variable = {
@@ -389,14 +472,10 @@ country_event = {
 
 	option = {
 		name = stock_market_menu_events.303.EVTOPT1
-		custom_tooltip = STOCK_MARKET_COCOA_CONSUMPTION_BAN
+		custom_tooltip = STOCK_MARKET_COCOA_CONSUMPTION_POLICY
 		hidden_effect = {
-			switch_trade_good_policy = {
-				policy = "consumption_ban"
-				trade_good_id = 20
-			}
 			country_event = {
-				id = stock_market_menu_events.3012 #Going back to the same option via other event
+				id = stock_market_menu_events.304
 			}		
 		}
 
@@ -404,15 +483,11 @@ country_event = {
 
 	option = {
 		name = stock_market_menu_events.303.EVTOPT2
-		custom_tooltip = STOCK_MARKET_COCOA_IMPORT_BAN
+		custom_tooltip = STOCK_MARKET_COCOA_IMPORT_POLICY
 		hidden_effect = {
 			hidden_effect = {
-				switch_trade_good_policy = {
-					policy = "import_ban"
-					trade_good_id = 20
-				}
 				country_event = {
-					id = stock_market_menu_events.3012 #Going back to the same option via other event
+					id = stock_market_menu_events.305
 				}		
 			}		
 		}
@@ -420,19 +495,15 @@ country_event = {
 
 	option = {
 		name = stock_market_menu_events.303.EVTOPT3
-		custom_tooltip = STOCK_MARKET_COCOA_EXPORT_BAN
+		custom_tooltip = STOCK_MARKET_COCOA_EXPORT_POLICY
 		hidden_effect = {
 			hidden_effect = {
-				switch_trade_good_policy = {
-					policy = "export_ban"
-					trade_good_id = 20
-				}
 				country_event = {
-					id = stock_market_menu_events.3012 #Going back to the same option via other event
+					id = stock_market_menu_events.306
 				}		
 			}		
 		}
-
+		trigger = { always = no }
 	}
 
 	option = {
@@ -446,8 +517,122 @@ country_event = {
 	}
 }
 
+
 country_event = {
-	id = stock_market_menu_events.3012
+	id = stock_market_menu_events.304
+	title = stock_market_menu_events.EVTNAME304
+	desc = stock_market_menu_events.EVTDESC304
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+
+	option = {
+		name = stock_market_menu_events.304.EVTOPT1
+		custom_tooltip = STOCK_MARKET_COCOA_NO_TAXES
+		hidden_effect = {
+			switch_trade_good_policy = {
+				trade_good_id = 20
+				policy = taxes
+				level = 0
+				set_modifiers = yes
+			}
+
+			country_event = {
+				id = stock_market_menu_events.3040 #Going back to the same option via other event
+			}		
+		}
+
+	}
+
+	option = {
+		name = stock_market_menu_events.304.EVTOPT2
+		custom_tooltip = STOCK_MARKET_COCOA_LOW_TAXES
+		hidden_effect = {
+			hidden_effect = {
+				switch_trade_good_policy = {
+					trade_good_id = 20
+					policy = taxes
+					level = 1
+					set_modifiers = yes
+				}
+
+				country_event = {
+					id = stock_market_menu_events.3040 #Going back to the same option via other event
+				}		
+			}		
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.304.EVTOPT3
+		custom_tooltip = STOCK_MARKET_COCOA_MEDIUM_TAXES
+		hidden_effect = {
+			hidden_effect = {
+				switch_trade_good_policy = {
+					trade_good_id = 20
+					policy = taxes
+					level = 2
+					set_modifiers = yes
+				}
+				country_event = {
+					id = stock_market_menu_events.3040 #Going back to the same option via other event
+				}		
+			}		
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.304.EVTOPT4
+		custom_tooltip = STOCK_MARKET_COCOA_HIGH_TAXES
+		hidden_effect = {
+			hidden_effect = {
+				switch_trade_good_policy = {
+					trade_good_id = 20
+					policy = taxes
+					level = 3
+					set_modifiers = yes
+				}
+				country_event = {
+					id = stock_market_menu_events.3040 #Going back to the same option via other event
+				}		
+			}		
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.304.EVTOPT5
+		custom_tooltip = STOCK_MARKET_COCOA_COMPLETE_BAN
+		hidden_effect = {
+			hidden_effect = {
+				switch_trade_good_policy = {
+					trade_good_id = 20
+					policy = taxes
+					level = 4
+					set_modifiers = yes
+				}
+				country_event = {
+					id = stock_market_menu_events.3040 #Going back to the same option via other event
+				}		
+			}		
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.304.EVTOPT6
+		custom_tooltip = GO_BACK_TO_COCOA_POLICY_MENU
+		hidden_effect = {
+			country_event = {
+				id = stock_market_menu_events.330
+			}			
+		}
+	}
+}
+
+country_event = {
+	id = stock_market_menu_events.3040
 	title = stock_market_menu_events.EVTNAME301
 	desc = stock_market_menu_events.EVTDESC301
 	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
@@ -461,7 +646,255 @@ country_event = {
 
 	option = {
 		country_event = {
-			id = stock_market_menu_events.303 #Going back to the same option
+			id = stock_market_menu_events.304 #Going back to the same option
+		}			
+		ai_chance = { 
+			factor = 1
+		}
+	}
+}
+
+
+country_event = {
+	id = stock_market_menu_events.305
+	title = stock_market_menu_events.EVTNAME305
+	desc = stock_market_menu_events.EVTDESC305
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+
+	option = {
+		name = stock_market_menu_events.305.EVTOPT00
+		custom_tooltip = STOCK_MARKET_COCOA_BLOCK_STOCKPILE
+		hidden_effect = {
+			switch_trade_good_policy = {
+				trade_good_id = 20
+				policy = block_stockpile
+				level = 1
+			}
+
+			country_event = {
+				id = stock_market_menu_events.3050 #Going back to the same option via other event
+			}		
+		}
+		trigger = {
+			NOT = { has_country_flag = block_stockpile_1_for_20 }
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.305.EVTOPT01
+		custom_tooltip = STOCK_MARKET_COCOA_UNBLOCK_STOCKPILE
+		hidden_effect = {
+			switch_trade_good_policy = {
+				trade_good_id = 20
+				policy = block_stockpile
+				level = 0
+			}
+
+			country_event = {
+				id = stock_market_menu_events.3050 #Going back to the same option via other event
+			}		
+		}
+		trigger = {
+			has_country_flag = block_stockpile_1_for_20
+		}
+	}
+
+
+	option = {
+		name = stock_market_menu_events.305.EVTOPT10
+		custom_tooltip = STOCK_MARKET_COCOA_BLOCK_IMPORT
+		hidden_effect = {
+			switch_trade_good_policy = {
+				trade_good_id = 20
+				policy = block_import
+				level = 1
+			}
+
+			country_event = {
+				id = stock_market_menu_events.3050 #Going back to the same option via other event
+			}		
+		}
+		trigger = {
+			NOT = { has_country_flag = block_import_1_for_20 }
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.305.EVTOPT11
+		custom_tooltip = STOCK_MARKET_COCOA_UNBLOCK_IMPORT
+		hidden_effect = {
+			switch_trade_good_policy = {
+				trade_good_id = 20
+				policy = block_import
+				level = 0
+			}
+
+			country_event = {
+				id = stock_market_menu_events.3050 #Going back to the same option via other event
+			}		
+		}
+		trigger = {
+			has_country_flag = block_import_1_for_20
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.305.EVTOPT2
+		custom_tooltip = STOCK_MARKET_COCOA_RESET_BUDGET
+		hidden_effect = {
+			hidden_effect = {
+				set_country_flag = unlimited_budget_for_20
+				set_variable = {
+					which = stock_market_budget_for_20
+					value = 0
+				}
+				country_event = {
+					id = stock_market_menu_events.3050 #Going back to the same option via other event
+				}		
+			}		
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.305.EVTOPT3
+		custom_tooltip = STOCK_MARKET_COCOA_ADD_5_BUDGET
+		hidden_effect = {
+			hidden_effect = {
+				clr_country_flag = unlimited_budget_for_20
+
+				change_variable = {
+					which = stock_market_budget_for_20
+					value = 5
+				}
+
+				country_event = {
+					id = stock_market_menu_events.3050 #Going back to the same option via other event
+				}		
+			}		
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.305.EVTOPT4
+		custom_tooltip = STOCK_MARKET_COCOA_ADD_25_BUDGET
+		hidden_effect = {
+			hidden_effect = {
+				clr_country_flag = unlimited_budget_for_20
+
+				change_variable = {
+					which = stock_market_budget_for_20
+					value = 25
+				}
+
+				country_event = {
+					id = stock_market_menu_events.3050 #Going back to the same option via other event
+				}		
+			}		
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.305.EVTOPT5
+		custom_tooltip = STOCK_MARKET_COCOA_REMOVE_5_BUDGET
+		hidden_effect = {
+			hidden_effect = {
+				subtract_variable = {
+					which = stock_market_budget_for_20
+					value = 5
+				}
+
+				if = {
+					limit = {
+						is_variable_equal = {
+							which = stock_market_budget_for_20
+							value = 0
+						}
+					}
+
+					set_country_flag = unlimited_budget_for_20
+
+				}
+
+				country_event = {
+					id = stock_market_menu_events.3050 #Going back to the same option via other event
+				}		
+			}		
+		}
+		trigger = {
+			check_variable = {
+				which = stock_market_budget_for_20
+				value = 5
+			}
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.305.EVTOPT6
+		custom_tooltip = STOCK_MARKET_COCOA_REMOVE_25_BUDGET
+		hidden_effect = {
+			hidden_effect = {
+				subtract_variable = {
+					which = stock_market_budget_for_20
+					value = 25
+				}
+
+				if = {
+					limit = {
+						is_variable_equal = {
+							which = stock_market_budget_for_20
+							value = 0
+						}
+					}
+
+					set_country_flag = unlimited_budget_for_20
+
+				}
+
+				country_event = {
+					id = stock_market_menu_events.3050 #Going back to the same option via other event
+				}		
+			}		
+		}
+		trigger = {
+			check_variable = {
+				which = stock_market_budget_for_20
+				value = 25
+			}
+		}
+	}
+
+	option = {
+		name = stock_market_menu_events.305.EVTOPT7
+		custom_tooltip = GO_BACK_TO_COCOA_POLICY_MENU
+		hidden_effect = {
+			country_event = {
+				id = stock_market_menu_events.330
+			}			
+		}
+	}
+}
+
+country_event = {
+	id = stock_market_menu_events.3050
+	title = stock_market_menu_events.EVTNAME301
+	desc = stock_market_menu_events.EVTDESC301
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		country_event = {
+			id = stock_market_menu_events.305 #Going back to the same option
 		}			
 		ai_chance = { 
 			factor = 1

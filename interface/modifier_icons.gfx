@@ -39,4 +39,730 @@ spriteTypes = {
         name = "GFX_modifier_icon_30_craze"
         textureFile = "gfx/interface/ideas_EU4/modifier_icon_30_craze.dds"
 	}
+    spriteType = {
+        name = "GFX_modifier_icon_30_craze"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_30_craze.dds"
+	}
+
+        spriteType = {
+        name = "GFX_modifier_icon_mediocre_shortage_of_0"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_mediocre_shortage_of_0.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_severe_shortage_of_0"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_severe_shortage_of_0.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_1_for_0"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_1_for_0.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_2_for_0"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_2_for_0.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_3_for_0"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_3_for_0.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_4_for_0"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_4_for_0.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_mediocre_shortage_of_1"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_mediocre_shortage_of_1.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_severe_shortage_of_1"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_severe_shortage_of_1.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_1_for_1"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_1_for_1.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_2_for_1"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_2_for_1.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_3_for_1"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_3_for_1.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_4_for_1"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_4_for_1.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_mediocre_shortage_of_2"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_mediocre_shortage_of_2.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_severe_shortage_of_2"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_severe_shortage_of_2.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_1_for_2"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_1_for_2.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_2_for_2"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_2_for_2.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_3_for_2"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_3_for_2.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_4_for_2"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_4_for_2.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_mediocre_shortage_of_3"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_mediocre_shortage_of_3.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_severe_shortage_of_3"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_severe_shortage_of_3.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_1_for_3"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_1_for_3.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_2_for_3"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_2_for_3.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_3_for_3"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_3_for_3.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_4_for_3"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_4_for_3.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_mediocre_shortage_of_4"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_mediocre_shortage_of_4.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_severe_shortage_of_4"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_severe_shortage_of_4.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_1_for_4"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_1_for_4.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_2_for_4"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_2_for_4.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_3_for_4"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_3_for_4.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_4_for_4"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_4_for_4.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_mediocre_shortage_of_5"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_mediocre_shortage_of_5.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_severe_shortage_of_5"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_severe_shortage_of_5.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_1_for_5"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_1_for_5.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_2_for_5"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_2_for_5.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_3_for_5"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_3_for_5.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_4_for_5"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_4_for_5.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_mediocre_shortage_of_6"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_mediocre_shortage_of_6.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_severe_shortage_of_6"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_severe_shortage_of_6.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_1_for_6"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_1_for_6.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_2_for_6"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_2_for_6.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_3_for_6"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_3_for_6.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_4_for_6"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_4_for_6.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_mediocre_shortage_of_7"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_mediocre_shortage_of_7.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_severe_shortage_of_7"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_severe_shortage_of_7.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_1_for_7"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_1_for_7.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_2_for_7"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_2_for_7.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_3_for_7"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_3_for_7.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_4_for_7"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_4_for_7.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_mediocre_shortage_of_8"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_mediocre_shortage_of_8.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_severe_shortage_of_8"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_severe_shortage_of_8.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_1_for_8"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_1_for_8.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_2_for_8"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_2_for_8.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_3_for_8"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_3_for_8.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_4_for_8"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_4_for_8.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_mediocre_shortage_of_10"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_mediocre_shortage_of_10.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_severe_shortage_of_10"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_severe_shortage_of_10.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_1_for_10"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_1_for_10.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_2_for_10"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_2_for_10.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_3_for_10"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_3_for_10.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_4_for_10"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_4_for_10.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_mediocre_shortage_of_11"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_mediocre_shortage_of_11.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_severe_shortage_of_11"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_severe_shortage_of_11.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_1_for_11"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_1_for_11.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_2_for_11"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_2_for_11.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_3_for_11"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_3_for_11.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_4_for_11"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_4_for_11.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_mediocre_shortage_of_12"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_mediocre_shortage_of_12.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_severe_shortage_of_12"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_severe_shortage_of_12.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_1_for_12"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_1_for_12.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_2_for_12"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_2_for_12.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_3_for_12"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_3_for_12.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_4_for_12"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_4_for_12.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_mediocre_shortage_of_13"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_mediocre_shortage_of_13.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_severe_shortage_of_13"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_severe_shortage_of_13.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_1_for_13"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_1_for_13.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_2_for_13"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_2_for_13.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_3_for_13"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_3_for_13.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_4_for_13"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_4_for_13.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_mediocre_shortage_of_14"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_mediocre_shortage_of_14.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_severe_shortage_of_14"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_severe_shortage_of_14.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_1_for_14"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_1_for_14.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_2_for_14"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_2_for_14.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_3_for_14"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_3_for_14.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_4_for_14"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_4_for_14.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_mediocre_shortage_of_15"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_mediocre_shortage_of_15.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_severe_shortage_of_15"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_severe_shortage_of_15.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_1_for_15"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_1_for_15.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_2_for_15"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_2_for_15.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_3_for_15"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_3_for_15.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_4_for_15"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_4_for_15.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_mediocre_shortage_of_16"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_mediocre_shortage_of_16.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_severe_shortage_of_16"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_severe_shortage_of_16.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_1_for_16"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_1_for_16.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_2_for_16"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_2_for_16.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_3_for_16"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_3_for_16.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_4_for_16"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_4_for_16.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_mediocre_shortage_of_17"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_mediocre_shortage_of_17.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_severe_shortage_of_17"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_severe_shortage_of_17.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_1_for_17"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_1_for_17.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_2_for_17"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_2_for_17.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_3_for_17"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_3_for_17.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_4_for_17"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_4_for_17.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_mediocre_shortage_of_18"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_mediocre_shortage_of_18.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_severe_shortage_of_18"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_severe_shortage_of_18.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_1_for_18"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_1_for_18.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_2_for_18"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_2_for_18.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_3_for_18"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_3_for_18.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_4_for_18"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_4_for_18.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_mediocre_shortage_of_19"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_mediocre_shortage_of_19.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_severe_shortage_of_19"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_severe_shortage_of_19.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_1_for_19"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_1_for_19.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_2_for_19"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_2_for_19.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_3_for_19"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_3_for_19.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_4_for_19"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_4_for_19.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_mediocre_shortage_of_20"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_mediocre_shortage_of_20.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_severe_shortage_of_20"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_severe_shortage_of_20.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_1_for_20"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_1_for_20.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_2_for_20"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_2_for_20.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_3_for_20"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_3_for_20.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_4_for_20"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_4_for_20.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_mediocre_shortage_of_21"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_mediocre_shortage_of_21.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_severe_shortage_of_21"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_severe_shortage_of_21.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_1_for_21"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_1_for_21.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_2_for_21"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_2_for_21.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_3_for_21"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_3_for_21.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_4_for_21"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_4_for_21.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_mediocre_shortage_of_22"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_mediocre_shortage_of_22.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_severe_shortage_of_22"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_severe_shortage_of_22.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_1_for_22"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_1_for_22.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_2_for_22"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_2_for_22.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_3_for_22"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_3_for_22.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_4_for_22"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_4_for_22.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_mediocre_shortage_of_23"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_mediocre_shortage_of_23.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_severe_shortage_of_23"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_severe_shortage_of_23.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_1_for_23"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_1_for_23.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_2_for_23"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_2_for_23.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_3_for_23"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_3_for_23.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_4_for_23"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_4_for_23.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_mediocre_shortage_of_24"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_mediocre_shortage_of_24.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_severe_shortage_of_24"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_severe_shortage_of_24.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_1_for_24"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_1_for_24.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_2_for_24"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_2_for_24.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_3_for_24"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_3_for_24.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_4_for_24"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_4_for_24.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_mediocre_shortage_of_25"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_mediocre_shortage_of_25.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_severe_shortage_of_25"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_severe_shortage_of_25.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_1_for_25"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_1_for_25.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_2_for_25"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_2_for_25.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_3_for_25"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_3_for_25.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_4_for_25"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_4_for_25.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_mediocre_shortage_of_26"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_mediocre_shortage_of_26.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_severe_shortage_of_26"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_severe_shortage_of_26.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_1_for_26"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_1_for_26.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_2_for_26"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_2_for_26.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_3_for_26"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_3_for_26.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_4_for_26"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_4_for_26.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_mediocre_shortage_of_27"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_mediocre_shortage_of_27.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_severe_shortage_of_27"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_severe_shortage_of_27.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_1_for_27"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_1_for_27.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_2_for_27"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_2_for_27.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_3_for_27"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_3_for_27.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_4_for_27"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_4_for_27.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_mediocre_shortage_of_28"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_mediocre_shortage_of_28.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_severe_shortage_of_28"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_severe_shortage_of_28.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_1_for_28"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_1_for_28.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_2_for_28"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_2_for_28.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_3_for_28"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_3_for_28.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_4_for_28"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_4_for_28.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_mediocre_shortage_of_29"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_mediocre_shortage_of_29.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_severe_shortage_of_29"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_severe_shortage_of_29.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_1_for_29"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_1_for_29.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_2_for_29"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_2_for_29.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_3_for_29"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_3_for_29.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_4_for_29"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_4_for_29.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_mediocre_shortage_of_30"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_mediocre_shortage_of_30.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_severe_shortage_of_30"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_severe_shortage_of_30.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_1_for_30"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_1_for_30.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_2_for_30"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_2_for_30.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_3_for_30"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_3_for_30.dds"
+	}
+    spriteType = {
+        name = "GFX_modifier_icon_taxes_4_for_30"
+        textureFile = "gfx/interface/ideas_EU4/modifier_icon_taxes_4_for_30.dds"
+	}
+
 }

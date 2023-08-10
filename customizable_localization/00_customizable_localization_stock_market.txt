@@ -25,6 +25,159 @@ defined_text = {
 }
 
 defined_text = {
+    name = GetConsumptionTaxFor0
+	random = no
+    text = {
+        localisation_key = stock_market_complete_ban
+        trigger = {
+            has_country_flag = taxes_4_for_0
+        }
+    }
+    text = {
+        localisation_key = stock_market_high_taxes
+        trigger = {
+            has_country_flag = taxes_3_for_0
+        }
+    }
+    text = {
+        localisation_key = stock_market_medium_taxes
+        trigger = {
+            has_country_flag = taxes_2_for_0
+        }
+    }
+    text = {
+        localisation_key = stock_market_low_taxes
+        trigger = {
+            has_country_flag = taxes_1_for_0
+        }
+    }
+    text = {
+        localisation_key = stock_market_no_taxes
+        trigger = {
+            has_country_flag = taxes_0_for_0
+        }
+    }
+}
+
+defined_text = {
+    name = GetCurrentBudgetFor0
+	random = no
+    text = {
+        localisation_key = stock_market_unlimited_budget
+        trigger = {
+            has_country_flag = unlimited_budget_for_0
+        }
+    }
+    text = {
+        localisation_key = stock_market_budget_for_0
+    }
+}
+
+defined_text = {
+    name = GetColouredDemandGrowthFor0
+	random = no
+    text = {
+        localisation_key = positive_demand_growth_for_0
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_demand_growth_for_0
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_demand_growth_for_0
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_demand_growth_for_0
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_demand_growth_for_0
+    }
+}
+
+defined_text = {
+    name = GetColouredStockpileGrowthFor0
+	random = no
+    text = {
+        localisation_key = positive_stockpile_growth_for_0
+        trigger = {
+			check_variable = {
+				which = stock_market_stockpile_growth_for_0
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_stockpile_growth_for_0
+        trigger = {
+			check_variable = {
+				which = stock_market_stockpile_growth_for_0
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_stockpile_growth_for_0
+    }
+}
+
+defined_text = {
+    name = GetColouredIncomeGrowthFor0
+	random = no
+    text = {
+        localisation_key = positive_income_growth_for_0
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_income_growth_for_0
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_income_growth_for_0
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_income_growth_for_0
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_income_growth_for_0
+    }
+}
+
+defined_text = {
+    name = GetColouredPriceGrowthFor0
+	random = no
+    text = {
+        localisation_key = positive_prices_growth_for_0
+        trigger = {
+			check_variable = {
+				which = stock_market_prices_growth_for_0
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_prices_growth_for_0
+        trigger = {
+			check_variable = {
+				which = stock_market_prices_growth_for_0
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_prices_growth_for_0
+    }
+}
+
+defined_text = {
     name = GetColouredSupplyGrowthFor1
 	random = no
     text = {
@@ -47,6 +200,159 @@ defined_text = {
     }
     text = {
         localisation_key = negative_supply_growth_for_1
+    }
+}
+
+defined_text = {
+    name = GetConsumptionTaxFor1
+	random = no
+    text = {
+        localisation_key = stock_market_complete_ban
+        trigger = {
+            has_country_flag = taxes_4_for_1
+        }
+    }
+    text = {
+        localisation_key = stock_market_high_taxes
+        trigger = {
+            has_country_flag = taxes_3_for_1
+        }
+    }
+    text = {
+        localisation_key = stock_market_medium_taxes
+        trigger = {
+            has_country_flag = taxes_2_for_1
+        }
+    }
+    text = {
+        localisation_key = stock_market_low_taxes
+        trigger = {
+            has_country_flag = taxes_1_for_1
+        }
+    }
+    text = {
+        localisation_key = stock_market_no_taxes
+        trigger = {
+            has_country_flag = taxes_0_for_1
+        }
+    }
+}
+
+defined_text = {
+    name = GetCurrentBudgetFor1
+	random = no
+    text = {
+        localisation_key = stock_market_unlimited_budget
+        trigger = {
+            has_country_flag = unlimited_budget_for_1
+        }
+    }
+    text = {
+        localisation_key = stock_market_budget_for_1
+    }
+}
+
+defined_text = {
+    name = GetColouredDemandGrowthFor1
+	random = no
+    text = {
+        localisation_key = positive_demand_growth_for_1
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_demand_growth_for_1
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_demand_growth_for_1
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_demand_growth_for_1
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_demand_growth_for_1
+    }
+}
+
+defined_text = {
+    name = GetColouredStockpileGrowthFor1
+	random = no
+    text = {
+        localisation_key = positive_stockpile_growth_for_1
+        trigger = {
+			check_variable = {
+				which = stock_market_stockpile_growth_for_1
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_stockpile_growth_for_1
+        trigger = {
+			check_variable = {
+				which = stock_market_stockpile_growth_for_1
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_stockpile_growth_for_1
+    }
+}
+
+defined_text = {
+    name = GetColouredIncomeGrowthFor1
+	random = no
+    text = {
+        localisation_key = positive_income_growth_for_1
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_income_growth_for_1
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_income_growth_for_1
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_income_growth_for_1
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_income_growth_for_1
+    }
+}
+
+defined_text = {
+    name = GetColouredPriceGrowthFor1
+	random = no
+    text = {
+        localisation_key = positive_prices_growth_for_1
+        trigger = {
+			check_variable = {
+				which = stock_market_prices_growth_for_1
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_prices_growth_for_1
+        trigger = {
+			check_variable = {
+				which = stock_market_prices_growth_for_1
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_prices_growth_for_1
     }
 }
 
@@ -77,6 +383,159 @@ defined_text = {
 }
 
 defined_text = {
+    name = GetConsumptionTaxFor2
+	random = no
+    text = {
+        localisation_key = stock_market_complete_ban
+        trigger = {
+            has_country_flag = taxes_4_for_2
+        }
+    }
+    text = {
+        localisation_key = stock_market_high_taxes
+        trigger = {
+            has_country_flag = taxes_3_for_2
+        }
+    }
+    text = {
+        localisation_key = stock_market_medium_taxes
+        trigger = {
+            has_country_flag = taxes_2_for_2
+        }
+    }
+    text = {
+        localisation_key = stock_market_low_taxes
+        trigger = {
+            has_country_flag = taxes_1_for_2
+        }
+    }
+    text = {
+        localisation_key = stock_market_no_taxes
+        trigger = {
+            has_country_flag = taxes_0_for_2
+        }
+    }
+}
+
+defined_text = {
+    name = GetCurrentBudgetFor2
+	random = no
+    text = {
+        localisation_key = stock_market_unlimited_budget
+        trigger = {
+            has_country_flag = unlimited_budget_for_2
+        }
+    }
+    text = {
+        localisation_key = stock_market_budget_for_2
+    }
+}
+
+defined_text = {
+    name = GetColouredDemandGrowthFor2
+	random = no
+    text = {
+        localisation_key = positive_demand_growth_for_2
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_demand_growth_for_2
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_demand_growth_for_2
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_demand_growth_for_2
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_demand_growth_for_2
+    }
+}
+
+defined_text = {
+    name = GetColouredStockpileGrowthFor2
+	random = no
+    text = {
+        localisation_key = positive_stockpile_growth_for_2
+        trigger = {
+			check_variable = {
+				which = stock_market_stockpile_growth_for_2
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_stockpile_growth_for_2
+        trigger = {
+			check_variable = {
+				which = stock_market_stockpile_growth_for_2
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_stockpile_growth_for_2
+    }
+}
+
+defined_text = {
+    name = GetColouredIncomeGrowthFor2
+	random = no
+    text = {
+        localisation_key = positive_income_growth_for_2
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_income_growth_for_2
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_income_growth_for_2
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_income_growth_for_2
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_income_growth_for_2
+    }
+}
+
+defined_text = {
+    name = GetColouredPriceGrowthFor2
+	random = no
+    text = {
+        localisation_key = positive_prices_growth_for_2
+        trigger = {
+			check_variable = {
+				which = stock_market_prices_growth_for_2
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_prices_growth_for_2
+        trigger = {
+			check_variable = {
+				which = stock_market_prices_growth_for_2
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_prices_growth_for_2
+    }
+}
+
+defined_text = {
     name = GetColouredSupplyGrowthFor3
 	random = no
     text = {
@@ -99,6 +558,159 @@ defined_text = {
     }
     text = {
         localisation_key = negative_supply_growth_for_3
+    }
+}
+
+defined_text = {
+    name = GetConsumptionTaxFor3
+	random = no
+    text = {
+        localisation_key = stock_market_complete_ban
+        trigger = {
+            has_country_flag = taxes_4_for_3
+        }
+    }
+    text = {
+        localisation_key = stock_market_high_taxes
+        trigger = {
+            has_country_flag = taxes_3_for_3
+        }
+    }
+    text = {
+        localisation_key = stock_market_medium_taxes
+        trigger = {
+            has_country_flag = taxes_2_for_3
+        }
+    }
+    text = {
+        localisation_key = stock_market_low_taxes
+        trigger = {
+            has_country_flag = taxes_1_for_3
+        }
+    }
+    text = {
+        localisation_key = stock_market_no_taxes
+        trigger = {
+            has_country_flag = taxes_0_for_3
+        }
+    }
+}
+
+defined_text = {
+    name = GetCurrentBudgetFor3
+	random = no
+    text = {
+        localisation_key = stock_market_unlimited_budget
+        trigger = {
+            has_country_flag = unlimited_budget_for_3
+        }
+    }
+    text = {
+        localisation_key = stock_market_budget_for_3
+    }
+}
+
+defined_text = {
+    name = GetColouredDemandGrowthFor3
+	random = no
+    text = {
+        localisation_key = positive_demand_growth_for_3
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_demand_growth_for_3
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_demand_growth_for_3
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_demand_growth_for_3
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_demand_growth_for_3
+    }
+}
+
+defined_text = {
+    name = GetColouredStockpileGrowthFor3
+	random = no
+    text = {
+        localisation_key = positive_stockpile_growth_for_3
+        trigger = {
+			check_variable = {
+				which = stock_market_stockpile_growth_for_3
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_stockpile_growth_for_3
+        trigger = {
+			check_variable = {
+				which = stock_market_stockpile_growth_for_3
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_stockpile_growth_for_3
+    }
+}
+
+defined_text = {
+    name = GetColouredIncomeGrowthFor3
+	random = no
+    text = {
+        localisation_key = positive_income_growth_for_3
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_income_growth_for_3
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_income_growth_for_3
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_income_growth_for_3
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_income_growth_for_3
+    }
+}
+
+defined_text = {
+    name = GetColouredPriceGrowthFor3
+	random = no
+    text = {
+        localisation_key = positive_prices_growth_for_3
+        trigger = {
+			check_variable = {
+				which = stock_market_prices_growth_for_3
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_prices_growth_for_3
+        trigger = {
+			check_variable = {
+				which = stock_market_prices_growth_for_3
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_prices_growth_for_3
     }
 }
 
@@ -129,6 +741,159 @@ defined_text = {
 }
 
 defined_text = {
+    name = GetConsumptionTaxFor4
+	random = no
+    text = {
+        localisation_key = stock_market_complete_ban
+        trigger = {
+            has_country_flag = taxes_4_for_4
+        }
+    }
+    text = {
+        localisation_key = stock_market_high_taxes
+        trigger = {
+            has_country_flag = taxes_3_for_4
+        }
+    }
+    text = {
+        localisation_key = stock_market_medium_taxes
+        trigger = {
+            has_country_flag = taxes_2_for_4
+        }
+    }
+    text = {
+        localisation_key = stock_market_low_taxes
+        trigger = {
+            has_country_flag = taxes_1_for_4
+        }
+    }
+    text = {
+        localisation_key = stock_market_no_taxes
+        trigger = {
+            has_country_flag = taxes_0_for_4
+        }
+    }
+}
+
+defined_text = {
+    name = GetCurrentBudgetFor4
+	random = no
+    text = {
+        localisation_key = stock_market_unlimited_budget
+        trigger = {
+            has_country_flag = unlimited_budget_for_4
+        }
+    }
+    text = {
+        localisation_key = stock_market_budget_for_4
+    }
+}
+
+defined_text = {
+    name = GetColouredDemandGrowthFor4
+	random = no
+    text = {
+        localisation_key = positive_demand_growth_for_4
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_demand_growth_for_4
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_demand_growth_for_4
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_demand_growth_for_4
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_demand_growth_for_4
+    }
+}
+
+defined_text = {
+    name = GetColouredStockpileGrowthFor4
+	random = no
+    text = {
+        localisation_key = positive_stockpile_growth_for_4
+        trigger = {
+			check_variable = {
+				which = stock_market_stockpile_growth_for_4
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_stockpile_growth_for_4
+        trigger = {
+			check_variable = {
+				which = stock_market_stockpile_growth_for_4
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_stockpile_growth_for_4
+    }
+}
+
+defined_text = {
+    name = GetColouredIncomeGrowthFor4
+	random = no
+    text = {
+        localisation_key = positive_income_growth_for_4
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_income_growth_for_4
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_income_growth_for_4
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_income_growth_for_4
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_income_growth_for_4
+    }
+}
+
+defined_text = {
+    name = GetColouredPriceGrowthFor4
+	random = no
+    text = {
+        localisation_key = positive_prices_growth_for_4
+        trigger = {
+			check_variable = {
+				which = stock_market_prices_growth_for_4
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_prices_growth_for_4
+        trigger = {
+			check_variable = {
+				which = stock_market_prices_growth_for_4
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_prices_growth_for_4
+    }
+}
+
+defined_text = {
     name = GetColouredSupplyGrowthFor5
 	random = no
     text = {
@@ -151,6 +916,159 @@ defined_text = {
     }
     text = {
         localisation_key = negative_supply_growth_for_5
+    }
+}
+
+defined_text = {
+    name = GetConsumptionTaxFor5
+	random = no
+    text = {
+        localisation_key = stock_market_complete_ban
+        trigger = {
+            has_country_flag = taxes_4_for_5
+        }
+    }
+    text = {
+        localisation_key = stock_market_high_taxes
+        trigger = {
+            has_country_flag = taxes_3_for_5
+        }
+    }
+    text = {
+        localisation_key = stock_market_medium_taxes
+        trigger = {
+            has_country_flag = taxes_2_for_5
+        }
+    }
+    text = {
+        localisation_key = stock_market_low_taxes
+        trigger = {
+            has_country_flag = taxes_1_for_5
+        }
+    }
+    text = {
+        localisation_key = stock_market_no_taxes
+        trigger = {
+            has_country_flag = taxes_0_for_5
+        }
+    }
+}
+
+defined_text = {
+    name = GetCurrentBudgetFor5
+	random = no
+    text = {
+        localisation_key = stock_market_unlimited_budget
+        trigger = {
+            has_country_flag = unlimited_budget_for_5
+        }
+    }
+    text = {
+        localisation_key = stock_market_budget_for_5
+    }
+}
+
+defined_text = {
+    name = GetColouredDemandGrowthFor5
+	random = no
+    text = {
+        localisation_key = positive_demand_growth_for_5
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_demand_growth_for_5
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_demand_growth_for_5
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_demand_growth_for_5
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_demand_growth_for_5
+    }
+}
+
+defined_text = {
+    name = GetColouredStockpileGrowthFor5
+	random = no
+    text = {
+        localisation_key = positive_stockpile_growth_for_5
+        trigger = {
+			check_variable = {
+				which = stock_market_stockpile_growth_for_5
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_stockpile_growth_for_5
+        trigger = {
+			check_variable = {
+				which = stock_market_stockpile_growth_for_5
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_stockpile_growth_for_5
+    }
+}
+
+defined_text = {
+    name = GetColouredIncomeGrowthFor5
+	random = no
+    text = {
+        localisation_key = positive_income_growth_for_5
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_income_growth_for_5
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_income_growth_for_5
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_income_growth_for_5
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_income_growth_for_5
+    }
+}
+
+defined_text = {
+    name = GetColouredPriceGrowthFor5
+	random = no
+    text = {
+        localisation_key = positive_prices_growth_for_5
+        trigger = {
+			check_variable = {
+				which = stock_market_prices_growth_for_5
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_prices_growth_for_5
+        trigger = {
+			check_variable = {
+				which = stock_market_prices_growth_for_5
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_prices_growth_for_5
     }
 }
 
@@ -181,6 +1099,159 @@ defined_text = {
 }
 
 defined_text = {
+    name = GetConsumptionTaxFor6
+	random = no
+    text = {
+        localisation_key = stock_market_complete_ban
+        trigger = {
+            has_country_flag = taxes_4_for_6
+        }
+    }
+    text = {
+        localisation_key = stock_market_high_taxes
+        trigger = {
+            has_country_flag = taxes_3_for_6
+        }
+    }
+    text = {
+        localisation_key = stock_market_medium_taxes
+        trigger = {
+            has_country_flag = taxes_2_for_6
+        }
+    }
+    text = {
+        localisation_key = stock_market_low_taxes
+        trigger = {
+            has_country_flag = taxes_1_for_6
+        }
+    }
+    text = {
+        localisation_key = stock_market_no_taxes
+        trigger = {
+            has_country_flag = taxes_0_for_6
+        }
+    }
+}
+
+defined_text = {
+    name = GetCurrentBudgetFor6
+	random = no
+    text = {
+        localisation_key = stock_market_unlimited_budget
+        trigger = {
+            has_country_flag = unlimited_budget_for_6
+        }
+    }
+    text = {
+        localisation_key = stock_market_budget_for_6
+    }
+}
+
+defined_text = {
+    name = GetColouredDemandGrowthFor6
+	random = no
+    text = {
+        localisation_key = positive_demand_growth_for_6
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_demand_growth_for_6
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_demand_growth_for_6
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_demand_growth_for_6
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_demand_growth_for_6
+    }
+}
+
+defined_text = {
+    name = GetColouredStockpileGrowthFor6
+	random = no
+    text = {
+        localisation_key = positive_stockpile_growth_for_6
+        trigger = {
+			check_variable = {
+				which = stock_market_stockpile_growth_for_6
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_stockpile_growth_for_6
+        trigger = {
+			check_variable = {
+				which = stock_market_stockpile_growth_for_6
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_stockpile_growth_for_6
+    }
+}
+
+defined_text = {
+    name = GetColouredIncomeGrowthFor6
+	random = no
+    text = {
+        localisation_key = positive_income_growth_for_6
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_income_growth_for_6
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_income_growth_for_6
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_income_growth_for_6
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_income_growth_for_6
+    }
+}
+
+defined_text = {
+    name = GetColouredPriceGrowthFor6
+	random = no
+    text = {
+        localisation_key = positive_prices_growth_for_6
+        trigger = {
+			check_variable = {
+				which = stock_market_prices_growth_for_6
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_prices_growth_for_6
+        trigger = {
+			check_variable = {
+				which = stock_market_prices_growth_for_6
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_prices_growth_for_6
+    }
+}
+
+defined_text = {
     name = GetColouredSupplyGrowthFor7
 	random = no
     text = {
@@ -203,6 +1274,159 @@ defined_text = {
     }
     text = {
         localisation_key = negative_supply_growth_for_7
+    }
+}
+
+defined_text = {
+    name = GetConsumptionTaxFor7
+	random = no
+    text = {
+        localisation_key = stock_market_complete_ban
+        trigger = {
+            has_country_flag = taxes_4_for_7
+        }
+    }
+    text = {
+        localisation_key = stock_market_high_taxes
+        trigger = {
+            has_country_flag = taxes_3_for_7
+        }
+    }
+    text = {
+        localisation_key = stock_market_medium_taxes
+        trigger = {
+            has_country_flag = taxes_2_for_7
+        }
+    }
+    text = {
+        localisation_key = stock_market_low_taxes
+        trigger = {
+            has_country_flag = taxes_1_for_7
+        }
+    }
+    text = {
+        localisation_key = stock_market_no_taxes
+        trigger = {
+            has_country_flag = taxes_0_for_7
+        }
+    }
+}
+
+defined_text = {
+    name = GetCurrentBudgetFor7
+	random = no
+    text = {
+        localisation_key = stock_market_unlimited_budget
+        trigger = {
+            has_country_flag = unlimited_budget_for_7
+        }
+    }
+    text = {
+        localisation_key = stock_market_budget_for_7
+    }
+}
+
+defined_text = {
+    name = GetColouredDemandGrowthFor7
+	random = no
+    text = {
+        localisation_key = positive_demand_growth_for_7
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_demand_growth_for_7
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_demand_growth_for_7
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_demand_growth_for_7
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_demand_growth_for_7
+    }
+}
+
+defined_text = {
+    name = GetColouredStockpileGrowthFor7
+	random = no
+    text = {
+        localisation_key = positive_stockpile_growth_for_7
+        trigger = {
+			check_variable = {
+				which = stock_market_stockpile_growth_for_7
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_stockpile_growth_for_7
+        trigger = {
+			check_variable = {
+				which = stock_market_stockpile_growth_for_7
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_stockpile_growth_for_7
+    }
+}
+
+defined_text = {
+    name = GetColouredIncomeGrowthFor7
+	random = no
+    text = {
+        localisation_key = positive_income_growth_for_7
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_income_growth_for_7
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_income_growth_for_7
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_income_growth_for_7
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_income_growth_for_7
+    }
+}
+
+defined_text = {
+    name = GetColouredPriceGrowthFor7
+	random = no
+    text = {
+        localisation_key = positive_prices_growth_for_7
+        trigger = {
+			check_variable = {
+				which = stock_market_prices_growth_for_7
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_prices_growth_for_7
+        trigger = {
+			check_variable = {
+				which = stock_market_prices_growth_for_7
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_prices_growth_for_7
     }
 }
 
@@ -233,6 +1457,159 @@ defined_text = {
 }
 
 defined_text = {
+    name = GetConsumptionTaxFor8
+	random = no
+    text = {
+        localisation_key = stock_market_complete_ban
+        trigger = {
+            has_country_flag = taxes_4_for_8
+        }
+    }
+    text = {
+        localisation_key = stock_market_high_taxes
+        trigger = {
+            has_country_flag = taxes_3_for_8
+        }
+    }
+    text = {
+        localisation_key = stock_market_medium_taxes
+        trigger = {
+            has_country_flag = taxes_2_for_8
+        }
+    }
+    text = {
+        localisation_key = stock_market_low_taxes
+        trigger = {
+            has_country_flag = taxes_1_for_8
+        }
+    }
+    text = {
+        localisation_key = stock_market_no_taxes
+        trigger = {
+            has_country_flag = taxes_0_for_8
+        }
+    }
+}
+
+defined_text = {
+    name = GetCurrentBudgetFor8
+	random = no
+    text = {
+        localisation_key = stock_market_unlimited_budget
+        trigger = {
+            has_country_flag = unlimited_budget_for_8
+        }
+    }
+    text = {
+        localisation_key = stock_market_budget_for_8
+    }
+}
+
+defined_text = {
+    name = GetColouredDemandGrowthFor8
+	random = no
+    text = {
+        localisation_key = positive_demand_growth_for_8
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_demand_growth_for_8
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_demand_growth_for_8
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_demand_growth_for_8
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_demand_growth_for_8
+    }
+}
+
+defined_text = {
+    name = GetColouredStockpileGrowthFor8
+	random = no
+    text = {
+        localisation_key = positive_stockpile_growth_for_8
+        trigger = {
+			check_variable = {
+				which = stock_market_stockpile_growth_for_8
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_stockpile_growth_for_8
+        trigger = {
+			check_variable = {
+				which = stock_market_stockpile_growth_for_8
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_stockpile_growth_for_8
+    }
+}
+
+defined_text = {
+    name = GetColouredIncomeGrowthFor8
+	random = no
+    text = {
+        localisation_key = positive_income_growth_for_8
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_income_growth_for_8
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_income_growth_for_8
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_income_growth_for_8
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_income_growth_for_8
+    }
+}
+
+defined_text = {
+    name = GetColouredPriceGrowthFor8
+	random = no
+    text = {
+        localisation_key = positive_prices_growth_for_8
+        trigger = {
+			check_variable = {
+				which = stock_market_prices_growth_for_8
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_prices_growth_for_8
+        trigger = {
+			check_variable = {
+				which = stock_market_prices_growth_for_8
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_prices_growth_for_8
+    }
+}
+
+defined_text = {
     name = GetColouredSupplyGrowthFor10
 	random = no
     text = {
@@ -255,6 +1632,159 @@ defined_text = {
     }
     text = {
         localisation_key = negative_supply_growth_for_10
+    }
+}
+
+defined_text = {
+    name = GetConsumptionTaxFor10
+	random = no
+    text = {
+        localisation_key = stock_market_complete_ban
+        trigger = {
+            has_country_flag = taxes_4_for_10
+        }
+    }
+    text = {
+        localisation_key = stock_market_high_taxes
+        trigger = {
+            has_country_flag = taxes_3_for_10
+        }
+    }
+    text = {
+        localisation_key = stock_market_medium_taxes
+        trigger = {
+            has_country_flag = taxes_2_for_10
+        }
+    }
+    text = {
+        localisation_key = stock_market_low_taxes
+        trigger = {
+            has_country_flag = taxes_1_for_10
+        }
+    }
+    text = {
+        localisation_key = stock_market_no_taxes
+        trigger = {
+            has_country_flag = taxes_0_for_10
+        }
+    }
+}
+
+defined_text = {
+    name = GetCurrentBudgetFor10
+	random = no
+    text = {
+        localisation_key = stock_market_unlimited_budget
+        trigger = {
+            has_country_flag = unlimited_budget_for_10
+        }
+    }
+    text = {
+        localisation_key = stock_market_budget_for_10
+    }
+}
+
+defined_text = {
+    name = GetColouredDemandGrowthFor10
+	random = no
+    text = {
+        localisation_key = positive_demand_growth_for_10
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_demand_growth_for_10
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_demand_growth_for_10
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_demand_growth_for_10
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_demand_growth_for_10
+    }
+}
+
+defined_text = {
+    name = GetColouredStockpileGrowthFor10
+	random = no
+    text = {
+        localisation_key = positive_stockpile_growth_for_10
+        trigger = {
+			check_variable = {
+				which = stock_market_stockpile_growth_for_10
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_stockpile_growth_for_10
+        trigger = {
+			check_variable = {
+				which = stock_market_stockpile_growth_for_10
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_stockpile_growth_for_10
+    }
+}
+
+defined_text = {
+    name = GetColouredIncomeGrowthFor10
+	random = no
+    text = {
+        localisation_key = positive_income_growth_for_10
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_income_growth_for_10
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_income_growth_for_10
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_income_growth_for_10
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_income_growth_for_10
+    }
+}
+
+defined_text = {
+    name = GetColouredPriceGrowthFor10
+	random = no
+    text = {
+        localisation_key = positive_prices_growth_for_10
+        trigger = {
+			check_variable = {
+				which = stock_market_prices_growth_for_10
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_prices_growth_for_10
+        trigger = {
+			check_variable = {
+				which = stock_market_prices_growth_for_10
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_prices_growth_for_10
     }
 }
 
@@ -285,6 +1815,159 @@ defined_text = {
 }
 
 defined_text = {
+    name = GetConsumptionTaxFor11
+	random = no
+    text = {
+        localisation_key = stock_market_complete_ban
+        trigger = {
+            has_country_flag = taxes_4_for_11
+        }
+    }
+    text = {
+        localisation_key = stock_market_high_taxes
+        trigger = {
+            has_country_flag = taxes_3_for_11
+        }
+    }
+    text = {
+        localisation_key = stock_market_medium_taxes
+        trigger = {
+            has_country_flag = taxes_2_for_11
+        }
+    }
+    text = {
+        localisation_key = stock_market_low_taxes
+        trigger = {
+            has_country_flag = taxes_1_for_11
+        }
+    }
+    text = {
+        localisation_key = stock_market_no_taxes
+        trigger = {
+            has_country_flag = taxes_0_for_11
+        }
+    }
+}
+
+defined_text = {
+    name = GetCurrentBudgetFor11
+	random = no
+    text = {
+        localisation_key = stock_market_unlimited_budget
+        trigger = {
+            has_country_flag = unlimited_budget_for_11
+        }
+    }
+    text = {
+        localisation_key = stock_market_budget_for_11
+    }
+}
+
+defined_text = {
+    name = GetColouredDemandGrowthFor11
+	random = no
+    text = {
+        localisation_key = positive_demand_growth_for_11
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_demand_growth_for_11
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_demand_growth_for_11
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_demand_growth_for_11
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_demand_growth_for_11
+    }
+}
+
+defined_text = {
+    name = GetColouredStockpileGrowthFor11
+	random = no
+    text = {
+        localisation_key = positive_stockpile_growth_for_11
+        trigger = {
+			check_variable = {
+				which = stock_market_stockpile_growth_for_11
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_stockpile_growth_for_11
+        trigger = {
+			check_variable = {
+				which = stock_market_stockpile_growth_for_11
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_stockpile_growth_for_11
+    }
+}
+
+defined_text = {
+    name = GetColouredIncomeGrowthFor11
+	random = no
+    text = {
+        localisation_key = positive_income_growth_for_11
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_income_growth_for_11
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_income_growth_for_11
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_income_growth_for_11
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_income_growth_for_11
+    }
+}
+
+defined_text = {
+    name = GetColouredPriceGrowthFor11
+	random = no
+    text = {
+        localisation_key = positive_prices_growth_for_11
+        trigger = {
+			check_variable = {
+				which = stock_market_prices_growth_for_11
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_prices_growth_for_11
+        trigger = {
+			check_variable = {
+				which = stock_market_prices_growth_for_11
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_prices_growth_for_11
+    }
+}
+
+defined_text = {
     name = GetColouredSupplyGrowthFor12
 	random = no
     text = {
@@ -307,6 +1990,159 @@ defined_text = {
     }
     text = {
         localisation_key = negative_supply_growth_for_12
+    }
+}
+
+defined_text = {
+    name = GetConsumptionTaxFor12
+	random = no
+    text = {
+        localisation_key = stock_market_complete_ban
+        trigger = {
+            has_country_flag = taxes_4_for_12
+        }
+    }
+    text = {
+        localisation_key = stock_market_high_taxes
+        trigger = {
+            has_country_flag = taxes_3_for_12
+        }
+    }
+    text = {
+        localisation_key = stock_market_medium_taxes
+        trigger = {
+            has_country_flag = taxes_2_for_12
+        }
+    }
+    text = {
+        localisation_key = stock_market_low_taxes
+        trigger = {
+            has_country_flag = taxes_1_for_12
+        }
+    }
+    text = {
+        localisation_key = stock_market_no_taxes
+        trigger = {
+            has_country_flag = taxes_0_for_12
+        }
+    }
+}
+
+defined_text = {
+    name = GetCurrentBudgetFor12
+	random = no
+    text = {
+        localisation_key = stock_market_unlimited_budget
+        trigger = {
+            has_country_flag = unlimited_budget_for_12
+        }
+    }
+    text = {
+        localisation_key = stock_market_budget_for_12
+    }
+}
+
+defined_text = {
+    name = GetColouredDemandGrowthFor12
+	random = no
+    text = {
+        localisation_key = positive_demand_growth_for_12
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_demand_growth_for_12
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_demand_growth_for_12
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_demand_growth_for_12
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_demand_growth_for_12
+    }
+}
+
+defined_text = {
+    name = GetColouredStockpileGrowthFor12
+	random = no
+    text = {
+        localisation_key = positive_stockpile_growth_for_12
+        trigger = {
+			check_variable = {
+				which = stock_market_stockpile_growth_for_12
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_stockpile_growth_for_12
+        trigger = {
+			check_variable = {
+				which = stock_market_stockpile_growth_for_12
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_stockpile_growth_for_12
+    }
+}
+
+defined_text = {
+    name = GetColouredIncomeGrowthFor12
+	random = no
+    text = {
+        localisation_key = positive_income_growth_for_12
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_income_growth_for_12
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_income_growth_for_12
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_income_growth_for_12
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_income_growth_for_12
+    }
+}
+
+defined_text = {
+    name = GetColouredPriceGrowthFor12
+	random = no
+    text = {
+        localisation_key = positive_prices_growth_for_12
+        trigger = {
+			check_variable = {
+				which = stock_market_prices_growth_for_12
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_prices_growth_for_12
+        trigger = {
+			check_variable = {
+				which = stock_market_prices_growth_for_12
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_prices_growth_for_12
     }
 }
 
@@ -337,6 +2173,159 @@ defined_text = {
 }
 
 defined_text = {
+    name = GetConsumptionTaxFor13
+	random = no
+    text = {
+        localisation_key = stock_market_complete_ban
+        trigger = {
+            has_country_flag = taxes_4_for_13
+        }
+    }
+    text = {
+        localisation_key = stock_market_high_taxes
+        trigger = {
+            has_country_flag = taxes_3_for_13
+        }
+    }
+    text = {
+        localisation_key = stock_market_medium_taxes
+        trigger = {
+            has_country_flag = taxes_2_for_13
+        }
+    }
+    text = {
+        localisation_key = stock_market_low_taxes
+        trigger = {
+            has_country_flag = taxes_1_for_13
+        }
+    }
+    text = {
+        localisation_key = stock_market_no_taxes
+        trigger = {
+            has_country_flag = taxes_0_for_13
+        }
+    }
+}
+
+defined_text = {
+    name = GetCurrentBudgetFor13
+	random = no
+    text = {
+        localisation_key = stock_market_unlimited_budget
+        trigger = {
+            has_country_flag = unlimited_budget_for_13
+        }
+    }
+    text = {
+        localisation_key = stock_market_budget_for_13
+    }
+}
+
+defined_text = {
+    name = GetColouredDemandGrowthFor13
+	random = no
+    text = {
+        localisation_key = positive_demand_growth_for_13
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_demand_growth_for_13
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_demand_growth_for_13
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_demand_growth_for_13
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_demand_growth_for_13
+    }
+}
+
+defined_text = {
+    name = GetColouredStockpileGrowthFor13
+	random = no
+    text = {
+        localisation_key = positive_stockpile_growth_for_13
+        trigger = {
+			check_variable = {
+				which = stock_market_stockpile_growth_for_13
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_stockpile_growth_for_13
+        trigger = {
+			check_variable = {
+				which = stock_market_stockpile_growth_for_13
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_stockpile_growth_for_13
+    }
+}
+
+defined_text = {
+    name = GetColouredIncomeGrowthFor13
+	random = no
+    text = {
+        localisation_key = positive_income_growth_for_13
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_income_growth_for_13
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_income_growth_for_13
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_income_growth_for_13
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_income_growth_for_13
+    }
+}
+
+defined_text = {
+    name = GetColouredPriceGrowthFor13
+	random = no
+    text = {
+        localisation_key = positive_prices_growth_for_13
+        trigger = {
+			check_variable = {
+				which = stock_market_prices_growth_for_13
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_prices_growth_for_13
+        trigger = {
+			check_variable = {
+				which = stock_market_prices_growth_for_13
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_prices_growth_for_13
+    }
+}
+
+defined_text = {
     name = GetColouredSupplyGrowthFor14
 	random = no
     text = {
@@ -359,6 +2348,159 @@ defined_text = {
     }
     text = {
         localisation_key = negative_supply_growth_for_14
+    }
+}
+
+defined_text = {
+    name = GetConsumptionTaxFor14
+	random = no
+    text = {
+        localisation_key = stock_market_complete_ban
+        trigger = {
+            has_country_flag = taxes_4_for_14
+        }
+    }
+    text = {
+        localisation_key = stock_market_high_taxes
+        trigger = {
+            has_country_flag = taxes_3_for_14
+        }
+    }
+    text = {
+        localisation_key = stock_market_medium_taxes
+        trigger = {
+            has_country_flag = taxes_2_for_14
+        }
+    }
+    text = {
+        localisation_key = stock_market_low_taxes
+        trigger = {
+            has_country_flag = taxes_1_for_14
+        }
+    }
+    text = {
+        localisation_key = stock_market_no_taxes
+        trigger = {
+            has_country_flag = taxes_0_for_14
+        }
+    }
+}
+
+defined_text = {
+    name = GetCurrentBudgetFor14
+	random = no
+    text = {
+        localisation_key = stock_market_unlimited_budget
+        trigger = {
+            has_country_flag = unlimited_budget_for_14
+        }
+    }
+    text = {
+        localisation_key = stock_market_budget_for_14
+    }
+}
+
+defined_text = {
+    name = GetColouredDemandGrowthFor14
+	random = no
+    text = {
+        localisation_key = positive_demand_growth_for_14
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_demand_growth_for_14
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_demand_growth_for_14
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_demand_growth_for_14
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_demand_growth_for_14
+    }
+}
+
+defined_text = {
+    name = GetColouredStockpileGrowthFor14
+	random = no
+    text = {
+        localisation_key = positive_stockpile_growth_for_14
+        trigger = {
+			check_variable = {
+				which = stock_market_stockpile_growth_for_14
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_stockpile_growth_for_14
+        trigger = {
+			check_variable = {
+				which = stock_market_stockpile_growth_for_14
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_stockpile_growth_for_14
+    }
+}
+
+defined_text = {
+    name = GetColouredIncomeGrowthFor14
+	random = no
+    text = {
+        localisation_key = positive_income_growth_for_14
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_income_growth_for_14
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_income_growth_for_14
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_income_growth_for_14
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_income_growth_for_14
+    }
+}
+
+defined_text = {
+    name = GetColouredPriceGrowthFor14
+	random = no
+    text = {
+        localisation_key = positive_prices_growth_for_14
+        trigger = {
+			check_variable = {
+				which = stock_market_prices_growth_for_14
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_prices_growth_for_14
+        trigger = {
+			check_variable = {
+				which = stock_market_prices_growth_for_14
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_prices_growth_for_14
     }
 }
 
@@ -389,6 +2531,159 @@ defined_text = {
 }
 
 defined_text = {
+    name = GetConsumptionTaxFor15
+	random = no
+    text = {
+        localisation_key = stock_market_complete_ban
+        trigger = {
+            has_country_flag = taxes_4_for_15
+        }
+    }
+    text = {
+        localisation_key = stock_market_high_taxes
+        trigger = {
+            has_country_flag = taxes_3_for_15
+        }
+    }
+    text = {
+        localisation_key = stock_market_medium_taxes
+        trigger = {
+            has_country_flag = taxes_2_for_15
+        }
+    }
+    text = {
+        localisation_key = stock_market_low_taxes
+        trigger = {
+            has_country_flag = taxes_1_for_15
+        }
+    }
+    text = {
+        localisation_key = stock_market_no_taxes
+        trigger = {
+            has_country_flag = taxes_0_for_15
+        }
+    }
+}
+
+defined_text = {
+    name = GetCurrentBudgetFor15
+	random = no
+    text = {
+        localisation_key = stock_market_unlimited_budget
+        trigger = {
+            has_country_flag = unlimited_budget_for_15
+        }
+    }
+    text = {
+        localisation_key = stock_market_budget_for_15
+    }
+}
+
+defined_text = {
+    name = GetColouredDemandGrowthFor15
+	random = no
+    text = {
+        localisation_key = positive_demand_growth_for_15
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_demand_growth_for_15
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_demand_growth_for_15
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_demand_growth_for_15
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_demand_growth_for_15
+    }
+}
+
+defined_text = {
+    name = GetColouredStockpileGrowthFor15
+	random = no
+    text = {
+        localisation_key = positive_stockpile_growth_for_15
+        trigger = {
+			check_variable = {
+				which = stock_market_stockpile_growth_for_15
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_stockpile_growth_for_15
+        trigger = {
+			check_variable = {
+				which = stock_market_stockpile_growth_for_15
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_stockpile_growth_for_15
+    }
+}
+
+defined_text = {
+    name = GetColouredIncomeGrowthFor15
+	random = no
+    text = {
+        localisation_key = positive_income_growth_for_15
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_income_growth_for_15
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_income_growth_for_15
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_income_growth_for_15
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_income_growth_for_15
+    }
+}
+
+defined_text = {
+    name = GetColouredPriceGrowthFor15
+	random = no
+    text = {
+        localisation_key = positive_prices_growth_for_15
+        trigger = {
+			check_variable = {
+				which = stock_market_prices_growth_for_15
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_prices_growth_for_15
+        trigger = {
+			check_variable = {
+				which = stock_market_prices_growth_for_15
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_prices_growth_for_15
+    }
+}
+
+defined_text = {
     name = GetColouredSupplyGrowthFor16
 	random = no
     text = {
@@ -411,6 +2706,159 @@ defined_text = {
     }
     text = {
         localisation_key = negative_supply_growth_for_16
+    }
+}
+
+defined_text = {
+    name = GetConsumptionTaxFor16
+	random = no
+    text = {
+        localisation_key = stock_market_complete_ban
+        trigger = {
+            has_country_flag = taxes_4_for_16
+        }
+    }
+    text = {
+        localisation_key = stock_market_high_taxes
+        trigger = {
+            has_country_flag = taxes_3_for_16
+        }
+    }
+    text = {
+        localisation_key = stock_market_medium_taxes
+        trigger = {
+            has_country_flag = taxes_2_for_16
+        }
+    }
+    text = {
+        localisation_key = stock_market_low_taxes
+        trigger = {
+            has_country_flag = taxes_1_for_16
+        }
+    }
+    text = {
+        localisation_key = stock_market_no_taxes
+        trigger = {
+            has_country_flag = taxes_0_for_16
+        }
+    }
+}
+
+defined_text = {
+    name = GetCurrentBudgetFor16
+	random = no
+    text = {
+        localisation_key = stock_market_unlimited_budget
+        trigger = {
+            has_country_flag = unlimited_budget_for_16
+        }
+    }
+    text = {
+        localisation_key = stock_market_budget_for_16
+    }
+}
+
+defined_text = {
+    name = GetColouredDemandGrowthFor16
+	random = no
+    text = {
+        localisation_key = positive_demand_growth_for_16
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_demand_growth_for_16
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_demand_growth_for_16
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_demand_growth_for_16
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_demand_growth_for_16
+    }
+}
+
+defined_text = {
+    name = GetColouredStockpileGrowthFor16
+	random = no
+    text = {
+        localisation_key = positive_stockpile_growth_for_16
+        trigger = {
+			check_variable = {
+				which = stock_market_stockpile_growth_for_16
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_stockpile_growth_for_16
+        trigger = {
+			check_variable = {
+				which = stock_market_stockpile_growth_for_16
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_stockpile_growth_for_16
+    }
+}
+
+defined_text = {
+    name = GetColouredIncomeGrowthFor16
+	random = no
+    text = {
+        localisation_key = positive_income_growth_for_16
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_income_growth_for_16
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_income_growth_for_16
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_income_growth_for_16
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_income_growth_for_16
+    }
+}
+
+defined_text = {
+    name = GetColouredPriceGrowthFor16
+	random = no
+    text = {
+        localisation_key = positive_prices_growth_for_16
+        trigger = {
+			check_variable = {
+				which = stock_market_prices_growth_for_16
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_prices_growth_for_16
+        trigger = {
+			check_variable = {
+				which = stock_market_prices_growth_for_16
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_prices_growth_for_16
     }
 }
 
@@ -441,6 +2889,159 @@ defined_text = {
 }
 
 defined_text = {
+    name = GetConsumptionTaxFor17
+	random = no
+    text = {
+        localisation_key = stock_market_complete_ban
+        trigger = {
+            has_country_flag = taxes_4_for_17
+        }
+    }
+    text = {
+        localisation_key = stock_market_high_taxes
+        trigger = {
+            has_country_flag = taxes_3_for_17
+        }
+    }
+    text = {
+        localisation_key = stock_market_medium_taxes
+        trigger = {
+            has_country_flag = taxes_2_for_17
+        }
+    }
+    text = {
+        localisation_key = stock_market_low_taxes
+        trigger = {
+            has_country_flag = taxes_1_for_17
+        }
+    }
+    text = {
+        localisation_key = stock_market_no_taxes
+        trigger = {
+            has_country_flag = taxes_0_for_17
+        }
+    }
+}
+
+defined_text = {
+    name = GetCurrentBudgetFor17
+	random = no
+    text = {
+        localisation_key = stock_market_unlimited_budget
+        trigger = {
+            has_country_flag = unlimited_budget_for_17
+        }
+    }
+    text = {
+        localisation_key = stock_market_budget_for_17
+    }
+}
+
+defined_text = {
+    name = GetColouredDemandGrowthFor17
+	random = no
+    text = {
+        localisation_key = positive_demand_growth_for_17
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_demand_growth_for_17
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_demand_growth_for_17
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_demand_growth_for_17
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_demand_growth_for_17
+    }
+}
+
+defined_text = {
+    name = GetColouredStockpileGrowthFor17
+	random = no
+    text = {
+        localisation_key = positive_stockpile_growth_for_17
+        trigger = {
+			check_variable = {
+				which = stock_market_stockpile_growth_for_17
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_stockpile_growth_for_17
+        trigger = {
+			check_variable = {
+				which = stock_market_stockpile_growth_for_17
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_stockpile_growth_for_17
+    }
+}
+
+defined_text = {
+    name = GetColouredIncomeGrowthFor17
+	random = no
+    text = {
+        localisation_key = positive_income_growth_for_17
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_income_growth_for_17
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_income_growth_for_17
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_income_growth_for_17
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_income_growth_for_17
+    }
+}
+
+defined_text = {
+    name = GetColouredPriceGrowthFor17
+	random = no
+    text = {
+        localisation_key = positive_prices_growth_for_17
+        trigger = {
+			check_variable = {
+				which = stock_market_prices_growth_for_17
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_prices_growth_for_17
+        trigger = {
+			check_variable = {
+				which = stock_market_prices_growth_for_17
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_prices_growth_for_17
+    }
+}
+
+defined_text = {
     name = GetColouredSupplyGrowthFor18
 	random = no
     text = {
@@ -463,6 +3064,159 @@ defined_text = {
     }
     text = {
         localisation_key = negative_supply_growth_for_18
+    }
+}
+
+defined_text = {
+    name = GetConsumptionTaxFor18
+	random = no
+    text = {
+        localisation_key = stock_market_complete_ban
+        trigger = {
+            has_country_flag = taxes_4_for_18
+        }
+    }
+    text = {
+        localisation_key = stock_market_high_taxes
+        trigger = {
+            has_country_flag = taxes_3_for_18
+        }
+    }
+    text = {
+        localisation_key = stock_market_medium_taxes
+        trigger = {
+            has_country_flag = taxes_2_for_18
+        }
+    }
+    text = {
+        localisation_key = stock_market_low_taxes
+        trigger = {
+            has_country_flag = taxes_1_for_18
+        }
+    }
+    text = {
+        localisation_key = stock_market_no_taxes
+        trigger = {
+            has_country_flag = taxes_0_for_18
+        }
+    }
+}
+
+defined_text = {
+    name = GetCurrentBudgetFor18
+	random = no
+    text = {
+        localisation_key = stock_market_unlimited_budget
+        trigger = {
+            has_country_flag = unlimited_budget_for_18
+        }
+    }
+    text = {
+        localisation_key = stock_market_budget_for_18
+    }
+}
+
+defined_text = {
+    name = GetColouredDemandGrowthFor18
+	random = no
+    text = {
+        localisation_key = positive_demand_growth_for_18
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_demand_growth_for_18
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_demand_growth_for_18
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_demand_growth_for_18
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_demand_growth_for_18
+    }
+}
+
+defined_text = {
+    name = GetColouredStockpileGrowthFor18
+	random = no
+    text = {
+        localisation_key = positive_stockpile_growth_for_18
+        trigger = {
+			check_variable = {
+				which = stock_market_stockpile_growth_for_18
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_stockpile_growth_for_18
+        trigger = {
+			check_variable = {
+				which = stock_market_stockpile_growth_for_18
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_stockpile_growth_for_18
+    }
+}
+
+defined_text = {
+    name = GetColouredIncomeGrowthFor18
+	random = no
+    text = {
+        localisation_key = positive_income_growth_for_18
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_income_growth_for_18
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_income_growth_for_18
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_income_growth_for_18
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_income_growth_for_18
+    }
+}
+
+defined_text = {
+    name = GetColouredPriceGrowthFor18
+	random = no
+    text = {
+        localisation_key = positive_prices_growth_for_18
+        trigger = {
+			check_variable = {
+				which = stock_market_prices_growth_for_18
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_prices_growth_for_18
+        trigger = {
+			check_variable = {
+				which = stock_market_prices_growth_for_18
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_prices_growth_for_18
     }
 }
 
@@ -493,6 +3247,159 @@ defined_text = {
 }
 
 defined_text = {
+    name = GetConsumptionTaxFor19
+	random = no
+    text = {
+        localisation_key = stock_market_complete_ban
+        trigger = {
+            has_country_flag = taxes_4_for_19
+        }
+    }
+    text = {
+        localisation_key = stock_market_high_taxes
+        trigger = {
+            has_country_flag = taxes_3_for_19
+        }
+    }
+    text = {
+        localisation_key = stock_market_medium_taxes
+        trigger = {
+            has_country_flag = taxes_2_for_19
+        }
+    }
+    text = {
+        localisation_key = stock_market_low_taxes
+        trigger = {
+            has_country_flag = taxes_1_for_19
+        }
+    }
+    text = {
+        localisation_key = stock_market_no_taxes
+        trigger = {
+            has_country_flag = taxes_0_for_19
+        }
+    }
+}
+
+defined_text = {
+    name = GetCurrentBudgetFor19
+	random = no
+    text = {
+        localisation_key = stock_market_unlimited_budget
+        trigger = {
+            has_country_flag = unlimited_budget_for_19
+        }
+    }
+    text = {
+        localisation_key = stock_market_budget_for_19
+    }
+}
+
+defined_text = {
+    name = GetColouredDemandGrowthFor19
+	random = no
+    text = {
+        localisation_key = positive_demand_growth_for_19
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_demand_growth_for_19
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_demand_growth_for_19
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_demand_growth_for_19
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_demand_growth_for_19
+    }
+}
+
+defined_text = {
+    name = GetColouredStockpileGrowthFor19
+	random = no
+    text = {
+        localisation_key = positive_stockpile_growth_for_19
+        trigger = {
+			check_variable = {
+				which = stock_market_stockpile_growth_for_19
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_stockpile_growth_for_19
+        trigger = {
+			check_variable = {
+				which = stock_market_stockpile_growth_for_19
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_stockpile_growth_for_19
+    }
+}
+
+defined_text = {
+    name = GetColouredIncomeGrowthFor19
+	random = no
+    text = {
+        localisation_key = positive_income_growth_for_19
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_income_growth_for_19
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_income_growth_for_19
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_income_growth_for_19
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_income_growth_for_19
+    }
+}
+
+defined_text = {
+    name = GetColouredPriceGrowthFor19
+	random = no
+    text = {
+        localisation_key = positive_prices_growth_for_19
+        trigger = {
+			check_variable = {
+				which = stock_market_prices_growth_for_19
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_prices_growth_for_19
+        trigger = {
+			check_variable = {
+				which = stock_market_prices_growth_for_19
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_prices_growth_for_19
+    }
+}
+
+defined_text = {
     name = GetColouredSupplyGrowthFor20
 	random = no
     text = {
@@ -515,6 +3422,159 @@ defined_text = {
     }
     text = {
         localisation_key = negative_supply_growth_for_20
+    }
+}
+
+defined_text = {
+    name = GetConsumptionTaxFor20
+	random = no
+    text = {
+        localisation_key = stock_market_complete_ban
+        trigger = {
+            has_country_flag = taxes_4_for_20
+        }
+    }
+    text = {
+        localisation_key = stock_market_high_taxes
+        trigger = {
+            has_country_flag = taxes_3_for_20
+        }
+    }
+    text = {
+        localisation_key = stock_market_medium_taxes
+        trigger = {
+            has_country_flag = taxes_2_for_20
+        }
+    }
+    text = {
+        localisation_key = stock_market_low_taxes
+        trigger = {
+            has_country_flag = taxes_1_for_20
+        }
+    }
+    text = {
+        localisation_key = stock_market_no_taxes
+        trigger = {
+            has_country_flag = taxes_0_for_20
+        }
+    }
+}
+
+defined_text = {
+    name = GetCurrentBudgetFor20
+	random = no
+    text = {
+        localisation_key = stock_market_unlimited_budget
+        trigger = {
+            has_country_flag = unlimited_budget_for_20
+        }
+    }
+    text = {
+        localisation_key = stock_market_budget_for_20
+    }
+}
+
+defined_text = {
+    name = GetColouredDemandGrowthFor20
+	random = no
+    text = {
+        localisation_key = positive_demand_growth_for_20
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_demand_growth_for_20
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_demand_growth_for_20
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_demand_growth_for_20
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_demand_growth_for_20
+    }
+}
+
+defined_text = {
+    name = GetColouredStockpileGrowthFor20
+	random = no
+    text = {
+        localisation_key = positive_stockpile_growth_for_20
+        trigger = {
+			check_variable = {
+				which = stock_market_stockpile_growth_for_20
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_stockpile_growth_for_20
+        trigger = {
+			check_variable = {
+				which = stock_market_stockpile_growth_for_20
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_stockpile_growth_for_20
+    }
+}
+
+defined_text = {
+    name = GetColouredIncomeGrowthFor20
+	random = no
+    text = {
+        localisation_key = positive_income_growth_for_20
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_income_growth_for_20
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_income_growth_for_20
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_income_growth_for_20
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_income_growth_for_20
+    }
+}
+
+defined_text = {
+    name = GetColouredPriceGrowthFor20
+	random = no
+    text = {
+        localisation_key = positive_prices_growth_for_20
+        trigger = {
+			check_variable = {
+				which = stock_market_prices_growth_for_20
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_prices_growth_for_20
+        trigger = {
+			check_variable = {
+				which = stock_market_prices_growth_for_20
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_prices_growth_for_20
     }
 }
 
@@ -545,6 +3605,159 @@ defined_text = {
 }
 
 defined_text = {
+    name = GetConsumptionTaxFor21
+	random = no
+    text = {
+        localisation_key = stock_market_complete_ban
+        trigger = {
+            has_country_flag = taxes_4_for_21
+        }
+    }
+    text = {
+        localisation_key = stock_market_high_taxes
+        trigger = {
+            has_country_flag = taxes_3_for_21
+        }
+    }
+    text = {
+        localisation_key = stock_market_medium_taxes
+        trigger = {
+            has_country_flag = taxes_2_for_21
+        }
+    }
+    text = {
+        localisation_key = stock_market_low_taxes
+        trigger = {
+            has_country_flag = taxes_1_for_21
+        }
+    }
+    text = {
+        localisation_key = stock_market_no_taxes
+        trigger = {
+            has_country_flag = taxes_0_for_21
+        }
+    }
+}
+
+defined_text = {
+    name = GetCurrentBudgetFor21
+	random = no
+    text = {
+        localisation_key = stock_market_unlimited_budget
+        trigger = {
+            has_country_flag = unlimited_budget_for_21
+        }
+    }
+    text = {
+        localisation_key = stock_market_budget_for_21
+    }
+}
+
+defined_text = {
+    name = GetColouredDemandGrowthFor21
+	random = no
+    text = {
+        localisation_key = positive_demand_growth_for_21
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_demand_growth_for_21
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_demand_growth_for_21
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_demand_growth_for_21
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_demand_growth_for_21
+    }
+}
+
+defined_text = {
+    name = GetColouredStockpileGrowthFor21
+	random = no
+    text = {
+        localisation_key = positive_stockpile_growth_for_21
+        trigger = {
+			check_variable = {
+				which = stock_market_stockpile_growth_for_21
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_stockpile_growth_for_21
+        trigger = {
+			check_variable = {
+				which = stock_market_stockpile_growth_for_21
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_stockpile_growth_for_21
+    }
+}
+
+defined_text = {
+    name = GetColouredIncomeGrowthFor21
+	random = no
+    text = {
+        localisation_key = positive_income_growth_for_21
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_income_growth_for_21
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_income_growth_for_21
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_income_growth_for_21
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_income_growth_for_21
+    }
+}
+
+defined_text = {
+    name = GetColouredPriceGrowthFor21
+	random = no
+    text = {
+        localisation_key = positive_prices_growth_for_21
+        trigger = {
+			check_variable = {
+				which = stock_market_prices_growth_for_21
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_prices_growth_for_21
+        trigger = {
+			check_variable = {
+				which = stock_market_prices_growth_for_21
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_prices_growth_for_21
+    }
+}
+
+defined_text = {
     name = GetColouredSupplyGrowthFor22
 	random = no
     text = {
@@ -567,6 +3780,159 @@ defined_text = {
     }
     text = {
         localisation_key = negative_supply_growth_for_22
+    }
+}
+
+defined_text = {
+    name = GetConsumptionTaxFor22
+	random = no
+    text = {
+        localisation_key = stock_market_complete_ban
+        trigger = {
+            has_country_flag = taxes_4_for_22
+        }
+    }
+    text = {
+        localisation_key = stock_market_high_taxes
+        trigger = {
+            has_country_flag = taxes_3_for_22
+        }
+    }
+    text = {
+        localisation_key = stock_market_medium_taxes
+        trigger = {
+            has_country_flag = taxes_2_for_22
+        }
+    }
+    text = {
+        localisation_key = stock_market_low_taxes
+        trigger = {
+            has_country_flag = taxes_1_for_22
+        }
+    }
+    text = {
+        localisation_key = stock_market_no_taxes
+        trigger = {
+            has_country_flag = taxes_0_for_22
+        }
+    }
+}
+
+defined_text = {
+    name = GetCurrentBudgetFor22
+	random = no
+    text = {
+        localisation_key = stock_market_unlimited_budget
+        trigger = {
+            has_country_flag = unlimited_budget_for_22
+        }
+    }
+    text = {
+        localisation_key = stock_market_budget_for_22
+    }
+}
+
+defined_text = {
+    name = GetColouredDemandGrowthFor22
+	random = no
+    text = {
+        localisation_key = positive_demand_growth_for_22
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_demand_growth_for_22
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_demand_growth_for_22
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_demand_growth_for_22
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_demand_growth_for_22
+    }
+}
+
+defined_text = {
+    name = GetColouredStockpileGrowthFor22
+	random = no
+    text = {
+        localisation_key = positive_stockpile_growth_for_22
+        trigger = {
+			check_variable = {
+				which = stock_market_stockpile_growth_for_22
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_stockpile_growth_for_22
+        trigger = {
+			check_variable = {
+				which = stock_market_stockpile_growth_for_22
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_stockpile_growth_for_22
+    }
+}
+
+defined_text = {
+    name = GetColouredIncomeGrowthFor22
+	random = no
+    text = {
+        localisation_key = positive_income_growth_for_22
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_income_growth_for_22
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_income_growth_for_22
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_income_growth_for_22
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_income_growth_for_22
+    }
+}
+
+defined_text = {
+    name = GetColouredPriceGrowthFor22
+	random = no
+    text = {
+        localisation_key = positive_prices_growth_for_22
+        trigger = {
+			check_variable = {
+				which = stock_market_prices_growth_for_22
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_prices_growth_for_22
+        trigger = {
+			check_variable = {
+				which = stock_market_prices_growth_for_22
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_prices_growth_for_22
     }
 }
 
@@ -597,6 +3963,159 @@ defined_text = {
 }
 
 defined_text = {
+    name = GetConsumptionTaxFor23
+	random = no
+    text = {
+        localisation_key = stock_market_complete_ban
+        trigger = {
+            has_country_flag = taxes_4_for_23
+        }
+    }
+    text = {
+        localisation_key = stock_market_high_taxes
+        trigger = {
+            has_country_flag = taxes_3_for_23
+        }
+    }
+    text = {
+        localisation_key = stock_market_medium_taxes
+        trigger = {
+            has_country_flag = taxes_2_for_23
+        }
+    }
+    text = {
+        localisation_key = stock_market_low_taxes
+        trigger = {
+            has_country_flag = taxes_1_for_23
+        }
+    }
+    text = {
+        localisation_key = stock_market_no_taxes
+        trigger = {
+            has_country_flag = taxes_0_for_23
+        }
+    }
+}
+
+defined_text = {
+    name = GetCurrentBudgetFor23
+	random = no
+    text = {
+        localisation_key = stock_market_unlimited_budget
+        trigger = {
+            has_country_flag = unlimited_budget_for_23
+        }
+    }
+    text = {
+        localisation_key = stock_market_budget_for_23
+    }
+}
+
+defined_text = {
+    name = GetColouredDemandGrowthFor23
+	random = no
+    text = {
+        localisation_key = positive_demand_growth_for_23
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_demand_growth_for_23
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_demand_growth_for_23
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_demand_growth_for_23
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_demand_growth_for_23
+    }
+}
+
+defined_text = {
+    name = GetColouredStockpileGrowthFor23
+	random = no
+    text = {
+        localisation_key = positive_stockpile_growth_for_23
+        trigger = {
+			check_variable = {
+				which = stock_market_stockpile_growth_for_23
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_stockpile_growth_for_23
+        trigger = {
+			check_variable = {
+				which = stock_market_stockpile_growth_for_23
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_stockpile_growth_for_23
+    }
+}
+
+defined_text = {
+    name = GetColouredIncomeGrowthFor23
+	random = no
+    text = {
+        localisation_key = positive_income_growth_for_23
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_income_growth_for_23
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_income_growth_for_23
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_income_growth_for_23
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_income_growth_for_23
+    }
+}
+
+defined_text = {
+    name = GetColouredPriceGrowthFor23
+	random = no
+    text = {
+        localisation_key = positive_prices_growth_for_23
+        trigger = {
+			check_variable = {
+				which = stock_market_prices_growth_for_23
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_prices_growth_for_23
+        trigger = {
+			check_variable = {
+				which = stock_market_prices_growth_for_23
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_prices_growth_for_23
+    }
+}
+
+defined_text = {
     name = GetColouredSupplyGrowthFor24
 	random = no
     text = {
@@ -619,6 +4138,159 @@ defined_text = {
     }
     text = {
         localisation_key = negative_supply_growth_for_24
+    }
+}
+
+defined_text = {
+    name = GetConsumptionTaxFor24
+	random = no
+    text = {
+        localisation_key = stock_market_complete_ban
+        trigger = {
+            has_country_flag = taxes_4_for_24
+        }
+    }
+    text = {
+        localisation_key = stock_market_high_taxes
+        trigger = {
+            has_country_flag = taxes_3_for_24
+        }
+    }
+    text = {
+        localisation_key = stock_market_medium_taxes
+        trigger = {
+            has_country_flag = taxes_2_for_24
+        }
+    }
+    text = {
+        localisation_key = stock_market_low_taxes
+        trigger = {
+            has_country_flag = taxes_1_for_24
+        }
+    }
+    text = {
+        localisation_key = stock_market_no_taxes
+        trigger = {
+            has_country_flag = taxes_0_for_24
+        }
+    }
+}
+
+defined_text = {
+    name = GetCurrentBudgetFor24
+	random = no
+    text = {
+        localisation_key = stock_market_unlimited_budget
+        trigger = {
+            has_country_flag = unlimited_budget_for_24
+        }
+    }
+    text = {
+        localisation_key = stock_market_budget_for_24
+    }
+}
+
+defined_text = {
+    name = GetColouredDemandGrowthFor24
+	random = no
+    text = {
+        localisation_key = positive_demand_growth_for_24
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_demand_growth_for_24
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_demand_growth_for_24
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_demand_growth_for_24
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_demand_growth_for_24
+    }
+}
+
+defined_text = {
+    name = GetColouredStockpileGrowthFor24
+	random = no
+    text = {
+        localisation_key = positive_stockpile_growth_for_24
+        trigger = {
+			check_variable = {
+				which = stock_market_stockpile_growth_for_24
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_stockpile_growth_for_24
+        trigger = {
+			check_variable = {
+				which = stock_market_stockpile_growth_for_24
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_stockpile_growth_for_24
+    }
+}
+
+defined_text = {
+    name = GetColouredIncomeGrowthFor24
+	random = no
+    text = {
+        localisation_key = positive_income_growth_for_24
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_income_growth_for_24
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_income_growth_for_24
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_income_growth_for_24
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_income_growth_for_24
+    }
+}
+
+defined_text = {
+    name = GetColouredPriceGrowthFor24
+	random = no
+    text = {
+        localisation_key = positive_prices_growth_for_24
+        trigger = {
+			check_variable = {
+				which = stock_market_prices_growth_for_24
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_prices_growth_for_24
+        trigger = {
+			check_variable = {
+				which = stock_market_prices_growth_for_24
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_prices_growth_for_24
     }
 }
 
@@ -649,6 +4321,159 @@ defined_text = {
 }
 
 defined_text = {
+    name = GetConsumptionTaxFor25
+	random = no
+    text = {
+        localisation_key = stock_market_complete_ban
+        trigger = {
+            has_country_flag = taxes_4_for_25
+        }
+    }
+    text = {
+        localisation_key = stock_market_high_taxes
+        trigger = {
+            has_country_flag = taxes_3_for_25
+        }
+    }
+    text = {
+        localisation_key = stock_market_medium_taxes
+        trigger = {
+            has_country_flag = taxes_2_for_25
+        }
+    }
+    text = {
+        localisation_key = stock_market_low_taxes
+        trigger = {
+            has_country_flag = taxes_1_for_25
+        }
+    }
+    text = {
+        localisation_key = stock_market_no_taxes
+        trigger = {
+            has_country_flag = taxes_0_for_25
+        }
+    }
+}
+
+defined_text = {
+    name = GetCurrentBudgetFor25
+	random = no
+    text = {
+        localisation_key = stock_market_unlimited_budget
+        trigger = {
+            has_country_flag = unlimited_budget_for_25
+        }
+    }
+    text = {
+        localisation_key = stock_market_budget_for_25
+    }
+}
+
+defined_text = {
+    name = GetColouredDemandGrowthFor25
+	random = no
+    text = {
+        localisation_key = positive_demand_growth_for_25
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_demand_growth_for_25
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_demand_growth_for_25
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_demand_growth_for_25
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_demand_growth_for_25
+    }
+}
+
+defined_text = {
+    name = GetColouredStockpileGrowthFor25
+	random = no
+    text = {
+        localisation_key = positive_stockpile_growth_for_25
+        trigger = {
+			check_variable = {
+				which = stock_market_stockpile_growth_for_25
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_stockpile_growth_for_25
+        trigger = {
+			check_variable = {
+				which = stock_market_stockpile_growth_for_25
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_stockpile_growth_for_25
+    }
+}
+
+defined_text = {
+    name = GetColouredIncomeGrowthFor25
+	random = no
+    text = {
+        localisation_key = positive_income_growth_for_25
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_income_growth_for_25
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_income_growth_for_25
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_income_growth_for_25
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_income_growth_for_25
+    }
+}
+
+defined_text = {
+    name = GetColouredPriceGrowthFor25
+	random = no
+    text = {
+        localisation_key = positive_prices_growth_for_25
+        trigger = {
+			check_variable = {
+				which = stock_market_prices_growth_for_25
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_prices_growth_for_25
+        trigger = {
+			check_variable = {
+				which = stock_market_prices_growth_for_25
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_prices_growth_for_25
+    }
+}
+
+defined_text = {
     name = GetColouredSupplyGrowthFor26
 	random = no
     text = {
@@ -671,6 +4496,159 @@ defined_text = {
     }
     text = {
         localisation_key = negative_supply_growth_for_26
+    }
+}
+
+defined_text = {
+    name = GetConsumptionTaxFor26
+	random = no
+    text = {
+        localisation_key = stock_market_complete_ban
+        trigger = {
+            has_country_flag = taxes_4_for_26
+        }
+    }
+    text = {
+        localisation_key = stock_market_high_taxes
+        trigger = {
+            has_country_flag = taxes_3_for_26
+        }
+    }
+    text = {
+        localisation_key = stock_market_medium_taxes
+        trigger = {
+            has_country_flag = taxes_2_for_26
+        }
+    }
+    text = {
+        localisation_key = stock_market_low_taxes
+        trigger = {
+            has_country_flag = taxes_1_for_26
+        }
+    }
+    text = {
+        localisation_key = stock_market_no_taxes
+        trigger = {
+            has_country_flag = taxes_0_for_26
+        }
+    }
+}
+
+defined_text = {
+    name = GetCurrentBudgetFor26
+	random = no
+    text = {
+        localisation_key = stock_market_unlimited_budget
+        trigger = {
+            has_country_flag = unlimited_budget_for_26
+        }
+    }
+    text = {
+        localisation_key = stock_market_budget_for_26
+    }
+}
+
+defined_text = {
+    name = GetColouredDemandGrowthFor26
+	random = no
+    text = {
+        localisation_key = positive_demand_growth_for_26
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_demand_growth_for_26
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_demand_growth_for_26
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_demand_growth_for_26
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_demand_growth_for_26
+    }
+}
+
+defined_text = {
+    name = GetColouredStockpileGrowthFor26
+	random = no
+    text = {
+        localisation_key = positive_stockpile_growth_for_26
+        trigger = {
+			check_variable = {
+				which = stock_market_stockpile_growth_for_26
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_stockpile_growth_for_26
+        trigger = {
+			check_variable = {
+				which = stock_market_stockpile_growth_for_26
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_stockpile_growth_for_26
+    }
+}
+
+defined_text = {
+    name = GetColouredIncomeGrowthFor26
+	random = no
+    text = {
+        localisation_key = positive_income_growth_for_26
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_income_growth_for_26
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_income_growth_for_26
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_income_growth_for_26
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_income_growth_for_26
+    }
+}
+
+defined_text = {
+    name = GetColouredPriceGrowthFor26
+	random = no
+    text = {
+        localisation_key = positive_prices_growth_for_26
+        trigger = {
+			check_variable = {
+				which = stock_market_prices_growth_for_26
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_prices_growth_for_26
+        trigger = {
+			check_variable = {
+				which = stock_market_prices_growth_for_26
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_prices_growth_for_26
     }
 }
 
@@ -701,6 +4679,159 @@ defined_text = {
 }
 
 defined_text = {
+    name = GetConsumptionTaxFor27
+	random = no
+    text = {
+        localisation_key = stock_market_complete_ban
+        trigger = {
+            has_country_flag = taxes_4_for_27
+        }
+    }
+    text = {
+        localisation_key = stock_market_high_taxes
+        trigger = {
+            has_country_flag = taxes_3_for_27
+        }
+    }
+    text = {
+        localisation_key = stock_market_medium_taxes
+        trigger = {
+            has_country_flag = taxes_2_for_27
+        }
+    }
+    text = {
+        localisation_key = stock_market_low_taxes
+        trigger = {
+            has_country_flag = taxes_1_for_27
+        }
+    }
+    text = {
+        localisation_key = stock_market_no_taxes
+        trigger = {
+            has_country_flag = taxes_0_for_27
+        }
+    }
+}
+
+defined_text = {
+    name = GetCurrentBudgetFor27
+	random = no
+    text = {
+        localisation_key = stock_market_unlimited_budget
+        trigger = {
+            has_country_flag = unlimited_budget_for_27
+        }
+    }
+    text = {
+        localisation_key = stock_market_budget_for_27
+    }
+}
+
+defined_text = {
+    name = GetColouredDemandGrowthFor27
+	random = no
+    text = {
+        localisation_key = positive_demand_growth_for_27
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_demand_growth_for_27
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_demand_growth_for_27
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_demand_growth_for_27
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_demand_growth_for_27
+    }
+}
+
+defined_text = {
+    name = GetColouredStockpileGrowthFor27
+	random = no
+    text = {
+        localisation_key = positive_stockpile_growth_for_27
+        trigger = {
+			check_variable = {
+				which = stock_market_stockpile_growth_for_27
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_stockpile_growth_for_27
+        trigger = {
+			check_variable = {
+				which = stock_market_stockpile_growth_for_27
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_stockpile_growth_for_27
+    }
+}
+
+defined_text = {
+    name = GetColouredIncomeGrowthFor27
+	random = no
+    text = {
+        localisation_key = positive_income_growth_for_27
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_income_growth_for_27
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_income_growth_for_27
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_income_growth_for_27
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_income_growth_for_27
+    }
+}
+
+defined_text = {
+    name = GetColouredPriceGrowthFor27
+	random = no
+    text = {
+        localisation_key = positive_prices_growth_for_27
+        trigger = {
+			check_variable = {
+				which = stock_market_prices_growth_for_27
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_prices_growth_for_27
+        trigger = {
+			check_variable = {
+				which = stock_market_prices_growth_for_27
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_prices_growth_for_27
+    }
+}
+
+defined_text = {
     name = GetColouredSupplyGrowthFor28
 	random = no
     text = {
@@ -723,6 +4854,159 @@ defined_text = {
     }
     text = {
         localisation_key = negative_supply_growth_for_28
+    }
+}
+
+defined_text = {
+    name = GetConsumptionTaxFor28
+	random = no
+    text = {
+        localisation_key = stock_market_complete_ban
+        trigger = {
+            has_country_flag = taxes_4_for_28
+        }
+    }
+    text = {
+        localisation_key = stock_market_high_taxes
+        trigger = {
+            has_country_flag = taxes_3_for_28
+        }
+    }
+    text = {
+        localisation_key = stock_market_medium_taxes
+        trigger = {
+            has_country_flag = taxes_2_for_28
+        }
+    }
+    text = {
+        localisation_key = stock_market_low_taxes
+        trigger = {
+            has_country_flag = taxes_1_for_28
+        }
+    }
+    text = {
+        localisation_key = stock_market_no_taxes
+        trigger = {
+            has_country_flag = taxes_0_for_28
+        }
+    }
+}
+
+defined_text = {
+    name = GetCurrentBudgetFor28
+	random = no
+    text = {
+        localisation_key = stock_market_unlimited_budget
+        trigger = {
+            has_country_flag = unlimited_budget_for_28
+        }
+    }
+    text = {
+        localisation_key = stock_market_budget_for_28
+    }
+}
+
+defined_text = {
+    name = GetColouredDemandGrowthFor28
+	random = no
+    text = {
+        localisation_key = positive_demand_growth_for_28
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_demand_growth_for_28
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_demand_growth_for_28
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_demand_growth_for_28
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_demand_growth_for_28
+    }
+}
+
+defined_text = {
+    name = GetColouredStockpileGrowthFor28
+	random = no
+    text = {
+        localisation_key = positive_stockpile_growth_for_28
+        trigger = {
+			check_variable = {
+				which = stock_market_stockpile_growth_for_28
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_stockpile_growth_for_28
+        trigger = {
+			check_variable = {
+				which = stock_market_stockpile_growth_for_28
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_stockpile_growth_for_28
+    }
+}
+
+defined_text = {
+    name = GetColouredIncomeGrowthFor28
+	random = no
+    text = {
+        localisation_key = positive_income_growth_for_28
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_income_growth_for_28
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_income_growth_for_28
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_income_growth_for_28
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_income_growth_for_28
+    }
+}
+
+defined_text = {
+    name = GetColouredPriceGrowthFor28
+	random = no
+    text = {
+        localisation_key = positive_prices_growth_for_28
+        trigger = {
+			check_variable = {
+				which = stock_market_prices_growth_for_28
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_prices_growth_for_28
+        trigger = {
+			check_variable = {
+				which = stock_market_prices_growth_for_28
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_prices_growth_for_28
     }
 }
 
@@ -753,6 +5037,159 @@ defined_text = {
 }
 
 defined_text = {
+    name = GetConsumptionTaxFor29
+	random = no
+    text = {
+        localisation_key = stock_market_complete_ban
+        trigger = {
+            has_country_flag = taxes_4_for_29
+        }
+    }
+    text = {
+        localisation_key = stock_market_high_taxes
+        trigger = {
+            has_country_flag = taxes_3_for_29
+        }
+    }
+    text = {
+        localisation_key = stock_market_medium_taxes
+        trigger = {
+            has_country_flag = taxes_2_for_29
+        }
+    }
+    text = {
+        localisation_key = stock_market_low_taxes
+        trigger = {
+            has_country_flag = taxes_1_for_29
+        }
+    }
+    text = {
+        localisation_key = stock_market_no_taxes
+        trigger = {
+            has_country_flag = taxes_0_for_29
+        }
+    }
+}
+
+defined_text = {
+    name = GetCurrentBudgetFor29
+	random = no
+    text = {
+        localisation_key = stock_market_unlimited_budget
+        trigger = {
+            has_country_flag = unlimited_budget_for_29
+        }
+    }
+    text = {
+        localisation_key = stock_market_budget_for_29
+    }
+}
+
+defined_text = {
+    name = GetColouredDemandGrowthFor29
+	random = no
+    text = {
+        localisation_key = positive_demand_growth_for_29
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_demand_growth_for_29
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_demand_growth_for_29
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_demand_growth_for_29
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_demand_growth_for_29
+    }
+}
+
+defined_text = {
+    name = GetColouredStockpileGrowthFor29
+	random = no
+    text = {
+        localisation_key = positive_stockpile_growth_for_29
+        trigger = {
+			check_variable = {
+				which = stock_market_stockpile_growth_for_29
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_stockpile_growth_for_29
+        trigger = {
+			check_variable = {
+				which = stock_market_stockpile_growth_for_29
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_stockpile_growth_for_29
+    }
+}
+
+defined_text = {
+    name = GetColouredIncomeGrowthFor29
+	random = no
+    text = {
+        localisation_key = positive_income_growth_for_29
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_income_growth_for_29
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_income_growth_for_29
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_income_growth_for_29
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_income_growth_for_29
+    }
+}
+
+defined_text = {
+    name = GetColouredPriceGrowthFor29
+	random = no
+    text = {
+        localisation_key = positive_prices_growth_for_29
+        trigger = {
+			check_variable = {
+				which = stock_market_prices_growth_for_29
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_prices_growth_for_29
+        trigger = {
+			check_variable = {
+				which = stock_market_prices_growth_for_29
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_prices_growth_for_29
+    }
+}
+
+defined_text = {
     name = GetColouredSupplyGrowthFor30
 	random = no
     text = {
@@ -777,3 +5214,157 @@ defined_text = {
         localisation_key = negative_supply_growth_for_30
     }
 }
+
+defined_text = {
+    name = GetConsumptionTaxFor30
+	random = no
+    text = {
+        localisation_key = stock_market_complete_ban
+        trigger = {
+            has_country_flag = taxes_4_for_30
+        }
+    }
+    text = {
+        localisation_key = stock_market_high_taxes
+        trigger = {
+            has_country_flag = taxes_3_for_30
+        }
+    }
+    text = {
+        localisation_key = stock_market_medium_taxes
+        trigger = {
+            has_country_flag = taxes_2_for_30
+        }
+    }
+    text = {
+        localisation_key = stock_market_low_taxes
+        trigger = {
+            has_country_flag = taxes_1_for_30
+        }
+    }
+    text = {
+        localisation_key = stock_market_no_taxes
+        trigger = {
+            has_country_flag = taxes_0_for_30
+        }
+    }
+}
+
+defined_text = {
+    name = GetCurrentBudgetFor30
+	random = no
+    text = {
+        localisation_key = stock_market_unlimited_budget
+        trigger = {
+            has_country_flag = unlimited_budget_for_30
+        }
+    }
+    text = {
+        localisation_key = stock_market_budget_for_30
+    }
+}
+
+defined_text = {
+    name = GetColouredDemandGrowthFor30
+	random = no
+    text = {
+        localisation_key = positive_demand_growth_for_30
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_demand_growth_for_30
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_demand_growth_for_30
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_demand_growth_for_30
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_demand_growth_for_30
+    }
+}
+
+defined_text = {
+    name = GetColouredStockpileGrowthFor30
+	random = no
+    text = {
+        localisation_key = positive_stockpile_growth_for_30
+        trigger = {
+			check_variable = {
+				which = stock_market_stockpile_growth_for_30
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_stockpile_growth_for_30
+        trigger = {
+			check_variable = {
+				which = stock_market_stockpile_growth_for_30
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_stockpile_growth_for_30
+    }
+}
+
+defined_text = {
+    name = GetColouredIncomeGrowthFor30
+	random = no
+    text = {
+        localisation_key = positive_income_growth_for_30
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_income_growth_for_30
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_income_growth_for_30
+        trigger = {
+			check_variable = {
+				which = country_total_stock_market_income_growth_for_30
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_income_growth_for_30
+    }
+}
+
+defined_text = {
+    name = GetColouredPriceGrowthFor30
+	random = no
+    text = {
+        localisation_key = positive_prices_growth_for_30
+        trigger = {
+			check_variable = {
+				which = stock_market_prices_growth_for_30
+				value = 0.001
+			}
+        }
+    }
+    text = {
+        localisation_key = neutral_prices_growth_for_30
+        trigger = {
+			check_variable = {
+				which = stock_market_prices_growth_for_30
+				value = 0.000
+			}
+        }
+    }
+    text = {
+        localisation_key = negative_prices_growth_for_30
+    }
+}
+
