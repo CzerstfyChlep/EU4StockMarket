@@ -310,6 +310,31 @@ stock_market_change_price = {
 
 save_old_prices = {
 	set_variable = {
+		which = country_total_stock_market_supply_growth_for_$trade_good_id$
+		which = stock_market_old_supply_for_$trade_good_id$
+	}
+	subtract_variable = {
+		which = country_total_stock_market_supply_growth_for_$trade_good_id$
+		which = stock_market_supply_for_$trade_good_id$
+	}
+	set_variable = {
+		which = stock_market_old_supply_for_$trade_good_id$
+		which = stock_market_supply_for_$trade_good_id$
+	}
+	set_variable = {
+		which = country_total_stock_market_demand_growth_for_$trade_good_id$
+		which = stock_market_old_demand_for_$trade_good_id$
+	}
+	subtract_variable = {
+		which = country_total_stock_market_demand_growth_for_$trade_good_id$
+		which = stock_market_demand_for_$trade_good_id$
+	}
+	set_variable = {
+		which = stock_market_old_demand_for_$trade_good_id$
+		which = stock_market_demand_for_$trade_good_id$
+	}
+	
+	set_variable = {
 		which = history_stock_market_price_for_$trade_good_id$
 		which = stock_market_price_value_$trade_good_id$
 	}
