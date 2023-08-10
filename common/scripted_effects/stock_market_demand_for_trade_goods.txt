@@ -342,7 +342,7 @@ update_demand_based_on_craze_individual = {
 	}
 	else_if ={
 		limit = {
-			has_province_modifier = stock_market_$trade_good_id$_consumption_province
+			has_province_flag = stock_market_$trade_good_id$_consumption_province
 		}
 		owner = {
 			set_variable = {
