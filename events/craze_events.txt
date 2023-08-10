@@ -15,7 +15,7 @@ country_event = {
 			all_owned_province = {
 				OR = {
 					has_province_modifier = stock_market_12_craze_province
-					has_province_modifier = stock_market_12_consumption_province
+					has_province_flag = stock_market_12_consumption_province
 				}
 			}
 		}
@@ -25,7 +25,7 @@ country_event = {
 		any_owned_province = {
 			OR = {
 				has_province_modifier = stock_market_12_craze_province
-				has_province_modifier = stock_market_12_consumption_province
+				has_province_flag = stock_market_12_consumption_province
 			}
 		}
 		NOT = {
@@ -73,7 +73,7 @@ country_event = {
 	trigger = {
 		all_owned_province = {
 			OR = {
-				has_province_modifier = stock_market_12_consumption_province
+				has_province_flag = stock_market_12_consumption_province
 			}
 		}
 		has_country_flag = has_12_craze
@@ -140,13 +140,13 @@ province_event = {
 	trigger = {
 		NOT = {
 			has_province_modifier = stock_market_12_craze_province
-			has_province_modifier = stock_market_12_consumption_province
+			has_province_flag = stock_market_12_consumption_province
 		}
 		OR = {
 			any_neighbor_province = {
 				OR = {
 					has_province_modifier = stock_market_12_craze_province
-					has_province_modifier = stock_market_12_consumption_province
+					has_province_flag = stock_market_12_consumption_province
 				}
 			}
 			AND = {
@@ -154,7 +154,7 @@ province_event = {
 				any_trade_node_member_province = {
 					OR = {
 						has_province_modifier = stock_market_12_craze_province
-						has_province_modifier = stock_market_12_consumption_province
+						has_province_flag = stock_market_12_consumption_province
 					}
 				}
 			}
@@ -203,11 +203,7 @@ province_event = {
 
 	immediate = {
 		remove_province_modifier = stock_market_12_craze_province
-		add_permanent_province_modifier = { 
-			name = stock_market_12_consumption_province
-			duration = -1
-			hidden = yes
-		}
+		set_province_flag = stock_market_12_consumption_province
 	}
 
 	option = {
@@ -231,7 +227,7 @@ country_event = {
 			all_owned_province = {
 				OR = {
 					has_province_modifier = stock_market_13_craze_province
-					has_province_modifier = stock_market_13_consumption_province
+					has_province_flag = stock_market_13_consumption_province
 				}
 			}
 		}
@@ -241,7 +237,7 @@ country_event = {
 		any_owned_province = {
 			OR = {
 				has_province_modifier = stock_market_13_craze_province
-				has_province_modifier = stock_market_13_consumption_province
+				has_province_flag = stock_market_13_consumption_province
 			}
 		}
 		NOT = {
@@ -289,7 +285,7 @@ country_event = {
 	trigger = {
 		all_owned_province = {
 			OR = {
-				has_province_modifier = stock_market_13_consumption_province
+				has_province_flag = stock_market_13_consumption_province
 			}
 		}
 		has_country_flag = has_13_craze
@@ -356,13 +352,13 @@ province_event = {
 	trigger = {
 		NOT = {
 			has_province_modifier = stock_market_13_craze_province
-			has_province_modifier = stock_market_13_consumption_province
+			has_province_flag = stock_market_13_consumption_province
 		}
 		OR = {
 			any_neighbor_province = {
 				OR = {
 					has_province_modifier = stock_market_13_craze_province
-					has_province_modifier = stock_market_13_consumption_province
+					has_province_flag = stock_market_13_consumption_province
 				}
 			}
 			AND = {
@@ -370,7 +366,7 @@ province_event = {
 				any_trade_node_member_province = {
 					OR = {
 						has_province_modifier = stock_market_13_craze_province
-						has_province_modifier = stock_market_13_consumption_province
+						has_province_flag = stock_market_13_consumption_province
 					}
 				}
 			}
@@ -419,11 +415,7 @@ province_event = {
 
 	immediate = {
 		remove_province_modifier = stock_market_13_craze_province
-		add_permanent_province_modifier = { 
-			name = stock_market_13_consumption_province
-			duration = -1
-			hidden = yes
-		}
+		set_province_flag = stock_market_13_consumption_province
 	}
 
 	option = {
@@ -447,7 +439,7 @@ country_event = {
 			all_owned_province = {
 				OR = {
 					has_province_modifier = stock_market_14_craze_province
-					has_province_modifier = stock_market_14_consumption_province
+					has_province_flag = stock_market_14_consumption_province
 				}
 			}
 		}
@@ -457,7 +449,7 @@ country_event = {
 		any_owned_province = {
 			OR = {
 				has_province_modifier = stock_market_14_craze_province
-				has_province_modifier = stock_market_14_consumption_province
+				has_province_flag = stock_market_14_consumption_province
 			}
 		}
 		NOT = {
@@ -505,7 +497,7 @@ country_event = {
 	trigger = {
 		all_owned_province = {
 			OR = {
-				has_province_modifier = stock_market_14_consumption_province
+				has_province_flag = stock_market_14_consumption_province
 			}
 		}
 		has_country_flag = has_14_craze
@@ -572,13 +564,13 @@ province_event = {
 	trigger = {
 		NOT = {
 			has_province_modifier = stock_market_14_craze_province
-			has_province_modifier = stock_market_14_consumption_province
+			has_province_flag = stock_market_14_consumption_province
 		}
 		OR = {
 			any_neighbor_province = {
 				OR = {
 					has_province_modifier = stock_market_14_craze_province
-					has_province_modifier = stock_market_14_consumption_province
+					has_province_flag = stock_market_14_consumption_province
 				}
 			}
 			AND = {
@@ -586,7 +578,7 @@ province_event = {
 				any_trade_node_member_province = {
 					OR = {
 						has_province_modifier = stock_market_14_craze_province
-						has_province_modifier = stock_market_14_consumption_province
+						has_province_flag = stock_market_14_consumption_province
 					}
 				}
 			}
@@ -635,11 +627,7 @@ province_event = {
 
 	immediate = {
 		remove_province_modifier = stock_market_14_craze_province
-		add_permanent_province_modifier = { 
-			name = stock_market_14_consumption_province
-			duration = -1
-			hidden = yes
-		}
+		set_province_flag = stock_market_14_consumption_province
 	}
 
 	option = {
@@ -663,7 +651,7 @@ country_event = {
 			all_owned_province = {
 				OR = {
 					has_province_modifier = stock_market_15_craze_province
-					has_province_modifier = stock_market_15_consumption_province
+					has_province_flag = stock_market_15_consumption_province
 				}
 			}
 		}
@@ -673,7 +661,7 @@ country_event = {
 		any_owned_province = {
 			OR = {
 				has_province_modifier = stock_market_15_craze_province
-				has_province_modifier = stock_market_15_consumption_province
+				has_province_flag = stock_market_15_consumption_province
 			}
 		}
 		NOT = {
@@ -721,7 +709,7 @@ country_event = {
 	trigger = {
 		all_owned_province = {
 			OR = {
-				has_province_modifier = stock_market_15_consumption_province
+				has_province_flag = stock_market_15_consumption_province
 			}
 		}
 		has_country_flag = has_15_craze
@@ -788,13 +776,13 @@ province_event = {
 	trigger = {
 		NOT = {
 			has_province_modifier = stock_market_15_craze_province
-			has_province_modifier = stock_market_15_consumption_province
+			has_province_flag = stock_market_15_consumption_province
 		}
 		OR = {
 			any_neighbor_province = {
 				OR = {
 					has_province_modifier = stock_market_15_craze_province
-					has_province_modifier = stock_market_15_consumption_province
+					has_province_flag = stock_market_15_consumption_province
 				}
 			}
 			AND = {
@@ -802,7 +790,7 @@ province_event = {
 				any_trade_node_member_province = {
 					OR = {
 						has_province_modifier = stock_market_15_craze_province
-						has_province_modifier = stock_market_15_consumption_province
+						has_province_flag = stock_market_15_consumption_province
 					}
 				}
 			}
@@ -851,11 +839,7 @@ province_event = {
 
 	immediate = {
 		remove_province_modifier = stock_market_15_craze_province
-		add_permanent_province_modifier = { 
-			name = stock_market_15_consumption_province
-			duration = -1
-			hidden = yes
-		}
+		set_province_flag = stock_market_15_consumption_province
 	}
 
 	option = {
@@ -879,7 +863,7 @@ country_event = {
 			all_owned_province = {
 				OR = {
 					has_province_modifier = stock_market_16_craze_province
-					has_province_modifier = stock_market_16_consumption_province
+					has_province_flag = stock_market_16_consumption_province
 				}
 			}
 		}
@@ -889,7 +873,7 @@ country_event = {
 		any_owned_province = {
 			OR = {
 				has_province_modifier = stock_market_16_craze_province
-				has_province_modifier = stock_market_16_consumption_province
+				has_province_flag = stock_market_16_consumption_province
 			}
 		}
 		NOT = {
@@ -937,7 +921,7 @@ country_event = {
 	trigger = {
 		all_owned_province = {
 			OR = {
-				has_province_modifier = stock_market_16_consumption_province
+				has_province_flag = stock_market_16_consumption_province
 			}
 		}
 		has_country_flag = has_16_craze
@@ -1004,13 +988,13 @@ province_event = {
 	trigger = {
 		NOT = {
 			has_province_modifier = stock_market_16_craze_province
-			has_province_modifier = stock_market_16_consumption_province
+			has_province_flag = stock_market_16_consumption_province
 		}
 		OR = {
 			any_neighbor_province = {
 				OR = {
 					has_province_modifier = stock_market_16_craze_province
-					has_province_modifier = stock_market_16_consumption_province
+					has_province_flag = stock_market_16_consumption_province
 				}
 			}
 			AND = {
@@ -1018,7 +1002,7 @@ province_event = {
 				any_trade_node_member_province = {
 					OR = {
 						has_province_modifier = stock_market_16_craze_province
-						has_province_modifier = stock_market_16_consumption_province
+						has_province_flag = stock_market_16_consumption_province
 					}
 				}
 			}
@@ -1067,11 +1051,7 @@ province_event = {
 
 	immediate = {
 		remove_province_modifier = stock_market_16_craze_province
-		add_permanent_province_modifier = { 
-			name = stock_market_16_consumption_province
-			duration = -1
-			hidden = yes
-		}
+		set_province_flag = stock_market_16_consumption_province
 	}
 
 	option = {
@@ -1095,7 +1075,7 @@ country_event = {
 			all_owned_province = {
 				OR = {
 					has_province_modifier = stock_market_17_craze_province
-					has_province_modifier = stock_market_17_consumption_province
+					has_province_flag = stock_market_17_consumption_province
 				}
 			}
 		}
@@ -1105,7 +1085,7 @@ country_event = {
 		any_owned_province = {
 			OR = {
 				has_province_modifier = stock_market_17_craze_province
-				has_province_modifier = stock_market_17_consumption_province
+				has_province_flag = stock_market_17_consumption_province
 			}
 		}
 		NOT = {
@@ -1153,7 +1133,7 @@ country_event = {
 	trigger = {
 		all_owned_province = {
 			OR = {
-				has_province_modifier = stock_market_17_consumption_province
+				has_province_flag = stock_market_17_consumption_province
 			}
 		}
 		has_country_flag = has_17_craze
@@ -1220,13 +1200,13 @@ province_event = {
 	trigger = {
 		NOT = {
 			has_province_modifier = stock_market_17_craze_province
-			has_province_modifier = stock_market_17_consumption_province
+			has_province_flag = stock_market_17_consumption_province
 		}
 		OR = {
 			any_neighbor_province = {
 				OR = {
 					has_province_modifier = stock_market_17_craze_province
-					has_province_modifier = stock_market_17_consumption_province
+					has_province_flag = stock_market_17_consumption_province
 				}
 			}
 			AND = {
@@ -1234,7 +1214,7 @@ province_event = {
 				any_trade_node_member_province = {
 					OR = {
 						has_province_modifier = stock_market_17_craze_province
-						has_province_modifier = stock_market_17_consumption_province
+						has_province_flag = stock_market_17_consumption_province
 					}
 				}
 			}
@@ -1283,11 +1263,7 @@ province_event = {
 
 	immediate = {
 		remove_province_modifier = stock_market_17_craze_province
-		add_permanent_province_modifier = { 
-			name = stock_market_17_consumption_province
-			duration = -1
-			hidden = yes
-		}
+		set_province_flag = stock_market_17_consumption_province
 	}
 
 	option = {
@@ -1311,7 +1287,7 @@ country_event = {
 			all_owned_province = {
 				OR = {
 					has_province_modifier = stock_market_18_craze_province
-					has_province_modifier = stock_market_18_consumption_province
+					has_province_flag = stock_market_18_consumption_province
 				}
 			}
 		}
@@ -1321,7 +1297,7 @@ country_event = {
 		any_owned_province = {
 			OR = {
 				has_province_modifier = stock_market_18_craze_province
-				has_province_modifier = stock_market_18_consumption_province
+				has_province_flag = stock_market_18_consumption_province
 			}
 		}
 		NOT = {
@@ -1369,7 +1345,7 @@ country_event = {
 	trigger = {
 		all_owned_province = {
 			OR = {
-				has_province_modifier = stock_market_18_consumption_province
+				has_province_flag = stock_market_18_consumption_province
 			}
 		}
 		has_country_flag = has_18_craze
@@ -1436,13 +1412,13 @@ province_event = {
 	trigger = {
 		NOT = {
 			has_province_modifier = stock_market_18_craze_province
-			has_province_modifier = stock_market_18_consumption_province
+			has_province_flag = stock_market_18_consumption_province
 		}
 		OR = {
 			any_neighbor_province = {
 				OR = {
 					has_province_modifier = stock_market_18_craze_province
-					has_province_modifier = stock_market_18_consumption_province
+					has_province_flag = stock_market_18_consumption_province
 				}
 			}
 			AND = {
@@ -1450,7 +1426,7 @@ province_event = {
 				any_trade_node_member_province = {
 					OR = {
 						has_province_modifier = stock_market_18_craze_province
-						has_province_modifier = stock_market_18_consumption_province
+						has_province_flag = stock_market_18_consumption_province
 					}
 				}
 			}
@@ -1499,11 +1475,7 @@ province_event = {
 
 	immediate = {
 		remove_province_modifier = stock_market_18_craze_province
-		add_permanent_province_modifier = { 
-			name = stock_market_18_consumption_province
-			duration = -1
-			hidden = yes
-		}
+		set_province_flag = stock_market_18_consumption_province
 	}
 
 	option = {
@@ -1527,7 +1499,7 @@ country_event = {
 			all_owned_province = {
 				OR = {
 					has_province_modifier = stock_market_19_craze_province
-					has_province_modifier = stock_market_19_consumption_province
+					has_province_flag = stock_market_19_consumption_province
 				}
 			}
 		}
@@ -1537,7 +1509,7 @@ country_event = {
 		any_owned_province = {
 			OR = {
 				has_province_modifier = stock_market_19_craze_province
-				has_province_modifier = stock_market_19_consumption_province
+				has_province_flag = stock_market_19_consumption_province
 			}
 		}
 		NOT = {
@@ -1585,7 +1557,7 @@ country_event = {
 	trigger = {
 		all_owned_province = {
 			OR = {
-				has_province_modifier = stock_market_19_consumption_province
+				has_province_flag = stock_market_19_consumption_province
 			}
 		}
 		has_country_flag = has_19_craze
@@ -1652,13 +1624,13 @@ province_event = {
 	trigger = {
 		NOT = {
 			has_province_modifier = stock_market_19_craze_province
-			has_province_modifier = stock_market_19_consumption_province
+			has_province_flag = stock_market_19_consumption_province
 		}
 		OR = {
 			any_neighbor_province = {
 				OR = {
 					has_province_modifier = stock_market_19_craze_province
-					has_province_modifier = stock_market_19_consumption_province
+					has_province_flag = stock_market_19_consumption_province
 				}
 			}
 			AND = {
@@ -1666,7 +1638,7 @@ province_event = {
 				any_trade_node_member_province = {
 					OR = {
 						has_province_modifier = stock_market_19_craze_province
-						has_province_modifier = stock_market_19_consumption_province
+						has_province_flag = stock_market_19_consumption_province
 					}
 				}
 			}
@@ -1715,11 +1687,7 @@ province_event = {
 
 	immediate = {
 		remove_province_modifier = stock_market_19_craze_province
-		add_permanent_province_modifier = { 
-			name = stock_market_19_consumption_province
-			duration = -1
-			hidden = yes
-		}
+		set_province_flag = stock_market_19_consumption_province
 	}
 
 	option = {
@@ -1743,7 +1711,7 @@ country_event = {
 			all_owned_province = {
 				OR = {
 					has_province_modifier = stock_market_20_craze_province
-					has_province_modifier = stock_market_20_consumption_province
+					has_province_flag = stock_market_20_consumption_province
 				}
 			}
 		}
@@ -1753,7 +1721,7 @@ country_event = {
 		any_owned_province = {
 			OR = {
 				has_province_modifier = stock_market_20_craze_province
-				has_province_modifier = stock_market_20_consumption_province
+				has_province_flag = stock_market_20_consumption_province
 			}
 		}
 		NOT = {
@@ -1801,7 +1769,7 @@ country_event = {
 	trigger = {
 		all_owned_province = {
 			OR = {
-				has_province_modifier = stock_market_20_consumption_province
+				has_province_flag = stock_market_20_consumption_province
 			}
 		}
 		has_country_flag = has_20_craze
@@ -1868,13 +1836,13 @@ province_event = {
 	trigger = {
 		NOT = {
 			has_province_modifier = stock_market_20_craze_province
-			has_province_modifier = stock_market_20_consumption_province
+			has_province_flag = stock_market_20_consumption_province
 		}
 		OR = {
 			any_neighbor_province = {
 				OR = {
 					has_province_modifier = stock_market_20_craze_province
-					has_province_modifier = stock_market_20_consumption_province
+					has_province_flag = stock_market_20_consumption_province
 				}
 			}
 			AND = {
@@ -1882,7 +1850,7 @@ province_event = {
 				any_trade_node_member_province = {
 					OR = {
 						has_province_modifier = stock_market_20_craze_province
-						has_province_modifier = stock_market_20_consumption_province
+						has_province_flag = stock_market_20_consumption_province
 					}
 				}
 			}
@@ -1931,11 +1899,7 @@ province_event = {
 
 	immediate = {
 		remove_province_modifier = stock_market_20_craze_province
-		add_permanent_province_modifier = { 
-			name = stock_market_20_consumption_province
-			duration = -1
-			hidden = yes
-		}
+		set_province_flag = stock_market_20_consumption_province
 	}
 
 	option = {
@@ -1959,7 +1923,7 @@ country_event = {
 			all_owned_province = {
 				OR = {
 					has_province_modifier = stock_market_29_craze_province
-					has_province_modifier = stock_market_29_consumption_province
+					has_province_flag = stock_market_29_consumption_province
 				}
 			}
 		}
@@ -1969,7 +1933,7 @@ country_event = {
 		any_owned_province = {
 			OR = {
 				has_province_modifier = stock_market_29_craze_province
-				has_province_modifier = stock_market_29_consumption_province
+				has_province_flag = stock_market_29_consumption_province
 			}
 		}
 		NOT = {
@@ -2017,7 +1981,7 @@ country_event = {
 	trigger = {
 		all_owned_province = {
 			OR = {
-				has_province_modifier = stock_market_29_consumption_province
+				has_province_flag = stock_market_29_consumption_province
 			}
 		}
 		has_country_flag = has_29_craze
@@ -2084,13 +2048,13 @@ province_event = {
 	trigger = {
 		NOT = {
 			has_province_modifier = stock_market_29_craze_province
-			has_province_modifier = stock_market_29_consumption_province
+			has_province_flag = stock_market_29_consumption_province
 		}
 		OR = {
 			any_neighbor_province = {
 				OR = {
 					has_province_modifier = stock_market_29_craze_province
-					has_province_modifier = stock_market_29_consumption_province
+					has_province_flag = stock_market_29_consumption_province
 				}
 			}
 			AND = {
@@ -2098,7 +2062,7 @@ province_event = {
 				any_trade_node_member_province = {
 					OR = {
 						has_province_modifier = stock_market_29_craze_province
-						has_province_modifier = stock_market_29_consumption_province
+						has_province_flag = stock_market_29_consumption_province
 					}
 				}
 			}
@@ -2147,11 +2111,7 @@ province_event = {
 
 	immediate = {
 		remove_province_modifier = stock_market_29_craze_province
-		add_permanent_province_modifier = { 
-			name = stock_market_29_consumption_province
-			duration = -1
-			hidden = yes
-		}
+		set_province_flag = stock_market_29_consumption_province
 	}
 
 	option = {
@@ -2175,7 +2135,7 @@ country_event = {
 			all_owned_province = {
 				OR = {
 					has_province_modifier = stock_market_30_craze_province
-					has_province_modifier = stock_market_30_consumption_province
+					has_province_flag = stock_market_30_consumption_province
 				}
 			}
 		}
@@ -2185,7 +2145,7 @@ country_event = {
 		any_owned_province = {
 			OR = {
 				has_province_modifier = stock_market_30_craze_province
-				has_province_modifier = stock_market_30_consumption_province
+				has_province_flag = stock_market_30_consumption_province
 			}
 		}
 		NOT = {
@@ -2233,7 +2193,7 @@ country_event = {
 	trigger = {
 		all_owned_province = {
 			OR = {
-				has_province_modifier = stock_market_30_consumption_province
+				has_province_flag = stock_market_30_consumption_province
 			}
 		}
 		has_country_flag = has_30_craze
@@ -2300,13 +2260,13 @@ province_event = {
 	trigger = {
 		NOT = {
 			has_province_modifier = stock_market_30_craze_province
-			has_province_modifier = stock_market_30_consumption_province
+			has_province_flag = stock_market_30_consumption_province
 		}
 		OR = {
 			any_neighbor_province = {
 				OR = {
 					has_province_modifier = stock_market_30_craze_province
-					has_province_modifier = stock_market_30_consumption_province
+					has_province_flag = stock_market_30_consumption_province
 				}
 			}
 			AND = {
@@ -2314,7 +2274,7 @@ province_event = {
 				any_trade_node_member_province = {
 					OR = {
 						has_province_modifier = stock_market_30_craze_province
-						has_province_modifier = stock_market_30_consumption_province
+						has_province_flag = stock_market_30_consumption_province
 					}
 				}
 			}
@@ -2363,11 +2323,7 @@ province_event = {
 
 	immediate = {
 		remove_province_modifier = stock_market_30_craze_province
-		add_permanent_province_modifier = { 
-			name = stock_market_30_consumption_province
-			duration = -1
-			hidden = yes
-		}
+		set_province_flag = stock_market_30_consumption_province
 	}
 
 	option = {
