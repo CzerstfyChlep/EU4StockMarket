@@ -171,7 +171,7 @@ update_national_demand_for_trade_good_7 = { # naval_supplies
 	
 	multiply_variable = {
 		which = tempvar
-		value = 0.5
+		value = 1
 	}
 	
 	if = {
@@ -516,7 +516,7 @@ update_national_demand_for_trade_good_24 = { # livestock
 	
 	multiply_variable = {
 		which = tempvar
-		value = 0.35
+		value = 0.7
 	}
 	
 	change_variable = {
