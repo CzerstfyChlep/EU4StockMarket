@@ -607,6 +607,26 @@ check_trade_good_satisfaction = {
 
 				if = {
 					limit = {
+						has_country_flag = not_unlimited_budget_for_$trade_good_id$
+					}
+
+					if = {
+						limit = {
+							check_variable = {
+								which = stock_market_cash
+								which = stock_market_budget_for_$trade_good_id$
+							}
+						}
+						set_variable = {
+							which = stock_market_cash
+							which = stock_market_budget_for_$trade_good_id$
+						}
+					}
+
+				}
+
+				if = {
+					limit = {
 						check_variable = {
 							which = stock_market_cash
 							which = temp_total_autobuy

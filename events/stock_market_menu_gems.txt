@@ -625,7 +625,7 @@ country_event = {
 		custom_tooltip = GO_BACK_TO_GEMS_POLICY_MENU
 		hidden_effect = {
 			country_event = {
-				id = stock_market_menu_events.338
+				id = stock_market_menu_events.383
 			}			
 		}
 	}
@@ -748,7 +748,7 @@ country_event = {
 		custom_tooltip = STOCK_MARKET_GEMS_RESET_BUDGET
 		hidden_effect = {
 			hidden_effect = {
-				set_country_flag = unlimited_budget_for_28
+				clr_country_flag = not_unlimited_budget_for_28
 				set_variable = {
 					which = stock_market_budget_for_28
 					value = 0
@@ -765,7 +765,7 @@ country_event = {
 		custom_tooltip = STOCK_MARKET_GEMS_ADD_5_BUDGET
 		hidden_effect = {
 			hidden_effect = {
-				clr_country_flag = unlimited_budget_for_28
+				set_country_flag = not_unlimited_budget_for_28
 
 				change_variable = {
 					which = stock_market_budget_for_28
@@ -784,7 +784,7 @@ country_event = {
 		custom_tooltip = STOCK_MARKET_GEMS_ADD_25_BUDGET
 		hidden_effect = {
 			hidden_effect = {
-				clr_country_flag = unlimited_budget_for_28
+				set_country_flag = not_unlimited_budget_for_28
 
 				change_variable = {
 					which = stock_market_budget_for_28
@@ -816,7 +816,7 @@ country_event = {
 						}
 					}
 
-					set_country_flag = unlimited_budget_for_28
+					clr_country_flag = not_unlimited_budget_for_28
 
 				}
 
@@ -851,7 +851,7 @@ country_event = {
 						}
 					}
 
-					set_country_flag = unlimited_budget_for_28
+					clr_country_flag = not_unlimited_budget_for_28
 
 				}
 
@@ -873,7 +873,7 @@ country_event = {
 		custom_tooltip = GO_BACK_TO_GEMS_POLICY_MENU
 		hidden_effect = {
 			country_event = {
-				id = stock_market_menu_events.338
+				id = stock_market_menu_events.383
 			}			
 		}
 	}

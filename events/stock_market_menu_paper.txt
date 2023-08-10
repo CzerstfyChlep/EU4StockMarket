@@ -625,7 +625,7 @@ country_event = {
 		custom_tooltip = GO_BACK_TO_PAPER_POLICY_MENU
 		hidden_effect = {
 			country_event = {
-				id = stock_market_menu_events.337
+				id = stock_market_menu_events.373
 			}			
 		}
 	}
@@ -748,7 +748,7 @@ country_event = {
 		custom_tooltip = STOCK_MARKET_PAPER_RESET_BUDGET
 		hidden_effect = {
 			hidden_effect = {
-				set_country_flag = unlimited_budget_for_27
+				clr_country_flag = not_unlimited_budget_for_27
 				set_variable = {
 					which = stock_market_budget_for_27
 					value = 0
@@ -765,7 +765,7 @@ country_event = {
 		custom_tooltip = STOCK_MARKET_PAPER_ADD_5_BUDGET
 		hidden_effect = {
 			hidden_effect = {
-				clr_country_flag = unlimited_budget_for_27
+				set_country_flag = not_unlimited_budget_for_27
 
 				change_variable = {
 					which = stock_market_budget_for_27
@@ -784,7 +784,7 @@ country_event = {
 		custom_tooltip = STOCK_MARKET_PAPER_ADD_25_BUDGET
 		hidden_effect = {
 			hidden_effect = {
-				clr_country_flag = unlimited_budget_for_27
+				set_country_flag = not_unlimited_budget_for_27
 
 				change_variable = {
 					which = stock_market_budget_for_27
@@ -816,7 +816,7 @@ country_event = {
 						}
 					}
 
-					set_country_flag = unlimited_budget_for_27
+					clr_country_flag = not_unlimited_budget_for_27
 
 				}
 
@@ -851,7 +851,7 @@ country_event = {
 						}
 					}
 
-					set_country_flag = unlimited_budget_for_27
+					clr_country_flag = not_unlimited_budget_for_27
 
 				}
 
@@ -873,7 +873,7 @@ country_event = {
 		custom_tooltip = GO_BACK_TO_PAPER_POLICY_MENU
 		hidden_effect = {
 			country_event = {
-				id = stock_market_menu_events.337
+				id = stock_market_menu_events.373
 			}			
 		}
 	}

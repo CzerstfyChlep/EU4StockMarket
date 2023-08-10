@@ -53,9 +53,6 @@ defined_text = {
     }
     text = {
         localisation_key = stock_market_no_taxes
-        trigger = {
-            has_country_flag = taxes_0_for_0
-        }
     }
 }
 
@@ -65,7 +62,9 @@ defined_text = {
     text = {
         localisation_key = stock_market_unlimited_budget
         trigger = {
-            has_country_flag = unlimited_budget_for_0
+            NOT = {
+                has_country_flag = not_unlimited_budget_for_0
+            }
         }
     }
     text = {
@@ -232,9 +231,6 @@ defined_text = {
     }
     text = {
         localisation_key = stock_market_no_taxes
-        trigger = {
-            has_country_flag = taxes_0_for_1
-        }
     }
 }
 
@@ -244,7 +240,9 @@ defined_text = {
     text = {
         localisation_key = stock_market_unlimited_budget
         trigger = {
-            has_country_flag = unlimited_budget_for_1
+            NOT = {
+                has_country_flag = not_unlimited_budget_for_1
+            }
         }
     }
     text = {
@@ -411,9 +409,6 @@ defined_text = {
     }
     text = {
         localisation_key = stock_market_no_taxes
-        trigger = {
-            has_country_flag = taxes_0_for_2
-        }
     }
 }
 
@@ -423,7 +418,9 @@ defined_text = {
     text = {
         localisation_key = stock_market_unlimited_budget
         trigger = {
-            has_country_flag = unlimited_budget_for_2
+            NOT = {
+                has_country_flag = not_unlimited_budget_for_2
+            }
         }
     }
     text = {
@@ -590,9 +587,6 @@ defined_text = {
     }
     text = {
         localisation_key = stock_market_no_taxes
-        trigger = {
-            has_country_flag = taxes_0_for_3
-        }
     }
 }
 
@@ -602,7 +596,9 @@ defined_text = {
     text = {
         localisation_key = stock_market_unlimited_budget
         trigger = {
-            has_country_flag = unlimited_budget_for_3
+            NOT = {
+                has_country_flag = not_unlimited_budget_for_3
+            }
         }
     }
     text = {
@@ -769,9 +765,6 @@ defined_text = {
     }
     text = {
         localisation_key = stock_market_no_taxes
-        trigger = {
-            has_country_flag = taxes_0_for_4
-        }
     }
 }
 
@@ -781,7 +774,9 @@ defined_text = {
     text = {
         localisation_key = stock_market_unlimited_budget
         trigger = {
-            has_country_flag = unlimited_budget_for_4
+            NOT = {
+                has_country_flag = not_unlimited_budget_for_4
+            }
         }
     }
     text = {
@@ -948,9 +943,6 @@ defined_text = {
     }
     text = {
         localisation_key = stock_market_no_taxes
-        trigger = {
-            has_country_flag = taxes_0_for_5
-        }
     }
 }
 
@@ -960,7 +952,9 @@ defined_text = {
     text = {
         localisation_key = stock_market_unlimited_budget
         trigger = {
-            has_country_flag = unlimited_budget_for_5
+            NOT = {
+                has_country_flag = not_unlimited_budget_for_5
+            }
         }
     }
     text = {
@@ -1127,9 +1121,6 @@ defined_text = {
     }
     text = {
         localisation_key = stock_market_no_taxes
-        trigger = {
-            has_country_flag = taxes_0_for_6
-        }
     }
 }
 
@@ -1139,7 +1130,9 @@ defined_text = {
     text = {
         localisation_key = stock_market_unlimited_budget
         trigger = {
-            has_country_flag = unlimited_budget_for_6
+            NOT = {
+                has_country_flag = not_unlimited_budget_for_6
+            }
         }
     }
     text = {
@@ -1306,9 +1299,6 @@ defined_text = {
     }
     text = {
         localisation_key = stock_market_no_taxes
-        trigger = {
-            has_country_flag = taxes_0_for_7
-        }
     }
 }
 
@@ -1318,7 +1308,9 @@ defined_text = {
     text = {
         localisation_key = stock_market_unlimited_budget
         trigger = {
-            has_country_flag = unlimited_budget_for_7
+            NOT = {
+                has_country_flag = not_unlimited_budget_for_7
+            }
         }
     }
     text = {
@@ -1485,9 +1477,6 @@ defined_text = {
     }
     text = {
         localisation_key = stock_market_no_taxes
-        trigger = {
-            has_country_flag = taxes_0_for_8
-        }
     }
 }
 
@@ -1497,7 +1486,9 @@ defined_text = {
     text = {
         localisation_key = stock_market_unlimited_budget
         trigger = {
-            has_country_flag = unlimited_budget_for_8
+            NOT = {
+                has_country_flag = not_unlimited_budget_for_8
+            }
         }
     }
     text = {
@@ -1664,9 +1655,6 @@ defined_text = {
     }
     text = {
         localisation_key = stock_market_no_taxes
-        trigger = {
-            has_country_flag = taxes_0_for_10
-        }
     }
 }
 
@@ -1676,7 +1664,9 @@ defined_text = {
     text = {
         localisation_key = stock_market_unlimited_budget
         trigger = {
-            has_country_flag = unlimited_budget_for_10
+            NOT = {
+                has_country_flag = not_unlimited_budget_for_10
+            }
         }
     }
     text = {
@@ -1843,9 +1833,6 @@ defined_text = {
     }
     text = {
         localisation_key = stock_market_no_taxes
-        trigger = {
-            has_country_flag = taxes_0_for_11
-        }
     }
 }
 
@@ -1855,7 +1842,9 @@ defined_text = {
     text = {
         localisation_key = stock_market_unlimited_budget
         trigger = {
-            has_country_flag = unlimited_budget_for_11
+            NOT = {
+                has_country_flag = not_unlimited_budget_for_11
+            }
         }
     }
     text = {
@@ -2022,9 +2011,6 @@ defined_text = {
     }
     text = {
         localisation_key = stock_market_no_taxes
-        trigger = {
-            has_country_flag = taxes_0_for_12
-        }
     }
 }
 
@@ -2034,7 +2020,9 @@ defined_text = {
     text = {
         localisation_key = stock_market_unlimited_budget
         trigger = {
-            has_country_flag = unlimited_budget_for_12
+            NOT = {
+                has_country_flag = not_unlimited_budget_for_12
+            }
         }
     }
     text = {
@@ -2201,9 +2189,6 @@ defined_text = {
     }
     text = {
         localisation_key = stock_market_no_taxes
-        trigger = {
-            has_country_flag = taxes_0_for_13
-        }
     }
 }
 
@@ -2213,7 +2198,9 @@ defined_text = {
     text = {
         localisation_key = stock_market_unlimited_budget
         trigger = {
-            has_country_flag = unlimited_budget_for_13
+            NOT = {
+                has_country_flag = not_unlimited_budget_for_13
+            }
         }
     }
     text = {
@@ -2380,9 +2367,6 @@ defined_text = {
     }
     text = {
         localisation_key = stock_market_no_taxes
-        trigger = {
-            has_country_flag = taxes_0_for_14
-        }
     }
 }
 
@@ -2392,7 +2376,9 @@ defined_text = {
     text = {
         localisation_key = stock_market_unlimited_budget
         trigger = {
-            has_country_flag = unlimited_budget_for_14
+            NOT = {
+                has_country_flag = not_unlimited_budget_for_14
+            }
         }
     }
     text = {
@@ -2559,9 +2545,6 @@ defined_text = {
     }
     text = {
         localisation_key = stock_market_no_taxes
-        trigger = {
-            has_country_flag = taxes_0_for_15
-        }
     }
 }
 
@@ -2571,7 +2554,9 @@ defined_text = {
     text = {
         localisation_key = stock_market_unlimited_budget
         trigger = {
-            has_country_flag = unlimited_budget_for_15
+            NOT = {
+                has_country_flag = not_unlimited_budget_for_15
+            }
         }
     }
     text = {
@@ -2738,9 +2723,6 @@ defined_text = {
     }
     text = {
         localisation_key = stock_market_no_taxes
-        trigger = {
-            has_country_flag = taxes_0_for_16
-        }
     }
 }
 
@@ -2750,7 +2732,9 @@ defined_text = {
     text = {
         localisation_key = stock_market_unlimited_budget
         trigger = {
-            has_country_flag = unlimited_budget_for_16
+            NOT = {
+                has_country_flag = not_unlimited_budget_for_16
+            }
         }
     }
     text = {
@@ -2917,9 +2901,6 @@ defined_text = {
     }
     text = {
         localisation_key = stock_market_no_taxes
-        trigger = {
-            has_country_flag = taxes_0_for_17
-        }
     }
 }
 
@@ -2929,7 +2910,9 @@ defined_text = {
     text = {
         localisation_key = stock_market_unlimited_budget
         trigger = {
-            has_country_flag = unlimited_budget_for_17
+            NOT = {
+                has_country_flag = not_unlimited_budget_for_17
+            }
         }
     }
     text = {
@@ -3096,9 +3079,6 @@ defined_text = {
     }
     text = {
         localisation_key = stock_market_no_taxes
-        trigger = {
-            has_country_flag = taxes_0_for_18
-        }
     }
 }
 
@@ -3108,7 +3088,9 @@ defined_text = {
     text = {
         localisation_key = stock_market_unlimited_budget
         trigger = {
-            has_country_flag = unlimited_budget_for_18
+            NOT = {
+                has_country_flag = not_unlimited_budget_for_18
+            }
         }
     }
     text = {
@@ -3275,9 +3257,6 @@ defined_text = {
     }
     text = {
         localisation_key = stock_market_no_taxes
-        trigger = {
-            has_country_flag = taxes_0_for_19
-        }
     }
 }
 
@@ -3287,7 +3266,9 @@ defined_text = {
     text = {
         localisation_key = stock_market_unlimited_budget
         trigger = {
-            has_country_flag = unlimited_budget_for_19
+            NOT = {
+                has_country_flag = not_unlimited_budget_for_19
+            }
         }
     }
     text = {
@@ -3454,9 +3435,6 @@ defined_text = {
     }
     text = {
         localisation_key = stock_market_no_taxes
-        trigger = {
-            has_country_flag = taxes_0_for_20
-        }
     }
 }
 
@@ -3466,7 +3444,9 @@ defined_text = {
     text = {
         localisation_key = stock_market_unlimited_budget
         trigger = {
-            has_country_flag = unlimited_budget_for_20
+            NOT = {
+                has_country_flag = not_unlimited_budget_for_20
+            }
         }
     }
     text = {
@@ -3633,9 +3613,6 @@ defined_text = {
     }
     text = {
         localisation_key = stock_market_no_taxes
-        trigger = {
-            has_country_flag = taxes_0_for_21
-        }
     }
 }
 
@@ -3645,7 +3622,9 @@ defined_text = {
     text = {
         localisation_key = stock_market_unlimited_budget
         trigger = {
-            has_country_flag = unlimited_budget_for_21
+            NOT = {
+                has_country_flag = not_unlimited_budget_for_21
+            }
         }
     }
     text = {
@@ -3812,9 +3791,6 @@ defined_text = {
     }
     text = {
         localisation_key = stock_market_no_taxes
-        trigger = {
-            has_country_flag = taxes_0_for_22
-        }
     }
 }
 
@@ -3824,7 +3800,9 @@ defined_text = {
     text = {
         localisation_key = stock_market_unlimited_budget
         trigger = {
-            has_country_flag = unlimited_budget_for_22
+            NOT = {
+                has_country_flag = not_unlimited_budget_for_22
+            }
         }
     }
     text = {
@@ -3991,9 +3969,6 @@ defined_text = {
     }
     text = {
         localisation_key = stock_market_no_taxes
-        trigger = {
-            has_country_flag = taxes_0_for_23
-        }
     }
 }
 
@@ -4003,7 +3978,9 @@ defined_text = {
     text = {
         localisation_key = stock_market_unlimited_budget
         trigger = {
-            has_country_flag = unlimited_budget_for_23
+            NOT = {
+                has_country_flag = not_unlimited_budget_for_23
+            }
         }
     }
     text = {
@@ -4170,9 +4147,6 @@ defined_text = {
     }
     text = {
         localisation_key = stock_market_no_taxes
-        trigger = {
-            has_country_flag = taxes_0_for_24
-        }
     }
 }
 
@@ -4182,7 +4156,9 @@ defined_text = {
     text = {
         localisation_key = stock_market_unlimited_budget
         trigger = {
-            has_country_flag = unlimited_budget_for_24
+            NOT = {
+                has_country_flag = not_unlimited_budget_for_24
+            }
         }
     }
     text = {
@@ -4349,9 +4325,6 @@ defined_text = {
     }
     text = {
         localisation_key = stock_market_no_taxes
-        trigger = {
-            has_country_flag = taxes_0_for_25
-        }
     }
 }
 
@@ -4361,7 +4334,9 @@ defined_text = {
     text = {
         localisation_key = stock_market_unlimited_budget
         trigger = {
-            has_country_flag = unlimited_budget_for_25
+            NOT = {
+                has_country_flag = not_unlimited_budget_for_25
+            }
         }
     }
     text = {
@@ -4528,9 +4503,6 @@ defined_text = {
     }
     text = {
         localisation_key = stock_market_no_taxes
-        trigger = {
-            has_country_flag = taxes_0_for_26
-        }
     }
 }
 
@@ -4540,7 +4512,9 @@ defined_text = {
     text = {
         localisation_key = stock_market_unlimited_budget
         trigger = {
-            has_country_flag = unlimited_budget_for_26
+            NOT = {
+                has_country_flag = not_unlimited_budget_for_26
+            }
         }
     }
     text = {
@@ -4707,9 +4681,6 @@ defined_text = {
     }
     text = {
         localisation_key = stock_market_no_taxes
-        trigger = {
-            has_country_flag = taxes_0_for_27
-        }
     }
 }
 
@@ -4719,7 +4690,9 @@ defined_text = {
     text = {
         localisation_key = stock_market_unlimited_budget
         trigger = {
-            has_country_flag = unlimited_budget_for_27
+            NOT = {
+                has_country_flag = not_unlimited_budget_for_27
+            }
         }
     }
     text = {
@@ -4886,9 +4859,6 @@ defined_text = {
     }
     text = {
         localisation_key = stock_market_no_taxes
-        trigger = {
-            has_country_flag = taxes_0_for_28
-        }
     }
 }
 
@@ -4898,7 +4868,9 @@ defined_text = {
     text = {
         localisation_key = stock_market_unlimited_budget
         trigger = {
-            has_country_flag = unlimited_budget_for_28
+            NOT = {
+                has_country_flag = not_unlimited_budget_for_28
+            }
         }
     }
     text = {
@@ -5065,9 +5037,6 @@ defined_text = {
     }
     text = {
         localisation_key = stock_market_no_taxes
-        trigger = {
-            has_country_flag = taxes_0_for_29
-        }
     }
 }
 
@@ -5077,7 +5046,9 @@ defined_text = {
     text = {
         localisation_key = stock_market_unlimited_budget
         trigger = {
-            has_country_flag = unlimited_budget_for_29
+            NOT = {
+                has_country_flag = not_unlimited_budget_for_29
+            }
         }
     }
     text = {
@@ -5244,9 +5215,6 @@ defined_text = {
     }
     text = {
         localisation_key = stock_market_no_taxes
-        trigger = {
-            has_country_flag = taxes_0_for_30
-        }
     }
 }
 
@@ -5256,7 +5224,9 @@ defined_text = {
     text = {
         localisation_key = stock_market_unlimited_budget
         trigger = {
-            has_country_flag = unlimited_budget_for_30
+            NOT = {
+                has_country_flag = not_unlimited_budget_for_30
+            }
         }
     }
     text = {

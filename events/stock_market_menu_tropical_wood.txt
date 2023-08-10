@@ -748,7 +748,7 @@ country_event = {
 		custom_tooltip = STOCK_MARKET_TROPICAL_WOOD_RESET_BUDGET
 		hidden_effect = {
 			hidden_effect = {
-				set_country_flag = unlimited_budget_for_23
+				clr_country_flag = not_unlimited_budget_for_23
 				set_variable = {
 					which = stock_market_budget_for_23
 					value = 0
@@ -765,7 +765,7 @@ country_event = {
 		custom_tooltip = STOCK_MARKET_TROPICAL_WOOD_ADD_5_BUDGET
 		hidden_effect = {
 			hidden_effect = {
-				clr_country_flag = unlimited_budget_for_23
+				set_country_flag = not_unlimited_budget_for_23
 
 				change_variable = {
 					which = stock_market_budget_for_23
@@ -784,7 +784,7 @@ country_event = {
 		custom_tooltip = STOCK_MARKET_TROPICAL_WOOD_ADD_25_BUDGET
 		hidden_effect = {
 			hidden_effect = {
-				clr_country_flag = unlimited_budget_for_23
+				set_country_flag = not_unlimited_budget_for_23
 
 				change_variable = {
 					which = stock_market_budget_for_23
@@ -816,7 +816,7 @@ country_event = {
 						}
 					}
 
-					set_country_flag = unlimited_budget_for_23
+					clr_country_flag = not_unlimited_budget_for_23
 
 				}
 
@@ -851,7 +851,7 @@ country_event = {
 						}
 					}
 
-					set_country_flag = unlimited_budget_for_23
+					clr_country_flag = not_unlimited_budget_for_23
 
 				}
 
