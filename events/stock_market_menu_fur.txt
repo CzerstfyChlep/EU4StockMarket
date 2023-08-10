@@ -524,7 +524,7 @@ country_event = {
 				trade_good_id = 5
 				policy = taxes
 				level = 0
-				set_modifiers = yes
+				clean_modifiers = yes
 			}
 
 			country_event = {

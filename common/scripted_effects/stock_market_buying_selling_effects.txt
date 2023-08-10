@@ -659,15 +659,9 @@ switch_trade_good_policy = {
 	clr_country_flag = $policy$_4_for_$trade_good_id$
 	clr_country_flag = $policy$_5_for_$trade_good_id$
 
-
+	
 	[[set_modifiers]
 		if = {
-			limit = {
-				has_country_modifier = $policy$_0_for_$trade_good_id$_modifier
-			}
-			remove_country_modifier = $policy$_0_for_$trade_good_id$_modifier
-		}
-		else_if = {
 			limit = {
 				has_country_modifier = $policy$_1_for_$trade_good_id$_modifier
 			}
@@ -697,6 +691,34 @@ switch_trade_good_policy = {
 			name = $policy$_$level$_for_$trade_good_id$_modifier
 			duration = -1  
 		}
+	]
+	
+	[[clean_modifiers]
+		if = {
+			limit = {
+				has_country_modifier = $policy$_1_for_$trade_good_id$_modifier
+			}
+			remove_country_modifier = $policy$_1_for_$trade_good_id$_modifier
+		}
+		else_if = {
+			limit = {
+				has_country_modifier = $policy$_2_for_$trade_good_id$_modifier
+			}
+			remove_country_modifier = $policy$_2_for_$trade_good_id$_modifier
+		}
+		else_if = {
+			limit = {
+				has_country_modifier = $policy$_3_for_$trade_good_id$_modifier
+			}
+			remove_country_modifier = $policy$_3_for_$trade_good_id$_modifier
+		}
+		else_if = {
+			limit = {
+				has_country_modifier = $policy$_4_for_$trade_good_id$_modifier
+			}
+			remove_country_modifier = $policy$_4_for_$trade_good_id$_modifier
+		}
+		else = { }
 	]
 
 

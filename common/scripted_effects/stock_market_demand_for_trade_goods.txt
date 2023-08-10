@@ -279,7 +279,7 @@ update_supply_and_demand_based_on_buildings = {
 			owner = {
 				change_variable = {
 					which = stock_market_demand_for_6
-					value = 10
+					value = 5
 				}
 			}
 		}
@@ -290,7 +290,7 @@ update_supply_and_demand_based_on_buildings = {
 			owner = {
 				change_variable = {
 					which = stock_market_demand_for_6
-					value = 20
+					value = 10
 				}
 			}
 		}
@@ -301,7 +301,7 @@ update_supply_and_demand_based_on_buildings = {
 			owner = {
 				change_variable = {
 					which = stock_market_demand_for_6
-					value = 30
+					value = 15
 				}
 			}
 		}
@@ -312,7 +312,7 @@ update_supply_and_demand_based_on_buildings = {
 			owner = {
 				change_variable = {
 					which = stock_market_demand_for_6
-					value = 40
+					value = 20
 				}
 			}
 		}
@@ -477,7 +477,18 @@ update_demand_for_trade_good_3 = { #cloth
 	demand_from_province_dev = {
 		trade_good_id = 3
 		base = 0.642
-		multiplier = 0.6
+		multiplier = 0.7
+		modifier_1 = "
+			if = {
+				limit = {
+					PREV = { development = 30 }
+				}
+				change_variable = {
+					which = modifier_var
+					value = 0.25
+				}
+			}
+		"
 	}
 	
 	# if = {
@@ -1153,6 +1164,28 @@ update_demand_for_trade_good_26 = { #glass
 				}
 			}
 		"
+		modifier_2 = "
+			if = {
+				limit = {
+					PREV = { development = 20 }
+				}
+				change_variable = {
+					which = modifier_var
+					value = 0.25
+				}
+			}
+		"
+		modifier_3 = "
+			if = {
+				limit = {
+					PREV = { development = 30 }
+				}
+				change_variable = {
+					which = modifier_var
+					value = 0.25
+				}
+			}
+		"
 	}
 }
 
@@ -1202,6 +1235,28 @@ update_demand_for_trade_good_27 = { #papers
 				}
 			}
 		"
+		modifier_4 = "
+			if = {
+				limit = {
+					PREV = { development = 20 }
+				}
+				change_variable = {
+					which = modifier_var
+					value = 0.25
+				}
+			}
+		"
+		modifier_5 = "
+			if = {
+				limit = {
+					PREV = { development = 30 }
+				}
+				change_variable = {
+					which = modifier_var
+					value = 0.25
+				}
+			}
+		"
 	}
 }
 
@@ -1217,6 +1272,17 @@ update_demand_for_trade_good_28 = { #gems
 					PREV = {
 						development = 20
 					}
+				}
+				change_variable = {
+					which = modifier_var
+					value = 0.25
+				}
+			}
+		"
+		modifier_2 = "
+			if = {
+				limit = {
+					PREV = { development = 30 }
 				}
 				change_variable = {
 					which = modifier_var
