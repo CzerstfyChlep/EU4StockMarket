@@ -142,7 +142,7 @@ apply_policies = {
 		}
 		multiply_variable = {
 			which = stock_market_supply_for_$trade_good_id$
-			value = 0.9
+			value = 0.8
 		}
 	}
 	else_if = {
@@ -160,7 +160,7 @@ apply_policies = {
 		}
 		multiply_variable = {
 			which = stock_market_supply_for_$trade_good_id$
-			value = 0.3
+			value = 0.4
 		}
 	}
 	else_if = {
@@ -169,7 +169,7 @@ apply_policies = {
 		}
 		multiply_variable = {
 			which = stock_market_supply_for_$trade_good_id$
-			value = 0.1
+			value = 0.2
 		}
 	}
 	else = { }
