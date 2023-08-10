@@ -64,6 +64,18 @@ stock_market_14_craze_province = {
 stock_market_14_consumption_province = {
 
 }
+stock_market_15_craze_ban = {
+	global_unrest = 1
+}
+
+stock_market_15_craze_province = {
+	province_trade_power_modifier = 0.05
+	picture = "modifier_icon_15_craze"
+}
+
+stock_market_15_consumption_province = {
+
+}
 stock_market_16_craze_ban = {
 	global_unrest = 1
 }
@@ -148,3 +160,4 @@ stock_market_30_craze_province = {
 stock_market_30_consumption_province = {
 
 }
+
