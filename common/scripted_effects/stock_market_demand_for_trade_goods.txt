@@ -279,7 +279,7 @@ update_supply_and_demand_based_on_buildings = {
 			owner = {
 				change_variable = {
 					which = stock_market_demand_for_6
-					value = 20
+					value = 10
 				}
 			}
 		}
@@ -290,7 +290,7 @@ update_supply_and_demand_based_on_buildings = {
 			owner = {
 				change_variable = {
 					which = stock_market_demand_for_6
-					value = 40
+					value = 20
 				}
 			}
 		}
@@ -301,7 +301,7 @@ update_supply_and_demand_based_on_buildings = {
 			owner = {
 				change_variable = {
 					which = stock_market_demand_for_6
-					value = 60
+					value = 30
 				}
 			}
 		}
@@ -312,7 +312,7 @@ update_supply_and_demand_based_on_buildings = {
 			owner = {
 				change_variable = {
 					which = stock_market_demand_for_6
-					value = 80
+					value = 40
 				}
 			}
 		}
@@ -378,7 +378,7 @@ update_demand_for_trade_good_0 = { #grain
 	demand_from_province_dev = {
 		trade_good_id = 0
 		base = 0.9
-		multiplier = 0.55
+		multiplier = 0.4
 		modifier_1 = "
 			if = {
 				limit = {
@@ -469,7 +469,7 @@ update_demand_for_trade_good_2 = { #wool
 	demand_from_province_dev = {
 		trade_good_id = 2
 		base = 0.3
-		multiplier = 0.5
+		multiplier = 0.3
 	}
 }
 
@@ -510,7 +510,7 @@ update_demand_for_trade_good_4 = { #fish
 	demand_from_province_dev = {
 		trade_good_id = 4
 		base = 0.4
-		multiplier = 0.5
+		multiplier = 0.4
 		modifier_1 = "
 			if = {
 				limit = {
@@ -574,7 +574,7 @@ update_demand_for_trade_good_6 = { #salt
 	demand_from_province_dev = {
 		trade_good_id = 6
 		base = 0.2
-		multiplier = 0.75
+		multiplier = 0.25
 	}
 }
 
@@ -966,7 +966,7 @@ update_demand_for_trade_good_20 = { #cocoa
 			}
 			multiply_variable = { 
 				which = tempvar
-				value = 1.75
+				value = 1
 			}
 			change_variable = {
 				which = stock_market_demand_for_20
@@ -1111,7 +1111,7 @@ update_demand_for_trade_good_25 = { #incense
 			}
 			multiply_variable = { 
 				which = tempvar
-				value = 0.05
+				value = 0.1
 			}
 			if = {
 				limit = {
