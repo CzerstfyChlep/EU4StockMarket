@@ -4,6 +4,7 @@ province_event = {
 	id = stock_market_buildings_events.1
 	title = "doesnt exist"
 	desc = "doesnt exist"
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
 	
 	hidden = yes
 	is_triggered_only = yes
@@ -22,6 +23,7 @@ province_event = {
 	id = stock_market_buildings_events.2
 	title = "doesnt exist"
 	desc = "doesnt exist"
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
 	
 	is_triggered_only = yes
 	hidden = yes
