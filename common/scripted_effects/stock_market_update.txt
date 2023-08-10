@@ -95,6 +95,20 @@ post_province_evaluation = {
 		which = country_stock_market_supply_for_$trade_good_id$
 	}
 
+	set_variable = {
+		which = stock_market_max_stockpile_for_$trade_good_id$
+		value = 500
+	}
+	change_variable = {
+		which = stock_market_max_stockpile_for_$trade_good_id$
+		which = country_total_stock_market_supply_for_$trade_good_id$ 
+	}
+
+	multiply_variable = {
+		which = stock_market_max_stockpile_for_$trade_good_id$
+		value = 12
+	}
+
 	# 75% goes to the global market
 	multiply_variable = {
 		which = stock_market_supply_for_$trade_good_id$ 
@@ -107,10 +121,35 @@ post_province_evaluation = {
 		value = 0.25
 	}
 
-	change_variable = {
-		which = country_stock_market_stockpile_for_$trade_good_id$
-		which = country_stock_market_supply_for_$trade_good_id$
+
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					which = country_stock_market_stockpile_for_$trade_good_id$
+					which = stock_market_max_stockpile_for_$trade_good_id$
+				}
+			}
+		}
+		change_variable = {
+			which = country_stock_market_stockpile_for_$trade_good_id$
+			which = country_stock_market_supply_for_$trade_good_id$
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = country_stock_market_stockpile_for_$trade_good_id$
+					which = stock_market_max_stockpile_for_$trade_good_id$
+				}
+			}
+			set_variable = {
+				which = country_stock_market_stockpile_for_$trade_good_id$
+				which = stock_market_max_stockpile_for_$trade_good_id$
+			}
+		}
 	}
+
+
 }
 
 set_REB_initial_variable = {
