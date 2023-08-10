@@ -591,10 +591,10 @@
  new_prices.5.d: "The motion of fashion and culture has accompanied humanity since the founding of the first civilizations. Today still, various groups of people still decide trends for consumption. Our state is no different to this, as recent developments in the politique of our nation are once again impacting prices of certain trade goods."
  new_prices.5.a: "It is what it is."
  
- building_fort_15th_desc: "Generates §Y+10.0§! Demand for £salt£§YSalt§!."
- building_fort_16th_desc: "Generates §Y+20.0§! Demand for £salt£§YSalt§!."
- building_fort_17th_desc: "Generates §Y+30.0§! Demand for £salt£§YSalt§!."
- building_fort_18th_desc: "Generates §Y+40.0§! Demand for £salt£§YSalt§!."
+ building_fort_15th_desc: "Generates §Y+5.0§! Demand for £salt£§YSalt§!."
+ building_fort_16th_desc: "Generates §Y+10.0§! Demand for £salt£§YSalt§!."
+ building_fort_17th_desc: "Generates §Y+15.0§! Demand for £salt£§YSalt§!."
+ building_fort_18th_desc: "Generates §Y+20.0§! Demand for £salt£§YSalt§!."
  
  good_0_demand_modifier: "Demand for Grain Modifier"
  good_1_demand_modifier: "Demand for Wine Modifier"
