@@ -1,0 +1,192 @@
+decreased_consumption_of_0 = {
+	good_0_demand_modifier = -0.33
+}
+increased_consumption_of_0 = {
+	good_0_demand_modifier = 0.5
+}
+decreased_consumption_of_1 = {
+	good_1_demand_modifier = -0.33
+}
+increased_consumption_of_1 = {
+	good_1_demand_modifier = 0.5
+}
+decreased_consumption_of_2 = {
+	good_2_demand_modifier = -0.33
+}
+increased_consumption_of_2 = {
+	good_2_demand_modifier = 0.5
+}
+decreased_consumption_of_3 = {
+	good_3_demand_modifier = -0.33
+}
+increased_consumption_of_3 = {
+	good_3_demand_modifier = 0.5
+}
+decreased_consumption_of_4 = {
+	good_4_demand_modifier = -0.33
+}
+increased_consumption_of_4 = {
+	good_4_demand_modifier = 0.5
+}
+decreased_consumption_of_5 = {
+	good_5_demand_modifier = -0.33
+}
+increased_consumption_of_5 = {
+	good_5_demand_modifier = 0.5
+}
+decreased_consumption_of_6 = {
+	good_6_demand_modifier = -0.33
+}
+increased_consumption_of_6 = {
+	good_6_demand_modifier = 0.5
+}
+decreased_consumption_of_7 = {
+	good_7_demand_modifier = -0.33
+}
+increased_consumption_of_7 = {
+	good_7_demand_modifier = 0.5
+}
+decreased_consumption_of_8 = {
+	good_8_demand_modifier = -0.33
+}
+increased_consumption_of_8 = {
+	good_8_demand_modifier = 0.5
+}
+decreased_consumption_of_9 = {
+	good_9_demand_modifier = -0.33
+}
+increased_consumption_of_9 = {
+	good_9_demand_modifier = 0.5
+}
+decreased_consumption_of_10 = {
+	good_10_demand_modifier = -0.33
+}
+increased_consumption_of_10 = {
+	good_10_demand_modifier = 0.5
+}
+decreased_consumption_of_11 = {
+	good_11_demand_modifier = -0.33
+}
+increased_consumption_of_11 = {
+	good_11_demand_modifier = 0.5
+}
+decreased_consumption_of_12 = {
+	good_12_demand_modifier = -0.33
+}
+increased_consumption_of_12 = {
+	good_12_demand_modifier = 0.5
+}
+decreased_consumption_of_13 = {
+	good_13_demand_modifier = -0.33
+}
+increased_consumption_of_13 = {
+	good_13_demand_modifier = 0.5
+}
+decreased_consumption_of_14 = {
+	good_14_demand_modifier = -0.33
+}
+increased_consumption_of_14 = {
+	good_14_demand_modifier = 0.5
+}
+decreased_consumption_of_15 = {
+	good_15_demand_modifier = -0.33
+}
+increased_consumption_of_15 = {
+	good_15_demand_modifier = 0.5
+}
+decreased_consumption_of_16 = {
+	good_16_demand_modifier = -0.33
+}
+increased_consumption_of_16 = {
+	good_16_demand_modifier = 0.5
+}
+decreased_consumption_of_17 = {
+	good_17_demand_modifier = -0.33
+}
+increased_consumption_of_17 = {
+	good_17_demand_modifier = 0.5
+}
+decreased_consumption_of_18 = {
+	good_18_demand_modifier = -0.33
+}
+increased_consumption_of_18 = {
+	good_18_demand_modifier = 0.5
+}
+decreased_consumption_of_19 = {
+	good_19_demand_modifier = -0.33
+}
+increased_consumption_of_19 = {
+	good_19_demand_modifier = 0.5
+}
+decreased_consumption_of_20 = {
+	good_20_demand_modifier = -0.33
+}
+increased_consumption_of_20 = {
+	good_20_demand_modifier = 0.5
+}
+decreased_consumption_of_21 = {
+	good_21_demand_modifier = -0.33
+}
+increased_consumption_of_21 = {
+	good_21_demand_modifier = 0.5
+}
+decreased_consumption_of_22 = {
+	good_22_demand_modifier = -0.33
+}
+increased_consumption_of_22 = {
+	good_22_demand_modifier = 0.5
+}
+decreased_consumption_of_23 = {
+	good_23_demand_modifier = -0.33
+}
+increased_consumption_of_23 = {
+	good_23_demand_modifier = 0.5
+}
+decreased_consumption_of_24 = {
+	good_24_demand_modifier = -0.33
+}
+increased_consumption_of_24 = {
+	good_24_demand_modifier = 0.5
+}
+decreased_consumption_of_25 = {
+	good_25_demand_modifier = -0.33
+}
+increased_consumption_of_25 = {
+	good_25_demand_modifier = 0.5
+}
+decreased_consumption_of_26 = {
+	good_26_demand_modifier = -0.33
+}
+increased_consumption_of_26 = {
+	good_26_demand_modifier = 0.5
+}
+decreased_consumption_of_27 = {
+	good_27_demand_modifier = -0.33
+}
+increased_consumption_of_27 = {
+	good_27_demand_modifier = 0.5
+}
+decreased_consumption_of_28 = {
+	good_28_demand_modifier = -0.33
+}
+increased_consumption_of_28 = {
+	good_28_demand_modifier = 0.5
+}
+decreased_consumption_of_29 = {
+	good_29_demand_modifier = -0.33
+}
+increased_consumption_of_29 = {
+	good_29_demand_modifier = 0.5
+}
+decreased_consumption_of_30 = {
+	good_30_demand_modifier = -0.33
+}
+increased_consumption_of_30 = {
+	good_30_demand_modifier = 0.5
+}
+decreased_consumption_of_31 = {
+	good_31_demand_modifier = -0.33
+}
+increased_consumption_of_31 = {
+	good_31_demand_modifier = 0.5
+}

@@ -257,3 +257,27 @@ country_event = {
 		custom_tooltip = stock_market_craze_will_begin_to_spread
 	}
 }
+
+country_event = {
+	id = new_prices.5
+	title = new_prices.5.t
+	desc = new_prices.5.d
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
+	
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	immediate = {
+		hidden_effect = {
+			stock_market_5_select_right_flag = yes
+		}
+	}
+	
+	
+	option = {
+		name = new_prices.5.a
+		
+		stock_market_new_prices_5_gain_modifier = yes
+	}
+}
