@@ -1,5 +1,5 @@
 estate_special = {
-		modifier_definition = {
+	modifier_definition = {
 		key = good_0_demand_modifier
 	}
 	modifier_definition = {
