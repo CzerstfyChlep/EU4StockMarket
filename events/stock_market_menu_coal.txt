@@ -494,19 +494,6 @@ country_event = {
 	}
 
 	option = {
-		name = stock_market_menu_events.393.EVTOPT3
-		custom_tooltip = STOCK_MARKET_COAL_EXPORT_POLICY
-		hidden_effect = {
-			hidden_effect = {
-				country_event = {
-					id = stock_market_menu_events.396
-				}		
-			}		
-		}
-		trigger = { always = no }
-	}
-
-	option = {
 		name = stock_market_menu_events.393.EVTOPT4
 		custom_tooltip = GO_BACK_TO_COAL_MENU
 		hidden_effect = {

@@ -494,19 +494,6 @@ country_event = {
 	}
 
 	option = {
-		name = stock_market_menu_events.363.EVTOPT3
-		custom_tooltip = STOCK_MARKET_GLASS_EXPORT_POLICY
-		hidden_effect = {
-			hidden_effect = {
-				country_event = {
-					id = stock_market_menu_events.366
-				}		
-			}		
-		}
-		trigger = { always = no }
-	}
-
-	option = {
 		name = stock_market_menu_events.363.EVTOPT4
 		custom_tooltip = GO_BACK_TO_GLASS_MENU
 		hidden_effect = {
