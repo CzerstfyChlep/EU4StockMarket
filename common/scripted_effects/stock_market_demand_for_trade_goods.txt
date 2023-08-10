@@ -398,18 +398,23 @@ update_demand_for_trade_good_0 = { #grain
 			}
 		"
 		modifier_2 = "
-			export_to_variable = {
-				which = tempvar2
-				value = trigger_value:devastation 
-				who = PREV
-			}
-			multiply_variable = {
-				which = tempvar2
-				value = 0.1
-			}
-			change_variable = {
-				which = modifier_var
-				which = tempvar2
+			if = {
+				limit = {
+					PREV = { devastation = 1 }
+				}
+				export_to_variable = {
+					which = tempvar2
+					value = trigger_value:devastation 
+					who = PREV
+				}
+				multiply_variable = {
+					which = tempvar2
+					value = 0.1
+				}
+				change_variable = {
+					which = modifier_var
+					which = tempvar2
+				}
 			}
 		"
 	}

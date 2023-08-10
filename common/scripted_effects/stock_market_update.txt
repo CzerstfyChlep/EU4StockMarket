@@ -766,9 +766,35 @@ check_trade_good_satisfaction = {
 }
 
 clear_satisfaction_modifier_for = {
-	remove_country_modifier = severe_shortage_of_$trade_good_id$
-	remove_country_modifier = mediocre_shortage_of_$trade_good_id$
-	remove_country_modifier = acute_shortage_of_$trade_good_id$
-	remove_country_modifier = high_satisfaction_of_$trade_good_id$
-	remove_country_modifier = over_satisfaction_of_$trade_good_id$
+	if = {
+		limit = {
+			has_country_modifier = severe_shortage_of_$trade_good_id$
+		}
+		remove_country_modifier = severe_shortage_of_$trade_good_id$
+	}
+	else_if = { #how will you acquire more than one, realistically?
+		limit = {
+			has_country_modifier = mediocre_shortage_of_$trade_good_id$
+		}
+		remove_country_modifier = mediocre_shortage_of_$trade_good_id$
+	}
+	else_if = {
+		limit = {
+			has_country_modifier = acute_shortage_of_$trade_good_id$
+		}
+		remove_country_modifier = acute_shortage_of_$trade_good_id$
+	}
+	else_if = {
+		limit = {
+			has_country_modifier = high_satisfaction_of_$trade_good_id$
+		}
+		remove_country_modifier = high_satisfaction_of_$trade_good_id$
+	}
+	else_if = {
+		limit = {
+			has_country_modifier = over_satisfaction_of_$trade_good_id$
+		}
+		remove_country_modifier = over_satisfaction_of_$trade_good_id$
+	}
+	else = { }
 }
