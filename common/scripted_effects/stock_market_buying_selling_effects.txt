@@ -512,6 +512,16 @@ prepare_immediate_values_for_buying = {
 
 	get_average_price_for_buying_trade_good = { amount = 10 trade_good_id = $trade_good_id$ }
 
+	set_variable = {
+		which = temp_stockpile
+		which = country_stock_market_stockpile_for_$trade_good_id$
+	}
+	change_variable = {
+		which = temp_stockpile
+		value = 9.999
+	}
+
+
 	if = {
 		limit = {
 			check_variable = {
@@ -522,12 +532,22 @@ prepare_immediate_values_for_buying = {
 				which = merchant_capacity_left
 				value = 10
 			}
+			NOT = {
+				check_variable = {
+					which = temp_stockpile
+					which = stock_market_max_stockpile_for_$trade_good_id$
+				}
+			}
 		}
 
 		set_country_flag = can_buy_10_$trade_good_id$
 
 		#we can buy more?
 		get_average_price_for_buying_trade_good = { amount = 50 trade_good_id = $trade_good_id$ }
+		change_variable = {
+			which = temp_stockpile
+			value = 40
+		}
 		if = {
 			limit = {
 				check_variable = {
@@ -538,10 +558,20 @@ prepare_immediate_values_for_buying = {
 					which = merchant_capacity_left
 					value = 50
 				}
+				NOT = {
+					check_variable = {
+						which = temp_stockpile
+						which = stock_market_max_stockpile_for_$trade_good_id$
+					}
+				}
 			}
 
 			set_country_flag = can_buy_50_$trade_good_id$
 			get_average_price_for_buying_trade_good = { amount = 200 trade_good_id = $trade_good_id$ }
+			change_variable = {
+				which = temp_stockpile
+				value = 150
+			}
 			if = {
 				limit = {
 					check_variable = {
@@ -552,10 +582,20 @@ prepare_immediate_values_for_buying = {
 						which = merchant_capacity_left
 						value = 200
 					}
+					NOT = {
+						check_variable = {
+							which = temp_stockpile
+							which = stock_market_max_stockpile_for_$trade_good_id$
+						}
+					}
 				}
 	
 				set_country_flag = can_buy_200_$trade_good_id$
 				get_average_price_for_buying_trade_good = { amount = 1000 trade_good_id = $trade_good_id$ }
+				change_variable = {
+					which = temp_stockpile
+					value = 800
+				}
 				if = {
 					limit = {
 						check_variable = {
@@ -565,6 +605,12 @@ prepare_immediate_values_for_buying = {
 						check_variable = {
 							which = merchant_capacity_left
 							value = 1000
+						}
+						NOT = {
+							check_variable = {
+							which = temp_stockpile
+							which = stock_market_max_stockpile_for_$trade_good_id$
+							}
 						}
 					}
 		
